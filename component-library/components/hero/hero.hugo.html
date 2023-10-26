@@ -1,0 +1,14 @@
+{{ $c := "hero" }}
+
+<div class="{{ $c }}">
+   {{ if .bg_image }}
+      <img class="{{ $c }}__svg-img" src={{ .bg_image }} alt="" />
+   {{ end }}
+   <div class="{{ $c }}__wrapper">
+      <h1>{{ .heading }}</h1>
+      <p>{{ .text }}</p>
+      {{ with .button }}
+         {{ partial "bookshop" . }}
+      {{ end }}
+   </div>
+</div>

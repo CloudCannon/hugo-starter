@@ -1,0 +1,3 @@
+{{ with resources.Get "sass/main.scss" | toCSS | postCSS }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}

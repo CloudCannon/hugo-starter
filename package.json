@@ -1,0 +1,29 @@
+{
+  "name": "hugo-bookshop-starter",
+  "private": true,
+  "description": "A starter template for Hugo with Bookshop",
+  "scripts": {
+    "start": "hugo server",
+    "new": "npx @bookshop/init --component"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCannon/hugo-bookshop-starter.git"
+  },
+  "author": "CloudCannon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CloudCannon/hugo-bookshop-starter/issues"
+  },
+  "homepage": "https://github.com/CloudCannon/hugo-bookshop-starter#readme",
+  "devDependencies": {
+    "@bookshop/browser": "3.2.1",
+    "@bookshop/generate": "3.2.1",
+    "@bookshop/hugo-engine": "3.2.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0"
+  }
+}

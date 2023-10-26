@@ -1,0 +1,8 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Hugo Bookshop Starter
+module:
+  replacements: local/component-library -> ../component-library
+  imports:
+    - path: local/component-library
+    - path: github.com/cloudcannon/bookshop/hugo/v3

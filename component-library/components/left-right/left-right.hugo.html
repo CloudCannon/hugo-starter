@@ -1,0 +1,19 @@
+{{ $c := "left-right" }}
+
+<div class="{{ $c }}">
+   {{ if .bg_image }}
+      <img class="{{ $c }}__svg-img" src={{ .bg_image }} alt="" />
+   {{ end }}
+   <div class="{{ $c }}__wrapper">
+      <div class="{{ $c }}__text">
+         <h2>{{ .heading }}</h2>
+         <p>{{ .text }}</p>
+         {{ with .button }}
+            {{ partial "bookshop" . }}
+         {{ end }}
+      </div>
+      {{ if .image }}
+         <img class="{{ $c }}__img" src={{ .image }} alt={{ .image_alt }} />
+      {{ end }}
+   </div>
+</div>
