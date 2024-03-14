@@ -6,9 +6,8 @@ module:
   imports:
     - path: local/component-library
     - path: github.com/cloudcannon/bookshop/hugo/v3
-generator:
-  metadata:
-    markdown: goldmark
-    goldmark:
-      renderer:
-        hardWraps: true
+markup:
+  # ensures html inside markdown is allowed to render
+  goldmark:
+    renderer:
+      unsafe: true
