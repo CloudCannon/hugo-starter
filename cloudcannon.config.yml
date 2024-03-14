@@ -43,8 +43,44 @@ collections_config:
     schemas:
 _editables:
   content:
-    # allow_custom_markup: true
-    # remove_custom_markup: false
+    allow_custom_markup: true
+    remove_custom_markup: false
+    blockquote:
+    bold:
+    bulletedlist:
+    center:
+    code:
+    copyformatting:
+    correct_orientation:
+    embed:
+    expandable:
+    format:
+    height:
+    horizontalrule:
+    image:
+    image_size_attributes: true
+    indent:
+    italic:
+    justify:
+    left:
+    link:
+    mime_type:
+    numberedlist:
+    outdent:
+    paths:
+    redo:
+    removeformat:
+    resize_style: contain
+    right:
+    snippet:
+    strike:
+    styles:
+    subscript:
+    superscript:
+    table:
+    underline:
+    undo:
+    width:
 data_config: {}
 editor:
   default_path:
