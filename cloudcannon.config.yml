@@ -18,93 +18,74 @@ collections_config:
     output: true
     filter: strict
     parse_branch_index: true
+    description: ''
     icon: notes
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
   data:
     path: data
     output: false
+    description: ''
     icon: notes
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-_structures:
-  content_blocks:
-    style: select
-    id_key: _bookshop_name
-    values:
-      - value:
-          _bookshop_name: hero
-          bg_image:
-          heading:
-          text:
-          button:
-        label: Hero
-        description: Hero block with heading, text & a colored button.
-        icon: cottage
-        tags:
-          - block
-          - hero
-        _inputs:
-          text:
-            type: markdown
-            cascade: true
-          button:
-            type: object
-            options:
-              structures: _structures._bookshop_single_component_global_button
-            cascade: true
-      - value:
-          _bookshop_name: left-right
-          bg_image:
-          heading:
-          text:
-          button:
-          image:
-          image_alt:
-        label: Left-Right Block
-        description: Left-Right block with heading, text & button next to image.
-        icon: chrome_reader_mode
-        tags:
-          - block
-          - left-right
-        _inputs:
-          text:
-            type: markdown
-            cascade: true
-          button:
-            type: object
-            options:
-              structures: _structures._bookshop_single_component_global_button
-            cascade: true
-      - value:
-          _bookshop_name: page-bg
-          background_image:
-        label: Full Page Background
-        description: A full page background image.
-        icon: wallpaper
-        tags:
-          - layout
-          - background
-        _inputs:
-  _bookshop_single_component_global_button:
-    style: select
-    id_key: _bookshop_name
-    values:
-      - value:
-          _bookshop_name: global/button
-          path: ''
-          button_text: ''
-          button_text_color: ''
-          button_color: ''
-        label: Button
-        description: Button with link and color options
-        icon: button
-        tags:
-          - button
-        _inputs:
-          path:
-            type: url
-            cascade: true
+    schemas:
+_editables:
+  content:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    blockquote:
+    bold:
+    bulletedlist:
+    center:
+    code:
+    copyformatting:
+    correct_orientation:
+    embed:
+    expandable:
+    format:
+    height:
+    horizontalrule:
+    image:
+    image_size_attributes: true
+    indent:
+    italic:
+    justify:
+    left:
+    link:
+    mime_type:
+    numberedlist:
+    outdent:
+    paths:
+    redo:
+    removeformat:
+    resize_style: contain
+    right:
+    snippet:
+    strike:
+    styles:
+    subscript:
+    superscript:
+    table:
+    underline:
+    undo:
+    width:
+data_config: {}
+editor:
+  default_path:
+source_editor:
+  tab_size: 2
+  theme: monokai
+  show_gutter: true
 timezone: Etc/UTC
