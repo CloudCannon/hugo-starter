@@ -12,8 +12,6 @@ seo:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: page-bg
-    background_image: /images/backgrounds/sunset.png
   - _bookshop_name: hero
     bg_image: /images/backgrounds/textures/home-web.svg
     heading: Hugo Starter Template
