@@ -43,8 +43,8 @@ collections_config:
     schemas:
 _editables:
   content:
-    allow_custom_markup: true
-    remove_custom_markup: false
+    # allow_custom_markup: true
+    # remove_custom_markup: false
 data_config: {}
 editor:
   default_path:
@@ -53,3 +53,9 @@ source_editor:
   theme: monokai
   show_gutter: true
 timezone: Etc/UTC
+generator:
+  metadata:
+    markdown: goldmark
+    goldmark:
+      renderer:
+        hardWraps: true
