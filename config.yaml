@@ -10,4 +10,4 @@ markup:
   goldmark:
     renderer:
       hardWraps: true
-      unsafe: false
+      unsafe: true
