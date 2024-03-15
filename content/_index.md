@@ -52,4 +52,4 @@ A new paragraph
  Another linebreak
 
 Another new paragraph
-A linebreak added in the content editor
+ A linebreak added in the content editor with hardwraps on
