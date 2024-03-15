@@ -9,5 +9,5 @@ module:
 markup:
   goldmark:
     renderer:
-      hardWraps: false
+      hardWraps: true
       unsafe: false
