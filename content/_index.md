@@ -46,5 +46,9 @@ content_blocks:
     image_alt:
 ---
 Some text
-Some more text
-A new new line
+
+A new paragraph
+A linebreak
+Another linebreak
+
+Another new paragraph
