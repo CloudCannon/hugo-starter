@@ -53,6 +53,7 @@ source_editor:
   theme: monokai
   show_gutter: true
 timezone: Etc/UTC
+
 generator:
   metadata:
     markdown: goldmark

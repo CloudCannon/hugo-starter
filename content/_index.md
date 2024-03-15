@@ -46,9 +46,5 @@ content_blocks:
     image_alt:
 ---
 Some text
-
-A new paragraph
-
-A new paragraph<br>Woah a linebreak out of nowhere<br>And another one
-
-A new paragraph
+Some more text
+A new new line
