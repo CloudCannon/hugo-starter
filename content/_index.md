@@ -48,7 +48,8 @@ content_blocks:
 Some text
 
 A new paragraph
-A linebreak
-Another linebreak
+ A linebreak
+ Another linebreak
 
 Another new paragraph
+A linebreak added in the content editor
