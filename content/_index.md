@@ -52,5 +52,6 @@ A new paragraph
  Another linebreak
 
 Another new paragraph
-A linebreak added in the content editor with hardwraps on
-Another linebreak added with hardwraps on
+ A linebreak added in the content editor with hardwraps on
+ Another linebreak added with hardwraps on
+A linebreak added with hardwraps off
