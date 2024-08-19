@@ -23,8 +23,8 @@ content_blocks:
       _bookshop_name: global/button
       path: /
       button_text: Discover Enterprise Solutions
-      button_text_color: '#181512'
-      button_color: '#f8b148'
+      button_text_color: "#181512"
+      button_color: "#f8b148"
   - _bookshop_name: left-right
     bg_image: /images/backgrounds/textures/home-waves.svg
     heading: Keep what you need. Delete the rest.
@@ -40,16 +40,8 @@ content_blocks:
       _bookshop_name: global/button
       path: /
       button_text: Read Analysis
-      button_text_color: '#fff'
-      button_color: '#c7588e'
+      button_text_color: "#fff"
+      button_color: "#c7588e"
     image: /images/transparent-bg/undraw-hello.svg
     image_alt:
 ---
-Some text
-
-A new paragraph
- A linebreak
- Another linebreak
-
-Another new paragraph
- A linebreak added in the content editor with hardwraps on
