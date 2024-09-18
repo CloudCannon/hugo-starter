@@ -13,12 +13,12 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: hero
-    bg_image: /images/backgrounds/textures/home-web.svg
     heading: Hugo Starter Template
     text: >-
-      A starter template for Hugo, Tailwind and Bookshop. Comes with a blog
-      section that includes pagination and tags. This template is set up so you
-      can just start building.<br>This is a linebreak<br>And another one
+      A starter template for Hugo, Tailwind and Bookshop. This template is set up so you
+      can start building components straight away.
+    background_color: "#034ad8"
+    text_color: "#ffffff"
     button:
       _bookshop_name: global/button
       path: /
@@ -26,7 +26,7 @@ content_blocks:
       button_text_color: "#181512"
       button_color: "#f8b148"
   - _bookshop_name: left-right
-    bg_image: /images/backgrounds/textures/home-waves.svg
+    bg_image:
     heading: Keep what you need. Delete the rest.
     text: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

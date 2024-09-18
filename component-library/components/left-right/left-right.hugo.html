@@ -6,7 +6,7 @@
    {{ end }}
    <div class="{{ $c }}__wrapper">
       <div class="{{ $c }}__text">
-         <h2>{{ .heading }}</h2>
+         <h2 class="text-red-500">{{ .heading }}</h2>
          <p>{{ .text }}</p>
          {{ with .button }}
             {{ partial "bookshop" . }}

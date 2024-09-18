@@ -4,14 +4,17 @@ spec:
     - content_blocks
   label: Hero
   description: Hero block with heading, text & a colored button.
-  icon: 'cottage'
-  tags: ['block', 'hero']
+  icon: "cottage"
+  tags:
+    - Text
+    - Button
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  bg_image:
   heading:
   text:
+  background_color: "#ffffff"
+  text_color: "#000000"
   button: bookshop:global/button
 
 # Overrides any fields in the blueprint when viewing this component in the component browser

@@ -1,57 +1,56 @@
 paths:
   data: data
-  collections: content
-  includes: layouts
-  layouts: layouts
   static: static
-  uploads: static/uploads
-  source: ''
-  archetypes: archetypes
+  uploads: static/images
   assets: assets
   content: content
   pages: content
-  publish: public
-  config: ''
+
 collections_config:
   pages:
     path: content
     output: true
     filter: strict
     parse_branch_index: true
-    description: ''
-    icon: notes
-    _editables:
-    _inputs:
-    _select_data:
-    _structures:
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    schemas:
+    description: ""
+    icon: laptop_mac
+    _enabled_editors:
+      - visual
   data:
     path: data
     output: false
-    description: ''
-    icon: notes
-    _editables:
+    description: ""
+    icon: analytics
     _inputs:
-    _select_data:
-    _structures:
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    schemas:
-_editables:
-  content:
-    # allow_custom_markup: true
-    # remove_custom_markup: false
-data_config: {}
-editor:
-  default_path:
+      value:
+        type: color
+
+data_config:
+  colors: true
+
+_inputs:
+  background_color:
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name
+  text_color:
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name
+
 source_editor:
   tab_size: 2
   theme: monokai
   show_gutter: true
+
 timezone: Etc/UTC
 
 generator:

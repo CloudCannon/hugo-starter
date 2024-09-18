@@ -4,8 +4,12 @@ spec:
     - content_blocks
   label: Left-Right Block
   description: Left-Right block with heading, text & button next to image.
-  icon: 'chrome_reader_mode'
-  tags: ['block', 'left-right']
+  icon: "chrome_reader_mode"
+  tags:
+    - BG Image
+    - Image
+    - Text
+    - Button
 
 # Defines the structure of this component, as well as the default values
 blueprint:
