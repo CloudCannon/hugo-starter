@@ -9,7 +9,7 @@ paths:
 collections_config:
   pages:
     path: content
-    url: /{url|if=url}[slug|unless=url]/
+    url: /{url|if=url}[full_slug]/
     output: true
     filter: strict
     parse_branch_index: true
