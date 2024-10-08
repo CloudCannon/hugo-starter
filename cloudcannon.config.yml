@@ -16,6 +16,11 @@ collections_config:
     icon: laptop_mac
     _enabled_editors:
       - visual
+    schemas:
+      default:
+        name: New Page
+        path: .cloudcannon/schemas/page.md
+        remove_extra_inputs: false
   data:
     path: data
     output: false
