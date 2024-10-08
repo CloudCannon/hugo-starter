@@ -1,7 +1,7 @@
 ---
 _schema: default
-title: Another new page
-url: testing-a-custom-url
+title: New page without custom url
+url:
 seo:
   page_description: >-
     We believe that a good email marketing strategy is the key to growth. So
@@ -15,8 +15,8 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: hero
-    heading: Test test
-    text: Another hero
+    heading: asdaasdas
+    text: dasdasdasd
     background_color: '#ffffff'
     text_color: '#000000'
     button:
