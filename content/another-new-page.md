@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Another new page
-url: /test-test/
+url:
 seo:
   page_description: >-
     We believe that a good email marketing strategy is the key to growth. So
