@@ -1,19 +1,11 @@
 paths:
-  data: data
   static: static
   uploads: static/images
-  assets: assets
-  content: content
-  pages: content
 
 collections_config:
   pages:
     path: content
-    url: /{url|if=url}[full_slug]/
-    output: true
-    filter: strict
-    parse_branch_index: true
-    description: ""
+    url: '[full_slug]'
     icon: laptop_mac
     _enabled_editors:
       - visual
@@ -24,15 +16,15 @@ collections_config:
         remove_extra_inputs: false
   data:
     path: data
-    output: false
-    description: ""
+    disable_url: true
     icon: analytics
     _inputs:
       value:
         type: color
 
 data_config:
-  colors: true
+  colors:
+    path: data/colors.yml
 
 _inputs:
   background_color:
@@ -58,10 +50,3 @@ source_editor:
   show_gutter: true
 
 timezone: Etc/UTC
-
-generator:
-  metadata:
-    markdown: goldmark
-    goldmark:
-      renderer:
-        hardWraps: true
