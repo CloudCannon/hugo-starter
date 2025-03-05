@@ -1,0 +1,27 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Hugo Bookshop Starter
+module:
+  replacements: local/component-library -> ../component-library
+  imports:
+    - path: local/component-library
+    - path: github.com/cloudcannon/bookshop/hugo/v3
+  mounts:
+    - source: assets
+      target: assets
+    - disableWatch: true
+      source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+  - source: assets/notwatching/hugo_stats\.json
+    target: css
+  - source: (postcss|tailwind)\.config\.js
+    target: css
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
+      unsafe: false

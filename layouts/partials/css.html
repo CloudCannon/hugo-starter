@@ -1,0 +1,6 @@
+
+{{ with resources.Get "css/main.css" }}
+  {{ with . | css.TailwindCSS }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+{{ end }}

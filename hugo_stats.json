@@ -1,0 +1,49 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "button",
+      "div",
+      "h1",
+      "h2",
+      "head",
+      "header",
+      "html",
+      "img",
+      "line",
+      "link",
+      "main",
+      "meta",
+      "nav",
+      "p",
+      "path",
+      "script",
+      "span",
+      "svg",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "button",
+      "button__link",
+      "header",
+      "header__container",
+      "header__hamburger",
+      "header__logo",
+      "header__nav",
+      "header__nav-list",
+      "header__nav-list-mobile",
+      "hero",
+      "hero__wrapper",
+      "left-right",
+      "left-right__img",
+      "left-right__text",
+      "left-right__wrapper",
+      "navbar-toggler-default",
+      "navbar-toggler-toggled",
+      "text-red-500"
+    ],
+    "ids": null
+  }
+}
