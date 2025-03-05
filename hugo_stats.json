@@ -42,6 +42,9 @@
       "left-right__wrapper",
       "navbar-toggler-default",
       "navbar-toggler-toggled",
+      "text-5xl",
+      "text-green-500",
+      "text-purple-200",
       "text-red-500"
     ],
     "ids": null
