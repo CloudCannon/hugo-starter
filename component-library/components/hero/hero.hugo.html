@@ -4,8 +4,8 @@
       <h1 class="heading" style="background: -webkit-linear-gradient(to left, {{ .heading.heading_gradient_color }} 50%, #000000); background: linear-gradient(to left, {{ .heading.heading_gradient_color }} 50%, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
         {{ .heading.heading_text }}
       </h1>
-      <div class="subheading-text" style="color: {{ .subheading.color }};">
-        {{ .subheading.markdown_content | markdownify }}
+      <div class="markdown-text subheading-text" style="color: {{ .subheading.color }};">
+        {{ .subheading.text_content | markdownify }}
       </div>
       <div class="buttons">
         {{ range .buttons }}

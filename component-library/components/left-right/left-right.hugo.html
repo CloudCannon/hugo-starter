@@ -1,19 +1,42 @@
-{{ $c := "left-right" }}
 
-<div class="{{ $c }}">
-   {{ if .bg_image }}
-      <img class="{{ $c }}__svg-img" src={{ .bg_image }} alt="" />
-   {{ end }}
-   <div class="{{ $c }}__wrapper">
-      <div class="{{ $c }}__text">
-         <h2 class="text-red-500">{{ .heading }}</h2>
-         <p>{{ .text }}</p>
-         {{ with .button }}
-            {{ partial "bookshop" . }}
-         {{ end }}
+<div class="left-right" style="background-color: {{ .background_color }};">
+  {{ if .flipped }}
+    <div class="left-right__wrapper">
+      <img
+        class="order-2 md:order-1"
+        alt="{{ .image.alt_text}}"
+        src="{{ .image.image_path }}"
+      />
+      <div class="left-right__text order-1 md:order-2">
+        <h2 style="color: {{ .heading.color }};">
+          {{ .heading.heading_text }}
+        </h2>
+        <div class="markdown-text left-right__text-content" style="color: {{ .text.color }};">
+          {{ .text.text_content | markdownify }}
+        </div>
+        {{ with .button }}
+          {{ partial "bookshop" . }}
+        {{ end }}
       </div>
-      {{ if .image }}
-         <img class="{{ $c }}__img" src={{ .image }} alt={{ .image_alt }} />
-      {{ end }}
-   </div>
+    </div>
+  {{ else }}
+    <div class="left-right__wrapper">
+      <div class="left-right__text">
+        <h2 style="color: {{ .heading.color }};">
+          {{ .heading.heading_text }}
+        </h2>
+        <div class="markdown-text left-right__text-content" style="color: {{ .text.color }};">
+          {{ .text.text_content | markdownify }}
+        </div>
+        {{ with .button }}
+          {{ partial "bookshop" . }}
+        {{ end }}
+      </div>
+      <img
+        class="order-2 md:order-1"
+        alt="{{ .image.alt_text}}"
+        src="{{ .image.image_path }}"
+      />
+    </div>
+  {{ end }}
 </div>

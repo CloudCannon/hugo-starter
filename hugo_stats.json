@@ -58,10 +58,18 @@
       "left-right",
       "left-right__img",
       "left-right__text",
+      "left-right__text-content",
       "left-right__wrapper",
+      "markdown-text",
+      "mb-4",
+      "md:order-1",
+      "md:order-2",
       "navbar-toggler-default",
       "navbar-toggler-toggled",
+      "order-1",
+      "order-2",
       "subheading-text",
+      "text-4xl",
       "text-red-500"
     ],
     "ids": [
