@@ -31,7 +31,7 @@ content_blocks:
       - _bookshop_name: buttons/primary
         button_text: GitHub
         button_icon: Github
-        button_link: https://github.com/CloudCannon/astro-starter
+        button_link: https://github.com/CloudCannon/hugo-starter/
         background_color: "#034ad8"
         hover_brightness: 0.85
         text_color: "#ffffff"
@@ -52,13 +52,10 @@ content_blocks:
         To help save you time, some features are set up in this template, like:
 
         -
-        [Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/)
+        [Bookshop](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc)
 
         - Blog with pagination, tags and
-        [snippets](https://docs.astro.build/en/guides/markdown-content/#using-components-in-mdx)
-
-        - [Image
-        optimization](https://docs.astro.build/en/guides/images/#image--astroassets)
+        [snippets](https://gohugo.io/content-management/shortcodes/)
 
         - SEO Controls
 
@@ -83,7 +80,7 @@ content_blocks:
       _bookshop_name: buttons/primary
       button_text: GitHub
       button_icon: Github
-      button_link: https://github.com/CloudCannon/astro-starter
+      button_link: https://github.com/CloudCannon/hugo-starter/
       background_color: "#034ad8"
       hover_brightness: 0.85
       text_color: "#ffffff"
