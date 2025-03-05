@@ -8,3 +8,5 @@ header:
       text: Blog
     - link: https://github.com/CloudCannon/hugo-starter/
       text: GitHub
+    - link: "https://cloudcannon.com/"
+      text: CloudCannon
