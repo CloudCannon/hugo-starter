@@ -1,9 +1,23 @@
-<div class="hero" style="background-color: {{ .background_color }};">
-  <div class="hero__wrapper" style="color: {{ .text_color }};">
-    <h1>{{ .heading }}</h1>
-    <p>{{ .text | markdownify }}</p>
-    {{ with.button }}
-    {{ partial "bookshop" . }}
-    {{ end }}
+<section style="background-color: {{ .background_color }};">
+  <div class="hero-container">
+    <div class="content">
+      <h1 class="heading" style="background: -webkit-linear-gradient(to left, {{ .heading.heading_gradient_color }} 50%, #000000); background: linear-gradient(to left, {{ .heading.heading_gradient_color }} 50%, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        {{ .heading.heading_text }}
+      </h1>
+      <div class="subheading-text" style="color: {{ .subheading.color }};">
+        {{ .subheading.markdown_content | markdownify }}
+      </div>
+      <div class="buttons">
+        {{ range .buttons }}
+          {{ partial "bookshop" . }}
+        {{ end }}
+      </div>
+    </div>
+    <div class="blob">
+      <img
+        src="{{ .image.image_path }}"
+        alt="{{ .image.alt_text }}"
+      />
+    </div>
   </div>
-</div>
+</section>

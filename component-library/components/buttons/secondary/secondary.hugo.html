@@ -1,0 +1,13 @@
+<button class="button" style="background-color: transparent; border: 2px solid {{ .background_color }};">
+  <style>
+    .button a:hover {
+      backdrop-filter: brightness({{ .hover_brightness }});
+    }
+  </style>
+  <a 
+  class="button__link" 
+  href="{{ .button_link }}"
+  style="color: {{ .text_color }};">
+    {{ .button_text }}
+  </a>
+</button>

@@ -1,17 +1,20 @@
 # Metadata about this component, to be used in the CMS
 spec:
   structures:
+    - buttons
   label: Button
-  description: "Button with link and color options"
+  description: "Solid bg color"
   icon: "button"
   tags: ['button']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  path: ''
-  button_text: ''
-  button_text_color: ''
-  button_color: ''
+  button_text:
+  button_icon:
+  button_link: 
+  background_color: "#f1f1f1"
+  hover_brightness: 0.85
+  text_color: "#000000"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

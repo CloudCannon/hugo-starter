@@ -1,0 +1,26 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - buttons
+  label: Button
+  description: "Outline & transparent bg"
+  icon: "button"
+  tags: ['button']
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  button_text:
+  button_icon:
+  button_link: 
+  background_color: "#f1f1f1"
+  hover_brightness: 0.85
+  text_color: "#000000"
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  path:
+    type: url
+

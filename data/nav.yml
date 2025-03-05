@@ -1,1 +1,10 @@
 logo: /images/logos/logo-wordmark-blue.png
+logo_url: '/'
+header:
+  background_color: '#ffffff'
+  text_color: '#393939'
+  links:
+    - link: /blog/
+      text: Blog
+    - link: https://github.com/CloudCannon/hugo-starter/
+      text: GitHub

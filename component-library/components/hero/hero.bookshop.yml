@@ -11,16 +11,22 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  background_color: '#ffffff'
   heading:
-  text:
-  background_color: "#ffffff"
-  text_color: "#000000"
-  button: bookshop:global/button
+    heading_text: 
+    heading_gradient_color: '#a0a2ff'
+  subheading:
+    text_content:
+    color: '#393939'
+  image:
+    image_path: 
+    alt_text:
+  buttons: [bookshop:structure:buttons]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  text:
+  text_content:
     type: markdown
