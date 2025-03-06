@@ -1,0 +1,3142 @@
+# See static/custom-icons/custom-icons.css to copy how to add other custom icons
+- name: CloudCannon
+  icon_code: custom-icon-cloudcannon 
+# FontAwesome free icons
+- name: 500px
+  icon_code: fab fa-500px
+- name: Accessible-icon
+  icon_code: fab fa-accessible-icon
+- name: Accusoft
+  icon_code: fab fa-accusoft
+- name: Acquisitions-incorporated
+  icon_code: fab fa-acquisitions-incorporated
+- name: Ad
+  icon_code: fas fa-ad
+- name: Address-book
+  icon_code: fas fa-address-book
+- name: Address-book
+  icon_code: far fa-address-book
+- name: Address-card
+  icon_code: fas fa-address-card
+- name: Address-card
+  icon_code: far fa-address-card
+- name: Adjust
+  icon_code: fas fa-adjust
+- name: Adn
+  icon_code: fab fa-adn
+- name: Adobe
+  icon_code: fab fa-adobe
+- name: Adversal
+  icon_code: fab fa-adversal
+- name: Affiliatetheme
+  icon_code: fab fa-affiliatetheme
+- name: Air-freshener
+  icon_code: fas fa-air-freshener
+- name: Algolia
+  icon_code: fab fa-algolia
+- name: Align-center
+  icon_code: fas fa-align-center
+- name: Align-justify
+  icon_code: fas fa-align-justify
+- name: Align-left
+  icon_code: fas fa-align-left
+- name: Align-right
+  icon_code: fas fa-align-right
+- name: Alipay
+  icon_code: fab fa-alipay
+- name: Allergies
+  icon_code: fas fa-allergies
+- name: Amazon
+  icon_code: fab fa-amazon
+- name: Amazon-pay
+  icon_code: fab fa-amazon-pay
+- name: Ambulance
+  icon_code: fas fa-ambulance
+- name: American-sign-language-interpreting
+  icon_code: fas fa-american-sign-language-interpreting
+- name: Amilia
+  icon_code: fab fa-amilia
+- name: Anchor
+  icon_code: fas fa-anchor
+- name: Android
+  icon_code: fab fa-android
+- name: Angellist
+  icon_code: fab fa-angellist
+- name: Angle-double-down
+  icon_code: fas fa-angle-double-down
+- name: Angle-double-left
+  icon_code: fas fa-angle-double-left
+- name: Angle-double-right
+  icon_code: fas fa-angle-double-right
+- name: Angle-double-up
+  icon_code: fas fa-angle-double-up
+- name: Angle-down
+  icon_code: fas fa-angle-down
+- name: Angle-left
+  icon_code: fas fa-angle-left
+- name: Angle-right
+  icon_code: fas fa-angle-right
+- name: Angle-up
+  icon_code: fas fa-angle-up
+- name: Angry
+  icon_code: fas fa-angry
+- name: Angry
+  icon_code: far fa-angry
+- name: Angrycreative
+  icon_code: fab fa-angrycreative
+- name: Angular
+  icon_code: fab fa-angular
+- name: Ankh
+  icon_code: fas fa-ankh
+- name: App-store
+  icon_code: fab fa-app-store
+- name: App-store-ios
+  icon_code: fab fa-app-store-ios
+- name: Apper
+  icon_code: fab fa-apper
+- name: Apple
+  icon_code: fab fa-apple
+- name: Apple-alt
+  icon_code: fas fa-apple-alt
+- name: Apple-pay
+  icon_code: fab fa-apple-pay
+- name: Archive
+  icon_code: fas fa-archive
+- name: Archway
+  icon_code: fas fa-archway
+- name: Arrow-alt-circle-down
+  icon_code: fas fa-arrow-alt-circle-down
+- name: Arrow-alt-circle-down
+  icon_code: far fa-arrow-alt-circle-down
+- name: Arrow-alt-circle-left
+  icon_code: fas fa-arrow-alt-circle-left
+- name: Arrow-alt-circle-left
+  icon_code: far fa-arrow-alt-circle-left
+- name: Arrow-alt-circle-right
+  icon_code: fas fa-arrow-alt-circle-right
+- name: Arrow-alt-circle-right
+  icon_code: far fa-arrow-alt-circle-right
+- name: Arrow-alt-circle-up
+  icon_code: fas fa-arrow-alt-circle-up
+- name: Arrow-alt-circle-up
+  icon_code: far fa-arrow-alt-circle-up
+- name: Arrow-circle-down
+  icon_code: fas fa-arrow-circle-down
+- name: Arrow-circle-left
+  icon_code: fas fa-arrow-circle-left
+- name: Arrow-circle-right
+  icon_code: fas fa-arrow-circle-right
+- name: Arrow-circle-up
+  icon_code: fas fa-arrow-circle-up
+- name: Arrow-down
+  icon_code: fas fa-arrow-down
+- name: Arrow-left
+  icon_code: fas fa-arrow-left
+- name: Arrow-right
+  icon_code: fas fa-arrow-right
+- name: Arrow-up
+  icon_code: fas fa-arrow-up
+- name: Arrows-alt
+  icon_code: fas fa-arrows-alt
+- name: Arrows-alt-h
+  icon_code: fas fa-arrows-alt-h
+- name: Arrows-alt-v
+  icon_code: fas fa-arrows-alt-v
+- name: Artstation
+  icon_code: fab fa-artstation
+- name: Assistive-listening-systems
+  icon_code: fas fa-assistive-listening-systems
+- name: Asterisk
+  icon_code: fas fa-asterisk
+- name: Asymmetrik
+  icon_code: fab fa-asymmetrik
+- name: At
+  icon_code: fas fa-at
+- name: Atlas
+  icon_code: fas fa-atlas
+- name: Atlassian
+  icon_code: fab fa-atlassian
+- name: Atom
+  icon_code: fas fa-atom
+- name: Audible
+  icon_code: fab fa-audible
+- name: Audio-description
+  icon_code: fas fa-audio-description
+- name: Autoprefixer
+  icon_code: fab fa-autoprefixer
+- name: Avianex
+  icon_code: fab fa-avianex
+- name: Aviato
+  icon_code: fab fa-aviato
+- name: Award
+  icon_code: fas fa-award
+- name: Aws
+  icon_code: fab fa-aws
+- name: Baby
+  icon_code: fas fa-baby
+- name: Baby-carriage
+  icon_code: fas fa-baby-carriage
+- name: Backspace
+  icon_code: fas fa-backspace
+- name: Backward
+  icon_code: fas fa-backward
+- name: Bacon
+  icon_code: fas fa-bacon
+- name: Bahai
+  icon_code: fas fa-bahai
+- name: Balance-scale
+  icon_code: fas fa-balance-scale
+- name: Balance-scale-left
+  icon_code: fas fa-balance-scale-left
+- name: Balance-scale-right
+  icon_code: fas fa-balance-scale-right
+- name: Ban
+  icon_code: fas fa-ban
+- name: Band-aid
+  icon_code: fas fa-band-aid
+- name: Bandcamp
+  icon_code: fab fa-bandcamp
+- name: Barcode
+  icon_code: fas fa-barcode
+- name: Bars
+  icon_code: fas fa-bars
+- name: Baseball-ball
+  icon_code: fas fa-baseball-ball
+- name: Basketball-ball
+  icon_code: fas fa-basketball-ball
+- name: Bath
+  icon_code: fas fa-bath
+- name: Battery-empty
+  icon_code: fas fa-battery-empty
+- name: Battery-full
+  icon_code: fas fa-battery-full
+- name: Battery-half
+  icon_code: fas fa-battery-half
+- name: Battery-quarter
+  icon_code: fas fa-battery-quarter
+- name: Battery-three-quarters
+  icon_code: fas fa-battery-three-quarters
+- name: Bed
+  icon_code: fas fa-bed
+- name: Beer
+  icon_code: fas fa-beer
+- name: Behance
+  icon_code: fab fa-behance
+- name: Behance-square
+  icon_code: fab fa-behance-square
+- name: Bell
+  icon_code: fas fa-bell
+- name: Bell
+  icon_code: far fa-bell
+- name: Bell-slash
+  icon_code: fas fa-bell-slash
+- name: Bell-slash
+  icon_code: far fa-bell-slash
+- name: Bezier-curve
+  icon_code: fas fa-bezier-curve
+- name: Bible
+  icon_code: fas fa-bible
+- name: Bicycle
+  icon_code: fas fa-bicycle
+- name: Biking
+  icon_code: fas fa-biking
+- name: Bimobject
+  icon_code: fab fa-bimobject
+- name: Binoculars
+  icon_code: fas fa-binoculars
+- name: Biohazard
+  icon_code: fas fa-biohazard
+- name: Birthday-cake
+  icon_code: fas fa-birthday-cake
+- name: Bitbucket
+  icon_code: fab fa-bitbucket
+- name: Bitbucket
+  icon_code: fab fa-bitbucket
+- name: Bitcoin
+  icon_code: fab fa-bitcoin
+- name: Bity
+  icon_code: fab fa-bity
+- name: Black-tie
+  icon_code: fab fa-black-tie
+- name: Blackberry
+  icon_code: fab fa-blackberry
+- name: Blender
+  icon_code: fas fa-blender
+- name: Blender-phone
+  icon_code: fas fa-blender-phone
+- name: Blind
+  icon_code: fas fa-blind
+- name: Blog
+  icon_code: fas fa-blog
+- name: Blogger
+  icon_code: fab fa-blogger
+- name: Blogger-b
+  icon_code: fab fa-blogger-b
+- name: Bluetooth
+  icon_code: fab fa-bluetooth
+- name: Bluetooth-b
+  icon_code: fab fa-bluetooth-b
+- name: Bold
+  icon_code: fas fa-bold
+- name: Bolt
+  icon_code: fas fa-bolt
+- name: Bomb
+  icon_code: fas fa-bomb
+- name: Bone
+  icon_code: fas fa-bone
+- name: Bong
+  icon_code: fas fa-bong
+- name: Book
+  icon_code: fas fa-book
+- name: Book-dead
+  icon_code: fas fa-book-dead
+- name: Book-medical
+  icon_code: fas fa-book-medical
+- name: Book-open
+  icon_code: fas fa-book-open
+- name: Book-reader
+  icon_code: fas fa-book-reader
+- name: Bookmark
+  icon_code: fas fa-bookmark
+- name: Bookmark
+  icon_code: far fa-bookmark
+- name: Border-all
+  icon_code: fas fa-border-all
+- name: Border-none
+  icon_code: fas fa-border-none
+- name: Border-style
+  icon_code: fas fa-border-style
+- name: Bowling-ball
+  icon_code: fas fa-bowling-ball
+- name: Box
+  icon_code: fas fa-box
+- name: Box-open
+  icon_code: fas fa-box-open
+- name: Box-tissue
+  icon_code: fas fa-box-tissue
+- name: Boxes
+  icon_code: fas fa-boxes
+- name: Braille
+  icon_code: fas fa-braille
+- name: Brain
+  icon_code: fas fa-brain
+- name: Bread-slice
+  icon_code: fas fa-bread-slice
+- name: Briefcase
+  icon_code: fas fa-briefcase
+- name: Briefcase-medical
+  icon_code: fas fa-briefcase-medical
+- name: Broadcast-tower
+  icon_code: fas fa-broadcast-tower
+- name: Broom
+  icon_code: fas fa-broom
+- name: Brush
+  icon_code: fas fa-brush
+- name: Btc
+  icon_code: fab fa-btc
+- name: Bug
+  icon_code: fas fa-bug
+- name: Building
+  icon_code: fas fa-building
+- name: Building
+  icon_code: far fa-building
+- name: Bullhorn
+  icon_code: fas fa-bullhorn
+- name: Bullseye
+  icon_code: fas fa-bullseye
+- name: Burn
+  icon_code: fas fa-burn
+- name: Buromobelexperte
+  icon_code: fab fa-buromobelexperte
+- name: Bus
+  icon_code: fas fa-bus
+- name: Bus-alt
+  icon_code: fas fa-bus-alt
+- name: Business-time
+  icon_code: fas fa-business-time
+- name: Buysellads
+  icon_code: fab fa-buysellads
+- name: Calculator
+  icon_code: fas fa-calculator
+- name: Calendar
+  icon_code: fas fa-calendar
+- name: Calendar
+  icon_code: far fa-calendar
+- name: Calendar-alt
+  icon_code: fas fa-calendar-alt
+- name: Calendar-alt
+  icon_code: far fa-calendar-alt
+- name: Calendar-check
+  icon_code: fas fa-calendar-check
+- name: Calendar-check
+  icon_code: far fa-calendar-check
+- name: Calendar-day
+  icon_code: fas fa-calendar-day
+- name: Calendar-minus
+  icon_code: fas fa-calendar-minus
+- name: Calendar-minus
+  icon_code: far fa-calendar-minus
+- name: Calendar-plus
+  icon_code: fas fa-calendar-plus
+- name: Calendar-plus
+  icon_code: far fa-calendar-plus
+- name: Calendar-times
+  icon_code: fas fa-calendar-times
+- name: Calendar-times
+  icon_code: far fa-calendar-times
+- name: Calendar-week
+  icon_code: fas fa-calendar-week
+- name: Camera
+  icon_code: fas fa-camera
+- name: Camera-retro
+  icon_code: fas fa-camera-retro
+- name: Campground
+  icon_code: fas fa-campground
+- name: Canadian-maple-leaf
+  icon_code: fab fa-canadian-maple-leaf
+- name: Candy-cane
+  icon_code: fas fa-candy-cane
+- name: Cannabis
+  icon_code: fas fa-cannabis
+- name: Capsules
+  icon_code: fas fa-capsules
+- name: Car
+  icon_code: fas fa-car
+- name: Car-alt
+  icon_code: fas fa-car-alt
+- name: Car-battery
+  icon_code: fas fa-car-battery
+- name: Car-crash
+  icon_code: fas fa-car-crash
+- name: Car-side
+  icon_code: fas fa-car-side
+- name: Caravan
+  icon_code: fas fa-caravan
+- name: Caret-down
+  icon_code: fas fa-caret-down
+- name: Caret-left
+  icon_code: fas fa-caret-left
+- name: Caret-right
+  icon_code: fas fa-caret-right
+- name: Caret-right
+  icon_code: fas fa-caret-right
+- name: Caret-square-down
+  icon_code: fas fa-caret-square-down
+- name: Caret-square-down
+  icon_code: far fa-caret-square-down
+- name: Caret-square-down
+  icon_code: fas fa-caret-square-down
+- name: Caret-square-down
+  icon_code: far fa-caret-square-down
+- name: Caret-square-left
+  icon_code: fas fa-caret-square-left
+- name: Caret-square-left
+  icon_code: far fa-caret-square-left
+- name: Caret-square-left
+  icon_code: fas fa-caret-square-left
+- name: Caret-square-left
+  icon_code: far fa-caret-square-left
+- name: Caret-square-right
+  icon_code: fas fa-caret-square-right
+- name: Caret-square-right
+  icon_code: far fa-caret-square-right
+- name: Caret-square-up
+  icon_code: fas fa-caret-square-up
+- name: Caret-square-up
+  icon_code: far fa-caret-square-up
+- name: Caret-up
+  icon_code: fas fa-caret-up
+- name: Carrot
+  icon_code: fas fa-carrot
+- name: Cart-arrow-down
+  icon_code: fas fa-cart-arrow-down
+- name: Cart-plus
+  icon_code: fas fa-cart-plus
+- name: Cash-register
+  icon_code: fas fa-cash-register
+- name: Cat
+  icon_code: fas fa-cat
+- name: Cc-amazon-pay
+  icon_code: fab fa-cc-amazon-pay
+- name: Cc-amex
+  icon_code: fab fa-cc-amex
+- name: Cc-apple-pay
+  icon_code: fab fa-cc-apple-pay
+- name: Cc-diners-club
+  icon_code: fab fa-cc-diners-club
+- name: Cc-discover
+  icon_code: fab fa-cc-discover
+- name: Cc-jcb
+  icon_code: fab fa-cc-jcb
+- name: Cc-mastercard
+  icon_code: fab fa-cc-mastercard
+- name: Cc-paypal
+  icon_code: fab fa-cc-paypal
+- name: Cc-stripe
+  icon_code: fab fa-cc-stripe
+- name: Cc-visa
+  icon_code: fab fa-cc-visa
+- name: Centercode
+  icon_code: fab fa-centercode
+- name: Centos
+  icon_code: fab fa-centos
+- name: Certificate
+  icon_code: fas fa-certificate
+- name: Chair
+  icon_code: fas fa-chair
+- name: Chalkboard
+  icon_code: fas fa-chalkboard
+- name: Chalkboard-teacher
+  icon_code: fas fa-chalkboard-teacher
+- name: Charging-station
+  icon_code: fas fa-charging-station
+- name: Chart-area
+  icon_code: fas fa-chart-area
+- name: Chart-bar
+  icon_code: fas fa-chart-bar
+- name: Chart-bar
+  icon_code: far fa-chart-bar
+- name: Chart-line
+  icon_code: fas fa-chart-line
+- name: Chart-pie
+  icon_code: fas fa-chart-pie
+- name: Check
+  icon_code: fas fa-check
+- name: Check-circle
+  icon_code: fas fa-check-circle
+- name: Check-circle
+  icon_code: far fa-check-circle
+- name: Check-double
+  icon_code: fas fa-check-double
+- name: Check-square
+  icon_code: fas fa-check-square
+- name: Check-square
+  icon_code: far fa-check-square
+- name: Cheese
+  icon_code: fas fa-cheese
+- name: Chess
+  icon_code: fas fa-chess
+- name: Chess-bishop
+  icon_code: fas fa-chess-bishop
+- name: Chess-board
+  icon_code: fas fa-chess-board
+- name: Chess-king
+  icon_code: fas fa-chess-king
+- name: Chess-knight
+  icon_code: fas fa-chess-knight
+- name: Chess-pawn
+  icon_code: fas fa-chess-pawn
+- name: Chess-queen
+  icon_code: fas fa-chess-queen
+- name: Chess-rook
+  icon_code: fas fa-chess-rook
+- name: Chevron-circle-down
+  icon_code: fas fa-chevron-circle-down
+- name: Chevron-circle-left
+  icon_code: fas fa-chevron-circle-left
+- name: Chevron-circle-right
+  icon_code: fas fa-chevron-circle-right
+- name: Chevron-circle-up
+  icon_code: fas fa-chevron-circle-up
+- name: Chevron-down
+  icon_code: fas fa-chevron-down
+- name: Chevron-left
+  icon_code: fas fa-chevron-left
+- name: Chevron-right
+  icon_code: fas fa-chevron-right
+- name: Chevron-up
+  icon_code: fas fa-chevron-up
+- name: Child
+  icon_code: fas fa-child
+- name: Chrome
+  icon_code: fab fa-chrome
+- name: Church
+  icon_code: fas fa-church
+- name: Circle
+  icon_code: fas fa-circle
+- name: Circle
+  icon_code: far fa-circle
+- name: Circle-notch
+  icon_code: fas fa-circle-notch
+- name: City
+  icon_code: fas fa-city
+- name: Clinic-medical
+  icon_code: fas fa-clinic-medical
+- name: Clipboard
+  icon_code: fas fa-clipboard
+- name: Clipboard
+  icon_code: far fa-clipboard
+- name: Clipboard-check
+  icon_code: fas fa-clipboard-check
+- name: Clipboard-list
+  icon_code: fas fa-clipboard-list
+- name: Clock
+  icon_code: fas fa-clock
+- name: Clock
+  icon_code: far fa-clock
+- name: Clone
+  icon_code: fas fa-clone
+- name: Clone
+  icon_code: far fa-clone
+- name: Closed-captioning
+  icon_code: fas fa-closed-captioning
+- name: Closed-captioning
+  icon_code: far fa-closed-captioning
+- name: Cloud
+  icon_code: fas fa-cloud
+- name: Cloud-download-alt
+  icon_code: fas fa-cloud-download-alt
+- name: Cloud-meatball
+  icon_code: fas fa-cloud-meatball
+- name: Cloud-moon
+  icon_code: fas fa-cloud-moon
+- name: Cloud-moon-rain
+  icon_code: fas fa-cloud-moon-rain
+- name: Cloud-rain
+  icon_code: fas fa-cloud-rain
+- name: Cloud-showers-heavy
+  icon_code: fas fa-cloud-showers-heavy
+- name: Cloud-sun
+  icon_code: fas fa-cloud-sun
+- name: Cloud-sun-rain
+  icon_code: fas fa-cloud-sun-rain
+- name: Cloud-upload-alt
+  icon_code: fas fa-cloud-upload-alt
+- name: Cloudscale
+  icon_code: fab fa-cloudscale
+- name: Cloudsmith
+  icon_code: fab fa-cloudsmith
+- name: Cloudversify
+  icon_code: fab fa-cloudversify
+- name: Cocktail
+  icon_code: fas fa-cocktail
+- name: Code
+  icon_code: fas fa-code
+- name: Code-branch
+  icon_code: fas fa-code-branch
+- name: Codepen
+  icon_code: fab fa-codepen
+- name: Codiepie
+  icon_code: fab fa-codiepie
+- name: Coffee
+  icon_code: fas fa-coffee
+- name: Cog
+  icon_code: fas fa-cog
+- name: Cogs
+  icon_code: fas fa-cogs
+- name: Coins
+  icon_code: fas fa-coins
+- name: Columns
+  icon_code: fas fa-columns
+- name: Comment
+  icon_code: fas fa-comment
+- name: Comment
+  icon_code: far fa-comment
+- name: Comment-alt
+  icon_code: fas fa-comment-alt
+- name: Comment-alt
+  icon_code: far fa-comment-alt
+- name: Comment-dollar
+  icon_code: fas fa-comment-dollar
+- name: Comment-dots
+  icon_code: fas fa-comment-dots
+- name: Comment-dots
+  icon_code: far fa-comment-dots
+- name: Comment-medical
+  icon_code: fas fa-comment-medical
+- name: Comment-slash
+  icon_code: fas fa-comment-slash
+- name: Comments
+  icon_code: fas fa-comments
+- name: Comments
+  icon_code: far fa-comments
+- name: Comments-dollar
+  icon_code: fas fa-comments-dollar
+- name: Compact-disc
+  icon_code: fas fa-compact-disc
+- name: Compass
+  icon_code: fas fa-compass
+- name: Compass
+  icon_code: far fa-compass
+- name: Compress
+  icon_code: fas fa-compress
+- name: Compress-alt
+  icon_code: fas fa-compress-alt
+- name: Compress-arrows-alt
+  icon_code: fas fa-compress-arrows-alt
+- name: Concierge-bell
+  icon_code: fas fa-concierge-bell
+- name: Confluence
+  icon_code: fab fa-confluence
+- name: Connectdevelop
+  icon_code: fab fa-connectdevelop
+- name: Contao
+  icon_code: fab fa-contao
+- name: Cookie
+  icon_code: fas fa-cookie
+- name: Cookie-bite
+  icon_code: fas fa-cookie-bite
+- name: Copy
+  icon_code: fas fa-copy
+- name: Copy
+  icon_code: far fa-copy
+- name: Copyright
+  icon_code: fas fa-copyright
+- name: Copyright
+  icon_code: far fa-copyright
+- name: Cotton-bureau
+  icon_code: fab fa-cotton-bureau
+- name: Couch
+  icon_code: fas fa-couch
+- name: Cpanel
+  icon_code: fab fa-cpanel
+- name: Creative-commons
+  icon_code: fab fa-creative-commons
+- name: Creative-commons-by
+  icon_code: fab fa-creative-commons-by
+- name: Creative-commons-nc
+  icon_code: fab fa-creative-commons-nc
+- name: Creative-commons-nc-eu
+  icon_code: fab fa-creative-commons-nc-eu
+- name: Creative-commons-nc-jp
+  icon_code: fab fa-creative-commons-nc-jp
+- name: Creative-commons-nd
+  icon_code: fab fa-creative-commons-nd
+- name: Creative-commons-pd
+  icon_code: fab fa-creative-commons-pd
+- name: Creative-commons-pd-alt
+  icon_code: fab fa-creative-commons-pd-alt
+- name: Creative-commons-remix
+  icon_code: fab fa-creative-commons-remix
+- name: Creative-commons-sa
+  icon_code: fab fa-creative-commons-sa
+- name: Creative-commons-sampling
+  icon_code: fab fa-creative-commons-sampling
+- name: Creative-commons-sampling-plus
+  icon_code: fab fa-creative-commons-sampling-plus
+- name: Creative-commons-share
+  icon_code: fab fa-creative-commons-share
+- name: Creative-commons-zero
+  icon_code: fab fa-creative-commons-zero
+- name: Credit-card
+  icon_code: fas fa-credit-card
+- name: Credit-card
+  icon_code: far fa-credit-card
+- name: Critical-role
+  icon_code: fab fa-critical-role
+- name: Crop
+  icon_code: fas fa-crop
+- name: Crop-alt
+  icon_code: fas fa-crop-alt
+- name: Cross
+  icon_code: fas fa-cross
+- name: Crosshairs
+  icon_code: fas fa-crosshairs
+- name: Crow
+  icon_code: fas fa-crow
+- name: Crown
+  icon_code: fas fa-crown
+- name: Crutch
+  icon_code: fas fa-crutch
+- name: Css3
+  icon_code: fab fa-css3
+- name: Css3-alt
+  icon_code: fab fa-css3-alt
+- name: Cube
+  icon_code: fas fa-cube
+- name: Cubes
+  icon_code: fas fa-cubes
+- name: Cut
+  icon_code: fas fa-cut
+- name: Cuttlefish
+  icon_code: fab fa-cuttlefish
+- name: D-and-d
+  icon_code: fab fa-d-and-d
+- name: D-and-d-beyond
+  icon_code: fab fa-d-and-d-beyond
+- name: Dashcube
+  icon_code: fab fa-dashcube
+- name: Database
+  icon_code: fas fa-database
+- name: Deaf
+  icon_code: fas fa-deaf
+- name: Delicious
+  icon_code: fab fa-delicious
+- name: Democrat
+  icon_code: fas fa-democrat
+- name: Deploydog
+  icon_code: fab fa-deploydog
+- name: Deskpro
+  icon_code: fab fa-deskpro
+- name: Desktop
+  icon_code: fas fa-desktop
+- name: Dev
+  icon_code: fab fa-dev
+- name: Deviantart
+  icon_code: fab fa-deviantart
+- name: Dharmachakra
+  icon_code: fas fa-dharmachakra
+- name: Dhl
+  icon_code: fab fa-dhl
+- name: Diagnoses
+  icon_code: fas fa-diagnoses
+- name: Diaspora
+  icon_code: fab fa-diaspora
+- name: Dice
+  icon_code: fas fa-dice
+- name: Dice-d20
+  icon_code: fas fa-dice-d20
+- name: Dice-d6
+  icon_code: fas fa-dice-d6
+- name: Dice-five
+  icon_code: fas fa-dice-five
+- name: Dice-four
+  icon_code: fas fa-dice-four
+- name: Dice-one
+  icon_code: fas fa-dice-one
+- name: Dice-six
+  icon_code: fas fa-dice-six
+- name: Dice-three
+  icon_code: fas fa-dice-three
+- name: Dice-two
+  icon_code: fas fa-dice-two
+- name: Digg
+  icon_code: fab fa-digg
+- name: Digital-ocean
+  icon_code: fab fa-digital-ocean
+- name: Digital-tachograph
+  icon_code: fas fa-digital-tachograph
+- name: Directions
+  icon_code: fas fa-directions
+- name: Discord
+  icon_code: fab fa-discord
+- name: Discourse
+  icon_code: fab fa-discourse
+- name: Divide
+  icon_code: fas fa-divide
+- name: Dizzy
+  icon_code: fas fa-dizzy
+- name: Dizzy
+  icon_code: far fa-dizzy
+- name: Dna
+  icon_code: fas fa-dna
+- name: Dochub
+  icon_code: fab fa-dochub
+- name: Docker
+  icon_code: fab fa-docker
+- name: Dog
+  icon_code: fas fa-dog
+- name: Dollar-sign
+  icon_code: fas fa-dollar-sign
+- name: Dolly
+  icon_code: fas fa-dolly
+- name: Dolly-flatbed
+  icon_code: fas fa-dolly-flatbed
+- name: Donate
+  icon_code: fas fa-donate
+- name: Door-closed
+  icon_code: fas fa-door-closed
+- name: Door-open
+  icon_code: fas fa-door-open
+- name: Dot-circle
+  icon_code: fas fa-dot-circle
+- name: Dot-circle
+  icon_code: far fa-dot-circle
+- name: Dove
+  icon_code: fas fa-dove
+- name: Download
+  icon_code: fas fa-download
+- name: Draft2digital
+  icon_code: fab fa-draft2digital
+- name: Drafting-compass
+  icon_code: fas fa-drafting-compass
+- name: Dragon
+  icon_code: fas fa-dragon
+- name: Draw-polygon
+  icon_code: fas fa-draw-polygon
+- name: Dribbble
+  icon_code: fab fa-dribbble
+- name: Dribbble-square
+  icon_code: fab fa-dribbble-square
+- name: Dropbox
+  icon_code: fab fa-dropbox
+- name: Drum
+  icon_code: fas fa-drum
+- name: Drum-steelpan
+  icon_code: fas fa-drum-steelpan
+- name: Drumstick-bite
+  icon_code: fas fa-drumstick-bite
+- name: Drupal
+  icon_code: fab fa-drupal
+- name: Dumbbell
+  icon_code: fas fa-dumbbell
+- name: Dumpster
+  icon_code: fas fa-dumpster
+- name: Dumpster-fire
+  icon_code: fas fa-dumpster-fire
+- name: Dungeon
+  icon_code: fas fa-dungeon
+- name: Dyalog
+  icon_code: fab fa-dyalog
+- name: Earlybirds
+  icon_code: fab fa-earlybirds
+- name: Ebay
+  icon_code: fab fa-ebay
+- name: Edge
+  icon_code: fab fa-edge
+- name: Edit
+  icon_code: fas fa-edit
+- name: Edit
+  icon_code: far fa-edit
+- name: Egg
+  icon_code: fas fa-egg
+- name: Eject
+  icon_code: fas fa-eject
+- name: Elementor
+  icon_code: fab fa-elementor
+- name: Ellipsis-h
+  icon_code: fas fa-ellipsis-h
+- name: Ellipsis-v
+  icon_code: fas fa-ellipsis-v
+- name: Ello
+  icon_code: fab fa-ello
+- name: Ember
+  icon_code: fab fa-ember
+- name: Empire
+  icon_code: fab fa-empire
+- name: Envelope
+  icon_code: fas fa-envelope
+- name: Envelope
+  icon_code: far fa-envelope
+- name: Envelope-open
+  icon_code: fas fa-envelope-open
+- name: Envelope-open
+  icon_code: far fa-envelope-open
+- name: Envelope-open-text
+  icon_code: fas fa-envelope-open-text
+- name: Envelope-square
+  icon_code: fas fa-envelope-square
+- name: Envira
+  icon_code: fab fa-envira
+- name: Equals
+  icon_code: fas fa-equals
+- name: Eraser
+  icon_code: fas fa-eraser
+- name: Erlang
+  icon_code: fab fa-erlang
+- name: Ethereum
+  icon_code: fab fa-ethereum
+- name: Ethernet
+  icon_code: fas fa-ethernet
+- name: Etsy
+  icon_code: fab fa-etsy
+- name: Euro-sign
+  icon_code: fas fa-euro-sign
+- name: Exchange-alt
+  icon_code: fas fa-exchange-alt
+- name: Exclamation
+  icon_code: fas fa-exclamation
+- name: Exclamation-circle
+  icon_code: fas fa-exclamation-circle
+- name: Exclamation-triangle
+  icon_code: fas fa-exclamation-triangle
+- name: Exclamation-triangle
+  icon_code: fas fa-exclamation-triangle
+- name: Expand
+  icon_code: fas fa-expand
+- name: Expand-alt
+  icon_code: fas fa-expand-alt
+- name: Expand-arrows-alt
+  icon_code: fas fa-expand-arrows-alt
+- name: Expeditedssl
+  icon_code: fab fa-expeditedssl
+- name: External-link-alt
+  icon_code: fas fa-external-link-alt
+- name: External-link-square-alt
+  icon_code: fas fa-external-link-square-alt
+- name: Eye
+  icon_code: fas fa-eye
+- name: Eye
+  icon_code: far fa-eye
+- name: Eye-dropper
+  icon_code: fas fa-eye-dropper
+- name: Eye-slash
+  icon_code: fas fa-eye-slash
+- name: Eye-slash
+  icon_code: far fa-eye-slash
+- name: Facebook
+  icon_code: fab fa-facebook
+- name: Facebook-f
+  icon_code: fab fa-facebook-f
+- name: Facebook-messenger
+  icon_code: fab fa-facebook-messenger
+- name: Facebook-square
+  icon_code: fab fa-facebook-square
+- name: Fan
+  icon_code: fas fa-fan
+- name: Fantasy-flight-games
+  icon_code: fab fa-fantasy-flight-games
+- name: Fast-backward
+  icon_code: fas fa-fast-backward
+- name: Fast-forward
+  icon_code: fas fa-fast-forward
+- name: Fax
+  icon_code: fas fa-fax
+- name: Feather
+  icon_code: fas fa-feather
+- name: Feather-alt
+  icon_code: fas fa-feather-alt
+- name: Fedex
+  icon_code: fab fa-fedex
+- name: Fedora
+  icon_code: fab fa-fedora
+- name: Female
+  icon_code: fas fa-female
+- name: Fighter-jet
+  icon_code: fas fa-fighter-jet
+- name: Figma
+  icon_code: fab fa-figma
+- name: File
+  icon_code: fas fa-file
+- name: File
+  icon_code: far fa-file
+- name: File-alt
+  icon_code: fas fa-file-alt
+- name: File-alt
+  icon_code: far fa-file-alt
+- name: File-archive
+  icon_code: fas fa-file-archive
+- name: File-archive
+  icon_code: far fa-file-archive
+- name: File-audio
+  icon_code: fas fa-file-audio
+- name: File-audio
+  icon_code: far fa-file-audio
+- name: File-code
+  icon_code: fas fa-file-code
+- name: File-code
+  icon_code: far fa-file-code
+- name: File-contract
+  icon_code: fas fa-file-contract
+- name: File-csv
+  icon_code: fas fa-file-csv
+- name: File-download
+  icon_code: fas fa-file-download
+- name: File-excel
+  icon_code: fas fa-file-excel
+- name: File-excel
+  icon_code: far fa-file-excel
+- name: File-export
+  icon_code: fas fa-file-export
+- name: File-image
+  icon_code: fas fa-file-image
+- name: File-image
+  icon_code: far fa-file-image
+- name: File-import
+  icon_code: fas fa-file-import
+- name: File-invoice
+  icon_code: fas fa-file-invoice
+- name: File-invoice-dollar
+  icon_code: fas fa-file-invoice-dollar
+- name: File-medical
+  icon_code: fas fa-file-medical
+- name: File-medical-alt
+  icon_code: fas fa-file-medical-alt
+- name: File-pdf
+  icon_code: fas fa-file-pdf
+- name: File-pdf
+  icon_code: far fa-file-pdf
+- name: File-powerpoint
+  icon_code: fas fa-file-powerpoint
+- name: File-powerpoint
+  icon_code: far fa-file-powerpoint
+- name: File-prescription
+  icon_code: fas fa-file-prescription
+- name: File-signature
+  icon_code: fas fa-file-signature
+- name: File-upload
+  icon_code: fas fa-file-upload
+- name: File-video
+  icon_code: fas fa-file-video
+- name: File-video
+  icon_code: far fa-file-video
+- name: File-word
+  icon_code: fas fa-file-word
+- name: File-word
+  icon_code: far fa-file-word
+- name: Fill
+  icon_code: fas fa-fill
+- name: Fill-drip
+  icon_code: fas fa-fill-drip
+- name: Film
+  icon_code: fas fa-film
+- name: Filter
+  icon_code: fas fa-filter
+- name: Fingerprint
+  icon_code: fas fa-fingerprint
+- name: Fire
+  icon_code: fas fa-fire
+- name: Fire-alt
+  icon_code: fas fa-fire-alt
+- name: Fire-extinguisher
+  icon_code: fas fa-fire-extinguisher
+- name: Firefox
+  icon_code: fab fa-firefox
+- name: Firefox-browser
+  icon_code: fab fa-firefox-browser
+- name: First-aid
+  icon_code: fas fa-first-aid
+- name: First-order
+  icon_code: fab fa-first-order
+- name: First-order-alt
+  icon_code: fab fa-first-order-alt
+- name: Firstdraft
+  icon_code: fab fa-firstdraft
+- name: Fish
+  icon_code: fas fa-fish
+- name: Fist-raised
+  icon_code: fas fa-fist-raised
+- name: Flag
+  icon_code: fas fa-flag
+- name: Flag
+  icon_code: far fa-flag
+- name: Flag-checkered
+  icon_code: fas fa-flag-checkered
+- name: Flag-usa
+  icon_code: fas fa-flag-usa
+- name: Flask
+  icon_code: fas fa-flask
+- name: Flickr
+  icon_code: fab fa-flickr
+- name: Flipboard
+  icon_code: fab fa-flipboard
+- name: Flushed
+  icon_code: fas fa-flushed
+- name: Flushed
+  icon_code: far fa-flushed
+- name: Fly
+  icon_code: fab fa-fly
+- name: Folder
+  icon_code: fas fa-folder
+- name: Folder
+  icon_code: far fa-folder
+- name: Folder-minus
+  icon_code: fas fa-folder-minus
+- name: Folder-open
+  icon_code: fas fa-folder-open
+- name: Folder-open
+  icon_code: far fa-folder-open
+- name: Folder-plus
+  icon_code: fas fa-folder-plus
+- name: Font
+  icon_code: fas fa-font
+- name: Font-awesome
+  icon_code: fab fa-font-awesome
+- name: Font-awesome-alt
+  icon_code: fab fa-font-awesome-alt
+- name: Font-awesome-flag
+  icon_code: fab fa-font-awesome-flag
+- name: Fonticons
+  icon_code: fab fa-fonticons
+- name: Fonticons-fi
+  icon_code: fab fa-fonticons-fi
+- name: Football-ball
+  icon_code: fas fa-football-ball
+- name: Fort-awesome
+  icon_code: fab fa-fort-awesome
+- name: Fort-awesome-alt
+  icon_code: fab fa-fort-awesome-alt
+- name: Forumbee
+  icon_code: fab fa-forumbee
+- name: Forward
+  icon_code: fas fa-forward
+- name: Foursquare
+  icon_code: fab fa-foursquare
+- name: Free-code-camp
+  icon_code: fab fa-free-code-camp
+- name: Freebsd
+  icon_code: fab fa-freebsd
+- name: Frog
+  icon_code: fas fa-frog
+- name: Frown
+  icon_code: fas fa-frown
+- name: Frown
+  icon_code: far fa-frown
+- name: Frown-open
+  icon_code: fas fa-frown-open
+- name: Frown-open
+  icon_code: far fa-frown-open
+- name: Fulcrum
+  icon_code: fab fa-fulcrum
+- name: Funnel-dollar
+  icon_code: fas fa-funnel-dollar
+- name: Futbol
+  icon_code: fas fa-futbol
+- name: Futbol
+  icon_code: far fa-futbol
+- name: Galactic-republic
+  icon_code: fab fa-galactic-republic
+- name: Galactic-senate
+  icon_code: fab fa-galactic-senate
+- name: Gamepad
+  icon_code: fas fa-gamepad
+- name: Gas-pump
+  icon_code: fas fa-gas-pump
+- name: Gavel
+  icon_code: fas fa-gavel
+- name: Gem
+  icon_code: fas fa-gem
+- name: Gem
+  icon_code: far fa-gem
+- name: Genderless
+  icon_code: fas fa-genderless
+- name: Get-pocket
+  icon_code: fab fa-get-pocket
+- name: Gg
+  icon_code: fab fa-gg
+- name: Gg-circle
+  icon_code: fab fa-gg-circle
+- name: Ghost
+  icon_code: fas fa-ghost
+- name: Gift
+  icon_code: fas fa-gift
+- name: Gifts
+  icon_code: fas fa-gifts
+- name: Git
+  icon_code: fab fa-git
+- name: Git-square
+  icon_code: fab fa-git-square
+- name: Github
+  icon_code: fab fa-github
+- name: Github-alt
+  icon_code: fab fa-github-alt
+- name: Github-square
+  icon_code: fab fa-github-square
+- name: Gitkraken
+  icon_code: fab fa-gitkraken
+- name: Gitlab
+  icon_code: fab fa-gitlab
+- name: Gitter
+  icon_code: fab fa-gitter
+- name: Glass-cheers
+  icon_code: fas fa-glass-cheers
+- name: Glass-martini
+  icon_code: fas fa-glass-martini
+- name: Glass-martini-alt
+  icon_code: fas fa-glass-martini-alt
+- name: Glass-whiskey
+  icon_code: fas fa-glass-whiskey
+- name: Glasses
+  icon_code: fas fa-glasses
+- name: Glide
+  icon_code: fab fa-glide
+- name: Glide-g
+  icon_code: fab fa-glide-g
+- name: Globe
+  icon_code: fas fa-globe
+- name: Globe-africa
+  icon_code: fas fa-globe-africa
+- name: Globe-americas
+  icon_code: fas fa-globe-americas
+- name: Globe-asia
+  icon_code: fas fa-globe-asia
+- name: Globe-europe
+  icon_code: fas fa-globe-europe
+- name: Gofore
+  icon_code: fab fa-gofore
+- name: Golf-ball
+  icon_code: fas fa-golf-ball
+- name: Goodreads
+  icon_code: fab fa-goodreads
+- name: Goodreads-g
+  icon_code: fab fa-goodreads-g
+- name: Google
+  icon_code: fab fa-google
+- name: Google-drive
+  icon_code: fab fa-google-drive
+- name: Google-play
+  icon_code: fab fa-google-play
+- name: Google-plus
+  icon_code: fab fa-google-plus
+- name: Google-plus-g
+  icon_code: fab fa-google-plus-g
+- name: Google-plus-square
+  icon_code: fab fa-google-plus-square
+- name: Google-wallet
+  icon_code: fab fa-google-wallet
+- name: Gopuram
+  icon_code: fas fa-gopuram
+- name: Graduation-cap
+  icon_code: fas fa-graduation-cap
+- name: Gratipay
+  icon_code: fab fa-gratipay
+- name: Grav
+  icon_code: fab fa-grav
+- name: Greater-than
+  icon_code: fas fa-greater-than
+- name: Greater-than-equal
+  icon_code: fas fa-greater-than-equal
+- name: Grimace
+  icon_code: fas fa-grimace
+- name: Grimace
+  icon_code: far fa-grimace
+- name: Grin
+  icon_code: fas fa-grin
+- name: Grin
+  icon_code: far fa-grin
+- name: Grin-alt
+  icon_code: fas fa-grin-alt
+- name: Grin-alt
+  icon_code: far fa-grin-alt
+- name: Grin-beam
+  icon_code: fas fa-grin-beam
+- name: Grin-beam
+  icon_code: far fa-grin-beam
+- name: Grin-beam-sweat
+  icon_code: fas fa-grin-beam-sweat
+- name: Grin-beam-sweat
+  icon_code: far fa-grin-beam-sweat
+- name: Grin-hearts
+  icon_code: fas fa-grin-hearts
+- name: Grin-hearts
+  icon_code: far fa-grin-hearts
+- name: Grin-squint
+  icon_code: fas fa-grin-squint
+- name: Grin-squint
+  icon_code: far fa-grin-squint
+- name: Grin-squint-tears
+  icon_code: fas fa-grin-squint-tears
+- name: Grin-squint-tears
+  icon_code: far fa-grin-squint-tears
+- name: Grin-stars
+  icon_code: fas fa-grin-stars
+- name: Grin-stars
+  icon_code: far fa-grin-stars
+- name: Grin-tears
+  icon_code: fas fa-grin-tears
+- name: Grin-tears
+  icon_code: far fa-grin-tears
+- name: Grin-tongue
+  icon_code: fas fa-grin-tongue
+- name: Grin-tongue
+  icon_code: far fa-grin-tongue
+- name: Grin-tongue-squint
+  icon_code: fas fa-grin-tongue-squint
+- name: Grin-tongue-squint
+  icon_code: far fa-grin-tongue-squint
+- name: Grin-tongue-wink
+  icon_code: fas fa-grin-tongue-wink
+- name: Grin-tongue-wink
+  icon_code: far fa-grin-tongue-wink
+- name: Grin-wink
+  icon_code: fas fa-grin-wink
+- name: Grin-wink
+  icon_code: far fa-grin-wink
+- name: Grip-horizontal
+  icon_code: fas fa-grip-horizontal
+- name: Grip-lines
+  icon_code: fas fa-grip-lines
+- name: Grip-lines-vertical
+  icon_code: fas fa-grip-lines-vertical
+- name: Grip-vertical
+  icon_code: fas fa-grip-vertical
+- name: Gripfire
+  icon_code: fab fa-gripfire
+- name: Grunt
+  icon_code: fab fa-grunt
+- name: Guitar
+  icon_code: fas fa-guitar
+- name: Gulp
+  icon_code: fab fa-gulp
+- name: H-square
+  icon_code: fas fa-h-square
+- name: Hacker-news
+  icon_code: fab fa-hacker-news
+- name: Hacker-news-square
+  icon_code: fab fa-hacker-news-square
+- name: Hackerrank
+  icon_code: fab fa-hackerrank
+- name: Hamburger
+  icon_code: fas fa-hamburger
+- name: Hammer
+  icon_code: fas fa-hammer
+- name: Hamsa
+  icon_code: fas fa-hamsa
+- name: Hand-holding
+  icon_code: fas fa-hand-holding
+- name: Hand-holding-heart
+  icon_code: fas fa-hand-holding-heart
+- name: Hand-holding-medical
+  icon_code: fas fa-hand-holding-medical
+- name: Hand-holding-usd
+  icon_code: fas fa-hand-holding-usd
+- name: Hand-lizard
+  icon_code: fas fa-hand-lizard
+- name: Hand-lizard
+  icon_code: far fa-hand-lizard
+- name: Hand-middle-finger
+  icon_code: fas fa-hand-middle-finger
+- name: Hand-paper
+  icon_code: fas fa-hand-paper
+- name: Hand-paper
+  icon_code: far fa-hand-paper
+- name: Hand-peace
+  icon_code: fas fa-hand-peace
+- name: Hand-peace
+  icon_code: far fa-hand-peace
+- name: Hand-point-down
+  icon_code: fas fa-hand-point-down
+- name: Hand-point-down
+  icon_code: far fa-hand-point-down
+- name: Hand-point-left
+  icon_code: fas fa-hand-point-left
+- name: Hand-point-left
+  icon_code: far fa-hand-point-left
+- name: Hand-point-right
+  icon_code: fas fa-hand-point-right
+- name: Hand-point-right
+  icon_code: far fa-hand-point-right
+- name: Hand-point-up
+  icon_code: fas fa-hand-point-up
+- name: Hand-point-up
+  icon_code: far fa-hand-point-up
+- name: Hand-pointer
+  icon_code: fas fa-hand-pointer
+- name: Hand-pointer
+  icon_code: far fa-hand-pointer
+- name: Hand-rock
+  icon_code: fas fa-hand-rock
+- name: Hand-rock
+  icon_code: far fa-hand-rock
+- name: Hand-scissors
+  icon_code: fas fa-hand-scissors
+- name: Hand-scissors
+  icon_code: far fa-hand-scissors
+- name: Hand-sparkles
+  icon_code: fas fa-hand-sparkles
+- name: Hand-spock
+  icon_code: fas fa-hand-spock
+- name: Hand-spock
+  icon_code: far fa-hand-spock
+- name: Hands
+  icon_code: fas fa-hands
+- name: Hands-helping
+  icon_code: fas fa-hands-helping
+- name: Hands-wash
+  icon_code: fas fa-hands-wash
+- name: Handshake
+  icon_code: fas fa-handshake
+- name: Handshake
+  icon_code: far fa-handshake
+- name: Handshake-alt-slash
+  icon_code: fas fa-handshake-alt-slash
+- name: Handshake-slash
+  icon_code: fas fa-handshake-slash
+- name: Hanukiah
+  icon_code: fas fa-hanukiah
+- name: Hard-hat
+  icon_code: fas fa-hard-hat
+- name: Hashtag
+  icon_code: fas fa-hashtag
+- name: Hat-cowboy
+  icon_code: fas fa-hat-cowboy
+- name: Hat-cowboy-side
+  icon_code: fas fa-hat-cowboy-side
+- name: Hat-wizard
+  icon_code: fas fa-hat-wizard
+- name: Hdd
+  icon_code: fas fa-hdd
+- name: Hdd
+  icon_code: far fa-hdd
+- name: Head-side-cough
+  icon_code: fas fa-head-side-cough
+- name: Head-side-cough-slash
+  icon_code: fas fa-head-side-cough-slash
+- name: Head-side-mask
+  icon_code: fas fa-head-side-mask
+- name: Head-side-virus
+  icon_code: fas fa-head-side-virus
+- name: Heading
+  icon_code: fas fa-heading
+- name: Headphones
+  icon_code: fas fa-headphones
+- name: Headphones-alt
+  icon_code: fas fa-headphones-alt
+- name: Headset
+  icon_code: fas fa-headset
+- name: Heart
+  icon_code: fas fa-heart
+- name: Heart
+  icon_code: far fa-heart
+- name: Heart-broken
+  icon_code: fas fa-heart-broken
+- name: Heartbeat
+  icon_code: fas fa-heartbeat
+- name: Helicopter
+  icon_code: fas fa-helicopter
+- name: Highlighter
+  icon_code: fas fa-highlighter
+- name: Hiking
+  icon_code: fas fa-hiking
+- name: Hippo
+  icon_code: fas fa-hippo
+- name: Hips
+  icon_code: fab fa-hips
+- name: Hire-a-helper
+  icon_code: fab fa-hire-a-helper
+- name: History
+  icon_code: fas fa-history
+- name: Hockey-puck
+  icon_code: fas fa-hockey-puck
+- name: Holly-berry
+  icon_code: fas fa-holly-berry
+- name: Home
+  icon_code: fas fa-home
+- name: Hooli
+  icon_code: fab fa-hooli
+- name: Hornbill
+  icon_code: fab fa-hornbill
+- name: Horse
+  icon_code: fas fa-horse
+- name: Horse-head
+  icon_code: fas fa-horse-head
+- name: Hospital
+  icon_code: fas fa-hospital
+- name: Hospital
+  icon_code: far fa-hospital
+- name: Hospital-alt
+  icon_code: fas fa-hospital-alt
+- name: Hospital-symbol
+  icon_code: fas fa-hospital-symbol
+- name: Hot-tub
+  icon_code: fas fa-hot-tub
+- name: Hotdog
+  icon_code: fas fa-hotdog
+- name: Hotel
+  icon_code: fas fa-hotel
+- name: Hotjar
+  icon_code: fab fa-hotjar
+- name: Hourglass
+  icon_code: fas fa-hourglass
+- name: Hourglass
+  icon_code: far fa-hourglass
+- name: Hourglass-end
+  icon_code: fas fa-hourglass-end
+- name: Hourglass-half
+  icon_code: fas fa-hourglass-half
+- name: Hourglass-start
+  icon_code: fas fa-hourglass-start
+- name: House-damage
+  icon_code: fas fa-house-damage
+- name: House-user
+  icon_code: fas fa-house-user
+- name: Houzz
+  icon_code: fab fa-houzz
+- name: Hryvnia
+  icon_code: fas fa-hryvnia
+- name: Html5
+  icon_code: fab fa-html5
+- name: Hubspot
+  icon_code: fab fa-hubspot
+- name: I-cursor
+  icon_code: fas fa-i-cursor
+- name: Ice-cream
+  icon_code: fas fa-ice-cream
+- name: Icicles
+  icon_code: fas fa-icicles
+- name: Icons
+  icon_code: fas fa-icons
+- name: Id-badge
+  icon_code: fas fa-id-badge
+- name: Id-badge
+  icon_code: far fa-id-badge
+- name: Id-card
+  icon_code: fas fa-id-card
+- name: Id-card
+  icon_code: far fa-id-card
+- name: Id-card-alt
+  icon_code: fas fa-id-card-alt
+- name: Ideal
+  icon_code: fab fa-ideal
+- name: Igloo
+  icon_code: fas fa-igloo
+- name: Image
+  icon_code: fas fa-image
+- name: Image
+  icon_code: far fa-image
+- name: Images
+  icon_code: fas fa-images
+- name: Images
+  icon_code: far fa-images
+- name: Imdb
+  icon_code: fab fa-imdb
+- name: Inbox
+  icon_code: fas fa-inbox
+- name: Indent
+  icon_code: fas fa-indent
+- name: Industry
+  icon_code: fas fa-industry
+- name: Infinity
+  icon_code: fas fa-infinity
+- name: Info
+  icon_code: fas fa-info
+- name: Info-circle
+  icon_code: fas fa-info-circle
+- name: Instagram
+  icon_code: fab fa-instagram
+- name: Intercom
+  icon_code: fab fa-intercom
+- name: Internet-explorer
+  icon_code: fab fa-internet-explorer
+- name: Invision
+  icon_code: fab fa-invision
+- name: Ioxhost
+  icon_code: fab fa-ioxhost
+- name: Italic
+  icon_code: fas fa-italic
+- name: Itunes
+  icon_code: fab fa-itunes
+- name: Itunes-note
+  icon_code: fab fa-itunes-note
+- name: Java
+  icon_code: fab fa-java
+- name: Jedi
+  icon_code: fas fa-jedi
+- name: Jedi-order
+  icon_code: fab fa-jedi-order
+- name: Jenkins
+  icon_code: fab fa-jenkins
+- name: Jira
+  icon_code: fab fa-jira
+- name: Joget
+  icon_code: fab fa-joget
+- name: Joint
+  icon_code: fas fa-joint
+- name: Joomla
+  icon_code: fab fa-joomla
+- name: Journal-whills
+  icon_code: fas fa-journal-whills
+- name: Js
+  icon_code: fab fa-js
+- name: Js-square
+  icon_code: fab fa-js-square
+- name: Jsfiddle
+  icon_code: fab fa-jsfiddle
+- name: Kaaba
+  icon_code: fas fa-kaaba
+- name: Kaggle
+  icon_code: fab fa-kaggle
+- name: Key
+  icon_code: fas fa-key
+- name: Keybase
+  icon_code: fab fa-keybase
+- name: Keyboard
+  icon_code: fas fa-keyboard
+- name: Keyboard
+  icon_code: far fa-keyboard
+- name: Keycdn
+  icon_code: fab fa-keycdn
+- name: Khanda
+  icon_code: fas fa-khanda
+- name: Kickstarter
+  icon_code: fab fa-kickstarter
+- name: Kickstarter-k
+  icon_code: fab fa-kickstarter-k
+- name: Kiss
+  icon_code: fas fa-kiss
+- name: Kiss
+  icon_code: far fa-kiss
+- name: Kiss-beam
+  icon_code: fas fa-kiss-beam
+- name: Kiss-beam
+  icon_code: far fa-kiss-beam
+- name: Kiss-wink-heart
+  icon_code: fas fa-kiss-wink-heart
+- name: Kiss-wink-heart
+  icon_code: far fa-kiss-wink-heart
+- name: Kiwi-bird
+  icon_code: fas fa-kiwi-bird
+- name: Korvue
+  icon_code: fab fa-korvue
+- name: Landmark
+  icon_code: fas fa-landmark
+- name: Language
+  icon_code: fas fa-language
+- name: Laptop
+  icon_code: fas fa-laptop
+- name: Laptop-code
+  icon_code: fas fa-laptop-code
+- name: Laptop-house
+  icon_code: fas fa-laptop-house
+- name: Laptop-medical
+  icon_code: fas fa-laptop-medical
+- name: Laravel
+  icon_code: fab fa-laravel
+- name: Lastfm
+  icon_code: fab fa-lastfm
+- name: Lastfm-square
+  icon_code: fab fa-lastfm-square
+- name: Laugh
+  icon_code: fas fa-laugh
+- name: Laugh
+  icon_code: far fa-laugh
+- name: Laugh-beam
+  icon_code: fas fa-laugh-beam
+- name: Laugh-beam
+  icon_code: far fa-laugh-beam
+- name: Laugh-squint
+  icon_code: fas fa-laugh-squint
+- name: Laugh-squint
+  icon_code: far fa-laugh-squint
+- name: Laugh-wink
+  icon_code: fas fa-laugh-wink
+- name: Laugh-wink
+  icon_code: far fa-laugh-wink
+- name: Layer-group
+  icon_code: fas fa-layer-group
+- name: Leaf
+  icon_code: fas fa-leaf
+- name: Leanpub
+  icon_code: fab fa-leanpub
+- name: Lemon
+  icon_code: fas fa-lemon
+- name: Lemon
+  icon_code: far fa-lemon
+- name: Less
+  icon_code: fab fa-less
+- name: Less-than
+  icon_code: fas fa-less-than
+- name: Less-than-equal
+  icon_code: fas fa-less-than-equal
+- name: Level-down-alt
+  icon_code: fas fa-level-down-alt
+- name: Level-up-alt
+  icon_code: fas fa-level-up-alt
+- name: Life-ring
+  icon_code: fas fa-life-ring
+- name: Life-ring
+  icon_code: far fa-life-ring
+- name: Lightbulb
+  icon_code: fas fa-lightbulb
+- name: Lightbulb
+  icon_code: far fa-lightbulb
+- name: Line
+  icon_code: fab fa-line
+- name: Link
+  icon_code: fas fa-link
+- name: Linkedin
+  icon_code: fab fa-linkedin
+- name: Linkedin-in
+  icon_code: fab fa-linkedin-in
+- name: Linode
+  icon_code: fab fa-linode
+- name: Linux
+  icon_code: fab fa-linux
+- name: Lira-sign
+  icon_code: fas fa-lira-sign
+- name: List
+  icon_code: fas fa-list
+- name: List-alt
+  icon_code: fas fa-list-alt
+- name: List-alt
+  icon_code: far fa-list-alt
+- name: List-ol
+  icon_code: fas fa-list-ol
+- name: List-ul
+  icon_code: fas fa-list-ul
+- name: Location-arrow
+  icon_code: fas fa-location-arrow
+- name: Lock
+  icon_code: fas fa-lock
+- name: Lock-open
+  icon_code: fas fa-lock-open
+- name: Long-arrow-alt-down
+  icon_code: fas fa-long-arrow-alt-down
+- name: Long-arrow-alt-left
+  icon_code: fas fa-long-arrow-alt-left
+- name: Long-arrow-alt-right
+  icon_code: fas fa-long-arrow-alt-right
+- name: Long-arrow-alt-up
+  icon_code: fas fa-long-arrow-alt-up
+- name: Low-vision
+  icon_code: fas fa-low-vision
+- name: Luggage-cart
+  icon_code: fas fa-luggage-cart
+- name: Lungs-virus
+  icon_code: fas fa-lungs-virus
+- name: Lyft
+  icon_code: fab fa-lyft
+- name: Magento
+  icon_code: fab fa-magento
+- name: Magic
+  icon_code: fas fa-magic
+- name: Magnet
+  icon_code: fas fa-magnet
+- name: Mail-bulk
+  icon_code: fas fa-mail-bulk
+- name: Mailchimp
+  icon_code: fab fa-mailchimp
+- name: Male
+  icon_code: fas fa-male
+- name: Mandalorian
+  icon_code: fab fa-mandalorian
+- name: Map
+  icon_code: fas fa-map
+- name: Map
+  icon_code: far fa-map
+- name: Map-marked
+  icon_code: fas fa-map-marked
+- name: Map-marked-alt
+  icon_code: fas fa-map-marked-alt
+- name: Map-marker
+  icon_code: fas fa-map-marker
+- name: Map-marker-alt
+  icon_code: fas fa-map-marker-alt
+- name: Map-pin
+  icon_code: fas fa-map-pin
+- name: Map-signs
+  icon_code: fas fa-map-signs
+- name: Markdown
+  icon_code: fab fa-markdown
+- name: Marker
+  icon_code: fas fa-marker
+- name: Mars
+  icon_code: fas fa-mars
+- name: Mars-double
+  icon_code: fas fa-mars-double
+- name: Mars-stroke
+  icon_code: fas fa-mars-stroke
+- name: Mars-stroke-h
+  icon_code: fas fa-mars-stroke-h
+- name: Mars-stroke-v
+  icon_code: fas fa-mars-stroke-v
+- name: Mask
+  icon_code: fas fa-mask
+- name: Mastodon
+  icon_code: fab fa-mastodon
+- name: Maxcdn
+  icon_code: fab fa-maxcdn
+- name: Medal
+  icon_code: fas fa-medal
+- name: Medapps
+  icon_code: fab fa-medapps
+- name: Medium
+  icon_code: fab fa-medium
+- name: Medium-m
+  icon_code: fab fa-medium-m
+- name: Medkit
+  icon_code: fas fa-medkit
+- name: Medrt
+  icon_code: fab fa-medrt
+- name: Meetup
+  icon_code: fab fa-meetup
+- name: Megaport
+  icon_code: fab fa-megaport
+- name: Meh
+  icon_code: fas fa-meh
+- name: Meh
+  icon_code: far fa-meh
+- name: Meh-blank
+  icon_code: fas fa-meh-blank
+- name: Meh-blank
+  icon_code: far fa-meh-blank
+- name: Meh-rolling-eyes
+  icon_code: fas fa-meh-rolling-eyes
+- name: Meh-rolling-eyes
+  icon_code: far fa-meh-rolling-eyes
+- name: Memory
+  icon_code: fas fa-memory
+- name: Mendeley
+  icon_code: fab fa-mendeley
+- name: Menorah
+  icon_code: fas fa-menorah
+- name: Mercury
+  icon_code: fas fa-mercury
+- name: Meteor
+  icon_code: fas fa-meteor
+- name: Microblog
+  icon_code: fab fa-microblog
+- name: Microchip
+  icon_code: fas fa-microchip
+- name: Microphone
+  icon_code: fas fa-microphone
+- name: Microphone-alt
+  icon_code: fas fa-microphone-alt
+- name: Microphone-alt-slash
+  icon_code: fas fa-microphone-alt-slash
+- name: Microphone-slash
+  icon_code: fas fa-microphone-slash
+- name: Microscope
+  icon_code: fas fa-microscope
+- name: Microsoft
+  icon_code: fab fa-microsoft
+- name: Minus
+  icon_code: fas fa-minus
+- name: Minus-circle
+  icon_code: fas fa-minus-circle
+- name: Minus-square
+  icon_code: fas fa-minus-square
+- name: Minus-square
+  icon_code: far fa-minus-square
+- name: Mitten
+  icon_code: fas fa-mitten
+- name: Mix
+  icon_code: fab fa-mix
+- name: Mixcloud
+  icon_code: fab fa-mixcloud
+- name: Mizuni
+  icon_code: fab fa-mizuni
+- name: Mobile
+  icon_code: fas fa-mobile
+- name: Mobile-alt
+  icon_code: fas fa-mobile-alt
+- name: Modx
+  icon_code: fab fa-modx
+- name: Monero
+  icon_code: fab fa-monero
+- name: Money-bill
+  icon_code: fas fa-money-bill
+- name: Money-bill-alt
+  icon_code: fas fa-money-bill-alt
+- name: Money-bill-alt
+  icon_code: far fa-money-bill-alt
+- name: Money-bill-wave
+  icon_code: fas fa-money-bill-wave
+- name: Money-bill-wave-alt
+  icon_code: fas fa-money-bill-wave-alt
+- name: Money-check
+  icon_code: fas fa-money-check
+- name: Money-check-alt
+  icon_code: fas fa-money-check-alt
+- name: Monument
+  icon_code: fas fa-monument
+- name: Moon
+  icon_code: fas fa-moon
+- name: Moon
+  icon_code: far fa-moon
+- name: Mortar-pestle
+  icon_code: fas fa-mortar-pestle
+- name: Mosque
+  icon_code: fas fa-mosque
+- name: Motorcycle
+  icon_code: fas fa-motorcycle
+- name: Mountain
+  icon_code: fas fa-mountain
+- name: Mouse-pointer
+  icon_code: fas fa-mouse-pointer
+- name: Mug-hot
+  icon_code: fas fa-mug-hot
+- name: Music
+  icon_code: fas fa-music
+- name: Napster
+  icon_code: fab fa-napster
+- name: Neos
+  icon_code: fab fa-neos
+- name: Network-wired
+  icon_code: fas fa-network-wired
+- name: Neuter
+  icon_code: fas fa-neuter
+- name: Newspaper
+  icon_code: fas fa-newspaper
+- name: Newspaper
+  icon_code: far fa-newspaper
+- name: Nimblr
+  icon_code: fab fa-nimblr
+- name: Nintendo-switch
+  icon_code: fab fa-nintendo-switch
+- name: Node
+  icon_code: fab fa-node
+- name: Node-js
+  icon_code: fab fa-node-js
+- name: Not-equal
+  icon_code: fas fa-not-equal
+- name: Notes-medical
+  icon_code: fas fa-notes-medical
+- name: Npm
+  icon_code: fab fa-npm
+- name: Ns8
+  icon_code: fab fa-ns8
+- name: Nutritionix
+  icon_code: fab fa-nutritionix
+- name: Object-group
+  icon_code: fas fa-object-group
+- name: Object-group
+  icon_code: far fa-object-group
+- name: Object-ungroup
+  icon_code: fas fa-object-ungroup
+- name: Object-ungroup
+  icon_code: far fa-object-ungroup
+- name: Odnoklassniki
+  icon_code: fab fa-odnoklassniki
+- name: Odnoklassniki-square
+  icon_code: fab fa-odnoklassniki-square
+- name: Oil-can
+  icon_code: fas fa-oil-can
+- name: Old-republic
+  icon_code: fab fa-old-republic
+- name: Om
+  icon_code: fas fa-om
+- name: Opencart
+  icon_code: fab fa-opencart
+- name: Openid
+  icon_code: fab fa-openid
+- name: Opera
+  icon_code: fab fa-opera
+- name: Optin-monster
+  icon_code: fab fa-optin-monster
+- name: Osi
+  icon_code: fab fa-osi
+- name: Otter
+  icon_code: fas fa-otter
+- name: Outdent
+  icon_code: fas fa-outdent
+- name: Page4
+  icon_code: fab fa-page4
+- name: Pagelines
+  icon_code: fab fa-pagelines
+- name: Pager
+  icon_code: fas fa-pager
+- name: Paint-brush
+  icon_code: fas fa-paint-brush
+- name: Paint-roller
+  icon_code: fas fa-paint-roller
+- name: Palette
+  icon_code: fas fa-palette
+- name: Palfed
+  icon_code: fab fa-palfed
+- name: Pallet
+  icon_code: fas fa-pallet
+- name: Paper-plane
+  icon_code: fas fa-paper-plane
+- name: Paper-plane
+  icon_code: far fa-paper-plane
+- name: Paperclip
+  icon_code: fas fa-paperclip
+- name: Parachute-box
+  icon_code: fas fa-parachute-box
+- name: Paragraph
+  icon_code: fas fa-paragraph
+- name: Parking
+  icon_code: fas fa-parking
+- name: Passport
+  icon_code: fas fa-passport
+- name: Pastafarianism
+  icon_code: fas fa-pastafarianism
+- name: Paste
+  icon_code: fas fa-paste
+- name: Patreon
+  icon_code: fab fa-patreon
+- name: Pause
+  icon_code: fas fa-pause
+- name: Pause-circle
+  icon_code: fas fa-pause-circle
+- name: Pause-circle
+  icon_code: far fa-pause-circle
+- name: Paw
+  icon_code: fas fa-paw
+- name: Paypal
+  icon_code: fab fa-paypal
+- name: Peace
+  icon_code: fas fa-peace
+- name: Pen
+  icon_code: fas fa-pen
+- name: Pen-alt
+  icon_code: fas fa-pen-alt
+- name: Pen-fancy
+  icon_code: fas fa-pen-fancy
+- name: Pen-nib
+  icon_code: fas fa-pen-nib
+- name: Pen-square
+  icon_code: fas fa-pen-square
+- name: Pencil-alt
+  icon_code: fas fa-pencil-alt
+- name: Pencil-ruler
+  icon_code: fas fa-pencil-ruler
+- name: Penny-arcade
+  icon_code: fab fa-penny-arcade
+- name: People-arrows
+  icon_code: fas fa-people-arrows
+- name: People-carry
+  icon_code: fas fa-people-carry
+- name: Pepper-hot
+  icon_code: fas fa-pepper-hot
+- name: Percent
+  icon_code: fas fa-percent
+- name: Percentage
+  icon_code: fas fa-percentage
+- name: Periscope
+  icon_code: fab fa-periscope
+- name: Person-booth
+  icon_code: fas fa-person-booth
+- name: Phabricator
+  icon_code: fab fa-phabricator
+- name: Phoenix-framework
+  icon_code: fab fa-phoenix-framework
+- name: Phoenix-squadron
+  icon_code: fab fa-phoenix-squadron
+- name: Phone
+  icon_code: fas fa-phone
+- name: Phone-alt
+  icon_code: fab fa-phone-alt
+- name: Phone-alt
+  icon_code: fas fa-phone-alt
+- name: Phone-slash
+  icon_code: fas fa-phone-slash
+- name: Phone-square
+  icon_code: fas fa-phone-square
+- name: Phone-square-alt
+  icon_code: fab fa-phone-square-alt
+- name: Phone-square-alt
+  icon_code: fas fa-phone-square-alt
+- name: Phone-volume
+  icon_code: fas fa-phone-volume
+- name: Photo-video
+  icon_code: fas fa-photo-video
+- name: Php
+  icon_code: fab fa-php
+- name: Pied-piper
+  icon_code: fab fa-pied-piper
+- name: Pied-piper-alt
+  icon_code: fab fa-pied-piper-alt
+- name: Pied-piper-hat
+  icon_code: fab fa-pied-piper-hat
+- name: Pied-piper-pp
+  icon_code: fab fa-pied-piper-pp
+- name: Pied-piper-square
+  icon_code: fab fa-pied-piper-square
+- name: Piggy-bank
+  icon_code: fas fa-piggy-bank
+- name: Pills
+  icon_code: fas fa-pills
+- name: Pinterest
+  icon_code: fab fa-pinterest
+- name: Pinterest-p
+  icon_code: fab fa-pinterest-p
+- name: Pinterest-square
+  icon_code: fab fa-pinterest-square
+- name: Pizza-slice
+  icon_code: fas fa-pizza-slice
+- name: Place-of-worship
+  icon_code: fas fa-place-of-worship
+- name: Plane
+  icon_code: fas fa-plane
+- name: Plane-arrival
+  icon_code: fas fa-plane-arrival
+- name: Plane-departure
+  icon_code: fas fa-plane-departure
+- name: Plane-slash
+  icon_code: fas fa-plane-slash
+- name: Play
+  icon_code: fas fa-play
+- name: Play-circle
+  icon_code: fas fa-play-circle
+- name: Play-circle
+  icon_code: far fa-play-circle
+- name: Playstation
+  icon_code: fab fa-playstation
+- name: Plug
+  icon_code: fas fa-plug
+- name: Plus
+  icon_code: fas fa-plus
+- name: Plus-circle
+  icon_code: fas fa-plus-circle
+- name: Plus-square
+  icon_code: fas fa-plus-square
+- name: Plus-square
+  icon_code: far fa-plus-square
+- name: Podcast
+  icon_code: fas fa-podcast
+- name: Poll
+  icon_code: fas fa-poll
+- name: Poll-h
+  icon_code: fas fa-poll-h
+- name: Poo
+  icon_code: fas fa-poo
+- name: Poo-storm
+  icon_code: fas fa-poo-storm
+- name: Poop
+  icon_code: fas fa-poop
+- name: Portrait
+  icon_code: fas fa-portrait
+- name: Pound-sign
+  icon_code: fas fa-pound-sign
+- name: Power-off
+  icon_code: fas fa-power-off
+- name: Pray
+  icon_code: fas fa-pray
+- name: Praying-hands
+  icon_code: fas fa-praying-hands
+- name: Prescription
+  icon_code: fas fa-prescription
+- name: Prescription-bottle
+  icon_code: fas fa-prescription-bottle
+- name: Prescription-bottle-alt
+  icon_code: fas fa-prescription-bottle-alt
+- name: Print
+  icon_code: fas fa-print
+- name: Procedures
+  icon_code: fas fa-procedures
+- name: Product-hunt
+  icon_code: fab fa-product-hunt
+- name: Project-diagram
+  icon_code: fas fa-project-diagram
+- name: Pump-medical
+  icon_code: fas fa-pump-medical
+- name: Pump-soap
+  icon_code: fas fa-pump-soap
+- name: Pushed
+  icon_code: fab fa-pushed
+- name: Puzzle-piece
+  icon_code: fas fa-puzzle-piece
+- name: Python
+  icon_code: fab fa-python
+- name: Qq
+  icon_code: fab fa-qq
+- name: Qrcode
+  icon_code: fas fa-qrcode
+- name: Question
+  icon_code: fas fa-question
+- name: Question-circle
+  icon_code: fas fa-question-circle
+- name: Question-circle
+  icon_code: far fa-question-circle
+- name: Quidditch
+  icon_code: fas fa-quidditch
+- name: Quinscape
+  icon_code: fab fa-quinscape
+- name: Quora
+  icon_code: fab fa-quora
+- name: Quote-left
+  icon_code: fas fa-quote-left
+- name: Quote-right
+  icon_code: fas fa-quote-right
+- name: Quran
+  icon_code: fas fa-quran
+- name: R-project
+  icon_code: fab fa-r-project
+- name: Radiation
+  icon_code: fas fa-radiation
+- name: Radiation-alt
+  icon_code: fas fa-radiation-alt
+- name: Rainbow
+  icon_code: fas fa-rainbow
+- name: Random
+  icon_code: fas fa-random
+- name: Raspberry-pi
+  icon_code: fab fa-raspberry-pi
+- name: Ravelry
+  icon_code: fab fa-ravelry
+- name: React
+  icon_code: fab fa-react
+- name: Reacteurope
+  icon_code: fab fa-reacteurope
+- name: Readme
+  icon_code: fab fa-readme
+- name: Rebel
+  icon_code: fab fa-rebel
+- name: Receipt
+  icon_code: fas fa-receipt
+- name: Record-vinyl
+  icon_code: fas fa-record-vinyl
+- name: Recycle
+  icon_code: fas fa-recycle
+- name: Red-river
+  icon_code: fab fa-red-river
+- name: Reddit
+  icon_code: fab fa-reddit
+- name: Reddit-alien
+  icon_code: fab fa-reddit-alien
+- name: Reddit-square
+  icon_code: fab fa-reddit-square
+- name: Redhat
+  icon_code: fab fa-redhat
+- name: Redo
+  icon_code: fas fa-redo
+- name: Redo-alt
+  icon_code: fas fa-redo-alt
+- name: Registered
+  icon_code: fas fa-registered
+- name: Registered
+  icon_code: far fa-registered
+- name: Remove-format
+  icon_code: fas fa-remove-format
+- name: Rendact
+  icon_code: fab fa-rendact
+- name: Renren
+  icon_code: fab fa-renren
+- name: Reply
+  icon_code: fas fa-reply
+- name: Reply-all
+  icon_code: fas fa-reply-all
+- name: Replyd
+  icon_code: fab fa-replyd
+- name: Republican
+  icon_code: fas fa-republican
+- name: Researchgate
+  icon_code: fab fa-researchgate
+- name: Resolving
+  icon_code: fab fa-resolving
+- name: Restroom
+  icon_code: fas fa-restroom
+- name: Retweet
+  icon_code: fas fa-retweet
+- name: Rev
+  icon_code: fab fa-rev
+- name: Ribbon
+  icon_code: fas fa-ribbon
+- name: Ring
+  icon_code: fas fa-ring
+- name: Road
+  icon_code: fas fa-road
+- name: Robot
+  icon_code: fas fa-robot
+- name: Rocket
+  icon_code: fas fa-rocket
+- name: Rocketchat
+  icon_code: fab fa-rocketchat
+- name: Rockrms
+  icon_code: fab fa-rockrms
+- name: Route
+  icon_code: fas fa-route
+- name: Rss
+  icon_code: fas fa-rss
+- name: Rss-square
+  icon_code: fas fa-rss-square
+- name: Ruble-sign
+  icon_code: fas fa-ruble-sign
+- name: Ruler
+  icon_code: fas fa-ruler
+- name: Ruler-combined
+  icon_code: fas fa-ruler-combined
+- name: Ruler-horizontal
+  icon_code: fas fa-ruler-horizontal
+- name: Ruler-vertical
+  icon_code: fas fa-ruler-vertical
+- name: Running
+  icon_code: fas fa-running
+- name: Rupee-sign
+  icon_code: fas fa-rupee-sign
+- name: Sad-cry
+  icon_code: fas fa-sad-cry
+- name: Sad-cry
+  icon_code: far fa-sad-cry
+- name: Sad-tear
+  icon_code: fas fa-sad-tear
+- name: Sad-tear
+  icon_code: far fa-sad-tear
+- name: Safari
+  icon_code: fab fa-safari
+- name: Sass
+  icon_code: fab fa-sass
+- name: Satellite
+  icon_code: fas fa-satellite
+- name: Satellite-dish
+  icon_code: fas fa-satellite-dish
+- name: Save
+  icon_code: fas fa-save
+- name: Save
+  icon_code: far fa-save
+- name: Schlix
+  icon_code: fab fa-schlix
+- name: School
+  icon_code: fas fa-school
+- name: Screwdriver
+  icon_code: fas fa-screwdriver
+- name: Scribd
+  icon_code: fab fa-scribd
+- name: Scroll
+  icon_code: fas fa-scroll
+- name: Sd-card
+  icon_code: fas fa-sd-card
+- name: Search
+  icon_code: fas fa-search
+- name: Search-dollar
+  icon_code: fas fa-search-dollar
+- name: Search-location
+  icon_code: fas fa-search-location
+- name: Search-minus
+  icon_code: fas fa-search-minus
+- name: Search-plus
+  icon_code: fas fa-search-plus
+- name: Searchengin
+  icon_code: fab fa-searchengin
+- name: Seedling
+  icon_code: fas fa-seedling
+- name: Sellcast
+  icon_code: fab fa-sellcast
+- name: Sellsy
+  icon_code: fab fa-sellsy
+- name: Server
+  icon_code: fas fa-server
+- name: Servicestack
+  icon_code: fab fa-servicestack
+- name: Shapes
+  icon_code: fas fa-shapes
+- name: Share
+  icon_code: fas fa-share
+- name: Share-alt
+  icon_code: fas fa-share-alt
+- name: Share-alt-square
+  icon_code: fas fa-share-alt-square
+- name: Share-square
+  icon_code: fas fa-share-square
+- name: Share-square
+  icon_code: far fa-share-square
+- name: Shekel-sign
+  icon_code: fas fa-shekel-sign
+- name: Shield-alt
+  icon_code: fas fa-shield-alt
+- name: Shield-virus
+  icon_code: fas fa-shield-virus
+- name: Ship
+  icon_code: fas fa-ship
+- name: Shipping-fast
+  icon_code: fas fa-shipping-fast
+- name: Shirtsinbulk
+  icon_code: fab fa-shirtsinbulk
+- name: Shoe-prints
+  icon_code: fas fa-shoe-prints
+- name: Shopping-bag
+  icon_code: fas fa-shopping-bag
+- name: Shopping-basket
+  icon_code: fas fa-shopping-basket
+- name: Shopping-cart
+  icon_code: fas fa-shopping-cart
+- name: Shopware
+  icon_code: fab fa-shopware
+- name: Shower
+  icon_code: fas fa-shower
+- name: Shuttle-van
+  icon_code: fas fa-shuttle-van
+- name: Sign
+  icon_code: fas fa-sign
+- name: Sign-in-alt
+  icon_code: fas fa-sign-in-alt
+- name: Sign-language
+  icon_code: fas fa-sign-language
+- name: Sign-out-alt
+  icon_code: fas fa-sign-out-alt
+- name: Signal
+  icon_code: fas fa-signal
+- name: Signature
+  icon_code: fas fa-signature
+- name: Signature
+  icon_code: fas fa-signature
+- name: Sim-card
+  icon_code: fas fa-sim-card
+- name: Simplybuilt
+  icon_code: fab fa-simplybuilt
+- name: Sistrix
+  icon_code: fab fa-sistrix
+- name: Sitemap
+  icon_code: fas fa-sitemap
+- name: Sith
+  icon_code: fab fa-sith
+- name: Skating
+  icon_code: fas fa-skating
+- name: Sketch
+  icon_code: fab fa-sketch
+- name: Skiing
+  icon_code: fas fa-skiing
+- name: Skiing-nordic
+  icon_code: fas fa-skiing-nordic
+- name: Skull
+  icon_code: fas fa-skull
+- name: Skull-crossbones
+  icon_code: fas fa-skull-crossbones
+- name: Skyatlas
+  icon_code: fab fa-skyatlas
+- name: Skype
+  icon_code: fab fa-skype
+- name: Slack
+  icon_code: fab fa-slack
+- name: Slack-hash
+  icon_code: fab fa-slack-hash
+- name: Slash
+  icon_code: fas fa-slash
+- name: Sleigh
+  icon_code: fas fa-sleigh
+- name: Sliders-h
+  icon_code: fas fa-sliders-h
+- name: Slideshare
+  icon_code: fab fa-slideshare
+- name: Smile
+  icon_code: fas fa-smile
+- name: Smile
+  icon_code: far fa-smile
+- name: Smile-beam
+  icon_code: fas fa-smile-beam
+- name: Smile-beam
+  icon_code: far fa-smile-beam
+- name: Smile-wink
+  icon_code: fas fa-smile-wink
+- name: Smile-wink
+  icon_code: far fa-smile-wink
+- name: Smog
+  icon_code: fas fa-smog
+- name: Smoking
+  icon_code: fas fa-smoking
+- name: Smoking-ban
+  icon_code: fas fa-smoking-ban
+- name: Sms
+  icon_code: fas fa-sms
+- name: Snapchat
+  icon_code: fab fa-snapchat
+- name: Snapchat-ghost
+  icon_code: fab fa-snapchat-ghost
+- name: Snapchat-square
+  icon_code: fab fa-snapchat-square
+- name: Snowboarding
+  icon_code: fas fa-snowboarding
+- name: Snowflake
+  icon_code: fas fa-snowflake
+- name: Snowflake
+  icon_code: far fa-snowflake
+- name: Snowman
+  icon_code: fas fa-snowman
+- name: Snowplow
+  icon_code: fas fa-snowplow
+- name: Soap
+  icon_code: fas fa-soap
+- name: Socks
+  icon_code: fas fa-socks
+- name: Solar-panel
+  icon_code: fas fa-solar-panel
+- name: Sort
+  icon_code: fas fa-sort
+- name: Sort-alpha-down
+  icon_code: fas fa-sort-alpha-down
+- name: Sort-alpha-down-alt
+  icon_code: fas fa-sort-alpha-down-alt
+- name: Sort-alpha-up
+  icon_code: fas fa-sort-alpha-up
+- name: Sort-alpha-up-alt
+  icon_code: fas fa-sort-alpha-up-alt
+- name: Sort-amount-down
+  icon_code: fas fa-sort-amount-down
+- name: Sort-amount-down-alt
+  icon_code: fas fa-sort-amount-down-alt
+- name: Sort-amount-up
+  icon_code: fas fa-sort-amount-up
+- name: Sort-amount-up-alt
+  icon_code: fas fa-sort-amount-up-alt
+- name: Sort-down
+  icon_code: fas fa-sort-down
+- name: Sort-numeric-down
+  icon_code: fas fa-sort-numeric-down
+- name: Sort-numeric-down-alt
+  icon_code: fas fa-sort-numeric-down-alt
+- name: Sort-numeric-up
+  icon_code: fas fa-sort-numeric-up
+- name: Sort-numeric-up-alt
+  icon_code: fas fa-sort-numeric-up-alt
+- name: Sort-up
+  icon_code: fas fa-sort-up
+- name: Soundcloud
+  icon_code: fab fa-soundcloud
+- name: Sourcetree
+  icon_code: fab fa-sourcetree
+- name: Spa
+  icon_code: fas fa-spa
+- name: Space-shuttle
+  icon_code: fas fa-space-shuttle
+- name: Speakap
+  icon_code: fab fa-speakap
+- name: Spell-check
+  icon_code: fas fa-spell-check
+- name: Spider
+  icon_code: fas fa-spider
+- name: Spinner
+  icon_code: fas fa-spinner
+- name: Splotch
+  icon_code: fas fa-splotch
+- name: Spotify
+  icon_code: fab fa-spotify
+- name: Spray-can
+  icon_code: fas fa-spray-can
+- name: Square
+  icon_code: fas fa-square
+- name: Square
+  icon_code: far fa-square
+- name: Square-full
+  icon_code: fas fa-square-full
+- name: Square-root-alt
+  icon_code: fas fa-square-root-alt
+- name: Squarespace
+  icon_code: fab fa-squarespace
+- name: Stack-exchange
+  icon_code: fab fa-stack-exchange
+- name: Stack-overflow
+  icon_code: fab fa-stack-overflow
+- name: Stamp
+  icon_code: fas fa-stamp
+- name: Star
+  icon_code: fas fa-star
+- name: Star
+  icon_code: far fa-star
+- name: Star-and-crescent
+  icon_code: fas fa-star-and-crescent
+- name: Star-half
+  icon_code: fas fa-star-half
+- name: Star-half
+  icon_code: far fa-star-half
+- name: Star-half-alt
+  icon_code: fas fa-star-half-alt
+- name: Star-of-david
+  icon_code: fas fa-star-of-david
+- name: Star-of-life
+  icon_code: fas fa-star-of-life
+- name: Staylinked
+  icon_code: fab fa-staylinked
+- name: Steam
+  icon_code: fab fa-steam
+- name: Steam-square
+  icon_code: fab fa-steam-square
+- name: Steam-symbol
+  icon_code: fab fa-steam-symbol
+- name: Step-backward
+  icon_code: fas fa-step-backward
+- name: Step-forward
+  icon_code: fas fa-step-forward
+- name: Stethoscope
+  icon_code: fas fa-stethoscope
+- name: Sticker-mule
+  icon_code: fab fa-sticker-mule
+- name: Sticky-note
+  icon_code: fas fa-sticky-note
+- name: Sticky-note
+  icon_code: far fa-sticky-note
+- name: Stop
+  icon_code: fas fa-stop
+- name: Stop-circle
+  icon_code: fas fa-stop-circle
+- name: Stop-circle
+  icon_code: far fa-stop-circle
+- name: Stopwatch
+  icon_code: fas fa-stopwatch
+- name: Stopwatch-20
+  icon_code: fas fa-stopwatch-20
+- name: Store
+  icon_code: fas fa-store
+- name: Store-alt
+  icon_code: fas fa-store-alt
+- name: Store-alt-slash
+  icon_code: fas fa-store-alt-slash
+- name: Store-slash
+  icon_code: fas fa-store-slash
+- name: Strava
+  icon_code: fab fa-strava
+- name: Stream
+  icon_code: fas fa-stream
+- name: Street-view
+  icon_code: fas fa-street-view
+- name: Strikethrough
+  icon_code: fas fa-strikethrough
+- name: Stripe
+  icon_code: fab fa-stripe
+- name: Stripe-s
+  icon_code: fab fa-stripe-s
+- name: Stroopwafel
+  icon_code: fas fa-stroopwafel
+- name: Studiovinari
+  icon_code: fab fa-studiovinari
+- name: Stumbleupon
+  icon_code: fab fa-stumbleupon
+- name: Stumbleupon-circle
+  icon_code: fab fa-stumbleupon-circle
+- name: Subscript
+  icon_code: fas fa-subscript
+- name: Subway
+  icon_code: fas fa-subway
+- name: Suitcase
+  icon_code: fas fa-suitcase
+- name: Suitcase-rolling
+  icon_code: fas fa-suitcase-rolling
+- name: Sun
+  icon_code: fas fa-sun
+- name: Sun
+  icon_code: far fa-sun
+- name: Superpowers
+  icon_code: fab fa-superpowers
+- name: Superscript
+  icon_code: fas fa-superscript
+- name: Supple
+  icon_code: fab fa-supple
+- name: Surprise
+  icon_code: fas fa-surprise
+- name: Surprise
+  icon_code: far fa-surprise
+- name: Suse
+  icon_code: fab fa-suse
+- name: Swatchbook
+  icon_code: fas fa-swatchbook
+- name: Swimmer
+  icon_code: fas fa-swimmer
+- name: Swimming-pool
+  icon_code: fas fa-swimming-pool
+- name: Synagogue
+  icon_code: fas fa-synagogue
+- name: Sync
+  icon_code: fas fa-sync
+- name: Sync-alt
+  icon_code: fas fa-sync-alt
+- name: Syringe
+  icon_code: fas fa-syringe
+- name: Table
+  icon_code: fas fa-table
+- name: Table-tennis
+  icon_code: fas fa-table-tennis
+- name: Tablet
+  icon_code: fas fa-tablet
+- name: Tablet-alt
+  icon_code: fas fa-tablet-alt
+- name: Tablets
+  icon_code: fas fa-tablets
+- name: Tachometer-alt
+  icon_code: fas fa-tachometer-alt
+- name: Tag
+  icon_code: fas fa-tag
+- name: Tags
+  icon_code: fas fa-tags
+- name: Tape
+  icon_code: fas fa-tape
+- name: Tasks
+  icon_code: fas fa-tasks
+- name: Taxi
+  icon_code: fas fa-taxi
+- name: Teamspeak
+  icon_code: fab fa-teamspeak
+- name: Teeth
+  icon_code: fas fa-teeth
+- name: Teeth-open
+  icon_code: fas fa-teeth-open
+- name: Telegram
+  icon_code: fab fa-telegram
+- name: Telegram-plane
+  icon_code: fab fa-telegram-plane
+- name: Temperature-high
+  icon_code: fas fa-temperature-high
+- name: Temperature-low
+  icon_code: fas fa-temperature-low
+- name: Tencent-weibo
+  icon_code: fab fa-tencent-weibo
+- name: Tenge
+  icon_code: fas fa-tenge
+- name: Terminal
+  icon_code: fas fa-terminal
+- name: Text-height
+  icon_code: fas fa-text-height
+- name: Text-width
+  icon_code: fas fa-text-width
+- name: Th
+  icon_code: fas fa-th
+- name: Th-large
+  icon_code: fas fa-th-large
+- name: Th-list
+  icon_code: fas fa-th-list
+- name: The-red-yeti
+  icon_code: fab fa-the-red-yeti
+- name: Theater-masks
+  icon_code: fas fa-theater-masks
+- name: Themeco
+  icon_code: fab fa-themeco
+- name: Themeisle
+  icon_code: fab fa-themeisle
+- name: Thermometer
+  icon_code: fas fa-thermometer
+- name: Thermometer-empty
+  icon_code: fas fa-thermometer-empty
+- name: Thermometer-full
+  icon_code: fas fa-thermometer-full
+- name: Thermometer-half
+  icon_code: fas fa-thermometer-half
+- name: Thermometer-quarter
+  icon_code: fas fa-thermometer-quarter
+- name: Thermometer-three-quarters
+  icon_code: fas fa-thermometer-three-quarters
+- name: Think-peaks
+  icon_code: fab fa-think-peaks
+- name: Thumbs-down
+  icon_code: fas fa-thumbs-down
+- name: Thumbs-down
+  icon_code: far fa-thumbs-down
+- name: Thumbs-up
+  icon_code: fas fa-thumbs-up
+- name: Thumbs-up
+  icon_code: far fa-thumbs-up
+- name: Thumbtack
+  icon_code: fas fa-thumbtack
+- name: Ticket-alt
+  icon_code: fas fa-ticket-alt
+- name: Times
+  icon_code: fas fa-times
+- name: Times-circle
+  icon_code: fas fa-times-circle
+- name: Times-circle
+  icon_code: far fa-times-circle
+- name: Tint
+  icon_code: fas fa-tint
+- name: Tint-slash
+  icon_code: fas fa-tint-slash
+- name: Tired
+  icon_code: fas fa-tired
+- name: Tired
+  icon_code: far fa-tired
+- name: Toggle-off
+  icon_code: fas fa-toggle-off
+- name: Toggle-on
+  icon_code: fas fa-toggle-on
+- name: Toilet
+  icon_code: fas fa-toilet
+- name: Toilet-paper
+  icon_code: fas fa-toilet-paper
+- name: Toilet-paper-slash
+  icon_code: fas fa-toilet-paper-slash
+- name: Toolbox
+  icon_code: fas fa-toolbox
+- name: Tools
+  icon_code: fas fa-tools
+- name: Tooth
+  icon_code: fas fa-tooth
+- name: Torah
+  icon_code: fas fa-torah
+- name: Torii-gate
+  icon_code: fas fa-torii-gate
+- name: Tractor
+  icon_code: fas fa-tractor
+- name: Trade-federation
+  icon_code: fab fa-trade-federation
+- name: Trademark
+  icon_code: fas fa-trademark
+- name: Traffic-light
+  icon_code: fas fa-traffic-light
+- name: Trailer
+  icon_code: fas fa-trailer
+- name: Train
+  icon_code: fas fa-train
+- name: Tram
+  icon_code: fas fa-tram
+- name: Transgender
+  icon_code: fas fa-transgender
+- name: Transgender-alt
+  icon_code: fas fa-transgender-alt
+- name: Trash
+  icon_code: fas fa-trash
+- name: Trash-alt
+  icon_code: fas fa-trash-alt
+- name: Trash-alt
+  icon_code: far fa-trash-alt
+- name: Trash-restore
+  icon_code: fas fa-trash-restore
+- name: Trash-restore-alt
+  icon_code: fas fa-trash-restore-alt
+- name: Tree
+  icon_code: fas fa-tree
+- name: Trello
+  icon_code: fab fa-trello
+- name: Trello
+  icon_code: fab fa-trello
+- name: Tripadvisor
+  icon_code: fab fa-tripadvisor
+- name: Trophy
+  icon_code: fas fa-trophy
+- name: Truck
+  icon_code: fas fa-truck
+- name: Truck-loading
+  icon_code: fas fa-truck-loading
+- name: Truck-monster
+  icon_code: fas fa-truck-monster
+- name: Truck-moving
+  icon_code: fas fa-truck-moving
+- name: Truck-pickup
+  icon_code: fas fa-truck-pickup
+- name: Tshirt
+  icon_code: fas fa-tshirt
+- name: Tty
+  icon_code: fas fa-tty
+- name: Tumblr
+  icon_code: fab fa-tumblr
+- name: Tumblr-square
+  icon_code: fab fa-tumblr-square
+- name: Tv
+  icon_code: fas fa-tv
+- name: Twitch
+  icon_code: fab fa-twitch
+- name: Twitter
+  icon_code: fab fa-twitter
+- name: Twitter-square
+  icon_code: fab fa-twitter-square
+- name: Typo3
+  icon_code: fab fa-typo3
+- name: Uber
+  icon_code: fab fa-uber
+- name: Ubuntu
+  icon_code: fab fa-ubuntu
+- name: Uikit
+  icon_code: fab fa-uikit
+- name: Umbrella
+  icon_code: fas fa-umbrella
+- name: Umbrella-beach
+  icon_code: fas fa-umbrella-beach
+- name: Underline
+  icon_code: fas fa-underline
+- name: Undo
+  icon_code: fas fa-undo
+- name: Undo-alt
+  icon_code: fas fa-undo-alt
+- name: Uniregistry
+  icon_code: fab fa-uniregistry
+- name: Unity
+  icon_code: fas fa-unity
+- name: Universal-access
+  icon_code: fas fa-universal-access
+- name: University
+  icon_code: fas fa-university
+- name: Unlink
+  icon_code: fas fa-unlink
+- name: Unlock
+  icon_code: fas fa-unlock
+- name: Unlock-alt
+  icon_code: fas fa-unlock-alt
+- name: Untappd
+  icon_code: fab fa-untappd
+- name: Upload
+  icon_code: fas fa-upload
+- name: Ups
+  icon_code: fab fa-ups
+- name: Usb
+  icon_code: fab fa-usb
+- name: User
+  icon_code: fas fa-user
+- name: User
+  icon_code: far fa-user
+- name: User-alt
+  icon_code: fas fa-user-alt
+- name: User-alt-slash
+  icon_code: fas fa-user-alt-slash
+- name: User-astronaut
+  icon_code: fas fa-user-astronaut
+- name: User-check
+  icon_code: fas fa-user-check
+- name: User-circle
+  icon_code: fas fa-user-circle
+- name: User-circle
+  icon_code: far fa-user-circle
+- name: User-clock
+  icon_code: fas fa-user-clock
+- name: User-cog
+  icon_code: fas fa-user-cog
+- name: User-edit
+  icon_code: fas fa-user-edit
+- name: User-friends
+  icon_code: fas fa-user-friends
+- name: User-graduate
+  icon_code: fas fa-user-graduate
+- name: User-injured
+  icon_code: fas fa-user-injured
+- name: User-lock
+  icon_code: fas fa-user-lock
+- name: User-md
+  icon_code: fas fa-user-md
+- name: User-minus
+  icon_code: fas fa-user-minus
+- name: User-ninja
+  icon_code: fas fa-user-ninja
+- name: User-nurse
+  icon_code: fas fa-user-nurse
+- name: User-plus
+  icon_code: fas fa-user-plus
+- name: User-secret
+  icon_code: fas fa-user-secret
+- name: User-shield
+  icon_code: fas fa-user-shield
+- name: User-slash
+  icon_code: fas fa-user-slash
+- name: User-tag
+  icon_code: fas fa-user-tag
+- name: User-tie
+  icon_code: fas fa-user-tie
+- name: User-times
+  icon_code: fas fa-user-times
+- name: Users
+  icon_code: fas fa-users
+- name: Users-cog
+  icon_code: fas fa-users-cog
+- name: Usps
+  icon_code: fab fa-usps
+- name: Ussunnah
+  icon_code: fab fa-ussunnah
+- name: Utensil-spoon
+  icon_code: fas fa-utensil-spoon
+- name: Utensils
+  icon_code: fas fa-utensils
+- name: Vaadin
+  icon_code: fab fa-vaadin
+- name: Vector-square
+  icon_code: fas fa-vector-square
+- name: Venus
+  icon_code: fas fa-venus
+- name: Venus-double
+  icon_code: fas fa-venus-double
+- name: Venus-mars
+  icon_code: fas fa-venus-mars
+- name: Viacoin
+  icon_code: fab fa-viacoin
+- name: Viadeo
+  icon_code: fab fa-viadeo
+- name: Viadeo-square
+  icon_code: fab fa-viadeo-square
+- name: Vial
+  icon_code: fas fa-vial
+- name: Vials
+  icon_code: fas fa-vials
+- name: Viber
+  icon_code: fab fa-viber
+- name: Video
+  icon_code: fas fa-video
+- name: Video-slash
+  icon_code: fas fa-video-slash
+- name: Vihara
+  icon_code: fas fa-vihara
+- name: Vimeo
+  icon_code: fab fa-vimeo
+- name: Vimeo-square
+  icon_code: fab fa-vimeo-square
+- name: Vimeo-v
+  icon_code: fab fa-vimeo-v
+- name: Vine
+  icon_code: fab fa-vine
+- name: Virus
+  icon_code: fas fa-virus
+- name: Virus-slash
+  icon_code: fas fa-virus-slash
+- name: Viruses
+  icon_code: fas fa-viruses
+- name: Vk
+  icon_code: fab fa-vk
+- name: Vnv
+  icon_code: fab fa-vnv
+- name: Volleyball-ball
+  icon_code: fas fa-volleyball-ball
+- name: Volume-down
+  icon_code: fas fa-volume-down
+- name: Volume-mute
+  icon_code: fas fa-volume-mute
+- name: Volume-off
+  icon_code: fas fa-volume-off
+- name: Volume-up
+  icon_code: fas fa-volume-up
+- name: Vote-yea
+  icon_code: fas fa-vote-yea
+- name: Vuejs
+  icon_code: fab fa-vuejs
+- name: Walking
+  icon_code: fas fa-walking
+- name: Wallet
+  icon_code: fas fa-wallet
+- name: Warehouse
+  icon_code: fas fa-warehouse
+- name: Water
+  icon_code: fas fa-water
+- name: Weebly
+  icon_code: fab fa-weebly
+- name: Weibo
+  icon_code: fab fa-weibo
+- name: Weight
+  icon_code: fas fa-weight
+- name: Weight-hanging
+  icon_code: fas fa-weight-hanging
+- name: Weixin
+  icon_code: fab fa-weixin
+- name: Whatsapp
+  icon_code: fab fa-whatsapp
+- name: Whatsapp-square
+  icon_code: fab fa-whatsapp-square
+- name: Wheelchair
+  icon_code: fas fa-wheelchair
+- name: Whmcs
+  icon_code: fab fa-whmcs
+- name: Wifi
+  icon_code: fas fa-wifi
+- name: Wikipedia-w
+  icon_code: fab fa-wikipedia-w
+- name: Wind
+  icon_code: fas fa-wind
+- name: Window-close
+  icon_code: fas fa-window-close
+- name: Window-close
+  icon_code: far fa-window-close
+- name: Window-maximize
+  icon_code: fas fa-window-maximize
+- name: Window-maximize
+  icon_code: far fa-window-maximize
+- name: Window-minimize
+  icon_code: fas fa-window-minimize
+- name: Window-minimize
+  icon_code: far fa-window-minimize
+- name: Window-restore
+  icon_code: fas fa-window-restore
+- name: Window-restore
+  icon_code: far fa-window-restore
+- name: Windows
+  icon_code: fab fa-windows
+- name: Wine-bottle
+  icon_code: fas fa-wine-bottle
+- name: Wine-glass
+  icon_code: fas fa-wine-glass
+- name: Wine-glass-alt
+  icon_code: fas fa-wine-glass-alt
+- name: Wix
+  icon_code: fab fa-wix
+- name: Wizards-of-the-coast
+  icon_code: fab fa-wizards-of-the-coast
+- name: Wolf-pack-battalion
+  icon_code: fab fa-wolf-pack-battalion
+- name: Won-sign
+  icon_code: fas fa-won-sign
+- name: Wordpress
+  icon_code: fab fa-wordpress
+- name: Wordpress-simple
+  icon_code: fab fa-wordpress-simple
+- name: Wpbeginner
+  icon_code: fab fa-wpbeginner
+- name: Wpexplorer
+  icon_code: fab fa-wpexplorer
+- name: Wpforms
+  icon_code: fab fa-wpforms
+- name: Wpressr
+  icon_code: fab fa-wpressr
+- name: Wrench
+  icon_code: fas fa-wrench
+- name: X-ray
+  icon_code: fas fa-x-ray
+- name: Xbox
+  icon_code: fab fa-xbox
+- name: Xing
+  icon_code: fab fa-xing
+- name: Xing-square
+  icon_code: fab fa-xing-square
+- name: Y-combinator
+  icon_code: fab fa-y-combinator
+- name: Yahoo
+  icon_code: fab fa-yahoo
+- name: Yandex
+  icon_code: fab fa-yandex
+- name: Yandex-international
+  icon_code: fab fa-yandex-international
+- name: Yarn
+  icon_code: fab fa-yarn
+- name: Yelp
+  icon_code: fab fa-yelp
+- name: Yen-sign
+  icon_code: fas fa-yen-sign
+- name: Yin-yang
+  icon_code: fas fa-yin-yang
+- name: Yoast
+  icon_code: fab fa-yoast
+- name: Youtube
+  icon_code: fab fa-youtube
+- name: Youtube-square
+  icon_code: fab fa-youtube-square
+- name: Zhihu
+  icon_code: fab fa-zhihu

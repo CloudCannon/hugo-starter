@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hugo Starter</title>
+    <title>CloudCannon Hugo Starter</title>
 
-    <!-- Alpine -->
+    <!-- AlpineJS -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js">
@@ -19,6 +19,7 @@
     css.Sass | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $scss.Permalink }}" />
     
+    <!-- Tailwind and custom styles in assets/css/ -->
     {{ partialCached "css.html" . }}
 
     <!-- Font Awesome icons -->
@@ -26,6 +27,7 @@
     <link href="/fontawesome/css/brands.min.css" rel="stylesheet" />
     <link href="/fontawesome/css/solid.min.css" rel="stylesheet" />
     <link href="/fontawesome/css/regular.min.css" rel="stylesheet" />
+    <link href="/css/custom-icons.css" rel="stylesheet" />
   </head>
 
   <body>

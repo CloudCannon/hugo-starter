@@ -30,14 +30,14 @@ content_blocks:
     buttons:
       - _bookshop_name: buttons/primary
         button_text: GitHub
-        button_icon: Github
+        button_icon: fab fa-github
         button_link: https://github.com/CloudCannon/hugo-starter/
         background_color: "#034ad8"
         hover_brightness: 0.85
         text_color: "#ffffff"
       - _bookshop_name: buttons/secondary
         button_text: CloudCannon
-        button_icon: CloudCannon
+        button_icon: custom-icon-cloudcannon
         button_link: https://www.cloudcannon.com
         text_color: "#034ad8"
         hover_brightness: 0.95

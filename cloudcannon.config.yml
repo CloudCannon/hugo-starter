@@ -43,6 +43,8 @@ data_config:
     path: data/colors.yml
   tags:
     path: data/tags.yml
+  icons:
+    path: data/icons.yml
 
 file_config:
   - glob: data/colors.yml
@@ -156,6 +158,10 @@ _inputs:
     type: select
     options:
       values: data.icons
+      value_key: icon_code
+      preview:
+        text:
+          - key: name
   button_icon:
     type: select
     options:
