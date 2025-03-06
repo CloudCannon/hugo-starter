@@ -6,6 +6,7 @@
 }
 .blog-hero-title {
   font-size: 3rem;
+  font-weight: 600;
 }
 .blog-article-grid {
   display: grid;
@@ -42,10 +43,14 @@
 .pagination .page-link:hover svg g {
   fill: #034ad8;
 }
-.blog-post-tag {
+.blog-post-title {
+  font-size: 1.5rem;
   margin-block: 1rem;
 }
-.blog-post-tag a {
+.blog-post-categories {
+  margin-top: 1rem;
+}
+.blog-post-categories a {
   background: #f1f1f1;
   border-radius: 6px;
   padding: 4px 10px;
