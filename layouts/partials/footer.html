@@ -7,19 +7,18 @@
       class="footer-top">
       <a
         class="flex justify-center sm:justify-start items-center"
-        href="{{ .logo_url }}">
+        href="{{ .footer.logo_url }}">
         <img
-          class="footer__logo-image"
-          src="{{ .logo }}"
+          class="footer-logo-image"
+          src="{{ .footer.logo }}"
           alt=""
         />
       </a>
       <ul class="footer-socials">
         {{ range .footer.social }}
           <li>
-            <a href="{{ .link }}">
-              Icon Here
-              <i class="fa-solid fas-camera"></i>
+            <a class="footer-social-icon" href="{{ .link }}">
+              <i class="{{ .icon }}"></i>
             </a>
           </li>
         {{ end }}
@@ -34,7 +33,7 @@
     </ul>
     </div>
 
-    <p class="text-center py-8">
+    <p class="footer-copyright">
       <span>&#169;</span>
       <span>
         {{ if eq .footer.copyright_start_date time.Now.Year }}

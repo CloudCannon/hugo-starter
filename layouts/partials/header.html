@@ -6,8 +6,8 @@
   style="background-color: {{  .header.background_color }}; color: {{ .header.text_color }};">
   <div class="header__container">
     <nav class="header__nav">
-      <a class="header__logo-link" href="{{ .logo_url }}">
-        <img class="header__logo-image" src="{{ .logo }}" alt="Logo" />
+      <a class="header__logo-link" href="{{ .header.logo_url }}">
+        <img class="header__logo-image" src="{{ .header.logo }}" alt="Logo" />
       </a>
       <button class="hamburger" @click="open = ! open">
         <svg height="16" width="24" xmlns="http://www.w3.org/2000/svg">

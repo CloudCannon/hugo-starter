@@ -79,7 +79,7 @@ content_blocks:
     button:
       _bookshop_name: buttons/primary
       button_text: GitHub
-      button_icon: Github
+      button_icon: fab fa-github
       button_link: https://github.com/CloudCannon/hugo-starter/
       background_color: "#034ad8"
       hover_brightness: 0.85

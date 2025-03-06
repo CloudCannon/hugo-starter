@@ -1,6 +1,6 @@
-logo: /images/logos/logo-wordmark-blue.png
-logo_url: '/'
 header:
+  logo: /images/logos/logo-wordmark-blue.png
+  logo_url: '/'
   background_color: '#ffffff'
   text_color: '#393939'
   links:
@@ -11,15 +11,21 @@ header:
     - text: CloudCannon
       link: "https://cloudcannon.com/"
 footer:
+  logo: /images/logos/logo-wordmark-white.png
+  logo_url: '/'
   background_color: '#393939'
   text_color: '#ffffff'
   social:
-    - icon:
+    - icon: fab fa-facebook
       link: https://www.facebook.com/
-    - icon:
-      link: https://www.facebook.com/
-    - icon:
-      link: https://www.facebook.com/
+    - icon: fab fa-instagram
+      link: https://www.instagram.com/
+    - icon: fab fa-linkedin
+      link: https://www.linkedin.com/
+    - icon: fab fa-github
+      link: https://github.com/
+    - icon: fab fa-youtube
+      link: https://www.youtube.com/
   links:
     - text: Blog
       link: /blog/
