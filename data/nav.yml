@@ -4,9 +4,28 @@ header:
   background_color: '#ffffff'
   text_color: '#393939'
   links:
-    - link: /blog/
-      text: Blog
+    - text: Blog
+      link: /blog/
+    - text: GitHub
+      link: https://github.com/CloudCannon/hugo-starter/
+    - text: CloudCannon
+      link: "https://cloudcannon.com/"
+footer:
+  background_color: '#393939'
+  text_color: '#ffffff'
+  social:
+    - icon:
+      link: https://www.facebook.com/
+    - icon:
+      link: https://www.facebook.com/
+    - icon:
+      link: https://www.facebook.com/
+  links:
+    - text: Blog
+      link: /blog/
     - link: https://github.com/CloudCannon/hugo-starter/
       text: GitHub
     - link: "https://cloudcannon.com/"
       text: CloudCannon
+  copyright_start_date: 2025
+  copyright_statement: MyCompany. All rights reserved.

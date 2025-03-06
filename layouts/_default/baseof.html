@@ -29,6 +29,7 @@
       <!-- Render any additional page content below the page's content blocks -->
       {{ block "main" . }}{{ end }} 
       {{ .Content }}
+      {{ partial "footer.html" . }}
     </main>
   </body>
 </html>

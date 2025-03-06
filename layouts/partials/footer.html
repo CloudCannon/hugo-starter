@@ -1,0 +1,49 @@
+
+{{ with .Site.Data.nav }}
+<footer
+  style="background-color: {{ .footer.background_color }}; color: {{ .footer.text_color }};">
+  <div class="footer-container">
+    <div
+      class="footer-top">
+      <a
+        class="flex justify-center sm:justify-start items-center"
+        href="{{ .logo_url }}">
+        <img
+          class="footer__logo-image"
+          src="{{ .logo }}"
+          alt=""
+        />
+      </a>
+      <ul class="footer-socials">
+        {{ range .footer.social }}
+          <li>
+            <a href="{{ .link }}">
+              <span>Icon here</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+
+      <ul class="footer-links">
+        {{ range .footer.links }}
+          <li>
+            <a href={{ .link }}>{{ .text }}</a>
+          </li>
+        {{ end }}
+    </ul>
+    </div>
+
+    <p class="text-center py-8">
+      <span>&#169;</span>
+      <span>
+        {{ if eq .footer.copyright_start_date time.Now.Year }}
+          {{ .footer.copyright_start_date }} 
+        {{ else }}
+          {{ .footer.copyright_start_date }} - {{ time.Now.Year }}
+        {{ end }}
+      </span>
+      <span>{{ .footer.copyright_statement }}</span>
+    </p>
+  </div>
+</footer>
+{{ end }}
