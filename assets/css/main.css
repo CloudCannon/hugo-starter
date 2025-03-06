@@ -2,6 +2,7 @@
 @import "./_markdown.css";
 @import "./_header.css";
 @import "./_footer.css";
+@import "./_blog.css";
 
 @source "hugo_stats.json";
 
