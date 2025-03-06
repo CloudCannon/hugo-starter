@@ -20,14 +20,19 @@
     <link rel="stylesheet" href="{{ $scss.Permalink }}" />
     
     {{ partialCached "css.html" . }}
-    
+
+    <!-- Font Awesome icons -->
+    <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="/fontawesome/css/brands.min.css" rel="stylesheet" />
+    <link href="/fontawesome/css/solid.min.css" rel="stylesheet" />
+    <link href="/fontawesome/css/regular.min.css" rel="stylesheet" />
   </head>
 
   <body>
     <main>
       {{ partial "header.html" . }}
-      <!-- Render any additional page content below the page's content blocks -->
       {{ block "main" . }}{{ end }} 
+      <!-- Render any page body content below the page's content blocks -->
       {{ .Content }}
       {{ partial "footer.html" . }}
     </main>
