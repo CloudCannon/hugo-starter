@@ -271,3 +271,8 @@ _inputs:
     comment:
       When selected this removes the page from your sitemap and adds the noindex
       robots meta tag
+
+_snippets_imports:
+  hugo:
+    exclude:
+      - hugo_instagram
