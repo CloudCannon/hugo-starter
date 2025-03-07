@@ -151,6 +151,11 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
+  tags:
+    type: multiselect
+    options:
+      values: data.tags
+      empty_type: array
   background_color:
     type: select
     options:
