@@ -36,6 +36,7 @@
       "use"
     ],
     "classes": [
+      "404-page",
       "active",
       "blob",
       "blog-article-grid",
@@ -74,6 +75,7 @@
       "fa-youtube",
       "fab",
       "flex",
+      "footer",
       "footer-container",
       "footer-copyright",
       "footer-links",
@@ -102,6 +104,7 @@
       "md:order-1",
       "md:order-2",
       "my-5",
+      "not-found-page",
       "order-1",
       "order-2",
       "page-item",

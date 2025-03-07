@@ -1,0 +1,14 @@
+.not-found-page {
+  max-width: var(--pageContainer);
+  padding-inline: var(--pagePadding);
+  padding-block: 96px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.not-found-page a {
+  color: blue;
+  text-decoration: underline;
+}

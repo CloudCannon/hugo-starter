@@ -1,3 +1,6 @@
+.header {
+  margin-bottom: 48px;
+}
 .header__container {
   max-width: var(--pageContainer);
   margin: 0 auto;
