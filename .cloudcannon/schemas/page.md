@@ -1,6 +1,5 @@
 ---
 title:
-url: 
 seo:
   page_description: >-
     We believe that a good email marketing strategy is the key to growth. So
