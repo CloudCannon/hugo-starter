@@ -8,10 +8,10 @@
         src="{{ .image.image_path }}"
       />
       <div class="left-right__text order-1 md:order-2">
-        <h2 style="color: {{ .heading.color }};">
+        <h2 style="color: {{ .heading.text_color }};">
           {{ .heading.heading_text }}
         </h2>
-        <div class="markdown-text left-right__text-content" style="color: {{ .text.color }};">
+        <div class="markdown-text left-right__text-content" style="color: {{ .text.text_color }};">
           {{ .text.text_content | markdownify }}
         </div>
         {{ with .button }}
@@ -22,10 +22,10 @@
   {{ else }}
     <div class="left-right__wrapper">
       <div class="left-right__text">
-        <h2 style="color: {{ .heading.color }};">
+        <h2 style="color: {{ .heading.text_color }};">
           {{ .heading.heading_text }}
         </h2>
-        <div class="markdown-text left-right__text-content" style="color: {{ .text.color }};">
+        <div class="markdown-text left-right__text-content" style="color: {{ .text.text_color }};">
           {{ .text.text_content | markdownify }}
         </div>
         {{ with .button }}

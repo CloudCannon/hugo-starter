@@ -14,14 +14,15 @@ blueprint:
   background_color: '#ffffff'
   heading:
     heading_text: 
+    text_color: '#393939'
     heading_gradient_color: '#a0a2ff'
   subheading:
     text_content:
-    color: '#393939'
+    text_color: '#393939'
   image:
     image_path: 
     alt_text:
-  buttons: [bookshop:structure:buttons]
+  buttons: []
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -41,11 +42,7 @@ _inputs:
   subheading:
     options:
       preview:
-        icon: 'short_text'
-        text:
-          - Subheading
-        subtext:
-          - 'Update subheading content and color.'
+        icon: 'description'
   heading_gradient_color:
     type: select
     options:
@@ -66,3 +63,7 @@ _inputs:
           - 'Update image'
         image:
           - key: image_path
+  buttons:
+    type: array
+    options:
+      structures: _structures.buttons

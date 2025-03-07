@@ -4,7 +4,7 @@ spec:
     - buttons
   label: Button
   description: "Outline & transparent bg"
-  icon: "button"
+  icon: "smart_button"
   tags: ['button']
 
 # Defines the structure of this component, as well as the default values
@@ -21,6 +21,4 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  path:
-    type: url
 

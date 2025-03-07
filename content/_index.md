@@ -17,13 +17,14 @@ content_blocks:
     background_color: "#ffffff"
     heading:
       heading_text: CloudCannon Hugo Starter
+      text_color: '#393939'
       heading_gradient_color: "#a0a2ff"
     subheading:
       text_content: >-
         A starting point for **developers looking to build a website with Hugo,
         using Bookshop components in CloudCannon**. Create your own copy, and
         start creating your own components to use in the CloudCannon CMS.
-      color: "#393939"
+      text_color: "#393939"
     image:
       image_path: /images/blog/featured-image-5.jpg
       alt_text: An image
@@ -46,7 +47,7 @@ content_blocks:
     flipped: true
     heading:
       heading_text: Keep what you need. Delete the rest.
-      color: "#393939"
+      text_color: "#393939"
     text:
       text_content: >-
         To help save you time, some features are set up in this template, like:
@@ -72,7 +73,7 @@ content_blocks:
         - CloudCannon configuration
 
         - CSS variables
-      color: "#393939"
+      text_color: "#393939"
     image:
       image_path: /images/transparent-bg/undraw-hello.svg
       alt_text: An image
