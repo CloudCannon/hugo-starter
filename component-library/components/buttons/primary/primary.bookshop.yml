@@ -13,9 +13,9 @@ blueprint:
   button_text:
   button_icon:
   button_link: 
-  background_color: "#f1f1f1"
+  background_color: "#034AD8"
   hover_brightness: 0.85
-  text_color: "#000000"
+  text_color: "#ffffff"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
