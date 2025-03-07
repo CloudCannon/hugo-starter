@@ -16,7 +16,7 @@ blueprint:
   bg_image:
   heading:
   text:
-  button: bookshop:global/button
+  button: bookshop:structure:buttons
   image:
   image_alt:
 
