@@ -187,6 +187,10 @@ _inputs:
     type: select
     options:
       values: data.icons
+      value_key: icon_code
+      preview:
+        text:
+          - key: name
   button_link:
     type: url
   hover_brightness:

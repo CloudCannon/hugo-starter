@@ -10,7 +10,6 @@
   margin-inline: auto;
   overflow: hidden;
 }
-
 .content h1 {
   font-size: 2.5rem;
   line-height: 1em;
@@ -18,16 +17,13 @@
   text-wrap: balance;
   padding-block: 1rem;
 }
-
 .content {
   display: flex;
   flex-direction: column;
 }
-
 .subheading-text {
   margin-block: 1rem;
 }
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -45,7 +41,6 @@ button {
   align-items: center;
   justify-content: center;
 }
-
 .blob {
   width: 100%;
   display: flex;
@@ -61,7 +56,6 @@ button {
   animation: animate 10s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
-
 @media only screen and (min-width: 400px) {
   .buttons {
     flex-direction: row;
@@ -79,7 +73,6 @@ button {
   .content {
     width: 45%;
   }
-
   .blob {
     width: 45%;
   }
@@ -92,7 +85,6 @@ button {
     flex-direction: row;
   }
 }
-
 @keyframes animate {
   0%,
   100% {
