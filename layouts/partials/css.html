@@ -1,10 +1,6 @@
 {{ with (templates.Defer (dict "key" "global")) }}
   {{ with resources.Get "css/main.css" }}
-    {{ $opts := dict
-      "minify" hugo.IsProduction
-      "inlineImports" true
-    }}
-    {{ with . | css.TailwindCSS $opts }}
+    {{ with . | css.TailwindCSS }}
       <link rel="stylesheet" href="{{ .RelPermalink }}">
     {{ end }}
   {{ end }}
