@@ -1,7 +1,7 @@
 ---
 date: 2022-04-14T00:00:00Z
 title: 7 things you didn't know about email
-categories:
+tags:
   - Marketing
 author: Miyah Kelley
 thumb_image:

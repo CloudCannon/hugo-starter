@@ -9,14 +9,14 @@
           </a>
         </div>
         <div>
-          <div class="blog-post-categories">
-            {{ range .Params.categories }} 
-              {{ $href := print (absURL "categories/") (urlize .) }}
+          <div class="blog-post-tags">
+            {{ range .Params.tags }} 
+              {{ $href := print (absURL "tags/") (urlize .) }}
               <a href="{{ $href }}">{{ . | humanize }}</a>
             {{ end }}
           </div>
           <h2 class="blog-post-title">
-            <a href="{{ .RelPermalink }}" class="">{{.Title}}</a>
+            <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>
           </h2>
         </div>
       </div>

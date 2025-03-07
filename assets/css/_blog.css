@@ -47,10 +47,10 @@
   font-size: 1.5rem;
   margin-block: 1rem;
 }
-.blog-post-categories {
+.blog-post-tags {
   margin-top: 1rem;
 }
-.blog-post-categories a {
+.blog-post-tags a {
   background: #f1f1f1;
   border-radius: 6px;
   padding: 4px 10px;

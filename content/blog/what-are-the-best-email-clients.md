@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07T00:00:00Z
 title: What are the best email clients?
-categories:
+tags:
   - Marketing
 author: Wendy Parkes
 thumb_image:

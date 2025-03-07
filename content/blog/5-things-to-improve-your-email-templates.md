@@ -9,7 +9,7 @@ seo:
   author_twitter_handle:
   open_graph_type:
   no_index: false
-categories:
+tags:
   - Marketing
 author: Aaron Britt
 thumb_image:

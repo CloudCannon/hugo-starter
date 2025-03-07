@@ -31,9 +31,9 @@
         <img class="blog-related-post-thumb" src="{{ .Params.thumb_image.image_path }}" alt="{{ .Params.thumb_image.alt_text }}" />
       </a>
       <div class="blog-related-post-content">
-        <div class="blog-post-categories">
-          {{ range .Params.categories }} 
-            {{ $href := print (absURL "categories/") (urlize .) }}
+        <div class="blog-post-tags">
+          {{ range .Params.tags }} 
+            {{ $href := print (absURL "tags/") (urlize .) }}
             <a href="{{ $href }}">{{ . | humanize }}</a>
           {{ end }}
         </div>

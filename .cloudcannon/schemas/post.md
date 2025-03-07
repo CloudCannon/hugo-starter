@@ -8,7 +8,7 @@ seo:
   author_twitter_handle:
   open_graph_type: article
   no_index: false
-categories: []
+tags: []
 author: 
 thumb_image:
   image_path: 
