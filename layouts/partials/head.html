@@ -1,0 +1,93 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=5"
+  />
+  <!-- Page description for SEO -->
+  {{ if .Params.seo.page_description }}
+    <meta name="description" content="{{ .Params.seo.page_description }}">
+    <meta property="og:description" content="{{ .Params.seo.page_description }}" />
+  {{ else }}
+    <meta name="description" content="{{ site.Data.seo.description }}">
+    <meta property="og:description" content="{{ site.Data.seo.description }}" />
+  {{ end }}
+
+  <!-- Meta tags for open graph -->
+  {{ if eq .Permalink "/" }}
+    <meta property="og:type" content="website" />
+    <meta name="og:image" content="{{ site.Data.seo.image }}" />
+  {{ else }}
+    {{ with .Params.seo.open_graph_type }}
+      <meta property="og:type" content="{{ . }}" />
+    {{ else }}
+      <meta property="og:type" content="website" />
+    {{ end }}
+    {{ with .Params.seo.featured_image }}
+      <meta name="og:image" content="{{ . }}" />
+    {{ else }}
+      <meta name="og:image" content="{{ site.Data.seo.image }}" />
+    {{ end }}
+  {{ end }}
+
+  <!-- Add robots no index -->
+  {{ if .Params.seo.no_index }}
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+  {{ end }}
+
+  <!-- Canonical URL for SEO -->
+  {{ with .Params.seo.canonical_url }}
+    <link rel="canonical" href="{{ site.Data.seo.base_url }}{{ . | absURL }}" />
+  {{ else }}
+    <link rel="canonical" href="{{ site.Data.seo.base_url }}{{ .RelPermalink }}" />  
+  {{ end }}
+
+
+  {{ if .Page.IsHome }}
+    {{ if .Page.Title }} 
+      <title>{{ .Page.Title }}</title>
+      <meta name="og:title" content="{{ .Page.Title }}" />
+    {{ else if site.Data.title }}
+      <title>{{ site.Data.title }}</title>
+      <meta name="og:title" content="{{ site.Data.title }}" />
+    {{ else }}
+      <title>Home</title>
+      <meta name="og:title" content="Home" />
+    {{ end }}
+  {{ else }}
+    {{ if and .Page.Title site.Data.title }}
+      <title>{{ print .Page.Title " | " site.Data.title }}</title>
+      <meta name="og:title" content="{{ print .Page.Title " | " site.Data.title }}" />
+    {{ else if .Page.Title }}
+      <title>{{ .Page.Title }}</title>
+      <meta name="og:title" content="{{ .Page.Title }}" />
+    {{ else if site.Data.title }}
+      <title>{{ site.Data.title }}</title>
+      <meta name="og:title" content="{{ site.Data.title }}" />
+    {{ end }}
+  {{ end }}
+
+  <!-- AlpineJS -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js">
+  </script>
+
+  <!-- The bookshop_scss partial returns a slice of all SCSS resources from your Bookshop -->
+  {{ $bookshop_scss_files := partial "bookshop_scss" . }}
+  <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
+  {{ $scss := $bookshop_scss_files | resources.Concat "css/bookshop.css" | css.Sass | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $scss.Permalink }}" />
+  
+  <!-- Tailwind and custom styles in assets/css/ -->
+  {{ partialCached "css.html" . }}
+
+  <!-- Font Awesome icons -->
+  <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/brands.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/regular.min.css" rel="stylesheet" />
+  <link href="/css/custom-icons.css" rel="stylesheet" />
+</head>

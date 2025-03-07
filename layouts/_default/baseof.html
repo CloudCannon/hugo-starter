@@ -1,34 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CloudCannon Hugo Starter</title>
-
-    <!-- AlpineJS -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js">
-    </script>
-
-    <!-- The bookshop_scss partial returns a slice of all SCSS resources from your Bookshop -->
-    {{ $bookshop_scss_files := partial "bookshop_scss" . }}
-    <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
-    {{ $scss := $bookshop_scss_files | resources.Concat "css/bookshop.css" | css.Sass | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $scss.Permalink }}" />
-    
-    <!-- Tailwind and custom styles in assets/css/ -->
-    {{ partialCached "css.html" . }}
-
-    <!-- Font Awesome icons -->
-    <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
-    <link href="/fontawesome/css/brands.min.css" rel="stylesheet" />
-    <link href="/fontawesome/css/solid.min.css" rel="stylesheet" />
-    <link href="/fontawesome/css/regular.min.css" rel="stylesheet" />
-    <link href="/css/custom-icons.css" rel="stylesheet" />
-  </head>
-
+  {{ partial "head.html" . }}
   <body>
     <main>
       {{ partial "header.html" . }}
