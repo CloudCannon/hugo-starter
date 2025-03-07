@@ -25,7 +25,14 @@ When you send an email campaign, you expect it to reach your readers, right? But
 {{< figure src="/images/blog/blog-thumb-6.jpg" title="Laptops" alt="Four people working together around a table." caption="An image caption" >}}
 
 {{< alert alert_message="Helloooooo" color="#ff0000" background_color="#000000" icon="fas fa-bell" >}}
-{{< accordion summary="A dropdown accordion" >}}This is **some** markdown{{< /accordion>}}
+
+{{< accordion summary="A dropdown accordion" >}}This is **some** markdown
+
+1. A numbered list
+2. Another list item
+   1. Woo a sup list
+   2. A friend for the sub list
+3. Lets go{{< /accordion >}}
 
 ### Use an ESP
 
