@@ -22,7 +22,10 @@ draft: false
 ---
 When you send an email campaign, you expect it to reach your readers, right? But what if the emails go straight to your subscribers' spam folders instead of their inboxes? To make sure your emails reach their recipients successfully, follow these email delivery tips.
 
-{{< figure src="/images/blog/blog-thumb-6.jpg" title="Laptops" alt="Four people working together around a table." caption="An image caption" attr="Unsplash" >}}
+{{< figure src="/images/blog/blog-thumb-6.jpg" title="Laptops" alt="Four people working together around a table." caption="An image caption" >}}
+
+{{< alert alert_message="Helloooooo" color="#ff0000" background_color="#000000" icon="fas fa-bell" >}}
+{{< accordion summary="A dropdown accordion" >}}This is **some** markdown{{< /accordion>}}
 
 ### Use an ESP
 

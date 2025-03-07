@@ -282,3 +282,96 @@ _snippets_imports:
       - hugo_figure
       - hugo_vimeo
       - hugo_youtube
+
+_snippets:
+  alert:
+    template: hugo_shortcode_named_args
+    inline: false
+    preview:
+      icon: announcement
+      text: Alert
+      subtext:
+        - key: alert_message
+        - Update alert content and styles
+    definitions:
+      component_name: alert
+      named_args:
+        - editor_key: background_color
+          source_key: background_color
+          type: string
+        - editor_key: alert_message
+          source_key: alert_message
+          type: string
+        - editor_key: color
+          source_key: color
+          type: string
+        - editor_key: icon
+          source_key: icon
+          type: string
+    _inputs:
+      background_color:
+        type: select
+        options:
+          values: data.colors
+          value_key: value
+          preview:
+            text:
+              - key: name
+      icon:
+        type: select
+        options:
+          values: data.icons
+          value_key: icon_code
+          preview:
+            text:
+              - key: name
+      color:
+        type: select
+        options:
+          values: data.colors
+          value_key: value
+          preview:
+            text:
+              - key: name
+      alert_message:
+        comment: The text displayed in the alert.
+        type: textarea
+  accordion:
+    template: hugo_paired_shortcode_named_args
+    inline: false
+    preview:
+      text:
+        - key: summary 
+        - Accordion
+      subtext:
+        - key: inner_text
+      icon: info
+    definitions:
+      shortcode_name: accordion
+      content_key: inner_text
+      positional_args:
+        - editor_key: summary
+          type: string
+    _inputs:
+      summary:
+        type: text
+      inner_text:
+        type: markdown
+        options:
+          blockquote: true
+          bold: true
+          format: p
+          italic: true
+          strike: true
+          subscript: true
+          superscript: true
+          underline: true
+          link: true
+          bulletedlist: true
+          indent: true
+          numberedlist: true
+          outdent: true
+          undo: true
+          redo: true
+          removeformat: true
+          copyformatting: true
