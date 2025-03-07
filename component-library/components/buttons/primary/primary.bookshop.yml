@@ -2,10 +2,11 @@
 spec:
   structures:
     - buttons
-  label: Button
+  label: Primary Button
   description: "Solid bg color"
   icon: "smart_button"
-  tags: ['button']
+  tags:
+    - Solid background
 
 # Defines the structure of this component, as well as the default values
 blueprint:

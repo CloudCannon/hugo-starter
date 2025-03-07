@@ -2,10 +2,12 @@
 spec:
   structures:
     - buttons
-  label: Button
+  label: Secondary Button
   description: "Outline & transparent bg"
   icon: "smart_button"
-  tags: ['button']
+  tags:
+    - Outline
+    - Transparent background
 
 # Defines the structure of this component, as well as the default values
 blueprint:

@@ -216,12 +216,8 @@ _inputs:
   page_size:
     type: number
     comment: The number of collection items to list per page
-  featured_posts:
-    type: object
-    options:
-      preview:
-        icon: newspaper
-        text: Featured Posts
+  draft:
+    type: switch
   social:
     type: object
     options:

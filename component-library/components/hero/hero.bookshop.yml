@@ -3,11 +3,13 @@ spec:
   structures:
     - content_blocks
   label: Hero
-  description: Hero block with heading, text & a colored button.
+  description: Heading, text, image & colored buttons.
   icon: "cottage"
   tags:
+    - Heading
     - Text
-    - Button
+    - Image
+    - Buttons
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -37,8 +39,7 @@ _inputs:
           - key: heading_text
           - Heading
         subtext:
-          - key: heading_gradient_color
-          - 'Update heading gradient color and text content.'
+          - 'Update heading text and color'
   subheading:
     options:
       preview:
