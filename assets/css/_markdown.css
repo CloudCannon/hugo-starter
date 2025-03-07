@@ -114,6 +114,12 @@
   margin-block: 1.5rem;
   padding: 1rem;
 }
+.markdown-text details summary {
+  padding-bottom: 1rem;
+}
+.markdown-text details {
+  padding-block: 1.5rem;
+}
 
 figure figcaption {
   text-align: center;
