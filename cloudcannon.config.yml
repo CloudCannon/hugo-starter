@@ -273,7 +273,4 @@ _inputs:
       robots meta tag
 
 _snippets_imports:
-  hugo:
-    include:
-      - hugo_youtube
-      - hugo_vimeo
+  hugo: true
