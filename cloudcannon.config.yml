@@ -40,11 +40,13 @@ collections_config:
       default:
         path: '.cloudcannon/schemas/post.md'
     _enabled_editors:
-      - content
       - visual
+      - content
   data:
     path: data
     disable_url: true
+    glob:
+      - '!icons.yml'
     icon: analytics
     _inputs:
       value:
@@ -97,6 +99,40 @@ file_config:
         comment: Set the tags available in posts.
       $[*]:
         type: text
+  - glob: data/nav.yml
+    _inputs:
+      header:
+        type: object
+        options:
+          preview:
+            icon: menu
+            text: Header details
+            subtext: Update logo, colors, and links.
+      footer:
+        type: object
+        options:
+          preview:
+            icon: menu
+            text: Footer details
+            subtext: Update logo, colors, socials, copyright, and links.
+  - glob: data/seo.yml
+    _inputs:
+      header:
+        type: object
+        options:
+          preview:
+            icon: menu
+            text: Header details
+            subtext: Update logo, colors, and links.
+      footer:
+        type: object
+        options:
+          preview:
+            icon: menu
+            text: Footer details
+            subtext: Update logo, colors, socials, copyright, and links.
+      default_author:
+        comment: Used as author for blog posts that don't have an author defined on the page.
 
 _editables:
   content:

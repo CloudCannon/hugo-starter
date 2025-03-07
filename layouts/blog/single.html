@@ -12,7 +12,11 @@
       <div class="blog-details">
         <ul>
           <li>{{ .Date | time.Format ":date_long" }}</li>
-          <li>{{ .Params.author }}</li>
+          {{ with .Params.author }}
+            <li>{{ .Params.author }}</li>
+          {{ else with site.Data.seo.default_author }}
+            <li>{{ site.Data.seo.default_author  }}</li>
+          {{ end }}
         </ul>
       </div>
     </div>

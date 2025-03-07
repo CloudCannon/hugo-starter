@@ -2,3 +2,4 @@ title: CloudCannon Hugo Starter
 description: A starting point for developers looking to build a website with Hugo, using Bookshop components in CloudCannon.
 image:
 base_url:
+default_author:
