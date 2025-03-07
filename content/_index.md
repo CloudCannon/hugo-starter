@@ -1,11 +1,9 @@
 ---
 _schema: default
-title:
+title: CloudCannon Hugo Starter
 seo:
   page_description: >-
-    We believe that a good email marketing strategy is the key to growth. So
-    we’re helping you grow your business with tools and resources that make
-    email marketing easy.
+    A starting point for developers looking to build a website with Hugo, using Bookshop components in CloudCannon.
   canonical_url:
   featured_image:
   featured_image_alt:

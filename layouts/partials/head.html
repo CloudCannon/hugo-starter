@@ -49,23 +49,23 @@
     {{ if .Page.Title }} 
       <title>{{ .Page.Title }}</title>
       <meta name="og:title" content="{{ .Page.Title }}" />
-    {{ else if site.Data.title }}
-      <title>{{ site.Data.title }}</title>
-      <meta name="og:title" content="{{ site.Data.title }}" />
+    {{ else if site.Data.seo.title }}
+      <title>{{ site.Data.seo.title }}</title>
+      <meta name="og:title" content="{{ site.Data.seo.title }}" />
     {{ else }}
       <title>Home</title>
       <meta name="og:title" content="Home" />
     {{ end }}
   {{ else }}
-    {{ if and .Page.Title site.Data.title }}
-      <title>{{ print .Page.Title " | " site.Data.title }}</title>
-      <meta name="og:title" content="{{ print .Page.Title " | " site.Data.title }}" />
+    {{ if and .Page.Title site.Data.seo.title }}
+      <title>{{ print .Page.Title " | " site.Data.seo.title }}</title>
+      <meta name="og:title" content="{{ print .Page.Title " | " site.Data.seo.title }}" />
     {{ else if .Page.Title }}
       <title>{{ .Page.Title }}</title>
       <meta name="og:title" content="{{ .Page.Title }}" />
-    {{ else if site.Data.title }}
-      <title>{{ site.Data.title }}</title>
-      <meta name="og:title" content="{{ site.Data.title }}" />
+    {{ else if site.Data.seo.title }}
+      <title>{{ site.Data.seo.title }}</title>
+      <meta name="og:title" content="{{ site.Data.seo.title }}" />
     {{ end }}
   {{ end }}
 
