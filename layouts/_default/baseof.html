@@ -34,8 +34,6 @@
     <main>
       {{ partial "header.html" . }}
       {{ block "main" . }}{{ end }} 
-      <!-- Render any page body content below the page's content blocks -->
-      {{ .Content }}
       {{ partial "footer.html" . }}
     </main>
   </body>

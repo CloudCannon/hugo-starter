@@ -21,6 +21,8 @@
   line-height: 1em;
   font-weight: 600;
   text-wrap: balance;
+  max-width: 620px;
+  margin-block: 30px;
 }
 
 .left-right__text-content {
@@ -30,6 +32,7 @@
 .left-right__wrapper img {
   width: 100%;
   max-width: 500px;
+  margin-top: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -39,7 +42,7 @@
     padding-block: 48px;
   }
   .left-right__wrapper img {
-    width: 50%;
+    width: 45%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -47,13 +50,4 @@
     padding-block: 48px;
     gap: 10rem;
   }
-}
-
-.left-right__wrapper img {
-  margin-top: 32px;
-}
-
-h2 {
-  max-width: 620px;
-  margin-block: 30px;
 }

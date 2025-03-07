@@ -3,6 +3,7 @@
 @import "./_header.css";
 @import "./_footer.css";
 @import "./_blog.css";
+@import "./_post.css";
 
 @source "hugo_stats.json";
 
