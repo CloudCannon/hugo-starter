@@ -10,3 +10,4 @@ bookshop-hosted.js
 bookshop.css
 _gen
 .hugo_build.lock
+.env
