@@ -26,6 +26,8 @@
     {{ end }}
     {{ with .Params.seo.featured_image }}
       <meta name="og:image" content="{{ . }}" />
+    {{ else with .Params.featured_image.image_path }}
+      <meta name="og:image" content="{{. }}" />
     {{ else }}
       <meta name="og:image" content="{{ site.Data.seo.image }}" />
     {{ end }}

@@ -13,9 +13,9 @@
         <ul>
           <li>{{ .Date | time.Format ":date_long" }}</li>
           {{ with .Params.author }}
-            <li>{{ .Params.author }}</li>
+            <li>{{ . }}</li>
           {{ else with site.Data.seo.default_author }}
-            <li>{{ site.Data.seo.default_author  }}</li>
+            <li>{{ . }}</li>
           {{ end }}
         </ul>
       </div>
