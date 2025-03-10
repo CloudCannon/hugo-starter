@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/CloudCannon/hugo-bookshop-starter#readme",
   "devDependencies": {
-    "@bookshop/browser": "3.14.0",
     "@bookshop/generate": "3.14.0",
     "@bookshop/hugo-engine": "3.14.0",
     "@tailwindcss/cli": "^4.0.9",
