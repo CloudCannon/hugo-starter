@@ -2,24 +2,7 @@
 
 <section>
   <article class="blog-post">
-    <img
-      class="blog-hero-image"
-      src="{{ .Params.featured_image.image_path }}"
-      alt="{{  .Params.featured_image.alt_text }}"
-    />
-    <div></div>
-      <h2 class="blog-title">{{ .Params.title }}</h2>
-      <div class="blog-details">
-        <ul>
-          <li>{{ .Date | time.Format ":date_long" }}</li>
-          {{ with .Params.author }}
-            <li>{{ . }}</li>
-          {{ else with site.Data.seo.default_author }}
-            <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
+    {{ partial "bookshop" (slice "blog/hero" .) }}
     <div data-cms-edit="content" class="markdown-text">
       {{ .Content }}
     </div>

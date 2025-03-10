@@ -1,0 +1,18 @@
+<div class="c-blog-hero">
+  <img
+      class="blog-hero-image"
+      src="{{ .Params.featured_image.image_path }}"
+      alt="{{  .Params.featured_image.alt_text }}"
+    />
+    <h2 class="blog-title">{{ .Params.title }}</h2>
+    <div class="blog-details">
+      <ul>
+        <li>{{ .Date | time.Format ":date_long" }}</li>
+        {{ with .Params.author }}
+          <li>{{ . }}</li>
+        {{ else with site.Data.seo.default_author }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+</div>
