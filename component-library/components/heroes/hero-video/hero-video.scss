@@ -20,7 +20,6 @@
 }
 .hero-video-filter {
   z-index: 1;
-  backdrop-filter: brightness(0.75) blur(2px);
 }
 .hero-video-container {
   max-width: var(--pageContainer);
@@ -65,14 +64,6 @@
   max-width: fit-content;
   justify-content: center;
   margin-top: 1rem;
-}
-.hero-video-buttons button {
-  padding: 0.75rem 1.2rem;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all ease-in-out 0.15s;
-  align-items: center;
-  justify-content: center;
 }
 
 @media only screen and (min-width: 640px) {

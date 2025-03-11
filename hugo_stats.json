@@ -24,7 +24,6 @@
       "li",
       "link",
       "main",
-      "marquee",
       "mask",
       "meta",
       "nav",
@@ -47,7 +46,6 @@
     "classes": [
       "!mb-0",
       "active",
-      "blob",
       "blog-article-grid",
       "blog-details",
       "blog-hero-image",
@@ -67,9 +65,7 @@
       "button",
       "button__icon",
       "button__link",
-      "buttons",
       "c-blog-hero",
-      "content",
       "custom-icon-cloudcannon",
       "fa-bell",
       "fa-facebook",
@@ -98,8 +94,6 @@
       "header__nav-item",
       "header__nav-link",
       "header__nav-links",
-      "heading",
-      "hero-container",
       "hero-video",
       "hero-video-buttons",
       "hero-video-container",
@@ -128,7 +122,6 @@
       "rounded-lg",
       "shadow-md",
       "sm:justify-start",
-      "subheading-text",
       "w-[1rem]"
     ],
     "ids": [

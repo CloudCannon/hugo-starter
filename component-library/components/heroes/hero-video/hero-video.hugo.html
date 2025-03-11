@@ -1,9 +1,11 @@
 <section class="hero-video">
   <div class="hero-video-container">
-    <div class="hero-video-filter">
+    <div class="hero-video-filter" style="backdrop-filter: brightness({{ .background_filters.brightness }}) blur({{ .background_filters.blur }}px);">
     </div>
-    <video playsinline autoplay muted loop poster="" id="">
-      <source src="/videos/nz-coast.mp4" type="video/mp4">
+    <video playsinline autoplay muted loop poster="{{ .video.poster_image }}">
+      {{ $video_ext_arr := split .video.video_path "." }}
+      {{ $video_ext := index $video_ext_arr 1 }}
+      <source src="{{ .video.video_path }}" type="video/{{ $video_ext }}">
     </video>
     <div class="hero-video-content">
       <h1 class="hero-video-heading" style="color: {{ .heading.text_color }};">

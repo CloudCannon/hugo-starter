@@ -12,37 +12,89 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  header_text_color_override:
   heading:
-    heading_text: CloudCannon Hugo Starter
+    heading_text: 
     text_color: '#ffffff'
   subheading:
-    text_content: >-
-      A starting point for **developers looking to build a website with Hugo,
-      using Bookshop components in CloudCannon**. Create your own copy, and
-      start creating your own components to use in the CloudCannon CMS.
+    text_content: 
     text_color: '#ffffff'
-  image:
-    image_path: /images/blog/featured-image-5.jpg
-    alt_text: An image
+  video:
+    video_path: /videos/nz-coast.mp4
+    poster_image: 
+  header_text_color_override:
+  header_hover_text_color_override:
+  background_filters:
+    brightness: 0.5
+    blur: 1
   buttons:
     - _bookshop_name: buttons/primary
-      button_text: GitHub
-      button_icon: fab fa-github
-      button_link: https://github.com/CloudCannon/hugo-starter/
+      button_text: 
+      button_icon: 
+      button_link: 
       background_color: '#034ad8'
       hover_brightness: 0.85
       text_color: '#ffffff'
-    - _bookshop_name: buttons/secondary
-      button_text: CloudCannon
-      button_icon: custom-icon-cloudcannon
-      button_link: https://www.cloudcannon.com
-      background_color: '#034AD8'
-      hover_brightness: 0.85
-      text_color: '#034AD8'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  header_text_color_override:
+    type: color
+    comment: Updates the header text color for this page if set. Will not take effect until the next site save & build.
+  header_hover_text_color_override:
+    type: color
+    comment: Updates the header hover text color for this page if set. Will not take effect until the next site save & build.
+  background_filters:
+    type: object
+    options:
+      preview:
+        icon: exposure
+  brightness:
+    type: range
+    options:
+      min: 0
+      max: 2
+      step: 0.1
+  blur:
+    type: range
+    options:
+      min: 0
+      max: 10
+      step: 0.5
+  buttons:
+    type: array
+    options:
+      structures: _structures.buttons
+  heading:
+    options:
+      preview:
+        icon: 'short_text'
+        text:
+          - key: heading_text
+          - Heading
+        subtext:
+          - 'Update heading text and color'
+  subheading:
+    options:
+      preview:
+        icon: 'description'
+  video:
+    options:
+      preview:
+        icon: 'duo'
+        text:
+          - 'Background Video'
+        subtext:
+          - key: video_path
+          - 'Select a video'
+  video_path:
+    type: file
+    options:
+      paths:
+        static: static
+        uploads: 'static/videos'
+  poster_image:
+    type: image
+    comment: Specifies an image to be shown while the video is downloading.

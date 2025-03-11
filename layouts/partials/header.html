@@ -9,6 +9,20 @@
     style="background-color: {{ .header.background_color }}; color: {{ .header.text_color }};"
   {{ end }}
   >
+  {{ if $.Params.hero_block.header_hover_text_color_override }}
+    <style>
+      .header__nav-link:hover {
+        color: {{ $.Params.hero_block.header_hover_text_color_override }}
+      }
+    </style>
+  {{ else }}
+    <style>
+      .header__nav-link:hover {
+        color: {{ .header.text_hover_color }}
+      }
+    </style>
+  {{ end }}
+  
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo-link" href="{{ .header.logo_url }}">

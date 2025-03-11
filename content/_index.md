@@ -12,7 +12,7 @@ seo:
   no_index: false
 hero_block:
   _bookshop_name: heroes/hero-video
-  header_text_color_override: '#ffffff'
+
   heading:
     heading_text: CloudCannon Hugo Starter
     text_color: '#ffffff'
@@ -22,9 +22,14 @@ hero_block:
       using Bookshop components in CloudCannon**. Create your own copy, and
       start creating your own components to use in the CloudCannon CMS.
     text_color: '#ffffff'
-  image:
-    image_path: /images/blog/featured-image-5.jpg
-    alt_text: An image
+  video:
+    video_path: /videos/nz-coast.mp4
+    poster_image: 
+  header_text_color_override: '#ffffff'
+  header_hover_text_color_override: '#F1F1F1'
+  background_filters:
+    brightness: 0.5
+    blur: 1
   buttons:
     - _bookshop_name: buttons/primary
       button_text: GitHub
@@ -37,9 +42,9 @@ hero_block:
       button_text: CloudCannon
       button_icon: custom-icon-cloudcannon
       button_link: https://www.cloudcannon.com
-      background_color: '#034AD8'
+      background_color: '#ffffff'
       hover_brightness: 0.85
-      text_color: '#034AD8'
+      text_color: '#ffffff'
 content_blocks:
   - _bookshop_name: left-right
     background_color: '#ffffff'
