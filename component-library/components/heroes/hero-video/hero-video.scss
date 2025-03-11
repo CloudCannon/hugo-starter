@@ -49,6 +49,7 @@
 .hero-video-content h1 {
   font-size: 3rem;
   font-weight: 600;
+  text-wrap: balance;
 }
 
 .hero-video-subheading-text {
@@ -56,6 +57,7 @@
   font-size: 1.125rem;
   line-height: 1.75rem !important;
   max-width: 72ch;
+  text-wrap: pretty;
 }
 .hero-video-buttons {
   display: flex;
