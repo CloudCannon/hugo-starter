@@ -167,6 +167,10 @@ _editables:
     snippet: true
 
 _inputs:
+  hero_block:
+    type: object
+    options:
+      structures: _structures.hero_blocks
   text_content:
     type: markdown
     options:

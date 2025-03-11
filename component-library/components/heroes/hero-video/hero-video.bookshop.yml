@@ -1,15 +1,45 @@
 # Metadata about this component, to be used in the CMS
 spec:
   structures:
-    - content_blocks
-  label: "Heroes Hero-video"
-  description:
-  icon:
-  tags: []
+    - hero_blocks
+  label: "Hero - Video background"
+  description: Text over video bg
+  icon: duo
+  tags:
+    - Heading
+    - Video
+    - Buttons
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  header_text_color_override:
+  heading:
+    heading_text: CloudCannon Hugo Starter
+    text_color: '#ffffff'
+  subheading:
+    text_content: >-
+      A starting point for **developers looking to build a website with Hugo,
+      using Bookshop components in CloudCannon**. Create your own copy, and
+      start creating your own components to use in the CloudCannon CMS.
+    text_color: '#ffffff'
+  image:
+    image_path: /images/blog/featured-image-5.jpg
+    alt_text: An image
+  buttons:
+    - _bookshop_name: buttons/primary
+      button_text: GitHub
+      button_icon: fab fa-github
+      button_link: https://github.com/CloudCannon/hugo-starter/
+      background_color: '#034ad8'
+      hover_brightness: 0.85
+      text_color: '#ffffff'
+    - _bookshop_name: buttons/secondary
+      button_text: CloudCannon
+      button_icon: custom-icon-cloudcannon
+      button_link: https://www.cloudcannon.com
+      background_color: '#034AD8'
+      hover_brightness: 0.85
+      text_color: '#034AD8'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

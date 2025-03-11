@@ -12,7 +12,7 @@ seo:
   no_index: false
 hero_block:
   _bookshop_name: heroes/hero-video
-  header_text_color_override:
+  header_text_color_override: '#ffffff'
   heading:
     heading_text: CloudCannon Hugo Starter
     text_color: '#ffffff'
