@@ -11,3 +11,4 @@ bookshop.css
 _gen
 .hugo_build.lock
 .env
+.DS_Store

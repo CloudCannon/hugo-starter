@@ -20,8 +20,9 @@ blueprint:
     text_color: '#ffffff'
   video:
     video_path: /videos/nz-coast.mp4
-    poster_image: 
+    poster_image: /images/nz-coast-poster.png
   header_style_overrides:
+    background_color: transparent
     text_color: '#ffffff'
     hover_text_color: '#F1F1F1'
     alternate_logo: /images/logos/logo-wordmark-white.png
@@ -42,26 +43,27 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  header_text_color_override:
-    type: select
+  header_style_overrides:
+    type: object
+    comment: Specify header styles for just this page if set. Will not take effect until the next site save & build.
     options:
       values: data.colors
       value_key: value
       preview:
         text:
           - key: name
-    comment: Updates the header text color for this page if set. Will not take effect until the next site save & build.
-  header_hover_text_color_override:
+  hover_text_color:
     type: select
+    comment: Updates the header hover text color for this page if set.
     options:
       values: data.colors
       value_key: value
       preview:
         text:
           - key: name
-    comment: Updates the header hover text color for this page if set. Will not take effect until the next site save & build.
   background_filters:
     type: object
+    comment: Set brightness and blur filters over the background video to make the text content more legible.
     options:
       preview:
         icon: exposure
