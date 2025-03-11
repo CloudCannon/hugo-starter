@@ -1,13 +1,15 @@
 <section class="hero-video">
   <div class="hero-video-container">
+    <div class="hero-video-filter">
+    </div>
     <video playsinline autoplay muted loop poster="" id="">
       <source src="/videos/nz-coast.mp4" type="video/mp4">
     </video>
     <div class="hero-video-content">
-      <h1 class="hero-video-heading">
+      <h1 class="hero-video-heading" style="color: {{ .heading.text_color }};">
         {{ .heading.heading_text }}
       </h1>
-      <div class="markdown-text subheading-text" style="color: {{ .subheading.text_color }};">
+      <div class="markdown-text hero-video-subheading-text" style="color: {{ .subheading.text_color }};">
         {{ .subheading.text_content | markdownify }}
       </div>
       <div class="hero-video-buttons">

@@ -3,7 +3,12 @@
   class="header"
   x-data="{ open: false }"
   x-transition
-  style="background-color: {{  .header.background_color }}; color: {{ .header.text_color }};">
+  {{ if $.Params.hero_block.header_text_color_override }}
+    style="background-color: {{ .header.background_color }}; color: {{ $.Params.hero_block.header_text_color_override }};"
+  {{ else }}
+    style="background-color: {{ .header.background_color }}; color: {{ .header.text_color }};"
+  {{ end }}
+  >
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo-link" href="{{ .header.logo_url }}">

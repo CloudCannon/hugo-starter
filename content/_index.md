@@ -12,16 +12,16 @@ seo:
   no_index: false
 hero_block:
   _bookshop_name: heroes/hero-video
+  header_text_color_override:
   heading:
     heading_text: CloudCannon Hugo Starter
-    text_color: '#393939'
-    heading_gradient_color: '#a0a2ff'
+    text_color: '#ffffff'
   subheading:
     text_content: >-
       A starting point for **developers looking to build a website with Hugo,
       using Bookshop components in CloudCannon**. Create your own copy, and
       start creating your own components to use in the CloudCannon CMS.
-    text_color: '#393939'
+    text_color: '#ffffff'
   image:
     image_path: /images/blog/featured-image-5.jpg
     alt_text: An image
