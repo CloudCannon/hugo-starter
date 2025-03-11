@@ -2,7 +2,7 @@
 date: 2022-03-07T00:00:00Z
 title: Email delivery tips
 tags:
-  - Email
+  - email
 author: Gerard Hopper
 thumb_image:
   image_path: /images/blog/blog-thumb-1.jpg

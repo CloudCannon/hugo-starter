@@ -2,7 +2,7 @@
 date: 2022-03-07T00:00:00Z
 title: Best email sending services
 tags:
-  - Technology
+  - technology
 author: Wendy Parkes
 thumb_image:
   image_path: /images/blog/blog-thumb-3.jpg

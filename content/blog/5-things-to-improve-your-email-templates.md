@@ -10,7 +10,8 @@ seo:
   open_graph_type:
   no_index: false
 tags:
-  - Marketing
+  - marketing
+  - technology
 author: Aaron Britt
 thumb_image:
   image_path: /images/blog/blog-thumb-6.jpg

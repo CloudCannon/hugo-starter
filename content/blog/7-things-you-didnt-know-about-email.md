@@ -2,7 +2,7 @@
 date: 2022-04-14T00:00:00Z
 title: 7 things you didn't know about email
 tags:
-  - Marketing
+  - marketing
 author: Miyah Kelley
 thumb_image:
   image_path: /images/blog/blog-thumb-5.jpg
