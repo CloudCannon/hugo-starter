@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
 npx "@bookshop/generate"
+npx -y pagefind --site public

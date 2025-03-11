@@ -48,6 +48,8 @@
       "active",
       "blog-article-grid",
       "blog-details",
+      "blog-grid-image",
+      "blog-grid-item",
       "blog-hero-image",
       "blog-hero-title",
       "blog-pagination",
@@ -120,6 +122,7 @@
       "px-4",
       "py-2",
       "rounded-lg",
+      "search-bar",
       "shadow-md",
       "sm:justify-start",
       "w-[1rem]"
@@ -129,6 +132,7 @@
       "b",
       "double-opt-in",
       "keep-your-content-short-and-sweet",
+      "search",
       "send-your-best-email",
       "tracking",
       "use-an-esp"

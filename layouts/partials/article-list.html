@@ -1,24 +1,30 @@
 <section class="blog-section">
   <h1 class="blog-hero-title">{{ .context.Title }}</h1>
+  <div class="search-bar">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <div id="search"></div>
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+      });
+    </script>
+  </div>
   <div class="blog-article-grid">
     {{ range (.context.Paginator .page_size).Pages }}
-      <div>
-        <div>
-          <a href="{{ .RelPermalink }}">
-            <img src="{{ .Params.thumb_image.image_path }}" alt="blog-thumb" loading="lazy" />
-          </a>
+      <div class="blog-grid-item">
+        <a class="blog-grid-image" href="{{ .RelPermalink }}">
+          <img src="{{ .Params.thumb_image.image_path }}" alt="blog-thumb" loading="lazy" />
+        </a>
+        <div class="blog-post-tags">
+          {{ range .Params.tags }} 
+            {{ $href := print (absURL "tags/") (urlize .) }}
+            <a href="{{ $href }}">{{ . | humanize }}</a>
+          {{ end }}
         </div>
-        <div>
-          <div class="blog-post-tags">
-            {{ range .Params.tags }} 
-              {{ $href := print (absURL "tags/") (urlize .) }}
-              <a href="{{ $href }}">{{ . | humanize }}</a>
-            {{ end }}
-          </div>
-          <h2 class="blog-post-title">
-            <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>
-          </h2>
-        </div>
+        <h2 class="blog-post-title">
+          <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>
+        </h2>
       </div>
     {{ end }} 
   </div>
