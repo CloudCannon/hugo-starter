@@ -2,7 +2,7 @@
 spec:
   structures:
     - hero_blocks
-  label: "Hero - Video background"
+  label: "Hero - Video Background"
   description: Text over video bg
   icon: duo
   tags:
@@ -41,10 +41,22 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   header_text_color_override:
-    type: color
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name
     comment: Updates the header text color for this page if set. Will not take effect until the next site save & build.
   header_hover_text_color_override:
-    type: color
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name
     comment: Updates the header hover text color for this page if set. Will not take effect until the next site save & build.
   background_filters:
     type: object
@@ -56,13 +68,13 @@ _inputs:
     options:
       min: 0
       max: 2
-      step: 0.1
+      step: 0.025
   blur:
     type: range
     options:
       min: 0
       max: 10
-      step: 0.5
+      step: 0.25
   buttons:
     type: array
     options:
