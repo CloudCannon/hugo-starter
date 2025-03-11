@@ -1,0 +1,20 @@
+<section class="hero-video">
+  <div class="hero-video-container">
+    <video playsinline autoplay muted loop poster="" id="">
+      <source src="/videos/nz-coast.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-content">
+      <h1 class="hero-video-heading">
+        {{ .heading.heading_text }}
+      </h1>
+      <div class="markdown-text subheading-text" style="color: {{ .subheading.text_color }};">
+        {{ .subheading.text_content | markdownify }}
+      </div>
+      <div class="hero-video-buttons">
+        {{ range .buttons }}
+          {{ partial "bookshop" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

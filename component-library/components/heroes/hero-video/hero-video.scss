@@ -1,0 +1,35 @@
+.hero-video {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  top: calc((var(--headerHeight) + (var(--headerPadding) * 2)) * -1);
+  left: 0;
+}
+.hero-video video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.hero-video-container {
+  max-width: var(--pageContainer);
+  padding-inline: var(--pagePadding);
+  padding-block: calc(96px + var(--headerHeight));
+  margin: 0 auto;
+  height: 100%;
+}
+.hero-video-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 72ch;
+  height: 100%;
+  margin: 0 auto;
+}

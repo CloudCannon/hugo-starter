@@ -12,4 +12,6 @@
   --pageContainer: 1280px;
   --pagePadding: 32px;
   --sectionPadding: 48px;
+  --headerHeight: 64px;
+  --headerPadding: 16px;
 }

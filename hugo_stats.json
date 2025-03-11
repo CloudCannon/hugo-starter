@@ -24,7 +24,6 @@
       "li",
       "link",
       "main",
-      "marquee",
       "mask",
       "meta",
       "nav",
@@ -33,6 +32,7 @@
       "path",
       "script",
       "section",
+      "source",
       "span",
       "strong",
       "style",
@@ -40,7 +40,8 @@
       "svg",
       "title",
       "ul",
-      "use"
+      "use",
+      "video"
     ],
     "classes": [
       "!mb-0",
@@ -98,6 +99,11 @@
       "header__nav-links",
       "heading",
       "hero-container",
+      "hero-video",
+      "hero-video-buttons",
+      "hero-video-container",
+      "hero-video-content",
+      "hero-video-heading",
       "items-center",
       "justify-center",
       "left-right",
@@ -123,6 +129,7 @@
       "w-[1rem]"
     ],
     "ids": [
+      "",
       "a",
       "b",
       "double-opt-in",

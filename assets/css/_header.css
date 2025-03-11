@@ -1,6 +1,8 @@
 .header {
-  margin-bottom: 48px;
+  position: relative;
+  z-index: 99;
 }
+
 .header__container {
   max-width: var(--pageContainer);
   margin: 0 auto;
@@ -15,11 +17,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 1rem;
+  padding-block: var(--headerPadding);
 }
 
 .header__logo-image {
-  width: 200px;
+  width: auto;
+  height: calc(var(--headerHeight) - (var(--headerPadding) * 2));
 }
 
 .header__nav-links {
