@@ -3,16 +3,13 @@
   class="header"
   x-data="{ open: false }"
   x-transition
-  {{ if $.Params.hero_block.header_text_color_override }}
-    style="background-color: {{ .header.background_color }}; color: {{ $.Params.hero_block.header_text_color_override }};"
-  {{ else }}
-    style="background-color: {{ .header.background_color }}; color: {{ .header.text_color }};"
-  {{ end }}
-  >
-  {{ if $.Params.hero_block.header_hover_text_color_override }}
+  style="
+    {{ with $.Params.hero_block.header_style_overrides.background_color }}background-color: {{ . }};{{ end }}
+    {{ with $.Params.hero_block.header_style_overrides.text_color }}color: {{ . }};{{ end }}">
+  {{ with $.Params.hero_block.header_style_overrides.hover_text_color }}
     <style>
       .header__nav-link:hover {
-        color: {{ $.Params.hero_block.header_hover_text_color_override }}
+        color: {{ . }}
       }
     </style>
   {{ else }}
@@ -26,7 +23,11 @@
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo-link" href="{{ .header.logo_url }}">
-        <img class="header__logo-image" src="{{ .header.logo }}" alt="Logo" />
+        {{ with $.Params.hero_block.header_style_overrides.alternate_logo }}
+          <img class="header__logo-image" src="{{ . }}" alt="Logo" />
+        {{ else }}
+          <img class="header__logo-image" src="{{ .header.logo }}" alt="Logo" />
+        {{ end }}
       </a>
       <button class="hamburger" @click="open = ! open">
         <svg height="16" width="24" xmlns="http://www.w3.org/2000/svg">

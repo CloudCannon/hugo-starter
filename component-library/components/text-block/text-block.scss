@@ -1,0 +1,14 @@
+.text-block {
+}
+.text-block-container {
+  max-width: var(--pageContainer);
+  padding-inline: var(--pagePadding);
+  padding-block: var(--sectionPaddingMobile);
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 960px) {
+  .text-block-container {
+    padding-block: var(--sectionPadding);
+  }
+}

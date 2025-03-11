@@ -11,6 +11,8 @@
 :root {
   --pageContainer: 1280px;
   --pagePadding: 32px;
+  --sectionPadding: 96px;
+  --sectionPaddingMobile: 48px;
   --headerHeight: 64px;
   --headerPadding: 16px;
 }

@@ -25,8 +25,11 @@ hero_block:
   video:
     video_path: /videos/nz-coast.mp4
     poster_image: 
-  header_text_color_override: '#ffffff'
-  header_hover_text_color_override: '#F1F1F1'
+  header_style_overrides:
+    background_color: 'transparent'
+    text_color: '#ffffff'
+    hover_text_color: '#F1F1F1'
+    alternate_logo: /images/logos/logo-wordmark-white.png
   background_filters:
     brightness: 0.5
     blur: 1

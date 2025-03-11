@@ -8,7 +8,7 @@
   width: 100%;
   max-width: var(--pageContainer);
   padding-inline: var(--pagePadding);
-  padding-block: 24px;
+  padding-block: var(--sectionPaddingMobile);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
 @media only screen and (min-width: 768px) {
   .left-right__wrapper {
     flex-direction: row;
-    padding-block: 48px;
+    padding-block: var(--sectionPadding);
   }
   .left-right__wrapper img {
     width: 45%;

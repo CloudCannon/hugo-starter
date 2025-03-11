@@ -4,7 +4,7 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding-block: calc(96px + var(--headerHeight));
+  padding-block: calc(var(--sectionPaddingMobile) + var(--headerHeight));
   padding-inline: var(--pagePadding);
   max-width: var(--pageContainer);
   margin-inline: auto;
@@ -56,10 +56,14 @@
     font-size: 3.8rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding-block: calc(var(--sectionPadding) + var(--headerHeight));
+  }
+}
 @media only screen and (min-width: 960px) {
   .hero-container {
     flex-direction: row;
-    padding-block: 48px;
   }
   .content {
     width: 45%;
