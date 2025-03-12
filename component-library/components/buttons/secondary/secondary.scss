@@ -1,11 +1,12 @@
-.button {
+.secondary-button {
   cursor: pointer;
   border: none;
   border-radius: 8px;
   padding: 0;
+  max-width: max-content;
 }
 
-.button a {
+.secondary-button div {
   background: transparent;
   display: flex;
   align-items: center;
@@ -15,7 +16,7 @@
   font-size: 1rem;
 }
 
-.button__icon {
+.secondary-button .button__icon {
   width: 1rem;
   height: 1rem;
   display: flex;

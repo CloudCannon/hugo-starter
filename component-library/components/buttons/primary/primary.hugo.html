@@ -1,14 +1,14 @@
-<button class="button" style="background-color: {{ .background_color }};">
-  <style>
-    .button a:hover {
-      backdrop-filter: brightness({{ .hover_brightness }});
-    }
-  </style>
-  <a 
-  class="button__link" 
-  href="{{ .button_link }}"
-  style="color: {{ .text_color }};">
+<a 
+class="primary-button" 
+href="{{ .button_link }}"
+style="color: {{ .text_color }}; background-color: {{ .background_color }};">
+  <div>
     <span class="button__icon"><i class="{{ .button_icon }}"></i></span>
     {{ .button_text }}
-  </a>
-</button>
+  </div>
+</a>
+<style>
+  .primary-button div:hover {
+    backdrop-filter: brightness({{ .hover_brightness }});
+  }
+</style>
