@@ -1,6 +1,6 @@
 <section 
   class="hero-video" 
-  aria-labelledby="hero-video-{{ .heading.heading_text | slugify }}">
+  aria-labelledby="hero-video-{{ .heading.heading_text | anchorize }}">
   <div class="hero-video-container">
     <div 
       class="hero-video-filter" 
@@ -15,9 +15,10 @@
       <button 
         style="color: {{ .heading.text_color }};" 
         aria-label="Toggle play/pause background video" 
-        id="hero-video-pause-button" onclick="toggleVideoPause()">
-          <i class="fas fa-pause"></i>Pause
-        </button>
+        id="hero-video-pause-button" 
+        onclick="toggleVideoPause()">
+          <i class="fas fa-pause"></i>
+      </button>
       <script defer>
         // Toggles background video play/pause
         const videoElement = document.getElementById("hero-video");
@@ -25,15 +26,15 @@
         function toggleVideoPause() {
           if (videoElement.paused) {
             videoElement.play();
-            buttonElement.innerHTML = `<i class="fas fa-pause"></i>Pause`;
+            buttonElement.innerHTML = `<i class="fas fa-pause"></i>`;
           } else {
             videoElement.pause();
-            buttonElement.innerHTML = `<i class="fas fa-play"></i>Play`;
+            buttonElement.innerHTML = `<i class="fas fa-play"></i>`;
           }
         }
       </script>
       <h1 
-        id="hero-video-{{ .heading.heading_text | slugify }}" 
+        id="hero-video-{{ .heading.heading_text | anchorize }}" 
         class="hero-video-heading" style="color: {{ .heading.text_color }};">
         {{ .heading.heading_text }}
       </h1>

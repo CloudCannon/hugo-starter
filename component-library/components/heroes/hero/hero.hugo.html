@@ -1,10 +1,10 @@
 <section 
   style="background-color: {{ .background_color }};" 
-  aria-labelledby="hero-{{ .heading.heading_text | slugify }}">
+  aria-labelledby="hero-{{ .heading.heading_text | anchorize }}">
   <div class="hero-container">
     <div class="content">
       <h1 
-        id="hero-{{ .heading.heading_text | slugify }}" 
+        id="hero-{{ .heading.heading_text | anchorize }}" 
         class="heading" 
         style="
         background: -webkit-linear-gradient(to left, {{ .heading.heading_gradient_color }} 50%, {{ .heading.text_color }}); 
