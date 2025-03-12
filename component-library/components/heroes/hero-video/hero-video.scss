@@ -1,14 +1,26 @@
 .hero-video {
   width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
   min-height: fit-content;
   position: relative;
   z-index: 1;
   // Set this to the top of the page under the transparent header
   top: calc((var(--headerHeight) + (var(--headerPadding) * 2)) * -1);
   margin-bottom: calc((var(--headerHeight) + (var(--headerPadding) * 2)) * -1);
-  padding-block: calc(var(--sectionPaddingMobile) + var(--headerHeight));
   left: 0;
+}
+.hero-video-container {
+  width: 100%;
+  max-height: 100%;
+  min-height: fit-content;
+  max-width: var(--pageContainer);
+  padding-inline: var(--pagePadding);
+  padding-block: calc(var(--sectionPaddingMobile) + var(--headerHeight));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-video video,
 .hero-video-filter {
@@ -25,18 +37,6 @@
 .hero-video-filter {
   z-index: 1;
 }
-.hero-video-container {
-  max-width: var(--pageContainer);
-  padding-inline: var(--pagePadding);
-  padding-block: calc(var(--sectionPaddingMobile) + var(--headerHeight));
-  margin: 0 auto;
-  height: 100%;
-  min-height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .hero-video-content {
   position: relative;
   z-index: 10;
@@ -45,10 +45,8 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  width: 100%;
   padding-block: 32px;
-  padding-inline: 16px;
-  border-radius: 2px;
+  width: 100%;
 }
 .hero-video-content h1 {
   font-size: 3rem;
@@ -70,9 +68,19 @@
   gap: 1rem;
   max-width: fit-content;
   justify-content: center;
+  align-items: center;
   margin-top: 1rem;
 }
-
+#pause-video-button {
+  position: relative;
+  z-index: 99;
+  top: calc(var(--sectionPaddingMobile) * -1);
+  left: 0;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  align-self: flex-start;
+}
 @media only screen and (min-width: 768px) {
   .hero-video-buttons {
     flex-direction: row;
@@ -80,5 +88,8 @@
   }
   .hero-video-container {
     padding-block: calc(var(--sectionPadding) + var(--headerHeight));
+  }
+  #pause-video-button {
+    top: calc(var(--sectionPadding) * -1);
   }
 }

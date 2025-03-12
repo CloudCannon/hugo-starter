@@ -2,12 +2,31 @@
   <div class="hero-video-container">
     <div class="hero-video-filter" style="backdrop-filter: brightness({{ .background_filters.brightness }}) blur({{ .background_filters.blur }}px);">
     </div>
-    <video playsinline autoplay muted loop poster="{{ .video.poster_image }}">
+    <video id="hero-video" playsinline autoplay muted loop poster="{{ .video.poster_image }}">
       {{ $video_ext_arr := split .video.video_path "." }}
       {{ $video_ext := index $video_ext_arr 1 }}
       <source src="{{ .video.video_path }}" type="video/{{ $video_ext }}">
     </video>
     <div class="hero-video-content">
+      <button style="color: {{ .heading.text_color }};" id="pause-video-button" onclick="toggleVideoPause()"><i class="fas fa-pause"></i>Pause</button>
+      <script defer>
+        // Get the video
+        const video = document.getElementById("hero-video");
+
+        // Get the button
+        const button = document.getElementById("pause-video-button");
+
+        // Pause and play the video, and change the button text
+        function toggleVideoPause() {
+          if (video.paused) {
+            video.play();
+            button.innerHTML = `<i class="fas fa-pause"></i>Pause`;
+          } else {
+            video.pause();
+            button.innerHTML = `<i class="fas fa-play"></i>Play`;
+          }
+        }
+      </script>
       <h1 class="hero-video-heading" style="color: {{ .heading.text_color }};">
         {{ .heading.heading_text }}
       </h1>
