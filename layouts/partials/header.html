@@ -23,10 +23,10 @@
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo-link" href="{{ .header.logo_url }}">
-        {{ with $.Params.hero_block.header_style_overrides.alternate_logo }}
-          <img class="header__logo-image" src="{{ . }}" alt="Logo" />
+        {{ with $.Params.hero_block.header_style_overrides.alternate_logo.image_path }}
+          <img class="header__logo-image" src="{{ . }}" alt="{{ $.Params.hero_block.header_style_overrides.alternate_logo.logo_alt_text }}" />
         {{ else }}
-          <img class="header__logo-image" src="{{ .header.logo }}" alt="Logo" />
+          <img class="header__logo-image" src="{{ .header.logo }}" alt="{{ .header.logo_alt_text }}" />
         {{ end }}
       </a>
       <button class="hamburger" @click="open = ! open">

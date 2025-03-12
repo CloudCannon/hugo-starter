@@ -4,7 +4,7 @@
   class="footer"
   style="background-color: {{ .footer.background_color }}; color: {{ .footer.text_color }};">
   <div class="footer-container">
-    <div
+    <nav
       class="footer-top">
       <a
         class="flex justify-center sm:justify-start items-center"
@@ -12,7 +12,7 @@
         <img
           class="footer-logo-image"
           src="{{ .footer.logo }}"
-          alt=""
+          alt="{{ .footer.logo_alt_text }}"
         />
       </a>
       <ul class="footer-socials">
@@ -31,8 +31,8 @@
             <a href={{ .link }}>{{ .text }}</a>
           </li>
         {{ end }}
-    </ul>
-    </div>
+      </ul>
+    </nav>
 
     <p class="footer-copyright">
       <span>&#169;</span>

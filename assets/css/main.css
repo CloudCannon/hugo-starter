@@ -21,3 +21,22 @@
   --headerHeight: 64px;
   --headerPadding: 16px;
 }
+
+.skip-button {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-button:focus {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: white;
+  text-decoration: underline;
+}

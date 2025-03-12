@@ -2,10 +2,11 @@
 <html lang="en">
   {{ partial "head.html" . }}
   <body>
-    <main>
-      {{ partial "header.html" . }}
+    <a href="#main" class="skip-button">Skip to main content</a>
+    {{ partial "header.html" . }}
+    <main id="main">
       {{ block "main" . }}{{ end }} 
-      {{ partial "footer.html" . }}
     </main>
+    {{ partial "footer.html" . }}
   </body>
 </html>

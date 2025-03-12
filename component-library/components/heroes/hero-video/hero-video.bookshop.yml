@@ -25,7 +25,9 @@ blueprint:
     background_color: transparent
     text_color: '#ffffff'
     hover_text_color: '#F1F1F1'
-    alternate_logo: /images/logos/logo-wordmark-white.png
+    alternate_logo: 
+      image_path: 
+      logo_alt_text: 
   background_filters:
     brightness: 0.5
     blur: 1
@@ -47,11 +49,8 @@ _inputs:
     type: object
     comment: Specify header styles for just this page if set. Will not take effect until the next site save & build.
     options:
-      values: data.colors
-      value_key: value
       preview:
-        text:
-          - key: name
+        icon: palette
   hover_text_color:
     type: select
     comment: Updates the header hover text color for this page if set.
@@ -61,6 +60,12 @@ _inputs:
       preview:
         text:
           - key: name
+  alternate_logo:
+    type: object
+    comment: Set a different logo in the header if needed with this component. Will not take effect until the next site save & build.
+    options:
+        preview:
+          icon: palette
   background_filters:
     type: object
     comment: Set brightness and blur filters over the background video to make the text content more legible.

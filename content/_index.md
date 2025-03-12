@@ -12,7 +12,6 @@ seo:
   no_index: false
 hero_block:
   _bookshop_name: heroes/hero-video
-
   heading:
     heading_text: CloudCannon Hugo Starter
     text_color: '#ffffff'
@@ -29,7 +28,9 @@ hero_block:
     background_color: 'transparent'
     text_color: '#ffffff'
     hover_text_color: '#F1F1F1'
-    alternate_logo: /images/logos/logo-wordmark-white.png
+    alternate_logo: 
+      image_path: /images/logos/logo-wordmark-white.png
+      logo_alt_text: CloudCannon
   background_filters:
     brightness: 0.5
     blur: 1

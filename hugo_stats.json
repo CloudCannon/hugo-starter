@@ -127,6 +127,7 @@
       "search-bar",
       "secondary-button",
       "shadow-md",
+      "skip-button",
       "sm:justify-start",
       "w-[1rem]"
     ],
@@ -135,6 +136,7 @@
       "b",
       "double-opt-in",
       "keep-your-content-short-and-sweet",
+      "main",
       "search",
       "send-your-best-email",
       "tracking",

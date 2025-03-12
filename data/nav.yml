@@ -1,5 +1,6 @@
 header:
   logo: /images/logos/logo-wordmark-blue.png
+  logo_alt_text: CloudCannon
   logo_url: '/'
   background_color: 'transparent'
   text_color: '#393939'
@@ -14,6 +15,7 @@ header:
 footer:
   logo: /images/logos/logo-wordmark-white.png
   logo_url: '/'
+  logo_alt_text: CloudCannon
   background_color: '#393939'
   text_color: '#ffffff'
   social:
