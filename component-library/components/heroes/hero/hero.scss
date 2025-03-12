@@ -44,8 +44,7 @@
   -webkit-background-position: center;
   background-position: center center;
   margin: 20px;
-  animation: animate 10s ease-in-out infinite;
-  transition: all 1s ease-in-out;
+  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
 }
 @media only screen and (min-width: 400px) {
   .buttons {
@@ -80,12 +79,19 @@
     flex-direction: row;
   }
 }
-@keyframes animate {
+@keyframes animateBorder {
   0%,
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* CSS to disable motion goes here */
+  .blob > img {
+    animation: animateBorder 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
   }
 }
