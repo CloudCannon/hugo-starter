@@ -20,4 +20,6 @@
   /* Logo size is calculated by subtracting headerPadding * 2 from the headerHeight */
   --headerHeight: 64px;
   --headerPadding: 16px;
+
+  box-sizing: border-box;
 }
