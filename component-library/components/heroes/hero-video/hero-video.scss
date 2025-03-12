@@ -74,7 +74,7 @@
 #hero-video-pause-button {
   position: relative;
   z-index: 99;
-  top: calc(var(--sectionPaddingMobile) * -1);
+  top: 0;
   right: 0;
   display: flex;
   gap: 0.25rem;
