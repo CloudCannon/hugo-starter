@@ -40,7 +40,7 @@ preview:
 _inputs:
   header_style_overrides:
     type: object
-    comment: Specify header styles for just this page if set. Will not take effect until the next site save & build.
+    comment: Specify header styles for just this page if set. Will not take effect until the next time the page is saved.
     options:
       preview:
         icon: palette
@@ -55,7 +55,7 @@ _inputs:
           - key: name
   alternate_logo:
     type: object
-    comment: Set a different logo in the header if needed with this component. Will not take effect until the next site save & build.
+    comment: Set a different logo in the header if needed with this component.
     options:
         preview:
           icon: palette
