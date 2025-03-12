@@ -14,6 +14,7 @@ blueprint:
   button_text:
   button_icon:
   button_link: 
+  button_aria_label:
   background_color: "#034AD8"
   hover_brightness: 0.85
   text_color: "#ffffff"

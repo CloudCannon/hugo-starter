@@ -238,6 +238,10 @@ _inputs:
           - key: name
   button_link:
     type: url
+  button_aria_label:
+    type: text
+    comment: >-
+      Add a description if the button text content is generic, eg. 'Read more' 
   hover_brightness:
     type: range
     options:

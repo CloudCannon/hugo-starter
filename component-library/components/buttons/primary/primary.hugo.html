@@ -1,6 +1,9 @@
 <a 
 class="primary-button" 
 href="{{ .button_link }}"
+{{ with .button_aria_label }}
+  aria-label="{{ . }}"
+{{ end }}
 style="color: {{ .text_color }}; background-color: {{ .background_color }};">
   <div>
     <span class="button__icon"><i class="{{ .button_icon }}"></i></span>

@@ -1,4 +1,10 @@
-<a href="{{ .button_link }}" class="secondary-button" style="background-color: transparent; border: 2px solid {{ .background_color }};">
+<a 
+  class="secondary-button" 
+  href="{{ .button_link }}"
+  {{ with .button_aria_label }}
+    aria-label="{{ . }}"
+  {{ end }}
+  style="background-color: transparent; border: 2px solid {{ .background_color }};">
   <div 
   class="button__link" 
   style="color: {{ .text_color }};">

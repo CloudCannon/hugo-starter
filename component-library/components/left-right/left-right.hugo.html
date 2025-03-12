@@ -1,5 +1,5 @@
 
-<section class="left-right" style="background-color: {{ .background_color }};">
+<section class="left-right" style="background-color: {{ .background_color }};" aria-labelledby="left-right-{{ .heading.heading_text | slugify }}">
   {{ if .flipped }}
     <div class="left-right__wrapper">
       <img
@@ -8,7 +8,7 @@
         src="{{ .image.image_path }}"
       />
       <div class="left-right__text order-1 md:order-2">
-        <h2 style="color: {{ .heading.text_color }};">
+        <h2 id="left-right-{{ .heading.heading_text | slugify }}" style="color: {{ .heading.text_color }};">
           {{ .heading.heading_text }}
         </h2>
         <div class="markdown-text left-right__text-content" style="color: {{ .text.text_color }};">
@@ -22,7 +22,7 @@
   {{ else }}
     <div class="left-right__wrapper">
       <div class="left-right__text">
-        <h2 style="color: {{ .heading.text_color }};">
+        <h2 id="left-right-{{ .heading.heading_text | slugify }}" style="color: {{ .heading.text_color }};">
           {{ .heading.heading_text }}
         </h2>
         <div class="markdown-text left-right__text-content" style="color: {{ .text.text_color }};">

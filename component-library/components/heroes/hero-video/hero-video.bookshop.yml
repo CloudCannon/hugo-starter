@@ -31,14 +31,7 @@ blueprint:
   background_filters:
     brightness: 0.5
     blur: 1
-  buttons:
-    - _bookshop_name: buttons/primary
-      button_text: 
-      button_icon: 
-      button_link: 
-      background_color: '#034ad8'
-      hover_brightness: 0.85
-      text_color: '#ffffff'
+  buttons: []
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
