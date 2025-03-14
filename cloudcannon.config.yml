@@ -167,6 +167,11 @@ _editables:
     snippet: true
 
 _inputs:
+  content_blocks:
+    type: array
+    options:
+      structures: _structures.content_blocks
+      empty_type: array
   hero_block:
     type: object
     options:

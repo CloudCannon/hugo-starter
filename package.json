@@ -9,7 +9,9 @@
     "dev:hugo": "hugo server",
     "build:hugo": "hugo --destination public",
     "new": "npx @bookshop/init --component",
-    "update-bookshop": "npx @bookshop/up@latest"
+    "update-bookshop": "npx @bookshop/up@latest",
+    "pagefind": "npx -y pagefind --site public --serve",
+    "pagefind-server": "run-s build pagefind"
   },
   "repository": {
     "type": "git",

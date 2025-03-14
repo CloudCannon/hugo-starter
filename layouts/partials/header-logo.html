@@ -1,0 +1,7 @@
+<a class="header__logo-link" href="{{ .nav.header.logo_url }}">
+  {{ with .Params.hero_block.header_style_overrides.alternate_logo.image_path }}
+    <img class="header__logo-image" src="{{ . }}" alt="{{ $.Params.hero_block.header_style_overrides.alternate_logo.logo_alt_text }}" />
+  {{ else }}
+    <img class="header__logo-image" src="{{ .nav.header.logo }}" alt="{{ .nav.header.logo_alt_text }}" />
+  {{ end }}
+</a>

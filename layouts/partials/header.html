@@ -9,77 +9,14 @@
       color: #343434;
     }
   </style>
-  {{ with $.Params.hero_block.header_style_overrides.background_color }}
-  <style>
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        background-color: {{ . }};
-        color: #343434;
-      }
-    }
-  </style>
-  {{ else }}
-  <style>
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        background-color: {{ .header.background_color }};
-        color: #343434;
-      }
-    }
-  </style>
-  {{ end }}
 
-  {{ with $.Params.hero_block.header_style_overrides.text_color }}
-  <style>
-    .hamburger-open {
-      color: {{ . }};
-    }
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        color: {{ . }};
-      }
-    }
-  </style>
-  {{ else }}
-  <style>
-    .hamburger-open {
-      color: {{ .header.text_color }};
-    }
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        color: {{ .header.text_color }};
-      }
-    }
-  </style>
-  {{ end }}
-
-  {{ with $.Params.hero_block.header_style_overrides.hover_text_color }}
-    <style>
-       @media screen and (min-width: 600px) {
-        .header__nav-link:hover {
-          color: {{ . }}
-        }
-      }
-    </style>
-  {{ else }}
-    <style>
-      @media screen and (min-width: 600px) {
-        .header__nav-link:hover {
-          color: {{ .header.text_hover_color }}
-        }
-      }
-    </style>
-  {{ end }}
+  {{ partial "header-styles" (dict "nav" . "Params" $.Params) }}
   
   <div class="header__container">
     <nav class="header__nav">
-      <a class="header__logo-link" href="{{ .header.logo_url }}">
-        {{ with $.Params.hero_block.header_style_overrides.alternate_logo.image_path }}
-          <img class="header__logo-image" src="{{ . }}" alt="{{ $.Params.hero_block.header_style_overrides.alternate_logo.logo_alt_text }}" />
-        {{ else }}
-          <img class="header__logo-image" src="{{ .header.logo }}" alt="{{ .header.logo_alt_text }}" />
-        {{ end }}
-      </a>
+
+      {{ partial "header-logo" (dict "nav" . "Params" $.Params) }}
+      
       <button class="hamburger" @click="open = ! open">
         <i x-show="!open" class="fas fa-bars hamburger-open"></i>
         <i x-show="open" class="fas fa-close" style="color: #343434;"></i>

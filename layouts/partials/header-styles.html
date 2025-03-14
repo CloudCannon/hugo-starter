@@ -1,0 +1,61 @@
+{{ with .Params.hero_block.header_style_overrides.background_color }}
+  <style>
+    @media screen and (min-width: 600px) {
+      .header__nav-links {
+        background-color: {{ . }};
+        color: #343434;
+      }
+    }
+  </style>
+{{ else }}
+  <style>
+    @media screen and (min-width: 600px) {
+      .header__nav-links {
+        background-color: {{ .nav.header.background_color }};
+        color: #343434;
+      }
+    }
+  </style>
+{{ end }}
+
+{{ with .Params.hero_block.header_style_overrides.text_color }}
+  <style>
+    .hamburger-open {
+      color: {{ . }};
+    }
+    @media screen and (min-width: 600px) {
+      .header__nav-links {
+        color: {{ . }};
+      }
+    }
+  </style>
+{{ else }}
+  <style>
+    .hamburger-open {
+      color: {{ .nav.header.text_color }};
+    }
+    @media screen and (min-width: 600px) {
+      .header__nav-links {
+        color: {{ .nav.header.text_color }};
+      }
+    }
+  </style>
+{{ end }}
+
+{{ with .Params.hero_block.header_style_overrides.hover_text_color }}
+  <style>
+      @media screen and (min-width: 600px) {
+      .header__nav-link:hover {
+        color: {{ . }}
+      }
+    }
+  </style>
+{{ else }}
+  <style>
+    @media screen and (min-width: 600px) {
+      .header__nav-link:hover {
+        color: {{ .nav.header.text_hover_color }}
+      }
+    }
+  </style>
+{{ end }}
