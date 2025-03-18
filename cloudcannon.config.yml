@@ -12,7 +12,7 @@ paths:
 collections_config:
   pages:
     path: content
-    url: '/[slug]/'
+    url: "/[slug]/"
     icon: laptop_mac
     _enabled_editors:
       - visual
@@ -27,17 +27,6 @@ collections_config:
     icon: newspaper
     path: content/blog
     url: /blog/[slug]/
-    preview:
-      subtext:
-        - template: '{"Draft"|if=draft}'
-        - template: '{date|date_long}'
-        - key: url
-      image:
-        - key: thumb_image.image_path
-      metadata:
-        - icon: person
-          text:
-            - key: author
     schemas:
       default:
         path: '.cloudcannon/schemas/post.md'
