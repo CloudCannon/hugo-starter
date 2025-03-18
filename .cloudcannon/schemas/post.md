@@ -1,6 +1,7 @@
 ---
 date: 
 title:
+draft: false
 seo:
   page_description:
   canonical_url:
@@ -16,5 +17,4 @@ thumb_image:
 featured_image:
   image_path: 
   alt_text:
-draft: false
 ---
