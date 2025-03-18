@@ -6,7 +6,7 @@ Create your own copy, and start creating your own components quickly build your 
 
 This template is aimed at helping developers build sites quickly, rather than providing editors with a fully built editable site. If you are an editor looking for an already built template, have a look at [CloudCannon's templates page](https://cloudcannon.com/templates/).
 
-[See a demo version of this site](https://tiny-jackal.cloudvent.net/).
+[See a demo version of this site](TODO: Add link here).
 
 ## Features
 
@@ -118,17 +118,36 @@ To add your own custom icons to this list, you can follow the example set out in
 To remove icons, (TODO: Add remove list)
 
 ## Accessibility
+- A focus on semantic HTML elements
+  - `<nav>`
+  - `<main>`
+  - `<header>`
+  - `<footer>`
+  - `<section>`
+  - [`links` vs `buttons`](https://www.a11yproject.com/checklist/#use-the-button-element-for-buttons).
+- A `Skip to content` button.
+- Alt tags for images and [logos](https://www.a11yproject.com/checklist/#for-images-containing-text-make-sure-the-alt-description-includes-the-images-text)
+- Prefers reduced motion header and hero animations
+- Background videos are pausable
 
 ## SEO
+A general focus on performance, accessibility and SEO best practices mean this template is set up for SEO success.
+
+Editors can control metadata values for SEO both at a site-wide level, and on a page-by-page basis, depending on each page's needs.
 
 ## Color controls
+A color palette is controlled via the `data/colors.yml` file, which is used to populate the dropdown list editors will see in the app for select and multiselect inputs with the `values: data.colors` under their `options` key.
+
+This demonstrates how to populate your own select and multiselect inputs with data files in CloudCannon.
 
 ## Input config
+A range of different inputs are configured in CloudCannon, with corresponding templating in our code, to demonstrate how you can customise your non-technical editors workflows.
 
 ## Structures
-Components that are a part of  `content_blocks` but not `hero_blocks` will not show up in this list, meaning an editor can not add them. A component can be added to multiple structures, allowing you to create whatever subsets of components you like.
+Objects and arrays in CloudCannon need know what value to add when an editor wants to add to them. This is defined by a concept called structures. Any kind of array or object input or data file in this template should have a corresponding structure associated with them.
 
-hero blocks
-buttons
-content blocks
-colors & icons in data files
+Bookshop components can belong to structures in CloudCannon. This means an array input like `content_blocks` with `structures: _structures.content_blocks` under it's `options` key will show options to add anything that belongs to the `content_blocks` structure. 
+
+Similarly the `hero_block` input has the configuration `structures: _structures.hero_block` under it's `options` key. Components that are a part of the `content_blocks` structure but not `hero_blocks` will not show up in the list of components to add for `hero_block`, meaning an editor can not add them. 
+
+This shows how you can scope certain components to certain inputs, depending on what components you would like made available in the place that input is used. A component can be added to multiple structures, allowing you to create whatever subsets of components you like.
