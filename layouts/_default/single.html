@@ -1,7 +1,7 @@
 {{ define "main" }}
-  {{ with .Params.hero_block }}
-    {{ partial "bookshop_bindings" . }}
-    {{ partial "bookshop_partial" (slice "heroHelper" .) }}
+  {{ if .Params.hero_block._bookshop_name }}
+    {{ partial "bookshop_bindings" `.Params.hero_block` }}
+    {{ partial "bookshop_partial" (slice "heroHelper" .Params.hero_block) }}
   {{ end }}
   {{ with .Params.content_blocks }}
     {{ partial "bookshop_bindings" . }} 
