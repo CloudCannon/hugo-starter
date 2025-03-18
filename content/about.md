@@ -10,18 +10,26 @@ seo:
   open_graph_type:
   no_index: false
 hero_block:
-  _bookshop_name: heroes/hero
-  background_color: '#ffffff'
+  _bookshop_name: heroes/hero-video
   heading:
     heading_text:
-    text_color: '#393939'
-    heading_gradient_color: '#a0a2ff'
+    text_color: '#ffffff'
   subheading:
-    text_content: Some text
-    text_color: '#393939'
-  image:
-    image_path:
-    alt_text:
+    text_content:
+    text_color: '#ffffff'
+  video:
+    video_path: /videos/nz-coast.mp4
+    poster_image: /images/nz-coast-poster.png
+  header_style_overrides:
+    background_color: transparent
+    text_color: '#ffffff'
+    hover_text_color: '#F1F1F1'
+    alternate_logo:
+      image_path: /images/logos/logo-wordmark-white.png
+      logo_alt_text:
+  background_filters:
+    brightness: 0.6
+    blur: 1
   buttons: []
 content_blocks:
   - _bookshop_name: left-right
