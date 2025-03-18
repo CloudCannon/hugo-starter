@@ -10,5 +10,18 @@ seo:
   open_graph_type:
   no_index: false
 hero_block:
-content_blocks: []
+content_blocks:
+  - _bookshop_name: left-right
+    background_color: '#ffffff'
+    flipped: true
+    heading:
+      heading_text: A heading
+      text_color: '#393939'
+    text:
+      text_content: xzlckznxlkcnzlxkcn
+      text_color: '#393939'
+    image:
+      image_path:
+      alt_text:
+    button:
 ---
