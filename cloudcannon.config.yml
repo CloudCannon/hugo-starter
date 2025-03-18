@@ -12,7 +12,6 @@ paths:
 collections_config:
   pages:
     path: content
-    url: "/[slug]/"
     icon: laptop_mac
     _enabled_editors:
       - visual
