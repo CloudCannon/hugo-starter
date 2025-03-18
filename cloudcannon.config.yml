@@ -12,7 +12,7 @@ paths:
 collections_config:
   pages:
     path: content
-    url: '/[full_slug]/'
+    url: '/[slug]/'
     icon: laptop_mac
     _enabled_editors:
       - visual
@@ -26,7 +26,7 @@ collections_config:
   blog:
     icon: newspaper
     path: content/blog
-    url: /blog/[full_slug]/
+    url: /blog/[slug]/
     preview:
       subtext:
         - template: '{"Draft"|if=draft}'
