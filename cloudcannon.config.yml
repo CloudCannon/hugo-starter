@@ -13,6 +13,7 @@ collections_config:
   pages:
     path: content
     icon: laptop_mac
+    url: '/[full_slug]/'
     _enabled_editors:
       - visual
     new_preview_url: /about-example/
@@ -26,7 +27,7 @@ collections_config:
   blog:
     icon: newspaper
     path: content/blog
-    url: '/blog/[slug]/'
+    url: '/blog/[full_slug]/'
     schemas:
       default:
         path: '.cloudcannon/schemas/post.md'
