@@ -4,7 +4,7 @@
     {{ partial "bookshop_partial" (slice "heroHelper" .Params.hero_block) }}
   {{ end }}
   {{ with .Params.content_blocks }}
-    {{ partial "bookshop_bindings" . }} 
+    {{ partial "bookshop_bindings" `.Params.content_blocks` }} 
     {{ partial "bookshop_partial" (slice "page" .) }} 
   {{ end }}
 {{ end }}
