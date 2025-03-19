@@ -15,6 +15,7 @@ collections_config:
     icon: laptop_mac
     _enabled_editors:
       - visual
+    new_preview_url: /
     schemas:
       default:
         name: New Page
