@@ -7,7 +7,11 @@
   <h2 class="blog-title">{{ .Params.title }}</h2>
   <div class="blog-details">
     <ul>
-      <li>{{ .Date | time.Format ":date_long" }}</li>
+      {{ if site.Params.env_bookshop_live }}
+        <li>{{ .Date }}</li>
+      {{ else }}
+        <li>{{ .Date | time.Format ":date_long" }}</li>
+      {{ end }}
       {{ with .Params.author }}
         <li>{{ . }}</li>
       {{ else with site.Data.seo.default_author }}
