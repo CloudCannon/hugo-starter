@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="">
     {{ partial "bookshop_bindings" `.Params.hero_block` }}
-    {{ partial "bookshop_partial" (slice "heroHelper" .Params.hero_block) }}
+    {{ partial "bookshop" .Params.hero_block }}
   </div>
   <div class="">
     {{ partial "bookshop_bindings" `.Params.content_blocks` }} 
