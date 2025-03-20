@@ -16,7 +16,7 @@ collections_config:
     url: '/[full_slug]/'
     _enabled_editors:
       - visual
-    new_preview_url: /about-example/
+    new_preview_url: /
     schemas:
       default:
         name: New Page

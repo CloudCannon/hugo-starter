@@ -1,10 +1,14 @@
 {{ define "main" }}
-  <div class="">
-    {{ partial "bookshop_bindings" `.Params.hero_block` }}
-    {{ partial "bookshop" .Params.hero_block }}
-  </div>
-  <div class="">
+  {{ with .Params.hero_block }}
+    <div class="">
+        {{ partial "bookshop_bindings" `.Params.hero_block` }}
+        {{ partial "bookshop_partial" (slice "heroHelper" .) }}
+    </div>
+  {{ end }}
+  {{ with .Params.content_blocks }}
+    <div class="">
     {{ partial "bookshop_bindings" `.Params.content_blocks` }} 
-    {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
-  </div>
+    {{ partial "bookshop_partial" (slice "page" .) }} 
+    </div>
+  {{ end }}
 {{ end }}
