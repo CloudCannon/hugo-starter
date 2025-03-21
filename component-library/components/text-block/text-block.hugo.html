@@ -1,5 +1,5 @@
 <section class="text-block" style="background-color: {{ .background_color }};">
-  <div class="markdown-text text-block-container">
-    <div style="color: {{ .text_color }};">{{ .text_content | markdownify }}</div>
+  <div style="color: {{ .text_color }};" class="markdown-text text-block-container">
+    {{ .text_content | markdownify }}
   </div>
 </section>

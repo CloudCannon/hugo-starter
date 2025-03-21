@@ -1,10 +1,16 @@
-.text-block {
-}
 .text-block-container {
-  max-width: var(--pageContainer);
+  max-width: 72ch;
   padding-inline: var(--pagePadding);
   padding-block: var(--sectionPaddingMobile);
   margin: 0 auto;
+}
+
+.text-block .text-block-container h1,
+.text-block .text-block-container h2,
+.text-block .text-block-container h3,
+.text-block .text-block-container h4,
+.text-block .text-block-container h5 {
+  text-align: center;
 }
 
 @media only screen and (min-width: 960px) {

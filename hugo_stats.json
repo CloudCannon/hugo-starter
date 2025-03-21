@@ -4,6 +4,7 @@
       "a",
       "article",
       "body",
+      "br",
       "button",
       "details",
       "div",
@@ -23,7 +24,6 @@
       "li",
       "link",
       "main",
-      "marquee",
       "meta",
       "nav",
       "ol",
@@ -44,6 +44,7 @@
     "classes": [
       "!mb-0",
       "active",
+      "blob",
       "blog-article-grid",
       "blog-details",
       "blog-grid-image",
@@ -64,7 +65,9 @@
       "blog-title",
       "button__icon",
       "button__link",
+      "buttons",
       "c-blog-hero",
+      "content",
       "custom-icon-cloudcannon",
       "fa-bars",
       "fa-bell",
@@ -97,6 +100,8 @@
       "header__nav-item",
       "header__nav-link",
       "header__nav-links",
+      "heading",
+      "hero-container",
       "hero-video",
       "hero-video-buttons",
       "hero-video-container",
@@ -129,10 +134,14 @@
       "shadow-md",
       "skip-button",
       "sm:justify-start",
+      "subheading-text",
+      "text-block",
+      "text-block-container",
       "w-[1rem]"
     ],
     "ids": [
       "double-opt-in",
+      "hero-cloudcannon-hugo-starter",
       "hero-video",
       "hero-video-cloudcannon-hugo-starter",
       "hero-video-pause-button",
@@ -143,7 +152,8 @@
       "search",
       "send-your-best-email",
       "tracking",
-      "use-an-esp"
+      "use-an-esp",
+      "we-like-to-party"
     ]
   }
 }
