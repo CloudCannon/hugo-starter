@@ -1,7 +1,7 @@
 ---
 _schema: default
 date: 2025-03-21T01:19:09Z
-title:
+title: Justice
 draft: false
 seo:
   page_description:
@@ -10,12 +10,15 @@ seo:
   author_twitter_handle:
   open_graph_type: article
   no_index: false
-tags: []
-author:
+tags:
+  - another example
+  - example tag
+author: Test Richardson
 thumb_image:
   image_path:
   alt_text:
 featured_image:
-  image_path:
+  image_path: /images/nz-coast-poster.png
   alt_text:
 ---
+A new blog post!
