@@ -15,8 +15,8 @@ tags:
   - example tag
 author: Test Richardson
 thumb_image:
-  image_path:
-  alt_text:
+  image_path: /images/blog/blog-thumb-1.jpg
+  alt_text: Latops
 featured_image:
   image_path: /images/nz-coast-poster.png
   alt_text:
