@@ -2,11 +2,12 @@
 
 <section data-pagefind-body>
   <article class="blog-post">
-    {{ partial "bookshop" (slice "blog/hero" .) }}
+    {{ partial "bookshop" (slice "blog/hero" .Params) }}
     <div data-cms-edit="content" class="markdown-text">
       {{ .Content }}
     </div>
   </article>
+  
 </section>
 
 <section class="blog-related">

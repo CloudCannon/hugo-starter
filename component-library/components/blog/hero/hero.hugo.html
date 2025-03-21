@@ -1,11 +1,11 @@
 <div class="c-blog-hero">
-  <marquee behavior="" direction="">{{ .Params }}</marquee>
+  <marquee behavior="" direction="">{{ . }}</marquee>
   <img
     class="blog-hero-image"
-    src="{{ .Params.featured_image.image_path }}"
-    alt="{{  .Params.featured_image.alt_text }}"
+    src="{{ .featured_image.image_path }}"
+    alt="{{ .featured_image.alt_text }}"
   />
-  <h2 class="blog-title">{{ .Params.title }}</h2>
+  <h2 class="blog-title">{{ .title }}</h2>
   <div class="blog-details">
     <ul>
       {{ if site.Params.env_bookshop_live }}
@@ -13,7 +13,7 @@
       {{ else }}
         <li>{{ .Date | time.Format ":date_long" }}</li>
       {{ end }}
-      {{ with .Params.author }}
+      {{ with .author }}
         <li>{{ . }}</li>
       {{ else with site.Data.seo.default_author }}
         <li>{{ . }}</li>
