@@ -1,9 +1,19 @@
 <div class="c-blog-hero">
   <marquee behavior="" direction="">{{ .Params }}</marquee>
-  <h2 class="blog-title">{{ .title }}</h2>
+  <img
+    class="blog-hero-image"
+    src="{{ .Params.featured_image.image_path }}"
+    alt="{{  .Params.featured_image.alt_text }}"
+  />
+  <h2 class="blog-title">{{ .Params.title }}</h2>
   <div class="blog-details">
     <ul>
-      {{ with .author }}
+      {{ if site.Params.env_bookshop_live }}
+        <h1>Date will be displayed on live site</h1>
+      {{ else }}
+        <li>{{ .Date | time.Format ":date_long" }}</li>
+      {{ end }}
+      {{ with .Params.author }}
         <li>{{ . }}</li>
       {{ else with site.Data.seo.default_author }}
         <li>{{ . }}</li>
