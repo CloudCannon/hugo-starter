@@ -152,11 +152,6 @@ _editables:
     redo: true
     removeformat: true
     copyformatting: true
-    styles: /css/editor.css
-    left: align-left
-    center: align-center
-    right: align-right
-    justify: align-justify
     image_size_attributes: true
     snippet: true
 
