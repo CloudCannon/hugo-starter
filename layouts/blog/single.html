@@ -2,6 +2,7 @@
 
 <section data-pagefind-body>
   <article class="blog-post">
+    {{ partial "bookshop_bindings" `(dict "title" .Params.title "author" .Params.author)` }}
     {{ partial "bookshop" (slice "blog/hero" (dict "title" .Params.title "author" .Params.author)) }}
     <div data-cms-edit="content" class="markdown-text">
       {{ .Content }}
