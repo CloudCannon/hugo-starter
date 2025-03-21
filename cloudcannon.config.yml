@@ -62,6 +62,8 @@ data_config:
     path: data/tags.yml
   icons:
     path: data/icons.yml
+  seo:
+    path: data/seo.yml
 
 file_config:
   - glob: data/colors.yml
