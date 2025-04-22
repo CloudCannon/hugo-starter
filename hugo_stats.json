@@ -4,7 +4,6 @@
       "a",
       "article",
       "body",
-      "br",
       "button",
       "details",
       "div",
@@ -31,15 +30,13 @@
       "path",
       "script",
       "section",
-      "source",
       "span",
       "strong",
       "style",
       "summary",
       "svg",
       "title",
-      "ul",
-      "video"
+      "ul"
     ],
     "classes": [
       "!mb-0",
@@ -76,7 +73,6 @@
       "fa-github",
       "fa-instagram",
       "fa-linkedin",
-      "fa-pause",
       "fa-youtube",
       "fab",
       "fas",
@@ -102,13 +98,6 @@
       "header__nav-links",
       "heading",
       "hero-container",
-      "hero-video",
-      "hero-video-buttons",
-      "hero-video-container",
-      "hero-video-content",
-      "hero-video-filter",
-      "hero-video-heading",
-      "hero-video-subheading-text",
       "items-center",
       "justify-center",
       "left-right",
@@ -135,16 +124,11 @@
       "skip-button",
       "sm:justify-start",
       "subheading-text",
-      "text-block",
-      "text-block-container",
       "w-[1rem]"
     ],
     "ids": [
       "double-opt-in",
       "hero-cloudcannon-hugo-starter",
-      "hero-video",
-      "hero-video-cloudcannon-hugo-starter",
-      "hero-video-pause-button",
       "keep-your-content-short-and-sweet",
       "left-right-keep-what-you-need-delete-the-rest",
       "left-right-you-choose-your-editing-experience",
@@ -152,8 +136,7 @@
       "search",
       "send-your-best-email",
       "tracking",
-      "use-an-esp",
-      "we-like-to-party"
+      "use-an-esp"
     ]
   }
 }

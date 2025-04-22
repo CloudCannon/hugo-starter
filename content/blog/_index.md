@@ -1,4 +1,5 @@
 ---
+_schema: paginated
 title: Blog
 page_size: 3
 seo:
