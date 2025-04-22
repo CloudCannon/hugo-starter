@@ -1,61 +1,61 @@
-{{ with .Params.hero_block.header_style_overrides.background_color }}
-  <style>
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        background-color: {{ . }};
-        color: #343434;
-      }
+{{ with.Params.hero_block.header_style_overrides.background_color }}
+<style>
+  @media screen and (min-width: 600px) {
+    .header__nav-links {
+      background-color: {{ . }};
+      color: #333232;
     }
-  </style>
+  }
+</style>
 {{ else }}
-  <style>
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        background-color: {{ .nav.header.background_color }};
-        color: #343434;
-      }
+<style>
+  @media screen and (min-width: 600px) {
+    .header__nav-links {
+      background-color: {{ .nav.header.background_color }};
+      color: #333232;
     }
-  </style>
+  }
+</style>
 {{ end }}
 
-{{ with .Params.hero_block.header_style_overrides.text_color }}
-  <style>
-    .hamburger-open {
+{{ with.Params.hero_block.header_style_overrides.text_color }}
+<style>
+  .hamburger-open {
+    color: {{ . }};
+  }
+  @media screen and (min-width: 600px) {
+    .header__nav-links {
       color: {{ . }};
     }
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        color: {{ . }};
-      }
-    }
-  </style>
+  }
+</style>
 {{ else }}
-  <style>
-    .hamburger-open {
+<style>
+  .hamburger-open {
+    color: {{ .nav.header.text_color }};
+  }
+  @media screen and (min-width: 600px) {
+    .header__nav-links {
       color: {{ .nav.header.text_color }};
     }
-    @media screen and (min-width: 600px) {
-      .header__nav-links {
-        color: {{ .nav.header.text_color }};
-      }
-    }
-  </style>
+  }
+</style>
 {{ end }}
 
-{{ with .Params.hero_block.header_style_overrides.hover_text_color }}
-  <style>
-      @media screen and (min-width: 600px) {
-      .header__nav-link:hover {
-        color: {{ . }}
-      }
+{{ with.Params.hero_block.header_style_overrides.hover_text_color }}
+<style>
+  @media screen and (min-width: 600px) {
+    .header__nav-link:hover {
+      color: {{ . }}
     }
-  </style>
+  }
+</style>
 {{ else }}
-  <style>
-    @media screen and (min-width: 600px) {
-      .header__nav-link:hover {
-        color: {{ .nav.header.text_hover_color }}
-      }
+<style>
+  @media screen and (min-width: 600px) {
+    .header__nav-link:hover {
+      color: {{ .nav.header.text_hover_color }}
     }
-  </style>
+  }
+</style>
 {{ end }}

@@ -16,11 +16,11 @@ blueprint:
   background_color: '#ffffff'
   heading:
     heading_text: 
-    text_color: '#393939'
-    heading_gradient_color: '#a0a2ff'
+    text_color: '#333232'
+    heading_gradient_color: '#A0A2FF'
   subheading:
     text_content:
-    text_color: '#393939'
+    text_color: '#333232'
   image:
     image_path: 
     alt_text:

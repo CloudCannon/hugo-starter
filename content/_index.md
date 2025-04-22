@@ -15,12 +15,12 @@ hero_block:
   background_color: '#ffffff'
   heading:
     heading_text: CloudCannon Hugo Starter
-    text_color: '#393939'
-    heading_gradient_color: '#a0a2ff'
+    text_color: '#333232'
+    heading_gradient_color: '#A0A2FF'
   subheading:
     text_content: >-
       A starting point for developers looking to build a website with Hugo, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.
-    text_color: '#393939'
+    text_color: '#333232'
   image:
       image_path: /images/transparent-bg/undraw-online-test.svg
       alt_text: An image
@@ -40,14 +40,14 @@ hero_block:
       aria_label:
       background_color: '#034ad8'
       hover_brightness: 0.85
-      text_color: '#034ad8'
+      text_color: '#034AD8'
 content_blocks:
   - _bookshop_name: left-right
     background_color: '#ffffff'
     flipped: true
     heading:
       heading_text: Keep what you need. Delete the rest.
-      text_color: '#393939'
+      text_color: '#333232'
     text:
       text_content: >-
         The Hugo CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:
@@ -76,7 +76,7 @@ content_blocks:
 
         - Color palette controls
 
-      text_color: '#393939'
+      text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-hello.svg
       alt_text: An image
@@ -86,7 +86,7 @@ content_blocks:
     flipped: false
     heading:
       heading_text: You choose your editing experience.
-      text_color: '#393939'
+      text_color: '#333232'
     text:
       text_content: >-
         A flexible git-backed CMS that specialises in editing markdown and data files. 
@@ -96,7 +96,7 @@ content_blocks:
         
 
         Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git. 
-      text_color: '#393939'
+      text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-startup.svg
       alt_text: An image

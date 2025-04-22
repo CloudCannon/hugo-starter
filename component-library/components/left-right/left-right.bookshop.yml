@@ -16,10 +16,10 @@ blueprint:
   flipped: true
   heading:
     heading_text: 
-    text_color: "#393939"
+    text_color: "#333232"
   text:
     text_content:
-    text_color: "#393939"
+    text_color: "#333232"
   image:
     image_path: 
     alt_text: 

@@ -1,4 +1,4 @@
-{{ with .Site.Data.nav }}
+{{ with.Site.Data.nav }}
 <header
   class="header"
   x-data="{ open: false }"
@@ -6,32 +6,35 @@
   <style>
     .header__nav-links {
       background-color: #fff;
-      color: #343434;
+      color: #333232;
     }
   </style>
 
-  {{ partial "header-styles" (dict "nav" . "Params" $.Params) }}
-  
+  {{ partial "header-styles" (dict "nav" ."Params" $.Params) }}
+
   <div class="header__container">
     <nav class="header__nav">
 
-      {{ partial "header-logo" (dict "nav" . "Params" $.Params) }}
-      
+      {{ partial "header-logo" (dict "nav" ."Params" $.Params) }}
+
       <button class="hamburger" @click="open = ! open">
         <i x-show="!open" class="fas fa-bars hamburger-open"></i>
-        <i x-show="open" class="fas fa-close" style="color: #343434;"></i>
+        <i
+          x-show="open"
+          class="fas fa-close"
+          style="color: #333232;"></i>
       </button>
       <ul
         class="header__nav-links"
         x-show="open"
         x-transition
         @click.outside="open = false">
-        {{ range .header.links }}
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="{{ .link }}">
-              {{ .text }}
-            </a>
-          </li>
+        {{ range.header.links }}
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="{{ .link }}">
+            {{ .text }}
+          </a>
+        </li>
         {{ end }}
       </ul>
     </nav>

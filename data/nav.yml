@@ -3,7 +3,7 @@ header:
   logo_alt_text: CloudCannon
   logo_url: '/'
   background_color: 'transparent'
-  text_color: '#393939'
+  text_color: '#333232'
   text_hover_color: '#034AD8'
   links:
     - text: Blog
@@ -16,7 +16,7 @@ footer:
   logo: /images/logos/logo-wordmark-white.png
   logo_url: '/'
   logo_alt_text: CloudCannon
-  background_color: '#393939'
+  background_color: '#333232'
   text_color: '#ffffff'
   social:
     - icon: fab fa-facebook

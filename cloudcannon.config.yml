@@ -218,6 +218,9 @@ _inputs:
       preview:
         text:
           - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   color:
     type: select
     options:
@@ -226,6 +229,9 @@ _inputs:
       preview:
         text:
           - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   icon:
     type: select
     options:
@@ -364,6 +370,9 @@ _snippets:
           preview:
             text:
               - key: name
+            icon: palette
+            icon_color: 
+              - key: value
       icon:
         type: select
         options:
@@ -380,6 +389,9 @@ _snippets:
           preview:
             text:
               - key: name
+            icon: palette
+            icon_color: 
+              - key: value
       alert_message:
         comment: The text displayed in the alert.
         type: textarea
