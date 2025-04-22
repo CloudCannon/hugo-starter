@@ -14,7 +14,7 @@
         {{ .subheading.text_content | markdownify }}
       </div>
       <div class="buttons">
-        {{ range.buttons }}
+        {{ range .buttons }}
         {{ partial "bookshop" . }}
         {{ end }}
       </div>

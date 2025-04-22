@@ -29,7 +29,7 @@
         x-show="open"
         x-transition
         @click.outside="open = false">
-        {{ range.header.links }}
+        {{ range .header.links }}
         <li class="header__nav-item">
           <a class="header__nav-link" href="{{ .link }}">
             {{ .text }}
