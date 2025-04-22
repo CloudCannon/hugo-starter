@@ -30,7 +30,7 @@ hero_block:
       button_icon: fab fa-github
       button_link: https://github.com/CloudCannon/hugo-starter/
       aria_label:
-      background_color: '#034ad8'
+      background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
     - _bookshop_name: buttons/secondary
@@ -106,7 +106,7 @@ content_blocks:
       button_icon: fab fa-github
       button_link: https://github.com/CloudCannon/hugo-starter/
       aria_label:
-      background_color: '#034ad8'
+      background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
 ---
