@@ -5,16 +5,16 @@
     aria-label="{{ . }}"
   {{ end }}
   style="background-color: transparent; border: 2px solid {{ .background_color }};">
-  <div 
+  <p 
   class="button__link" 
   style="color: {{ .text_color }};">
     <span class="button__icon"><i class="{{ .button_icon }}"></i></span>
     {{ .button_text }}
-  </div>
+  </p>
 </a>
 
   <style>
-    .secondary-button div:hover {
+    .secondary-button p:hover {
       backdrop-filter: brightness({{ .hover_brightness }});
     }
   </style>
