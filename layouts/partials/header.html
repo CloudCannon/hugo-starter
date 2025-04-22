@@ -10,12 +10,12 @@
     }
   </style>
 
-  {{ partial "header-styles" (dict "nav" ."Params" $.Params) }}
+  {{ partial "header-styles" (dict "nav" . "Params" $.Params) }}
 
   <div class="header__container">
     <nav class="header__nav">
 
-      {{ partial "header-logo" (dict "nav" ."Params" $.Params) }}
+      {{ partial "header-logo" (dict "nav" . "Params" $.Params) }}
 
       <button class="hamburger" @click="open = ! open">
         <i x-show="!open" class="fas fa-bars hamburger-open"></i>
