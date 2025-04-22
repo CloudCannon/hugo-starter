@@ -120,6 +120,21 @@ file_config:
             icon: menu
             text: Footer details
             subtext: Update logo, colors, socials, copyright, and links.
+      social:
+        type: array
+        options:
+          structures: _structures.social_links
+    _structures:
+      social_links:
+        values:
+          - value:
+              icon:
+              link:
+              name:
+            _inputs:
+              name:
+                type: text
+                comment: Adds an aria-label for assistive technologies
   - glob: data/seo.yml
     _inputs:
       header:

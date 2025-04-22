@@ -21,13 +21,18 @@ footer:
   social:
     - icon: fab fa-facebook
       link: https://www.facebook.com/
+      name: Facebook
     - icon: fab fa-instagram
       link: https://www.instagram.com/
+      name: Instagram
     - icon: fab fa-linkedin
       link: https://www.linkedin.com/
+      name: LinkedIn
     - icon: fab fa-github
       link: https://github.com/
+      name: GitHub
     - icon: fab fa-youtube
+      name: YouTube
       link: https://www.youtube.com/
   links:
     - text: Blog
