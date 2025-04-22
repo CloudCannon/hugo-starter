@@ -6,10 +6,10 @@
   <h1 class="blog-title">{{ .Params.title }}</h1>
   <div class="blog-details">
     <ul>
-      {{ with.Params.date }}
+      {{ with .Params.date }}
       <li>{{ . | time.Format ":date_long" }}</li>
       {{ end }}
-      {{ with.Params.author }}
+      {{ with .Params.author }}
       <li>{{ . }}</li>
       {{ else with site.Data.seo.default_author }}
       <li>{{ . }}</li>

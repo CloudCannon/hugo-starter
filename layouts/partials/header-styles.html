@@ -1,4 +1,4 @@
-{{ with.Params.hero_block.header_style_overrides.background_color }}
+{{ with .Params.hero_block.header_style_overrides.background_color }}
 <style>
   @media screen and (min-width: 600px) {
     .header__nav-links {
@@ -18,7 +18,7 @@
 </style>
 {{ end }}
 
-{{ with.Params.hero_block.header_style_overrides.text_color }}
+{{ with .Params.hero_block.header_style_overrides.text_color }}
 <style>
   .hamburger-open {
     color: {{ . }};
@@ -42,7 +42,7 @@
 </style>
 {{ end }}
 
-{{ with.Params.hero_block.header_style_overrides.hover_text_color }}
+{{ with .Params.hero_block.header_style_overrides.hover_text_color }}
 <style>
   @media screen and (min-width: 600px) {
     .header__nav-link:hover {
