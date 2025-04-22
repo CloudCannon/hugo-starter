@@ -29,7 +29,7 @@ hero_block:
       button_text: GitHub
       button_icon: fab fa-github
       button_link: https://github.com/CloudCannon/hugo-starter/
-      aria_label:
+      button_aria_label:
       background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
@@ -37,7 +37,7 @@ hero_block:
       button_text: CloudCannon
       button_icon: custom-icon-cloudcannon
       button_link: https://www.cloudcannon.com
-      aria_label:
+      button_aria_label:
       background_color: '#034ad8'
       hover_brightness: 0.85
       text_color: '#034AD8'
@@ -105,7 +105,7 @@ content_blocks:
       button_text: GitHub
       button_icon: fab fa-github
       button_link: https://github.com/CloudCannon/hugo-starter/
-      aria_label:
+      button_aria_label:
       background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
