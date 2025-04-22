@@ -82,6 +82,8 @@ file_config:
               value:
             preview:
               icon: palette
+              icon_color:
+                - key: value
     _inputs:
       $:
         type: array
