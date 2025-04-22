@@ -2,6 +2,7 @@
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.0125rem;
+  max-width: 72ch;
 }
 
 .markdown-text h1,
