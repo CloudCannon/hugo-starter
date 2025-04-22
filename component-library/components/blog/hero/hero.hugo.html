@@ -2,18 +2,17 @@
   <img
     class="blog-hero-image"
     src="{{ .Params.featured_image.image_path }}"
-    alt="{{ .Params.featured_image.alt_text }}"
-  />
-  <h2 class="blog-title">{{ .Params.title }}</h2>
+    alt="{{ .Params.featured_image.alt_text }}" />
+  <h1 class="blog-title">{{ .Params.title }}</h1>
   <div class="blog-details">
     <ul>
-      {{ with .Params.date }}
-        <li>{{ . | time.Format ":date_long" }}</li>
-      {{ end}}
-      {{ with .Params.author }}
-        <li>{{ . }}</li>
+      {{ with.Params.date }}
+      <li>{{ . | time.Format ":date_long" }}</li>
+      {{ end }}
+      {{ with.Params.author }}
+      <li>{{ . }}</li>
       {{ else with site.Data.seo.default_author }}
-        <li>{{ . }}</li>
+      <li>{{ . }}</li>
       {{ end }}
     </ul>
   </div>
