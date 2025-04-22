@@ -223,6 +223,17 @@ _inputs:
         icon: palette
         icon_color: 
           - key: value
+  text_hover_color:
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   color:
     type: select
     options:
