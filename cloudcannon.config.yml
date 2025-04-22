@@ -207,6 +207,9 @@ _inputs:
       preview:
         text:
           - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   text_color:
     type: select
     options:
