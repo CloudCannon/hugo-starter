@@ -15,7 +15,6 @@
   padding-inline: var(--pagePadding);
   padding-top: 24px;
 }
-
 .blog-article-grid {
   display: grid;
   grid-template-columns: 1fr;
