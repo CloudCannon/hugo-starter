@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 .content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1em;
   font-weight: 700;
   text-wrap: balance;
@@ -38,9 +38,14 @@
   display: flex;
   justify-content: center;
 }
+@media only screen and (min-width: 320px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (min-width: 400px) {
   .content h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
   .buttons {
     flex-direction: row;
@@ -66,15 +71,15 @@
   .hero-container {
     flex-direction: row;
   }
-  .content {
-    width: 45%;
-  }
-  .image {
+  .hero-image {
     width: 45%;
   }
   .content h1,
   .content .subheading-text {
     text-align: start;
+  }
+  .content h1 {
+    font-size: 4rem;
   }
   .buttons {
     justify-content: start;
