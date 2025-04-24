@@ -20,7 +20,7 @@ hero_block:
   subheading:
     text_content: >-
       A starting point for developers looking to build a website with Hugo, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.
-    text_color: '#333232'
+    text_color: '#ff0000'
   image:
       image_path: /images/transparent-bg/undraw-online-test.svg
       alt_text: An image

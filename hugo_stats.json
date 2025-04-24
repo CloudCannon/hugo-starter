@@ -23,6 +23,7 @@
       "li",
       "link",
       "main",
+      "marquee",
       "meta",
       "nav",
       "ol",
@@ -63,7 +64,6 @@
       "button__icon",
       "button__link",
       "buttons",
-      "c-blog-hero",
       "content",
       "custom-icon-cloudcannon",
       "fa-bars",
@@ -130,6 +130,7 @@
     "ids": [
       "double-opt-in",
       "hero-cloudcannon-hugo-starter",
+      "hero-heading-text",
       "keep-your-content-short-and-sweet",
       "left-right-keep-what-you-need-delete-the-rest",
       "left-right-you-choose-your-editing-experience",

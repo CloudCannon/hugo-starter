@@ -1,6 +1,6 @@
 <section 
   class="hero-video" 
-  aria-labelledby="hero-video-{{ .heading.heading_text | anchorize }}">
+  aria-labelledby="hero-video-heading-text">
   <div class="hero-video-container">
     <div 
       class="hero-video-filter" 
@@ -34,15 +34,17 @@
         }
       </script>
       <h1 
-        id="hero-video-{{ .heading.heading_text | anchorize }}" 
+        id="hero-video-heading-text" 
         class="hero-video-heading" style="color: {{ .heading.text_color }};">
         {{ .heading.heading_text }}
       </h1>
-      <div 
+      {{ with .subheading.text_content }}
+        <div 
         class="markdown-text hero-video-subheading-text" 
-        style="color: {{ .subheading.text_color }};">
-        {{ .subheading.text_content | markdownify }}
-      </div>
+        style="color: {{ $.subheading.text_color }};">
+          {{ . | markdownify }}
+        </div>
+      {{ end }}
       {{ with .buttons }}
       <div class="hero-video-buttons">
         {{ range . }}
