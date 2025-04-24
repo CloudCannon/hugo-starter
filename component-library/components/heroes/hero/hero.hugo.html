@@ -10,14 +10,18 @@
         -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
         {{ .heading.heading_text }}
       </h1>
-      <div class="markdown-text subheading-text" style="color: {{ .subheading.text_color }};">
-        {{ .subheading.text_content | markdownify }}
-      </div>
-      <div class="buttons">
-        {{ range .buttons }}
-        {{ partial "bookshop" . }}
-        {{ end }}
-      </div>
+      {{ with .subheading.text_content }}
+        <div class="markdown-text subheading-text" style="color: {{ .subheading.text_color }};">
+          {{ . | markdownify }}
+        </div>
+      {{ end }}
+      {{ with .buttons }}
+        <div class="buttons">
+          {{ range . }}
+            {{ partial "bookshop" . }}
+          {{ end }}
+        </div>
+      {{ end }}
     </div>
 
     <img

@@ -43,11 +43,13 @@
         style="color: {{ .subheading.text_color }};">
         {{ .subheading.text_content | markdownify }}
       </div>
+      {{ with .buttons }}
       <div class="hero-video-buttons">
-        {{ range .buttons }}
+        {{ range . }}
           {{ partial "bookshop" . }}
         {{ end }}
-      </div>
+        </div>
+      {{ end }}
     </div>
   </div>
 </section>

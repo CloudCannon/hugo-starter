@@ -8,7 +8,9 @@
   <p 
   class="button__link" 
   style="color: {{ .text_color }};">
-    <span class="button__icon"><i class="{{ .button_icon }}"></i></span>
+    {{ with .button_icon }}
+      <span class="button__icon"><i class="{{ .button_icon }}"></i></span>
+    {{ end }}
     {{ .button_text }}
   </p>
 </a>

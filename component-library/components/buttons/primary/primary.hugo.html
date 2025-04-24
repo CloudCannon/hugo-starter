@@ -6,7 +6,9 @@
   {{ end }}
   style="color: {{ .text_color }}; background-color: {{ .background_color }}; border: 2px solid {{ .background_color }};">
   <p>
-    <span class="button__icon"><i class="{{ .button_icon }}"></i></span>
+    {{ with .button_icon }}
+      <span class="button__icon"><i class="{{ . }}"></i></span>
+    {{ end }}
     {{ .button_text }}
   </p>
 </a>

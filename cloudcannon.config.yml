@@ -43,6 +43,29 @@ collections_config:
     _enabled_editors:
       - visual
       - content
+    _inputs:
+      thumb_image:
+        options:
+          preview:
+            image: 
+              - key: image_path
+            text:
+              - key: alt_text
+              - Thumbnail Image
+            subtext:
+              - key: image_path
+              - Update Image Path and Alt Text
+      featured_image:
+        options:
+          preview:
+            image: 
+              - key: image_path
+            text:
+              - key: alt_text
+              - Hero Image
+            subtext:
+              - key: image_path
+              - Update Image Path and Alt Text
   data:
     path: data
     disable_url: true
@@ -213,6 +236,7 @@ _inputs:
       copyformatting: true
   tags:
     type: multiselect
+    comment: To add a new tag, go to the [tags data file](cloudcannon:collections/data/tags.yml)
     options:
       values: data.tags
       empty_type: array
