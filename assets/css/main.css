@@ -20,14 +20,6 @@
   /* Logo size is calculated by subtracting headerPadding * 2 from the headerHeight */
   --headerHeight: 4rem;
   --headerPadding: 1rem;
-
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 html {

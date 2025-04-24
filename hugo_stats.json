@@ -23,7 +23,6 @@
       "li",
       "link",
       "main",
-      "marquee",
       "meta",
       "nav",
       "ol",
@@ -41,6 +40,8 @@
     ],
     "classes": [
       "!mb-0",
+      "!px-8",
+      "!py-8",
       "active",
       "blog-article-grid",
       "blog-details",
@@ -117,7 +118,9 @@
       "pagination",
       "primary-button",
       "px-4",
+      "px-8",
       "py-2",
+      "py-8",
       "rounded-lg",
       "search-bar",
       "secondary-button",
@@ -128,8 +131,8 @@
       "w-[1rem]"
     ],
     "ids": [
+      "blog-heading-text",
       "double-opt-in",
-      "hero-cloudcannon-hugo-starter",
       "hero-heading-text",
       "keep-your-content-short-and-sweet",
       "left-right-keep-what-you-need-delete-the-rest",
