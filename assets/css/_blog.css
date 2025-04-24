@@ -32,6 +32,8 @@
 }
 .blog-grid-image img {
   border-radius: 2px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 .pagination {
   display: flex;

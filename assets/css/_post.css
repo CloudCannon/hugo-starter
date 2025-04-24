@@ -46,6 +46,8 @@
 }
 .blog-related-post-thumb {
   border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 .blog-related-post-content {
   margin-top: 16px;
