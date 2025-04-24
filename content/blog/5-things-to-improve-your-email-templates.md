@@ -2,6 +2,7 @@
 _schema: default
 date: 2022-06-10T00:00:00Z
 title: 5 things to improve your email templates
+draft: false
 seo:
   page_description:
   canonical_url:
@@ -19,13 +20,12 @@ thumb_image:
 featured_image:
   image_path: /images/blog/featured-image-2.jpg
   alt_text:
-draft: false
 ---
 When you send an email campaign, you expect it to reach your readers, right? But what if the emails go straight to your subscribers' spam folders instead of their inboxes? To make sure your emails reach their recipients successfully, follow these email delivery tips.
 
 {{< figure src="/images/blog/blog-thumb-6.jpg" title="Laptops" alt="Four people working together around a table." caption="An image caption" >}}
 
-{{< alert alert_message="Helloooooo" color="#ff0000" background_color="#000000" icon="fas fa-bell" >}}
+{{< alert background_color="#000000" alert_message="Helloooooo" color="#ff0000" icon="fas fa-bell" >}}
 
 {{< accordion summary="A dropdown accordion" >}}This is **some** markdown
 
@@ -36,6 +36,8 @@ When you send an email campaign, you expect it to reach your readers, right? But
 3. Lets go{{< /accordion >}}
 
 ### Use an ESP
+
+{{< youtube id="5dXw2jaj2so" autoplay="true" title="Live visual editing in Astro and CloudCannon" >}}
 
 Use an email service provider (ESP) that has been tested by third-party email certification services. This ensures that your emails will be accepted by the major ISPs. An ESP that offers multiple IP addresses, or one that allows you to use your own IP address if necessary. ISPs often block messages from unknown senders, so having your own IP address helps get around this issue.
 
