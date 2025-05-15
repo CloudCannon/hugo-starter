@@ -22,18 +22,5 @@ hero_block:
       image_path: /images/transparent-bg/undraw-online-test.svg
       alt_text: A placeholder image
   buttons: []
-content_blocks:
-  - _bookshop_name: left-right
-    background_color: '#ffffff'
-    flipped: true
-    heading:
-      heading_text:
-      text_color: '#333232'
-    text:
-      text_content: 
-      text_color: '#333232'
-    image:
-      image_path: /images/transparent-bg/undraw-hello.svg
-      alt_text: A placeholder image
-    button:
+content_blocks: []
 ---
