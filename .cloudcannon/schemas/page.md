@@ -19,8 +19,21 @@ hero_block:
     text_content:
     text_color: '#333232'
   image:
-      image_path: /images/transparent-bg/undraw-online-test.svg
-      alt_text: A placeholder image
+      image_path: 
+      alt_text: 
   buttons: []
-content_blocks: []
+content_blocks:
+  - _bookshop_name: left-right
+    background_color: '#ffffff'
+    flipped: true
+    heading:
+      heading_text:
+      text_color: '#333232'
+    text:
+      text_content: 
+      text_color: '#333232'
+    image:
+      image_path: 
+      alt_text:
+    button:
 ---
