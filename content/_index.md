@@ -3,7 +3,8 @@ _schema: default
 title: CloudCannon Hugo Starter
 seo:
   page_description: >-
-    A starting point for developers looking to build a website with Hugo, using Bookshop components in CloudCannon.
+    A starting point for developers looking to build a website with Hugo, using
+    Bookshop components in CloudCannon.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -19,11 +20,13 @@ hero_block:
     heading_gradient_color: '#A0A2FF'
   subheading:
     text_content: >-
-      A starting point for developers looking to build a website with Hugo, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.
-    text_color: '#ff0000'
+      A starting point for developers looking to build a website with Hugo,
+      using Bookshop components in CloudCannon. Create your own copy, and start
+      creating your own components to use in CloudCannon’s CMS.
+    text_color: '#333232'
   image:
-      image_path: /images/transparent-bg/undraw-online-test.svg
-      alt_text: An image
+    image_path: /images/transparent-bg/undraw-online-test.svg
+    alt_text: An image
   buttons:
     - _bookshop_name: buttons/primary
       button_text: GitHub
@@ -50,8 +53,11 @@ content_blocks:
       text_color: '#333232'
     text:
       text_content: >-
-        The Hugo CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:
-        
+        The Hugo CloudCannon Starter's aim is to get developers building their
+        own site quickly in CloudCannon. This template is trying to strike a
+        balance between minimal, and easy-to-delete boiler plate, while
+        providing some commonly used features out of the box:
+
         - Page building with Bookshop components
 
         - Markdown options & styles
@@ -75,7 +81,6 @@ content_blocks:
         - SEO controls
 
         - Color palette controls
-
       text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-hello.svg
@@ -89,13 +94,17 @@ content_blocks:
       text_color: '#333232'
     text:
       text_content: >-
-        A flexible git-backed CMS that specialises in editing markdown and data files. 
-        
+        A flexible git-backed CMS that specialises in editing markdown and data
+        files. 
 
-        Visual editing allows you to preview your changes live before you save them. 
-        
 
-        Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git. 
+        Visual editing allows you to preview your changes live before you save
+        them. 
+
+
+        Git-backed means you can keep all your familiar git workflows, while
+        providing an easy-to-understand interface for non-technical editors to
+        collaborate via git. 
       text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-startup.svg
