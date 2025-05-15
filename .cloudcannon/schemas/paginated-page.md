@@ -7,6 +7,6 @@ seo:
   featured_image:
   featured_image_alt:
   author_twitter_handle:
-  open_graph_type:
+  open_graph_type: website
   no_index: false
 ---
