@@ -4,7 +4,7 @@
   <article class="blog-post">
     
     {{ partial "bookshop_bindings" `(dict "Params" .Params)` }}
-    {{ partial "bookshop" (slice "blog/hero" (dict "Params" .Params)) }}
+    {{ partial "bookshop" (slice "blog/hero" (dict "Params" .Params.post_hero)) }}
 
     <div data-cms-edit="content" class="markdown-text">
       {{ .Content }}
@@ -19,11 +19,11 @@
     {{ range ( where site.RegularPages "Section" "blog" | first 3 ) }}
     <div>
       <a href="{{ .Permalink | relURL }}">
-        <img class="blog-related-post-thumb" src="{{ .Params.thumb_image.image_path }}" alt="{{ .Params.thumb_image.alt_text }}" />
+        <img class="blog-related-post-thumb" src="{{ .Params.thumb_image_path }}" alt="{{ .Params.thumb_image_alt }}" />
       </a>
       <div class="blog-related-post-content">
         <div class="blog-post-tags">
-          {{ range .Params.tags }} 
+          {{ range .Params.post_hero.tags }} 
             {{ $href := print (absURL "tags/") (urlize .) }}
             <a href="{{ $href }}">{{ . | humanize }}</a>
           {{ end }}

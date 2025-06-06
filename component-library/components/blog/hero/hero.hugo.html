@@ -1,9 +1,9 @@
 <div class="blog-hero" aria-labelledby="blog-heading-text">
   <img
     class="blog-hero-image"
-    src="{{ .Params.featured_image.image_path }}"
-    alt="{{ .Params.featured_image.alt_text }}" />
-  <h1 id="blog-heading-text" class="blog-title">{{ .Params.title }}</h1>
+    src="{{ .Params.image }}"
+    alt="{{ .Params.image_alt }}" />
+  <h1 id="blog-heading-text" class="blog-title">{{ .Params.heading }}</h1>
   <div class="blog-details">
     <ul>
       {{ with .Params.date }}
