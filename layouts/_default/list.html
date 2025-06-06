@@ -1,10 +1,10 @@
 {{ define "main" }}
-  {{ with .Params.hero_block }}
+  {{ if gt .Params.hero_block.len 0 }}
     {{ partial "bookshop_bindings" `.Params.hero_block` }}
-    {{ partial "bookshop_partial" (slice "heroHelper" .) }}
+    {{ partial "bookshop_partial" (slice "heroHelper" .Params.hero_block) }}
   {{ end }}
-  {{ with .Params.content_blocks }}
-    {{ partial "bookshop_bindings" `.Params.content_blocks` }} 
-    {{ partial "bookshop_partial" (slice "page" .) }} 
+  {{ if gt .Params.content_blocks.len 0 }}
+    {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
   {{ end }}
 {{ end }}
