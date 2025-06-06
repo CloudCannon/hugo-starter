@@ -1,14 +1,8 @@
 {{ define "main" }}
   {{ with .Params.hero_block }}
-    {{ partial "bookshop_bindings" `.Params.hero_block` }}
     {{ partial "bookshop_partial" (slice "heroHelper" .) }}
-  {{ else }}
-    <h2>Add a hero to ensure there's a main heading on the page...</h2>
   {{ end }}
   {{ with .Params.content_blocks }}
-    {{ partial "bookshop_bindings" `.Params.content_blocks` }} 
     {{ partial "bookshop_partial" (slice "page" .) }} 
-  {{ else }}
-    <h2>Add some content blocks...</h2>
   {{ end }}
 {{ end }}
