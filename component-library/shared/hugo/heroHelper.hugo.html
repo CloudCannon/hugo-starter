@@ -1,1 +1,3 @@
-{{ partial "bookshop" . }}
+{{ range . }}
+  {{ partial "bookshop" . }}
+{{ end }}
