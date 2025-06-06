@@ -2,13 +2,13 @@
   {{ with .Params.hero_block }}
     {{ if gt (. | len) 0 }}
       {{ partial "bookshop_bindings" `.Params.hero_block` }}
-      {{ partial "bookshop_partial" (slice "heroHelper" .) }}
+      {{ partial "bookshop_partial" (slice "heroHelper" $.Params.hero_block) }}
     {{ end }}
   {{ end }}
   {{ with .Params.content_blocks }}
     {{ if gt (. | len) 0 }}
       {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-      {{ partial "bookshop_partial" (slice "page" .) }}
+      {{ partial "bookshop_partial" (slice "page" $.Params.content_blocks) }}
     {{ end }}
   {{ end }}
 {{ end }}
