@@ -1,3 +1,7 @@
 {{ range . }}
-  {{ partial "bookshop" . }}
+  {{ if eq ._bookshop_name 'heroes/hero' }}
+    <p>{{ ._bookshop_name }}</p>
+  {{ else }}
+    {{ partial "bookshop" . }}
+  {{ end }}
 {{ end }}
