@@ -1,8 +1,3 @@
-{{ partial "bookshop_bindings" `.Params.hero_block` }} 
-{{ with .hero_block }}
-  {{ partial "bookshop" . }}
-{{ end }}
-{{ partial "bookshop_bindings" `.Params.content_blocks` }} 
-{{ range .content_blocks }}
+{{ range . }}
   {{ partial "bookshop" . }}
 {{ end }}
