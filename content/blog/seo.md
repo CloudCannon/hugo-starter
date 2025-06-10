@@ -4,11 +4,11 @@ title: SEO Controls
 post_hero:
   heading: SEO Controls
   date: 2025-05-06T11:28:34+12:00
-  tags:
-    - seo
   author: T Richardson
   image: /images/blog/featured-image-2.jpg
   image_alt: Children working around a laptop in a busy classroom.
+tags:
+  - seo
 thumb_image_path: /images/blog/blog-thumb-1.jpg
 thumb_image_alt: A group of people working around a table, as seen from above
 seo:

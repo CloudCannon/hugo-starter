@@ -4,11 +4,11 @@ title: Pagefind Search
 post_hero:
   heading: Pagefind Search
   date: 2025-05-07T16:19:42+12:00
-  tags:
-    - search
   author: T Richardson
   image: /images/blog/featured-image-4.jpg
   image_alt: A woman drinking a cup of coffee in bed in front of her laptop.
+tags:
+  - search
 thumb_image_path: /images/blog/blog-thumb-4.jpg
 thumb_image_alt: >-
   A group of four people working in front of one laptop in an office

@@ -4,7 +4,7 @@
   <article class="blog-post">
     
     {{ partial "bookshop_bindings" `(dict "Params" .Params)` }}
-    {{ partial "bookshop" (slice "blog/hero" (dict "Params" .Params.post_hero)) }}
+    {{ partial "bookshop" (slice "blog/hero" (dict "Params" .Params.post_hero "post_tags" .Params.tags)) }}
 
     <div data-cms-edit="content" class="markdown-text">
       {{ .Content }}
@@ -23,7 +23,7 @@
       </a>
       <div class="blog-related-post-content">
         <div class="blog-post-tags">
-          {{ range .Params.post_hero.tags }} 
+          {{ range .Params.tags }} 
             {{ $href := print (absURL "tags/") (urlize .) }}
             <a href="{{ $href }}">{{ . | humanize }}</a>
           {{ end }}

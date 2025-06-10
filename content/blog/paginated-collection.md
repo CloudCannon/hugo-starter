@@ -4,13 +4,13 @@ title: Paginated Collections
 post_hero:
   heading: Paginated Collections
   date: 2025-05-06T10:44:58+12:00
-  tags:
-    - navigation
-    - pagination
-    - building
   author: T Richardson
   image: /images/blog/featured-image-3.jpg
   image_alt: A man drinking a coffee in a dimly lit cafe in front of a laptop.
+tags:
+  - navigation
+  - pagination
+  - building
 thumb_image_path: /images/blog/blog-thumb-3.jpg
 thumb_image_alt: A team working around a table on laptops in front of a powerpoint.
 seo:

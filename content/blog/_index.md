@@ -1,7 +1,7 @@
 ---
 _schema: paginated
 title: Blog
-page_size: 3
+page_size: 6
 seo:
   page_description: Hugo CloudCannon Starter Blog
   canonical_url: 

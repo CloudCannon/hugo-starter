@@ -14,17 +14,22 @@
     {{ range (.context.Paginator .page_size).Pages }}
       <div class="blog-grid-item">
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
-          <img src="{{ .Params.thumb_image.image_path }}" alt="blog-thumb" loading="lazy" />
+          <img src="{{ .Params.thumb_image_path }}" alt="{{ .Params.thumb_image_alt }}" loading="lazy" />
         </a>
-        <div class="blog-post-tags">
-          {{ range .Params.tags }} 
-            {{ $href := print (absURL "tags/") (urlize .) }}
-            <a href="{{ $href }}">{{ . | humanize }}</a>
-          {{ end }}
-        </div>
         <h2 class="blog-post-title">
           <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>
         </h2>
+        {{ with .Params.post_hero.date }}
+          <p>{{ . | time.Format ":date_long" }}</p>
+        {{ end }}
+        {{ with .Params.tags }}
+          <div class="blog-post-tags">
+            {{ range . }} 
+              {{ $href := print (absURL "tags/") (urlize .) }}
+              <a href="{{ $href }}">{{ . | humanize }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
       </div>
     {{ end }} 
   </div>

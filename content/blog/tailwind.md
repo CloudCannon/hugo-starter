@@ -4,13 +4,13 @@ title: Tailwind
 post_hero:
   heading: Tailwind
   date: 2025-05-06T11:28:34+12:00
-  tags:
-    - building
-    - styling
-    - tailwind
   author: T Richardson
   image: /images/blog/featured-image-2.jpg
   image_alt: Children working around a laptop in a busy classroom.
+tags:
+  - building
+  - styling
+  - tailwind
 thumb_image_path: /images/blog/blog-thumb-6.jpg
 thumb_image_alt: A group of people working around a table, as seen from above.
 seo:

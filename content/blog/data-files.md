@@ -4,17 +4,17 @@ title: Data files
 post_hero:
   heading: Data files
   date: 2025-05-06T11:18:38+12:00
-  tags:
-    - seo
-    - inputs
-    - navigation
-    - icons
-    - data
   author: T Richardson
   image: /images/blog/featured-image-5.jpg
   image_alt: >-
     A side-on profile of someone working on a laptop with a phone in their hand,
     and a coffee next to them.
+tags:
+  - seo
+  - inputs
+  - navigation
+  - icons
+  - data
 thumb_image_path: /images/blog/blog-thumb-5.jpg
 thumb_image_alt: A group collaborating around a laptop.
 seo:

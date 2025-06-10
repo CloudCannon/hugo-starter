@@ -4,19 +4,19 @@ title: Page Building
 post_hero:
   heading: Page Building
   date: 2025-05-06T11:18:38+12:00
-  tags:
-    - bookshop
-    - components
-    - schemas
-    - editing
-    - building
-    - WYSIWYG editing
-    - live editing
   author: T Richardson
   image: /images/blog/featured-image-5.jpg
   image_alt: >-
     A side-on profile of someone working on a laptop with a phone in their hand,
     and a coffee next to them.
+tags:
+  - bookshop
+  - components
+  - schemas
+  - editing
+  - building
+  - WYSIWYG editing
+  - live editing
 thumb_image_path: /images/blog/blog-thumb-5.jpg
 thumb_image_alt: A group collaborating around a laptop.
 seo:

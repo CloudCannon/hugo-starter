@@ -58,29 +58,29 @@ content_blocks:
         balance between minimal, and easy-to-delete boiler plate, while
         providing some commonly used features out of the box:
 
-        - Page building with Bookshop components
+        - [Page building with Bookshop components](/blog/bookshop/)
 
-        - Markdown options & styles
+        - [Markdown options & styles](/blog/markdown/)
 
-        - Blog with pagination & tags
+        - [Blog with pagination & tags](/blog/paginated-collection/)
 
-        - Built-in search with Pagefind
+        - [Built-in search with Pagefind](/blog/pagefind/)
 
-        - Pre-configured shortcodes
+        - [Pre-configured shortcodes](/blog/markdown/#snippets)
 
-        - Header and Footer controls
+        - [Header and Footer controls](/blog/data-files/)
 
-        - Tailwind
+        - [Tailwind](/blog/tailwind/)
 
-        - Font Awesome icons
+        - [Font Awesome icons](/blog/icons/)
 
-        - Create and delete pages
+        - [Create and delete pages](/blog/page-building/)
 
-        - Accessibility controls
+        - [Accessibility controls](/blog/lighthouse-scores/#accessibility)
 
-        - SEO controls
+        - [SEO controls](/blog/seo/)
 
-        - Color palette controls
+        - [Color palette controls](/blog/data-files/)
       text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-hello.svg

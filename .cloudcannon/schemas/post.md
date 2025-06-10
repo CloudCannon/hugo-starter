@@ -1,20 +1,20 @@
 ---
-date: 
 title:
-draft: false
+post_hero:
+  heading:
+  date:
+  author:
+  image:
+  image_alt:
+tags: []
+thumb_image_path:
+thumb_image_alt:
 seo:
   page_description:
   canonical_url:
-  featured_image:
+  featured_image: 
+  featured_image_alt:
   author_twitter_handle:
   open_graph_type: article
   no_index: false
-tags: []
-author: 
-thumb_image:
-  image_path: 
-  alt_text:
-featured_image:
-  image_path: 
-  alt_text:
 ---

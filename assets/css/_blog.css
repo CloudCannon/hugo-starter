@@ -66,12 +66,19 @@
 }
 .blog-post-title {
   font-size: 1.5rem;
-  margin-block: 1rem;
+  margin-top: 1rem;
+}
+.blog-hero .blog-post-tags {
+  width: 100%;
 }
 .blog-post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
   margin-top: 1rem;
 }
 .blog-post-tags a {
+  display: block;
   background: #f1f1f1;
   border-radius: 6px;
   padding: 4px 10px;

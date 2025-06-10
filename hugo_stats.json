@@ -35,6 +35,7 @@
       "ul"
     ],
     "classes": [
+      "!text-red-700",
       "active",
       "blog-article-grid",
       "blog-details",
@@ -112,7 +113,9 @@
       "secondary-button",
       "skip-button",
       "sm:justify-start",
-      "subheading-text"
+      "subheading-text",
+      "text-amber-300",
+      "text-red-700"
     ],
     "ids": [
       "accessibility",

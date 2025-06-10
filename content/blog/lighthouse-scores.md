@@ -4,13 +4,13 @@ title: Green Lighthouse Scores
 post_hero:
   heading: Green Lighthouse Scores
   date: 2025-05-06T11:25:21+12:00
-  tags:
-    - seo
-    - accessibility
-    - images
   author: T Richardson
   image: /images/blog/featured-image-6.jpg
   image_alt: A woman on her phone in front of a laptop.
+tags:
+  - seo
+  - accessibility
+  - images
 thumb_image_path: /images/blog/blog-thumb-6.jpg
 thumb_image_alt: A top-down shot of people working at a table.
 seo:

@@ -4,13 +4,13 @@ title: Font Awesome Icons
 post_hero:
   heading: Font Awesome Icons
   date: 2025-05-06T11:18:38+12:00
-  tags:
-    - icons
-    - components
-    - styling
   author: T Richardson
   image: /images/blog/featured-image-3.jpg
   image_alt: A man in front of a laptop with a coffee in a dimly lit cafe.
+tags:
+  - icons
+  - components
+  - styling
 thumb_image_path: /images/blog/blog-thumb-5.jpg
 thumb_image_alt: A group collaborating around a laptop.
 seo:

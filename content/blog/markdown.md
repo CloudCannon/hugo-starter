@@ -4,12 +4,12 @@ title: Markdown Editing and Snippets
 post_hero:
   heading: Markdown Editing and Snippets
   date: 2025-05-06T10:08:43+12:00
-  tags:
-    - markdown
-    - snippets
   author: T Richardson
   image: /images/blog/featured-image-2.jpg
   image_alt: Children gathered around a laptop, in a busy classroom.
+tags:
+  - markdown
+  - snippets
 thumb_image_path: /images/blog/blog-thumb-2.jpg
 thumb_image_alt: >-
   Two people working either side of a table, with a distant view of a city in
