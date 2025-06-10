@@ -22,15 +22,20 @@
         <img class="blog-related-post-thumb" src="{{ .Params.thumb_image_path }}" alt="{{ .Params.thumb_image_alt }}" />
       </a>
       <div class="blog-related-post-content">
-        <div class="blog-post-tags">
-          {{ range .Params.tags }} 
-            {{ $href := print (absURL "tags/") (urlize .) }}
-            <a href="{{ $href }}">{{ . | humanize }}</a>
-          {{ end }}
-        </div>
         <a class="blog-related-post-title" href="{{ .Permalink | relURL }}">
           {{ .Params.title }}
         </a>
+        {{ with .Params.post_hero.date }}
+          <p>{{ . | time.Format ":date_long" }}</p>
+        {{ end }}
+        {{ with .Params.tags }}
+          <div class="blog-post-tags">
+            {{ range . }} 
+              {{ $href := print (absURL "tags/") (urlize .) }}
+              <a href="{{ $href }}">{{ . | humanize }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
       </div>
     </div>
     {{ end }}
