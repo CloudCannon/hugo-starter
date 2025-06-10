@@ -30,7 +30,7 @@ Bookshop is fully open-source and is available on GitHub at CloudCannon/bookshop
 
 Build custom components that non-technical editors can use in a page building experience in CloudCannon.
 
-To add a new component run `npx @bookshop/init --component <name>` in the root of your repository.
+To add a new component run `npm run new-component <name>` in the root of your repository.
 
 ## What does Bookshop bring to Hugo?
 

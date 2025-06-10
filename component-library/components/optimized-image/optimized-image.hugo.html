@@ -1,0 +1,12 @@
+
+{{ if site.Params.env_bookshop_live }}
+  <p>I am being edited live!</p>
+  <img src="{{ .image_path }}" alt="{{ .image_alt }}">
+{{ else }}
+  <p>I am the real image!</p>
+  {{ $image := resources.Get .image_path }}
+  {{ $image := $image.Resize (printf "%sx %s" .image_width .image_format) }}
+  {{ with $image }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.image_alt }}">
+  {{ end }}
+{{ end }}
