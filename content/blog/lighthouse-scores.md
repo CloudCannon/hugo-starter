@@ -15,8 +15,8 @@ thumb_image_path: /images/blog/blog-thumb-6.jpg
 thumb_image_alt: A top-down shot of people working at a table.
 seo:
   page_description: >-
-    A post describing what features come with the Astro starter to ensure it has
-    green lighthouse scores for accessibility, performance and SEO
+    A post describing what features come with the Hugo starter to ensure it has
+    green lighthouse scores for accessibility, performance and SEO.
   canonical_url:
   featured_image: /images/blog/featured-image-6.jpg
   featured_image_alt: A woman on her phone in front of a laptop.
@@ -38,7 +38,7 @@ Made with accessibility in mind.
 
 ## Performance
 
-Comes with image optimization, lazy and eager loading, minimal Javascript, all in a static Astro site, for low page bundle sizes and fast loading times.
+An emphasis on low page bundle sizes, fast loading times, and short build times (which is probably the whole reason you're using Hugo in the first place).
 
 ## Best practices
 

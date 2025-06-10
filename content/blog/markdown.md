@@ -15,7 +15,8 @@ thumb_image_alt: >-
   Two people working either side of a table, with a distant view of a city in
   the background.
 seo:
-  page_description:
+  page_description: >-
+    A post describing what Markdown editing features come with the Hugo starter in CloudCannon.
   canonical_url:
   featured_image: /images/blog/blog-thumb-2.jpg
   featured_image_alt: >-

@@ -15,7 +15,7 @@ thumb_image_path: /images/blog/blog-thumb-1.jpg
 thumb_image_alt: A birds eye view of a group of people working on laptops around a table.
 seo:
   page_description: >-
-    A post describing what Bookshop does in an Astro site using CloudCannon as a
+    A post describing what Bookshop does in a Hugo site using CloudCannon as a
     CMS.
   canonical_url:
   featured_image: /images/blog/featured-image-1.jpg
@@ -24,22 +24,22 @@ seo:
   open_graph_type: article
   no_index: false
 ---
-[Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/) is a collection of tooling that provides a component development workflow for static websites, and aids in the creation of a page-building interface in the CloudCannon CMS.
+[Bookshop](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc) is a collection of tooling that provides a component development workflow for static websites, and aids in the creation of a page-building interface in the CloudCannon CMS.
 
 Bookshop is fully open-source and is available on GitHub at CloudCannon/bookshop. As a tool that integrates into your codebase, we want to ensure you aren't vendor-locked to our platform. Sites built using Bookshop remain fully portable and can be built or hosted anywhere on the web.
 
 Build custom components that non-technical editors can use in a page building experience in CloudCannon.
 
-To add a new component run `npm run your-new-component` in the root of your repository.
+To add a new component run `npx @bookshop/init --component <name>` in the root of your repository.
 
-## What does Bookshop bring to Astro?
+## What does Bookshop bring to Hugo?
 
-For developers working locally, Bookshop first provides an Astro integration that is used to live update your components. When dealing with your components, this integration provides a `bookshop:live` directive to mark a component for live editing. The `bookshop:live` directive can be added to any component referenced from an Astro template.
+Bookshop defines conventions for writing static components for Hugo. Using these conventions, Bookshop provides an ergonomic way to build pages out of your components, build and browse these components locally, and generate rich live editing experiences in CloudCannon.
 
 ## What does Bookshop bring to CloudCannon?
 
 Once you have connected your site to CloudCannon, Bookshop's live editing features use your component files to generate CloudCannon configuration as part of your site build. Under the hood Bookshop creates CloudCannon Structures for each of your components, allowing your team to add and remove component objects in the CMS.
 
-Next, when your site is loaded into CloudCannon's Visual Editor, an additional Bookshop script is loaded. This script loads your component files into the browser, alongside a Bookshop engine that understands Astro and React components. Using this, Bookshop can subscribe to data in the CMS using the CloudCannon Visual Data Preview API to render changes to your components live on the page.
+Next, when your site is loaded into CloudCannon's Visual Editor, an additional Bookshop script is loaded. This script loads your component files into the browser, alongside a Bookshop engine that understands these components. Using this, Bookshop can subscribe to data in the CMS using the CloudCannon Visual Data Preview API to render changes to your components live on the page.
 
 Finally, after rendering components, the Bookshop script tags them with CloudCannon Visual Data Bindings. These data bindings allow you to click on elements directly in the Visual Editor and add, edit, or rearrange them visually.

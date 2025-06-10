@@ -19,7 +19,7 @@ thumb_image_path: /images/blog/blog-thumb-5.jpg
 thumb_image_alt: A group collaborating around a laptop.
 seo:
   page_description: >-
-    A post describing the role of data files in an Astro site using CloudCannon
+    A post describing the role of data files in a Hugo site using CloudCannon
     as a CMS.
   canonical_url:
   featured_image: /images/blog/featured-image-5.jpg

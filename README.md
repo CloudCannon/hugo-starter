@@ -8,23 +8,6 @@ This template is aimed at helping developers build sites quickly, rather than pr
 
 [See a demo version of this site](TODO: Add link here).
 
-## Features
-
-Hugo CloudCannon Starter has many built-in features to aid developers trying to get building quickly, while trying to keep the amount of placeholder content as easy to delete as possible. Some of these features include:
-
-- [Page building with components](#components)
-- [Markdown options & styles](#markdown)
-- [Blog with pagination & tags](#blog)
-- [Built-in search with Pagefind](#pagefind)
-- [Pre-configured shortcodes](#shortcodes)
-- [Header and Footer controls](#navigation)
-- [Tailwind](#tailwind)
-- [Font Awesome icons](#icons)
-- [Create and delete pages](#pages-and-collections)
-- [Accessibility controls](#accessibility)
-- [SEO controls](#seo)
-- [Color palette controls](#color-controls)
-
 ## Getting started 
 TODO: Test this list
 
@@ -62,6 +45,10 @@ To create a copy of your repository to work on your local machine:
 4. Run `npm start`
 
 5. Navigate to https://localhost:1313
+
+
+<!-- Delete from here -->
+
 
 
 ## Pages and Collections

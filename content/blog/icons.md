@@ -22,41 +22,26 @@ seo:
   open_graph_type: article
   no_index: false
 ---
-A Font Awesome Icon free icon pack is included, removing the need to set up your own kit in Font Awesome.
+This project hosts it's own free Font Awesome icon sets. This means you can avoid setting up your own custom icon kit in Font Awesome. This could be replaced with the basic CDN (TODO: Check this) method of adding Font Awesome icons to your site if you have your own Font Awesome kit. 
 
-To add more icons:
+The complete icon list is present in the `icons.yml` file. This file contains objects containing an editor readable name, paired with a Font Awesome class that will add an icon to the locations it's added to in the layouts. This icon list can be used to populate CloudCannon input's wherever it's needed.
 
-1. Go to the [Font Awesome icon list](https://fontawesome.com/search?o=r&amp;m=free)
-2. Pick a free icon
-3. Go to `src/components/utility/icon.jsx`
-4. Import the component from `'@fortawesome/free-solid-svg-icons'`, `'@fortawesome/free-regular-svg-icons'`, or `'@fortawesome/free-brands-svg-icons'`, depending on which kind of icon it is. Tip: After entering 'fa' into one of the destructured objects, you should see an autocomplete dropdown list to help you with the correct syntax.
-5. Add another case to the switch statement following the format the other icons use.
-6. Add the name you just used in the conditional of the switch statement to `data/icons.json`, which populates the icon dropdown list used for icons in the placeholder components.
+To add your own custom icons to this list, you can follow the example set out in the top of the `icons.yml` file for the CloudCannon logo. An editor-readable name is paired with a custom CSS class that we add styles to in our `static/css/custom-icons.css` file. Replicate the CSS in that file to add your own custom icons. An example of using an icon is present in our button components
 
 To remove Font Awesome Icons:
 
-1. Remove the following packages from your `package.json`:
-
-```JSON
-  {
-    "dependencies": {
-      "@fortawesome/fontawesome-svg-core": "^6.5.2",
-      "@fortawesome/free-brands-svg-icons": "^6.5.2",
-      "@fortawesome/free-regular-svg-icons": "^6.5.2",
-      "@fortawesome/free-solid-svg-icons": "^6.5.2",
-      "@fortawesome/react-fontawesome": "^0.2.0"
-    }
-  }
+1. Remove the `static/fontawesome` directory.
+2. Remove `static/css/custom-icons.css` , and the example custom icon `static/icons/logo.svg`.
+3. Remove the icon links from the head of your site in `partials/head.html`:
+```html
+  <!-- Font Awesome icons -->
+  <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/brands.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/regular.min.css" rel="stylesheet" />
+  <link href="/css/custom-icons.css" rel="stylesheet" />
 ```
-
-2. Remove `src/components/utility/icon.jsx`
-3. Remove any imports of the icon
-
-```javascript
-import Icon from '../utility/Icon';
-```
-
-4. Remove `icons.json`
+4. Remove `icons.yml`
 5. Remove any select inputs that were using the icon
 
 ```yaml
@@ -71,5 +56,5 @@ icon:
 ```yaml
 data_config:
   icons:
-    path: data/icons.json
+    path: data/icons.yml
 ```
