@@ -7,7 +7,7 @@
     "build": "run-p build:*",
     "dev:hugo": "hugo server",
     "build:hugo": "hugo --destination public",
-    "new": "npx @bookshop/init --component",
+    "new-component": "npx @bookshop/init --component",
     "update-bookshop": "npx @bookshop/up@latest",
     "pagefind": "npx -y pagefind --site public --serve",
     "pagefind-server": "run-s build pagefind"
@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/CloudCannon/hugo-bookshop-starter#readme",
   "devDependencies": {
-    "@bookshop/generate": "3.14.0",
-    "@bookshop/hugo-engine": "3.14.0",
+    "@bookshop/generate": "3.16.1",
+    "@bookshop/hugo-engine": "3.16.1",
     "@tailwindcss/cli": "^4.0.9",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^4.0.9"
