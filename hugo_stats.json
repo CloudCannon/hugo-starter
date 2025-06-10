@@ -35,7 +35,6 @@
       "ul"
     ],
     "classes": [
-      "!text-red-700",
       "active",
       "blog-article-grid",
       "blog-details",
@@ -113,9 +112,7 @@
       "secondary-button",
       "skip-button",
       "sm:justify-start",
-      "subheading-text",
-      "text-amber-300",
-      "text-red-700"
+      "subheading-text"
     ],
     "ids": [
       "accessibility",
@@ -133,7 +130,6 @@
       "seo",
       "snippets",
       "styling",
-      "what-does-bookshop-bring-to-astro",
       "what-does-bookshop-bring-to-cloudcannon",
       "what-does-bookshop-bring-to-hugo"
     ]

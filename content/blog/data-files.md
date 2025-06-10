@@ -5,7 +5,7 @@ post_hero:
   heading: Data files
   date: 2025-05-06T11:18:38+12:00
   author: T Richardson
-  image: /images/blog/featured-image-5.jpg
+  image: /images/blog/pexels-polina-tankilevitch.jpg
   image_alt: >-
     A side-on profile of someone working on a laptop with a phone in their hand,
     and a coffee next to them.

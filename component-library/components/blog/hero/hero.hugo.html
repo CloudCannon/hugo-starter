@@ -3,6 +3,7 @@
     class="blog-hero-image"
     src="{{ .Params.image }}"
     alt="{{ .Params.image_alt }}" />
+  {{ partial "optimized-image.html" (dict "image_path" .Params.image "image_alt" .Params.image_alt "image_width" "900" "image_format" "jpeg") }}
   {{ with .post_tags }}
     <div class="blog-post-tags">
       {{ range . }} 
