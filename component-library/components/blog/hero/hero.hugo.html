@@ -1,4 +1,4 @@
-<div class="blog-hero" aria-labelledby="blog-heading-text">
+<div class="blog-hero" aria-labelledby="blog-heading-text" data-cms-bind="#post_hero">
   <img
     class="blog-hero-image"
     src="{{ .Params.image }}"
@@ -15,7 +15,7 @@
       {{ end }}
     </div>
   {{ end }}
-  <h1 id="blog-heading-text" class="blog-title" data-cms-bind="#post_hero.heading">{{ .Params.heading }}</h1>
+  <h1 id="blog-heading-text" class="blog-title">{{ .Params.heading }}</h1>
   <div class="blog-details">
     <ul>
       {{ with .Params.date }}
