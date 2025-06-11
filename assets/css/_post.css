@@ -35,7 +35,8 @@
   margin: 0 auto;
 }
 .blog-related-posts {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 32px;
 }
 .blog-related-title {
@@ -57,4 +58,9 @@
   display: block;
   font-size: 1.25rem;
   margin-top: 8px;
+}
+@media only screen and (min-width: 600px) {
+  .blog-related-posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

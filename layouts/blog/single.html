@@ -19,7 +19,15 @@
     {{ range ( where site.RegularPages "Section" "blog" | first 3 ) }}
     <div>
       <a href="{{ .Permalink | relURL }}">
-        <img class="blog-related-post-thumb" src="{{ .Params.thumb_image_path }}" alt="{{ .Params.thumb_image_alt }}" />
+        {{ $optimized_image_props := dict 
+            "image_path" .Params.thumb_image_path
+            "image_alt" .Params.thumb_image_alt
+            "image_width" "700" 
+            "image_format" "webp"
+            "loading" "lazy"
+            "class" "blog-related-post-thumb"
+          }}
+          {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
       </a>
       <div class="blog-related-post-content">
         <a class="blog-related-post-title" href="{{ .Permalink | relURL }}">

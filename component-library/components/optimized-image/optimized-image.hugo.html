@@ -6,6 +6,17 @@
   {{ $image := resources.Get .image_path }}
   {{ $image := $image.Resize (printf "%sx %s" .image_width .image_format) }}
   {{ with $image }}
-    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.image_alt }}">
+    <img 
+      src="{{ .RelPermalink }}" 
+      width="{{ .Width }}" 
+      height="{{ .Height }}" 
+      alt="{{ $.image_alt }}"
+      {{ with $.loading }}
+      loading="{{ . }}"
+      {{ end }}
+      {{ with $.class }}
+      class="{{ . }}"
+      {{ end }}
+    >
   {{ end }}
 {{ end }}
