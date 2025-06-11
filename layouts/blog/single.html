@@ -3,8 +3,8 @@
 <section data-pagefind-body>
   <article class="blog-post">
     
-    {{ partial "bookshop_bindings" `(dict "Params" .Params.post_hero)` }}
-    {{ partial "bookshop" (slice "blog/hero" (dict "Params" .Params.post_hero)) }}
+    {{ partial "bookshop_bindings" `(dict "Params" .Params.post_hero "post_tags" .Params.tags)` }}
+    {{ partial "bookshop" (slice "blog/hero" (dict "Params" .Params.post_hero "post_tags" .Params.tags)) }}
 
     <div data-cms-edit="content" class="markdown-text">
       {{ .Content }}
