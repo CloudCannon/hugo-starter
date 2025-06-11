@@ -17,16 +17,14 @@ tags:
   - building
   - WYSIWYG editing
   - live editing
-thumb_image_path: /images/blog/blog-thumb-5.jpg
-thumb_image_alt: A group collaborating around a laptop.
+thumb_image_path: /images/blog/pexels-edmond-dantes.jpg
+thumb_image_alt: A group collaborating around a table.
 seo:
   page_description: >-
     A post describing what page building features come with the Hugo starter.
   canonical_url:
-  featured_image: /images/blog/featured-image-5.jpg
-  featured_image_alt: >-
-    A side-on profile of someone working on a laptop with a phone in their hand,
-    and a coffee next to them.
+  featured_image: /images/blog/pexels-edmond-dantes.jpg
+  featured_image_alt: A group collaborating around a table.
   author_twitter_handle:
   open_graph_type: article
   no_index: false

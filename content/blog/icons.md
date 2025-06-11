@@ -11,18 +11,18 @@ tags:
   - icons
   - components
   - styling
-thumb_image_path: /images/blog/blog-thumb-5.jpg
-thumb_image_alt: A group collaborating around a laptop.
+thumb_image_path: /images/blog/pexels-cottonbro.jpg
+thumb_image_alt: A person beginning a todo list in a notebook.
 seo:
   page_description: A post describing how to use FontAwesome Icons throughout your site.
   canonical_url:
-  featured_image: /images/blog/featured-image-3.jpg
-  featured_image_alt: A man in front of a laptop with a coffee in a dimly lit cafe.
+  featured_image: /images/blog/pexels-cottonbro.jpg
+  featured_image_alt: A person beginning a todo list in a notebook.
   author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---
-This project hosts it's own free Font Awesome icon sets. This means you can avoid setting up your own custom icon kit in Font Awesome. This could be replaced with the basic CDN (TODO: Check this) method of adding Font Awesome icons to your site if you have your own Font Awesome kit. 
+This project hosts it's own free Font Awesome icon sets. This means you can avoid setting up your own custom icon kit in Font Awesome. This could be replaced with the basic CDN method of adding Font Awesome icons to your site if you have your own Font Awesome kit. 
 
 The complete icon list is present in the `icons.yml` file. This file contains objects containing an editor readable name, paired with a Font Awesome class that will add an icon to the locations it's added to in the layouts. This icon list can be used to populate CloudCannon input's wherever it's needed.
 
