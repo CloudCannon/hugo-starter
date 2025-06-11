@@ -4,8 +4,7 @@
     src="{{ .Params.image }}"
     alt="{{ .Params.image_alt }}" />
   
-  {{ $optimized_image_params := dict "image_path" "test" "image_alt" "an_image_alt" }}
-  {{ partial "bookshop" (slice "optimized-image" $optimized_image_params) }}
+  {{ partial "bookshop" (slice "optimized-image" (dict "image_path" .Params.image "image_alt" "an_image_alt")) }}
 
   {{ with .post_tags }}
     <div class="blog-post-tags">
