@@ -3,7 +3,7 @@
   <!-- We copy images from the assets/images folder to static/fallback-images with the exact same path so they work in visual editor -->
   <p>I am being edited live!</p>
   <p>Image path: {{ .image_path }}</p>
-  <img src="/editor-fallback-images/{{ .image_path }}" alt="{{ .image_alt }}">
+  <img src="/editor-fallback-images{{ .image_path }}" alt="{{ .image_alt }}">
 {{ else }}
   <p>I am the real image!</p>
   <p>Image path: {{ .image_path }}</p>
