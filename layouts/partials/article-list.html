@@ -15,6 +15,13 @@
       <div class="blog-grid-item">
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
           <img src="{{ .Params.thumb_image_path }}" alt="{{ .Params.thumb_image_alt }}" loading="lazy" />
+          {{ $optimized_image_props := dict 
+            "image_path" .Params.thumb_image_path
+            "image_alt" .Params.thumb_image_alt
+            "image_width" "700" 
+            "image_format" "webp"
+          }}
+          {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
         </a>
         <h2 class="blog-post-title">
           <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>

@@ -1,9 +1,4 @@
 <div class="blog-hero" aria-labelledby="blog-heading-text" data-cms-bind="#post_hero">
-  <img
-    class="blog-hero-image"
-    src="{{ .Params.image }}"
-    alt="{{ .Params.image_alt }}" />
-  
   {{ $optimized_image_props := dict 
     "data_binding" false 
     "image_path" .Params.image 
