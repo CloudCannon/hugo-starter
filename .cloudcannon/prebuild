@@ -5,7 +5,7 @@
 # We can fallback to an unoptimized version of the image in the static folder for editing purposes
 # The optimized image component will have the /editor-fallback-images/ prefixed to its image path in the fallback to make it work
 # The live site will have the optimized image
-mkdir -p ./static/editor-fallback-images/images
-cp -r ./assets/images/ ./static/editor-fallback-images/images
+mkdir -p ./static/editor-fallback-images
+cp -r ./assets/images/ ./static/editor-fallback-images/
 
 # TODO: Do we need to sync path the fallback images back to the repo for CC?
