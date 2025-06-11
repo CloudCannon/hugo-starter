@@ -4,7 +4,7 @@
     src="{{ .Params.image }}"
     alt="{{ .Params.image_alt }}" />
   
-  {{ $optimized_image_props := dict "image_path" .Params.image "image_alt" .Params.image_alt }}
+  {{ $optimized_image_props := dict "data_binding" false "image_path" .Params.image "image_alt" .Params.image_alt }}
   {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
 
   {{ with .post_tags }}
@@ -15,7 +15,7 @@
       {{ end }}
     </div>
   {{ end }}
-  <h1 id="blog-heading-text" class="blog-title">{{ .Params.heading }}</h1>
+  <h1 id="blog-heading-text" class="blog-title" data-cms-bind="#post_hero.heading">{{ .Params.heading }}</h1>
   <div class="blog-details">
     <ul>
       {{ with .Params.date }}
