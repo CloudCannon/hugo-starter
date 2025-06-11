@@ -1,0 +1,31 @@
+{{ if site.Params.env_bookshop_live }}
+  <p>I am being edited live!</p>
+  <img src="{{ .image_path }}" alt="{{ .image_alt }}">
+{{ else }}
+  <p>I am the real image!</p>
+  {{ $image := resources.Get .image_path }}
+  {{ $image := $image.Resize (printf "%sx %s" .image_width .image_format) }}
+  {{ with $image }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.image_alt }}">
+  {{ end }}
+{{ end }}
+
+<!-- TODO:
+- Make this a Bookshop component! like https://github.com/CloudCannon/hugo-bookshop-starter/blob/main/component-library/components/hero/hero.hugo.html
+- Display an optimized image from /assets/images
+- Fallback in the visual editor to an image from /static/fallback-images/
+- Copy images from assets/images to static/fallback-images
+- Make the image address come from templating
+- Add to docs about this partial
+- - Made for CC cause
+- - - visual editor resources.Get dont work so good
+- - - bookshop components cant access your partials, so it needs to be a bookshop component to add it to a layout OR a bookshop component
+- - - we have a prebuild we can copy the images from assets to static in
+- - - maybe we can have a way to only copy the images over in a dev/staging env
+- - - the width should be set to max width, so for the blog post on Hugo starter around 700px is good
+- - - - the og image is 3000px (~355kb) and the optimized is 700px (~less idk) and the max width the image will ever be used for is 656px 
+
+Questions:
+- Does having the fallback images in the static folder increase load times if we don't reference them on the page?
+
+-->
