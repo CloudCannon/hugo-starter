@@ -20,10 +20,10 @@
       {{ with .Params.date }}
       <li>{{ . | time.Format ":date_long" }}</li>
       {{ end }}
-      {{ with .Params.author }}
-      <li>{{ . }}</li>
-      {{ else with site.Data.seo.default_author }}
-      <li>{{ . }}</li>
+      {{ if .Params.author }} 
+      <li>{{ .Params.author }}</li>
+      {{ else }}
+      <li>{{ site.Data.seo.default_author }}</li>
       {{ end }}
     </ul>
   </div>
