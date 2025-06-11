@@ -4,6 +4,7 @@
     src="{{ .Params.image }}"
     alt="{{ .Params.image_alt }}" />
   
+  {{ partial "bookshop_bindings" `dict "image_path" .Params.image "image_alt" .Params.image_alt)` }}
   {{ partial "bookshop" (slice "optimized-image" (dict "image_path" .Params.image "image_alt" .Params.image_alt)) }}
 
   {{ with .post_tags }}
