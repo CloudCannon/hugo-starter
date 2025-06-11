@@ -8,7 +8,7 @@
   {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
 
   {{ with .post_tags }}
-    <div class="blog-post-tags">
+    <div class="blog-post-tags" data-cms-bind="#tags">
       {{ range . }} 
         {{ $href := print (absURL "tags/") (urlize .) }}
         <a href="{{ $href }}">{{ . | humanize }}</a>

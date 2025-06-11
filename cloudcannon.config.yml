@@ -236,7 +236,7 @@ _inputs:
       copyformatting: true
   tags:
     type: multiselect
-    comment: To add a new tag, go to the [tags data file](cloudcannon:collections/data/tags.yml). These will not update live in the visual editor, and require a save to see any changes show up.
+    comment: To add a new tag, go to the [tags data file](cloudcannon:collections/data/tags.yml).
     options:
       values: data.tags
       empty_type: array
