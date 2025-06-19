@@ -1,6 +1,7 @@
 
 {{ if site.Params.env_bookshop_live }}
-  <!-- We copy images from the assets/images folder to static/fallback-images with the exact same path so they work in visual editor -->
+  <!-- We copy images from the assets/images folder to static/fallback-images in our prebuild script
+  with the exact same path so that the fallback works in CloudCannon's visual editor -->
   <img src="/editor-fallback-images{{ .image_path }}" alt="{{ .image_alt }}">
 {{ else }}
   {{ $image := resources.Get .image_path }}

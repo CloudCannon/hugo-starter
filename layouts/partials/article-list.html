@@ -10,22 +10,27 @@
       });
     </script>
   </div>
+  
   <div class="blog-article-grid">
     {{ range (.context.Paginator .page_size).Pages }}
       <div class="blog-grid-item">
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
-          {{ $optimized_image_props := dict 
-            "image_path" .Params.thumb_image_path
-            "image_alt" .Params.thumb_image_alt
-            "image_width" "700" 
-            "image_format" "webp"
-            "loading" "lazy"
-          }}
-          {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
+          <img src="{{ .Params.thumb_image_path }}" alt="{{ .Params.thumb_image_alt }}" loading="lazy" />
         </a>
         <h2 class="blog-post-title">
           <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>
         </h2>
+        {{ $imageTest := resources.Get .Params.thumb_image_path }}
+        {{ with $imageTest }}
+        {{ $imageTest := .Resize "700x" }}
+        {{ end }}
+        {{ with $imageTest }}
+          <img 
+            src="{{ .RelPermalink }}" 
+            width="{{ .Width }}" 
+            height="{{ .Height }}" 
+          >
+        {{ end }}
         {{ with .Params.post_hero.date }}
           <p>{{ . | time.Format ":date_long" }}</p>
         {{ end }}
