@@ -17,19 +17,19 @@
         <h2 class="blog-post-title">
           <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>
         </h2>
+        <a class="blog-grid-image" href="{{ .RelPermalink }}">
         {{ $optimizedImage := resources.Get .Params.thumb_image_path }}
         {{ with $optimizedImage }}
           {{ $optimizedImage := .Resize "700x webp" }}
         {{ end }}
         {{ with $optimizedImage }}
-          <a class="blog-grid-image" href="{{ .RelPermalink }}">
-            <img 
-              src="{{ .RelPermalink }}" 
-              width="{{ .Width }}" 
-              height="{{ .Height }}" 
-            >
-          </a>
+          <img 
+            src="{{ .RelPermalink }}" 
+            width="{{ .Width }}" 
+            height="{{ .Height }}" 
+          >
         {{ end }}
+        </a>
         {{ with .Params.post_hero.date }}
           <p>{{ . | time.Format ":date_long" }}</p>
         {{ end }}
