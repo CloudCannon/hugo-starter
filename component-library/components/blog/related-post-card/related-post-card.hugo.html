@@ -1,0 +1,29 @@
+<div>
+  <a href="{{ .Permalink | relURL }}">
+    {{ $optimized_image_props := dict 
+        "image_path" .Params.thumb_image_path
+        "image_alt" .Params.thumb_image_alt
+        "image_width" "700" 
+        "image_format" "webp"
+        "loading" "lazy"
+        "class" "blog-related-post-thumb"
+        }}
+    {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
+  </a>
+  <div class="blog-related-post-content">
+    <a class="blog-related-post-title" href="{{ .Permalink | relURL }}">
+      {{ .Params.title }}
+    </a>
+    {{ with .Params.post_hero.date }}
+        <p>{{ . | time.Format ":date_long" }}</p>
+    {{ end }}
+    {{ with .Params.tags }}
+        <div class="blog-post-tags">
+          {{ range . }} 
+            {{ $href := print (absURL "tags/") (urlize .) }}
+            <a href="{{ $href }}">{{ . | humanize }}</a>
+          {{ end }}
+        </div>
+    {{ end }}
+  </div>
+</div>
