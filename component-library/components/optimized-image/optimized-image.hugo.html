@@ -5,7 +5,7 @@
   <img src="/editor-fallback-images{{ .image_path }}" alt="{{ .image_alt }}">
 {{ else }}
   {{ $image := resources.Get .image_path }}
-  {{ $image := $image.Resize (printf "%sx %s" .image_width .image_format) }}
+  {{ $image = $image.Resize (printf "%sx %s" .image_width .image_format) }}
   {{ with $image }}
     <img 
       src="{{ .RelPermalink }}" 
