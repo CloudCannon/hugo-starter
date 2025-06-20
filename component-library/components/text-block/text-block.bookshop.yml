@@ -12,7 +12,13 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   background_color: '#ffffff'
+  heading:
+    heading_text: A section heading
+    text_alignment: center
+    text_color: '#034adf'
   text_color: '#333232'
+  text_column_count: 2
+  text_alignment: start
   text_content:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
@@ -20,4 +26,17 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  text_alignment:
+    type: select
+    options:
+      values:
+        - start
+        - center
+        - end
+  text_column_count:
+    type: range
+    options:
+      min: 1
+      max: 3
+      step: 1
   

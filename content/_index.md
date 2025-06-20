@@ -118,28 +118,4 @@ content_blocks:
       background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
-  - _bookshop_name: text-block
-    background_color: '#F2F2F2'
-    text_color: '#333232'
-    text_content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae
-      leo eu tortor ornare congue eget quis diam. Sed laoreet, nisi finibus
-      sodales interdum, metus turpis tincidunt libero, vel volutpat enim nisi
-      vel dolor. In scelerisque eleifend auctor. Sed iaculis ligula ac nisi
-      pharetra pretium. Vivamus ultricies semper lacinia. Vestibulum at mollis
-      arcu, in egestas eros. Donec iaculis vel mi porttitor auctor. Proin vel
-      libero sit amet libero molestie laoreet facilisis ac ligula. Proin vitae
-      elit felis.
-
-
-      Morbi in vehicula metus, ut facilisis urna. Morbi ornare purus eu tortor
-      bibendum, eu tempus mauris rhoncus. Proin tempor sapien at leo volutpat
-      cursus. Nulla porta nunc lacinia, tempus nisi in, feugiat sem. Fusce
-      mattis mi leo. Cras vitae ligula in turpis ornare ultrices sit amet a
-      tellus. Aliquam vel ultricies turpis. Etiam convallis iaculis lectus, eget
-      bibendum mauris malesuada sit amet. Duis ut lectus a arcu finibus molestie
-      eu a orci. Nunc elementum diam et risus egestas finibus a congue augue.
-      Pellentesque quis auctor sem, sed tristique nibh. Nulla lobortis sed diam
-      eget faucibus. Etiam quis mi quis erat hendrerit hendrerit. Integer vitae
-      justo quis elit venenatis vulputate eget non ipsum.
 ---

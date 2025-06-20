@@ -1,5 +1,52 @@
-<section class="text-block" style="background-color: {{ .background_color }};">
-  <div style="color: {{ .text_color }};" class="markdown-text text-block-container">
-    {{ .text_content | markdownify }}
+<section class="text-block">
+  <div class="markdown-text text-block-container">
+    <h2 style="color: {{ .heading.text_color }}; text-align: {{ .heading.text_alignment }};">
+      {{ .heading.heading_text }}
+    </h2>
+    <div class="text-block-body-content">
+      {{ .text_content | markdownify }}
+    </div>
   </div>
 </section>
+
+<style>
+  .text-block {
+    background-color: {{ .background_color }};
+  }
+  .text-block-container {
+    padding-top: calc(var(--sectionPaddingMobile));
+    padding-bottom: var(--sectionPaddingMobile);
+    padding-inline: var(--pagePadding);
+    max-width: var(--pageContainer);
+    margin-inline: auto;
+  }
+  .text-block-container h2 {
+    margin-block: 30px;
+  }
+  .text-block-body-content {
+    display: grid;
+    grid-template-columns: repeat({{ .text_column_count }}, 1fr);
+    gap: 2rem;
+    color: {{ .text_color }};
+  }
+  .text-block-body-content > * {
+    {{ if eq .text_alignment "center" }}
+      margin-inline: auto;
+    {{ else if eq .text_alignment "start" }}
+      margin-inline: 0
+    {{ end }}
+  }
+  .text-block-body-content {
+    display: grid;
+    grid-template-columns: repeat({{ .text_column_count }}, 1fr);
+    gap: 2rem;
+    text-align: {{ .text_alignment }};
+    color: {{ .text_color }};
+  }
+  @media only screen and (min-width: 768px) {
+    .text-block-container {
+      padding-top: calc(var(--sectionPadding));
+      padding-bottom: var(--sectionPadding);
+    }
+  }
+</style>
