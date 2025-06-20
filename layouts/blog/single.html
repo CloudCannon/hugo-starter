@@ -17,7 +17,7 @@
   <h2 class="blog-related-title">Recent Posts</h2>
   <div class="blog-related-posts">
     {{ range ( where site.RegularPages "Section" "blog" | first 3 ) }}
-      {{ partial "bookshop" (slice "blog/hero" .) }}
+      {{ partial "bookshop" (slice "blog/related-post-card" .) }}
     {{ end }}
   </div>
 </section>
