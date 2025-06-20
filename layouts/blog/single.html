@@ -19,21 +19,16 @@
     {{ range ( where site.RegularPages "Section" "blog" | first 3 ) }}
       <div>
         <a href="{{ .Permalink | relURL }}">
-          {{ if site.Params.env_bookshop_live }}
-            <!-- We copy images from the assets/images folder to static/fallback-images in our prebuild script
-            with the exact same path so that the fallback works in CloudCannon's visual editor -->
-            <img src="/editor-fallback-images{{ .Params.thumb_image_path }}" alt="{{ .Params.thumb_image_alt }}">
-          {{ else }}
-            {{ $image := resources.Get .Params.thumb_image_path }}
-            {{ $image = $image.Resize "700x webp" }}
-            {{ with $image }}
-              <img 
-                src="{{ .RelPermalink }}" 
-                width="{{ .Width }}" 
-                height="{{ .Height }}" 
-                alt="{{ $.Params.thumb_image_alt }}"
-              >
-            {{ end }}
+          {{ $image := resources.Get .Params.thumb_image_path }}
+          {{ $image = $image.Resize "700x webp" }}
+          {{ with $image }}
+            <img 
+              src="{{ .RelPermalink }}" 
+              width="{{ .Width }}" 
+              height="{{ .Height }}" 
+              class="blog-related-post-thumb"
+              alt="{{ $.Params.thumb_image_alt }}"
+            >
           {{ end }}
         </a>
         <div class="blog-relsated-post-content">
