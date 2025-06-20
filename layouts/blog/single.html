@@ -20,7 +20,7 @@
     <div>
       <a href="{{ .Permalink | relURL }}">
         {{ $optimized_image_props := dict 
-            "image_path" .Params.post_hero.image
+            "image_path" .Params.thumb_image_path
             "image_alt" .Params.thumb_image_alt
             "image_width" "700" 
             "image_format" "webp"
