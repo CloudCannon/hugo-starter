@@ -9,15 +9,19 @@
       {
         "key": "HUGO_CACHEDIR",
         "value": "/usr/local/__site/src/.hugo_cache/"
+      },
+      {
+        "key": "SYNC_PATHS",
+        "value": "/static/editor-fallback-images/"
       }
     ],
-    "preserved_paths": "resources/,.hugo_cache/",
+    "preserved_paths": "resources/,.hugo_cache/,node_modules/",
     "preserve_output": false,
     "include_git": false,
     "manually_configure_urls": false,
     "hugo_version": "0.145.0",
     "ruby_version": "2.7.3",
-    "node_version": "18",
+    "node_version": "20",
     "deno_version": "1.40.2"
   }
 }
