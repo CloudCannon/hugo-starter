@@ -16,7 +16,7 @@
       <div class="blog-grid-item">
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
         {{ $optimizedImage := resources.Get .Params.thumb_image_path }}
-        {{ $optimizedImage = $optimizedImage.Resize "1000x avif" }}
+        {{ $optimizedImage = $optimizedImage.Resize "1000x webp" }}
         {{ with $optimizedImage }}
           <img 
             src="{{ .RelPermalink }}" 
