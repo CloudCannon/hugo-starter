@@ -1,5 +1,4 @@
 <div>
-  {{ . }}
   <a href="{{ .Permalink | relURL }}">
     {{ $optimized_image_props := dict 
         "image_path" .Params.thumb_image_path
