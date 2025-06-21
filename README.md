@@ -9,27 +9,29 @@ This template is aimed at helping developers build sites quickly, rather than pr
 [See a demo version of this site](TODO: Add link here).
 
 ## Getting started 
-TODO: Test this list
 
 1. Select `Use as template` in GitHub to create a copy of the repository on your own GitHub account.
 
 2. Build a site on CloudCannon, using your newly copied repository.
 
-    a. [Create a CloudCannon account](TODO: Link to signup) if you haven't already
-
-    b. Create an [organisation](TODO: Link to concept of org in docs) if you haven't already
+    a. [Create a CloudCannon account](https://app.cloudcannon.com/register) if you haven't already
     
-    c. Go to `Sites`
+    b. Go to `Sites`
 
-    d. Select `Create a new site`
+    c. Select `Create a new site`
 
-    e. Select `Connect to a GitHub repository`
+    d. Select `Connect to a GitHub repository` (or whatever Git provider you use).
 
-    f. Authenticate CloudCannon as an application on your GitHub if you haven't already
+    e. Authenticate CloudCannon as an application on your Git provider if you haven't already
 
-    g. Select build site
+    f. Select build site
 
-    h. Any changes to your repository will trigger a rebuild for your attached site in CloudCannon.
+    g. Any changes pushed to your repository will trigger a rebuild for your attached site in CloudCannon. Similarly any changes you make on CloudCannon will push to your connected Git repository.
+
+## Prerequisites
+
+- Hugo [install](https://gohugo.io/installation/). `brew install hugo`
+- Go [install](https://go.dev/learn/). `brew install go`
 
 ## Local development
 
@@ -37,11 +39,13 @@ Any changes you make locally, which you then push to your git repository, will t
 
 To create a copy of your repository to work on your local machine:
 
-1. Run `git clone` in the directory you want your repository
+1. Run `git clone` in the directory you want your repository.
+
 2. `cd` into your newly cloned Hugo starter directory. 
 
-3. Run `npm install` at the root of your cloned directory
+3. Run `npm install` at the root of your cloned directory.
 
-4. Run `npm start`
+4. Run `npm start`.
 
-5. Navigate to https://localhost:1313
+5. Navigate to https://localhost:1313.
+
