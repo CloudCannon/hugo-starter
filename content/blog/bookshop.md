@@ -24,7 +24,7 @@ seo:
   open_graph_type: article
   no_index: false
 ---
-[Bookshop](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc) is a collection of tooling that provides a component development workflow for static websites, and aids in the creation of a page-building interface in the CloudCannon CMS.
+[Bookshop](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc) is a piece of tooling that provides a component development workflow for static websites, and aids in the creation of a page-building interface in the CloudCannon CMS.
 
 Bookshop is fully open-source and is available on GitHub at CloudCannon/bookshop. As a tool that integrates into your codebase, we want to ensure you aren't vendor-locked to our platform. Sites built using Bookshop remain fully portable and can be built or hosted anywhere on the web.
 
