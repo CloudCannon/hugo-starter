@@ -2,11 +2,16 @@
 <section class="left-right" style="background-color: {{ .background_color }};" aria-labelledby="left-right-{{ .heading.heading_text | anchorize }}">
   {{ if .flipped }}
     <div class="left-right__wrapper">
-      <img
-        class="left-right__image-flipped"
-        alt="{{ .image.alt_text}}"
-        src="{{ .image.image_path }}"
-      />
+      {{ $optimized_image_props := dict 
+        "data_binding" false 
+        "image_path" .image.image_path
+        "image_alt" .image.alt_text
+        "image_width" "1000" 
+        "image_format" "webp" 
+        "class" "left-right__image-flipped"
+        "loading" "lazy"
+      }}
+      {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
       <div class="left-right__text-flipped">
         <h2 id="left-right-{{ .heading.heading_text | anchorize }}" style="color: {{ .heading.text_color }};">
           {{ .heading.heading_text }}
@@ -32,11 +37,16 @@
           {{ partial "bookshop" . }}
         {{ end }}
       </div>
-      <img
-        class="left-right__image-unflipped"
-        alt="{{ .image.alt_text}}"
-        src="{{ .image.image_path }}"
-      />
+      {{ $optimized_image_props := dict 
+        "data_binding" false 
+        "image_path" .image.image_path
+        "image_alt" .image.alt_text
+        "image_width" "1000" 
+        "image_format" "webp" 
+        "class" "left-right__image-unflipped"
+        "loading" "lazy"
+      }}
+      {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
     </div>
   {{ end }}
 </section>

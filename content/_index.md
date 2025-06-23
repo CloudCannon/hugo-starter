@@ -83,7 +83,7 @@ content_blocks:
         - [Color palette controls](/blog/data-files/)
       text_color: '#333232'
     image:
-      image_path: /images/transparent-bg/undraw-hello.svg
+      image_path: /images/blog/pexels-edmond-dantes.jpg
       alt_text: An image
     button:
   - _bookshop_name: left-right
