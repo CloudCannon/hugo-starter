@@ -1,5 +1,5 @@
 
-{{ if site.Params.env_bookshop_live }}
+{{ if or site.Params.env_bookshop_live ( hasSuffix .image_path ".svg" ) }}
   <!-- We copy images from the assets/images folder to static/fallback-images in our prebuild script
   with the exact same path so that the fallback works in CloudCannon's visual editor -->
   <img 
