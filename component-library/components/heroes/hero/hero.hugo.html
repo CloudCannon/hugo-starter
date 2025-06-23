@@ -24,10 +24,16 @@
       {{ end }}
     </div>
 
-    <img
-      class="hero-image"
-      src="{{ .image.image_path }}"
-      alt="{{ .image.alt_text }}" />
+    {{ $optimized_image_props := dict 
+      "data_binding" false 
+      "image_path" .image.image_path
+      "image_alt" .image.alt_text
+      "image_width" "1000" 
+      "image_format" "webp" 
+      "class" "hero-image"
+      "loading" "eager"
+    }}
+    {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
 
   </div>
 </section>
