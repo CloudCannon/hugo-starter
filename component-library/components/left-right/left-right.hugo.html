@@ -3,11 +3,11 @@
   {{ if .flipped }}
     <div class="left-right__wrapper">
       <img
-        class="order-2 md:order-1"
+        class="left-right__image-flipped"
         alt="{{ .image.alt_text}}"
         src="{{ .image.image_path }}"
       />
-      <div class="left-right__text order-1 md:order-2">
+      <div class="left-right__text-flipped">
         <h2 id="left-right-{{ .heading.heading_text | anchorize }}" style="color: {{ .heading.text_color }};">
           {{ .heading.heading_text }}
         </h2>
@@ -33,7 +33,7 @@
         {{ end }}
       </div>
       <img
-        class="order-2 md:order-1"
+        class="left-right__image-unflipped"
         alt="{{ .image.alt_text}}"
         src="{{ .image.image_path }}"
       />
