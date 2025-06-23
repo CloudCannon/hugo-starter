@@ -3,7 +3,7 @@ _schema: default
 title: Bookshop Components
 post_hero:
   heading: Bookshop Components
-  date: 2025-05-06T10:03:53+12:00
+  date: 2025-05-08T10:03:53+12:00
   author: T Richardson
   image: /images/blog/featured-image-1.jpg
   image_alt: A child working at a computer, seen from behind.
@@ -11,7 +11,7 @@ tags:
   - bookshop
   - components
   - live editing
-thumb_image_path: /images/transparent-bg/undraw-data-input.svg
+thumb_image_path: /images/blog/blog-thumb-1.jpg
 thumb_image_alt: A birds eye view of a group of people working on laptops around a table.
 seo:
   page_description: >-
