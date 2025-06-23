@@ -1,7 +1,10 @@
 
 {{ if or site.Params.env_bookshop_live ( hasSuffix .image_path ".svg" ) }}
   <!-- We copy images from the assets/images folder to static/fallback-images in our prebuild script
-  with the exact same path so that the fallback works in CloudCannon's visual editor -->
+  with the same path so that the fallback works when: 
+    - image is viewed in CloudCannon's visual editor 
+    - the image is an SVG and can't be processed 
+  -->
   <img 
     src="/fallback-images{{ .image_path }}" 
     alt="{{ .image_alt }}"
@@ -15,37 +18,20 @@
 {{ else }}
   {{ $image := resources.Get .image_path }}
   {{ with $image }}
-    <!-- Don't try to resize a non-raster image like an SVG -->
-    {{ if ne .MediaType.SubType "svg" }}
-      {{ $image = $image.Resize (printf "%sx %s" $.image_width $.image_format) }}
-    {{ end }}
+    {{ $image = $image.Resize (printf "%sx %s" $.image_width $.image_format) }}
   {{ end }}
   {{ with $image }}
-      <!-- Fallback for SVG images -->
-    {{ if eq .MediaType.SubType "svg" }}
-      <img 
-        src="{{ $.image_path }}" 
-        alt="{{ $.image_alt }}"
-        {{ with $.loading }}
-          loading="{{ . }}"
-        {{ end }}
-        {{ with $.class }}
-          class="{{ . }}"
-        {{ end }}
-      >
-    {{ else }}
-      <img 
-        src="{{ .RelPermalink }}" 
-        width="{{ .Width }}" 
-        height="{{ .Height }}" 
-        alt="{{ $.image_alt }}"
-        {{ with $.loading }}
-        loading="{{ . }}"
-        {{ end }}
-        {{ with $.class }}
-        class="{{ . }}"
-        {{ end }}
-      >
-    {{ end }}
+    <img 
+      src="{{ .RelPermalink }}" 
+      width="{{ .Width }}" 
+      height="{{ .Height }}" 
+      alt="{{ $.image_alt }}"
+      {{ with $.loading }}
+      loading="{{ . }}"
+      {{ end }}
+      {{ with $.class }}
+      class="{{ . }}"
+      {{ end }}
+    >
   {{ end }}
 {{ end }}
