@@ -15,17 +15,25 @@
     {{ range (.context.Paginator .page_size).Pages }}
       <div class="blog-grid-item">
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
-        {{ $optimizedImage := resources.Get .Params.thumb_image_path }}
-        {{ with $optimizedImage }}
-          {{ $optimizedImage = $optimizedImage.Resize "1000x webp" }}
-        {{ end }}
-        {{ with $optimizedImage }}
-          <img 
-            src="{{ .RelPermalink }}" 
-            width="{{ .Width }}" 
-            height="{{ .Height }}" 
-          >
-        {{ end }}
+          {{ if hasSuffix .Params.thumb_image_path ".svg" }}
+            <img 
+              src="/fallback-images{{ .Params.thumb_image_path }}" 
+              alt="{{ .Params.thumb_image_alt }}"
+            >
+          {{ else }}
+            {{ $optimizedImage := resources.Get .Params.thumb_image_path }}
+            {{ with $optimizedImage }}
+              {{ $optimizedImage = $optimizedImage.Resize "1000x webp" }}
+            {{ end }}
+            {{ with $optimizedImage }}
+              <img 
+                src="{{ .RelPermalink }}"
+                alt="{{ $.Params.thumb_image_alt }}"
+                width="{{ .Width }}" 
+                height="{{ .Height }}" 
+              >
+            {{ end }}
+          {{ end }}
         </a>
         <h2 class="blog-post-title">
           <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>

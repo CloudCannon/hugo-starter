@@ -11,7 +11,7 @@ tags:
   - bookshop
   - components
   - live editing
-thumb_image_path: /images/blog/blog-thumb-1.jpg
+thumb_image_path: /images/transparent-bg/undraw-data-input.svg
 thumb_image_alt: A birds eye view of a group of people working on laptops around a table.
 seo:
   page_description: >-

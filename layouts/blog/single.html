@@ -19,17 +19,26 @@
     {{ range ( where site.RegularPages "Section" "blog" | first 3 ) }}
       <div>
         <a href="{{ .Permalink | relURL }}">
-          {{ $image := resources.Get .Params.thumb_image_path }}
-          {{ $image = $image.Resize "700x webp" }}
-          {{ with $image }}
+          {{ if hasSuffix .Params.thumb_image_path ".svg" }}
             <img 
-              src="{{ .RelPermalink }}" 
-              width="{{ .Width }}" 
-              height="{{ .Height }}" 
+              src="/fallback-images{{ .Params.thumb_image_path }}" 
+              alt="{{ .Params.thumb_image_alt }}"
               class="blog-related-post-thumb"
-              alt="{{ $.Params.thumb_image_alt }}"
               loading="lazy"
             >
+          {{ else }}
+            {{ $image := resources.Get .Params.thumb_image_path }}
+            {{ $image = $image.Resize "700x webp" }}
+            {{ with $image }}
+              <img 
+                src="{{ .RelPermalink }}" 
+                width="{{ .Width }}" 
+                height="{{ .Height }}" 
+                class="blog-related-post-thumb"
+                alt="{{ $.Params.thumb_image_alt }}"
+                loading="lazy"
+              >
+            {{ end }}
           {{ end }}
         </a>
         <div class="blog-related-post-content">
