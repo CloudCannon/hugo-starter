@@ -106,6 +106,14 @@
   margin-block: 1.5rem;
   padding: 1rem;
 }
+.markdown-text p code,
+.markdown-text li code {
+  background: #f1f1f1;
+  border-radius: 6px;
+  padding: 4px 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
 .markdown-text details summary {
   padding-bottom: 1rem;
 }
