@@ -12,7 +12,14 @@
   </div>
   
   <div class="blog-article-grid">
-    {{ range (.context.Paginator .page_size).Pages }}
+    <!-- Paginate is used for when you need to sort pages -->
+    <!-- Paginator is used for the pagination controls -->
+
+    {{ $pagesToPaginate := .context.Pages }}
+    {{ $pagesToPaginate = $pagesToPaginate.ByParam "post_hero.date" }}
+    {{ $pagesToPaginate = $pagesToPaginate.Reverse }}
+
+    {{ range (.context.Paginate $pagesToPaginate .page_size).Pages }}
       <div class="blog-grid-item">
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
           {{ if hasSuffix .Params.thumb_image_path ".svg" }}
@@ -50,14 +57,15 @@
           </div>
         {{ end }}
       </div>
-    {{ end }} 
+    {{ end }}
   </div>
-  {{ if gt .context.Paginator.TotalPages 1 }}
+  {{ $paginator := .context.Paginator }} 
+  {{ if gt $paginator.TotalPages 1 }}
     <nav class="blog-pagination">
       <ul class="pagination">
-        {{ if .context.Paginator.HasPrev }}
+        {{ if $paginator.HasPrev }}
           <li class="page-item">
-            <a class="page-link" href="{{.context.Paginator.Prev.URL}}">
+            <a class="page-link" href="{{ $paginator.Prev.URL }}">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20.657"
@@ -79,7 +87,6 @@
             </a>
           </li>
         {{ end }} 
-        {{ $paginator := .context.Paginator }} 
         {{ range $paginator.Pagers }}
           <li class="page-item">
             <a
@@ -89,9 +96,9 @@
             </a>
           </li>
         {{ end }} 
-        {{ if .context.Paginator.HasNext }}
+        {{ if $paginator.HasNext }}
           <li class="page-item">
-            <a class="page-link" href="{{ .context.Paginator.Next.URL }}">
+            <a class="page-link" href="{{ $paginator.Next.URL }}">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20.657"
