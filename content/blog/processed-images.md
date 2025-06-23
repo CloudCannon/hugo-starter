@@ -9,7 +9,11 @@ post_hero:
   image_alt: >-
     A woman sitting sideways on a chair, working at a desk on a laptop. The only
     other thing on the desk is a small pot plant.
-tags: []
+tags: 
+  - images
+  - seo
+  - components
+  - live editing
 thumb_image_path: /images/blog/pexels-polina-tankilevitch.jpg
 thumb_image_alt: >-
   A woman sitting sideways on a chair, working at a desk on a laptop. The only
