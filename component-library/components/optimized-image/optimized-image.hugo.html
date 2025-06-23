@@ -3,7 +3,7 @@
   <!-- We copy images from the assets/images folder to static/fallback-images in our prebuild script
   with the exact same path so that the fallback works in CloudCannon's visual editor -->
   <img 
-    src="/editor-fallback-images{{ .image_path }}" 
+    src="/fallback-images{{ .image_path }}" 
     alt="{{ .image_alt }}"
     {{ with .loading }}
       loading="{{ . }}"

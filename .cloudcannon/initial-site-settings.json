@@ -12,7 +12,7 @@
       },
       {
         "key": "SYNC_PATHS",
-        "value": "/static/editor-fallback-images/"
+        "value": "/static/fallback-images/"
       }
     ],
     "preserved_paths": "resources/,.hugo_cache/,node_modules/",
