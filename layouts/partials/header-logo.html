@@ -2,27 +2,48 @@
 {{ $original := .nav.header }}
 <a class="header__logo-link" href="{{ $original.logo_url }}">
   {{ with $override.image_path }}
-    <img class="header__logo-image" src="{{ . }}" alt="{{ $override.logo_alt_text }}" />
-    {{ $optimized_image_props := dict 
-      "data_binding" false 
-      "image_path" .
-      "image_alt" $override.logo_alt_text
-      "image_width" "440" 
-      "image_format" "png"
-      "class" "header__logo-image"
-      "loading" "eager"
-    }}
-    {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
+    {{ if hasSuffix . ".svg" }}
+      <img 
+        src="/fallback-images{{ . }}" 
+        alt="{{ $override.logo_alt_text }}"
+        class="header__logo-image"
+        loading="eager"
+      >
+    {{ else }}
+      {{ $image := resources.Get $override.image_path }}
+      {{ $image = $image.Resize "440x png" }}
+      {{ with $image }}
+        <img 
+          src="{{ .RelPermalink }}" 
+          width="{{ .Width }}" 
+          height="{{ .Height }}" 
+          class="header__logo-image"
+          alt="{{ $override.logo_alt_text }}"
+          loading="eager"
+        >
+      {{ end }}
+    {{ end }}
   {{ else }}
-    {{ $optimized_image_props := dict 
-      "data_binding" false 
-      "image_path" $original.logo
-      "image_alt" $override.logo_alt_text
-      "image_width" "440" 
-      "image_format" "png"
-      "class" "header__logo-image"
-      "loading" "eager"
-    }}
-    {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
+    {{ if hasSuffix .Params.thumb_image_path ".svg" }}
+      <img 
+        src="/fallback-images{{ $original.logo }}" 
+        alt="{{ $original.logo_alt_text }}"
+        class="header__logo-image"
+        loading="eager"
+      >
+    {{ else }}
+      {{ $image := resources.Get $original.logo }}
+      {{ $image = $image.Resize "440x png" }}
+      {{ with $image }}
+        <img 
+          src="{{ .RelPermalink }}" 
+          width="{{ .Width }}" 
+          height="{{ .Height }}" 
+          class="header__logo-image"
+          alt="{{ $original.logo_alt_text }}"
+          loading="eager"
+        >
+      {{ end }}
+    {{ end }}
   {{ end }}
 </a>

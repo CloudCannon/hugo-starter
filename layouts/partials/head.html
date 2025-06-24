@@ -19,6 +19,7 @@
   {{ if eq .Permalink "/" }}
     <meta property="og:type" content="website" />
     <meta name="og:image" content="{{ site.Data.seo.image }}" />
+    <meta name="og:image:alt" content="{{ site.Data.seo.image_alt }}" />
   {{ else }}
     {{ with .Params.seo.open_graph_type }}
       <meta property="og:type" content="{{ . }}" />
@@ -27,10 +28,13 @@
     {{ end }}
     {{ with .Params.seo.featured_image }}
       <meta name="og:image" content="{{ . }}" />
-    {{ else with .Params.featured_image.image_path }}
-      <meta name="og:image" content="{{. }}" />
+      <meta name="og:image:alt" content="{{ $.Params.seo.featured_image_alt }}" />
+    {{ else with .Params.thumb_image_path }}
+      <meta name="og:image" content="{{ . }}" />
+      <meta name="og:image:alt" content="{{ $.Params.thumb_image_alt }}" />
     {{ else }}
       <meta name="og:image" content="{{ site.Data.seo.image }}" />
+      <meta name="og:image:alt" content="{{ site.Data.seo.image_alt }}" />
     {{ end }}
   {{ end }}
 
