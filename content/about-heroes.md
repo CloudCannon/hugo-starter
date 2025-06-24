@@ -14,6 +14,7 @@ hero_block:
   heading:
     heading_text: A new hero
     text_color: '#ffffff'
+    heading_gradient_color: '#A0A2FF'
   subheading:
     text_content: A subheading.<br>**Markdown**.<br>Linebreaks.
     text_color: '#034AD8'
@@ -26,11 +27,13 @@ hero_block:
     hover_text_color: '#F1F1F1'
     alternate_logo:
       image_path: /images/logos/logo-wordmark-white.png
-      logo_alt_text: CloudCannon
+      logo_alt_text: CloudCannon logo
   background_filters:
     brightness: 0.5
     blur: 1
   buttons: []
+  background_color: '#ffffff'
+  image: {}
 content_blocks:
   - _bookshop_name: left-right
     background_color: '#ffffff'
