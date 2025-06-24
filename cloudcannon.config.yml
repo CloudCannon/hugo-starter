@@ -412,6 +412,7 @@ _snippets:
       shortcode_name: alert
       named_args:
         - editor_key: background_color
+          source_key: background_color
           type: string
         - editor_key: alert_message
           type: string
