@@ -21,6 +21,7 @@ hero_block:
   video:
     video_path: /videos/nz-coast.mp4
     poster_image: /images/nz-coast-poster.jpg
+    playback_speed: 0.5
   header_style_overrides:
     background_color: transparent
     text_color: '#ffffff'

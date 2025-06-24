@@ -1,3 +1,9 @@
+<!-- 
+This is a placeholder component that uses a self hosted video.
+This can result in the page size being overly large, and therefore slow to load.
+On a production site, you probably want to look into something that allows you to embed videos, eg Vimeo,
+or using a DAM, eg Cloudinary.
+-->
 <section 
   class="hero-video" 
   aria-labelledby="hero-video-heading-text">
@@ -23,6 +29,8 @@
         // Toggles background video play/pause
         const videoElement = document.getElementById("hero-video");
         const buttonElement = document.getElementById("hero-video-pause-button");
+        // Change the playback speed to keep file size down while making video longer
+        videoElement.playbackRate = {{ .video.playback_speed }}; 
         function toggleVideoPause() {
           if (videoElement.paused) {
             videoElement.play();
