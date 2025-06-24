@@ -52,6 +52,6 @@ If we're using this image processing in a part of the site that isn't a Bookshop
 
 ## A note on videos
 
-The placeholder component `heroes/hero-video` has a video background that is self-hosted - meaning it comes straight from the `static` folder. This video uses a [poster](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/poster) image while it loads the video. There is no way to process the image used for the poster, so care must be taken to ensure the image used is a reasonable size. Something in the realm of <100kb as a ballpark figure.
+The placeholder component `heroes/hero-video` has a video background that is self-hosted - meaning it comes straight from the `static` folder. This video uses a [poster](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/poster) image while it loads the video. There is no way to process the image used for the poster, so care must be taken to ensure the image used is a reasonable size. Something in the realm of &lt;100kb as a ballpark figure.
 
 Similarly, no processing is run by Hugo on the video itself. Videos can quickly bloat your page size, and slow load times. If you want to use a video background on your site, it is recommended to use a video hosting platform like Vimeo (which lets you customize the video to fit with the styles on your site), or YouTube (not-so-customizable). You could also use a DAM like Cloudinary to avoid self-hosting the video.
