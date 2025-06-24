@@ -9,16 +9,29 @@
       <a
         class="flex justify-center sm:justify-start items-center"
         href="{{ .footer.logo_url }}">
-        {{ $optimized_image_props := dict 
-          "data_binding" false 
-          "image_path" .footer.logo
-          "image_alt" .footer.logo_alt_text
-          "image_width" "440" 
-          "image_format" "png"
-          "class" "footer-logo-image"
-          "loading" "lazy"
-        }}
-        {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
+        {{ if hasSuffix .footer.logo ".svg" }}
+          <img 
+            src="{{ .footer.logo }}" 
+            alt="{{ .footer.logo_alt_text }}"
+            class="footer-logo-image"
+            loading="lazy"
+          >
+        {{ else }}
+          {{ $image := resources.Get .footer.logo }}
+          {{ with $image }}
+            {{ $image = $image.Resize "440x png" }}
+          {{ end }}
+          {{ with $image }}
+            <img 
+              src="{{ .RelPermalink }}" 
+              width="{{ .Width }}" 
+              height="{{ .Height }}" 
+              class="footer-logo-image"
+              alt="{{ $.Site.Data.nav.footer.logo_alt_text }}"
+              loading="lazy"
+            >
+          {{ end }}
+        {{ end }}
       </a>
       <ul class="footer-socials">
         {{ range .footer.social }}
