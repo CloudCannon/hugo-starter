@@ -111,4 +111,4 @@ _inputs:
         uploads: 'static/videos'
   poster_image:
     type: image
-    comment: Specifies an image to be shown while the video is downloading.
+    comment: Specifies an image to be shown while the video is downloading. No processing is supported on video posters, so it's particularly important to ensure this file not be too large when uploading.
