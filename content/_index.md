@@ -68,6 +68,8 @@ content_blocks:
 
         - [Pre-configured shortcodes](/blog/markdown/#snippets)
 
+        - [Image processing](/blog/processed-images/)
+
         - [Header and Footer controls](/blog/data-files/)
 
         - [Tailwind](/blog/tailwind/)
