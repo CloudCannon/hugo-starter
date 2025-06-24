@@ -26,7 +26,9 @@ hero_block:
     background_color: transparent
     text_color: '#ffffff'
     hover_text_color: '#F1F1F1'
-    alternate_logo: {}
+    alternate_logo:
+      image_path: /images/logos/logo-wordmark-white.png
+      logo_alt_text: CloudCannon
   background_filters:
     brightness: 0.5
     blur: 1
