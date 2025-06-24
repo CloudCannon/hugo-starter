@@ -9,7 +9,7 @@ post_hero:
   image_alt: >-
     A woman sitting sideways on a chair, working at a desk on a laptop. The only
     other thing on the desk is a small pot plant.
-tags: 
+tags:
   - images
   - seo
   - components
@@ -41,7 +41,7 @@ In this template there exists the following examples of image processing:
 
 * A Bookshop component for image processing. This should be used when the image needs to update live in CloudCannon's Visual Editor. This is used throughout the placeholder Bookshop components on the site.
 * A built in [figure shortcode](https://gohugo.io/shortcodes/figure/), that comes out-of-the-box with Hugo. This is supposed to be used amongst your markdown content, for example in a blog post.
-* A 'hardcoded' example in the `layouts/blog/single.html` layout file, and in the `header` and `footer` partials. 
+* A 'hardcoded' example in the `layouts/blog/single.html` layout file, and in the `header` and `footer` partials.
 * In the `article-list` partial, which is used in the&nbsp;`layouts/blog/list.html` layout file, and in the `/layouts/\_default/taxonomy.html` layout file.
 
 ## Visual Editing Fallbacks
