@@ -216,10 +216,6 @@ _inputs:
     options:
       structures: _structures.content_blocks
       empty_type: array
-  hero_block:
-    type: object
-    options:
-      structures: _structures.hero_blocks
   text_content:
     type: markdown
     options:

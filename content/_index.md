@@ -11,40 +11,39 @@ seo:
   author_twitter_handle:
   open_graph_type:
   no_index: false
-hero_block:
-  _bookshop_name: heroes/hero
-  background_color: '#ffffff'
-  heading:
-    heading_text: CloudCannon Hugo Starter
-    text_color: '#333232'
-    heading_gradient_color: '#A0A2FF'
-  subheading:
-    text_content: >-
-      A starting point for developers looking to build a website with Hugo,
-      using Bookshop components in CloudCannon. Create your own copy, and start
-      creating your own components to use in CloudCannon’s CMS.
-    text_color: '#333232'
-  image:
-    image_path: /images/blog/pexels-cottonbro.jpg
-    alt_text: An illustration of someone leaning against the inside of a desktop computer monitor, with one leg dangled off the side. They're holding a piece of paper with a large 'A', and are next to some buttons on the screen.
-  buttons:
-    - _bookshop_name: buttons/primary
-      button_text: GitHub
-      button_icon: fab fa-github
-      button_link: https://github.com/CloudCannon/hugo-starter/
-      button_aria_label:
-      background_color: '#034AD8'
-      hover_brightness: 0.85
-      text_color: '#ffffff'
-    - _bookshop_name: buttons/secondary
-      button_text: CloudCannon
-      button_icon: custom-icon-cloudcannon
-      button_link: https://www.cloudcannon.com
-      button_aria_label:
-      background_color: '#034ad8'
-      hover_brightness: 0.85
-      text_color: '#034AD8'
 content_blocks:
+  - _bookshop_name: heroes/hero
+    background_color: '#ffffff'
+    heading:
+      heading_text: CloudCannon Hugo Starter
+      text_color: '#333232'
+      heading_gradient_color: '#A0A2FF'
+    subheading:
+      text_content: >-
+        A starting point for developers looking to build a website with Hugo,
+        using Bookshop components in CloudCannon. Create your own copy, and start
+        creating your own components to use in CloudCannon’s CMS.
+      text_color: '#333232'
+    image:
+      image_path: /images/blog/pexels-cottonbro.jpg
+      alt_text: An illustration of someone leaning against the inside of a desktop computer monitor, with one leg dangled off the side. They're holding a piece of paper with a large 'A', and are next to some buttons on the screen.
+    buttons:
+      - _bookshop_name: buttons/primary
+        button_text: GitHub
+        button_icon: fab fa-github
+        button_link: https://github.com/CloudCannon/hugo-starter/
+        button_aria_label:
+        background_color: '#034AD8'
+        hover_brightness: 0.85
+        text_color: '#ffffff'
+      - _bookshop_name: buttons/secondary
+        button_text: CloudCannon
+        button_icon: custom-icon-cloudcannon
+        button_link: https://www.cloudcannon.com
+        button_aria_label:
+        background_color: '#034ad8'
+        hover_brightness: 0.85
+        text_color: '#034AD8'
   - _bookshop_name: left-right
     background_color: '#ffffff'
     flipped: true

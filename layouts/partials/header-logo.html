@@ -1,16 +1,18 @@
-{{ $override := .Params.hero_block.header_style_overrides.alternate_logo }}
+{{ $firstContentBlock := index .Params.content_blocks 0 }}
+{{ $overrideLogo := $firstContentBlock.header_style_overrides.alternate_logo }}
+{{ $overrideLogoPath := $overrideLogo.image_path }}
 {{ $original := .nav.header }}
 <a class="header__logo-link" href="{{ $original.logo_url }}">
-  {{ with $override.image_path }}
+  {{ with $overrideLogoPath }}
     {{ if hasSuffix . ".svg" }}
       <img 
         src="{{ . }}" 
-        alt="{{ $override.logo_alt_text }}"
+        alt="{{ $overrideLogo.logo_alt_text }}"
         class="header__logo-image"
         loading="eager"
       >
     {{ else }}
-      {{ $image := resources.Get $override.image_path }}
+      {{ $image := resources.Get $overrideLogoPath }}
       {{ with $image }}
         {{ $image = $image.Resize "440x png" }}
       {{ end }}
@@ -20,7 +22,7 @@
           width="{{ .Width }}" 
           height="{{ .Height }}" 
           class="header__logo-image"
-          alt="{{ $override.logo_alt_text }}"
+          alt="{{ $overrideLogo.logo_alt_text }}"
           loading="eager"
         >
       {{ end }}

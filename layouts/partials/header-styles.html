@@ -1,4 +1,5 @@
-{{ $override := .Params.hero_block.header_style_overrides }}
+{{ $firstContentBlock := index .Params.content_blocks 0 }}
+{{ $override := $firstContentBlock.header_style_overrides }}
 {{ $original := .nav.header }}
 <style>
   /* Text color */
