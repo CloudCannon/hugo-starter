@@ -28,11 +28,11 @@
               alt="{{ .Params.thumb_image_alt }}"
             >
           {{ else }}
-            {{ $optimizedImage := resources.Get .Params.thumb_image_path }}
-            {{ with $optimizedImage }}
-              {{ $optimizedImage = $optimizedImage.Resize "1000x webp" }}
+            {{ $processedImage := resources.Get .Params.thumb_image_path }}
+            {{ with $processedImage }}
+              {{ $processedImage = $processedImage.Resize "1000x webp" }}
             {{ end }}
-            {{ with $optimizedImage }}
+            {{ with $processedImage }}
               <img 
                 src="{{ .RelPermalink }}"
                 alt="{{ $.Params.thumb_image_alt }}"
