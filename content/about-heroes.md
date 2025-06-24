@@ -21,14 +21,12 @@ hero_block:
   video:
     video_path: /videos/nz-coast.mp4
     poster_image: /images/nz-coast-poster.jpg
-    playback_speed: 0.5
+    playback_speed: 0.1
   header_style_overrides:
     background_color: transparent
     text_color: '#ffffff'
     hover_text_color: '#F1F1F1'
-    alternate_logo:
-      image_path: /images/logos/logo-wordmark-white.png
-      logo_alt_text: CloudCannon logo
+    alternate_logo: {}
   background_filters:
     brightness: 0.5
     blur: 1
