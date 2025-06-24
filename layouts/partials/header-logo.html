@@ -1,7 +1,28 @@
-<a class="header__logo-link" href="{{ .nav.header.logo_url }}">
-  {{ with .Params.hero_block.header_style_overrides.alternate_logo.image_path }}
-    <img class="header__logo-image" src="{{ . }}" alt="{{ $.Params.hero_block.header_style_overrides.alternate_logo.logo_alt_text }}" />
+{{ $override := .Params.hero_block.header_style_overrides.alternate_logo }}
+{{ $original := .nav.header }}
+<a class="header__logo-link" href="{{ $original.logo_url }}">
+  {{ with $override.image_path }}
+    <img class="header__logo-image" src="{{ . }}" alt="{{ $override.logo_alt_text }}" />
+    {{ $optimized_image_props := dict 
+      "data_binding" false 
+      "image_path" .
+      "image_alt" $override.logo_alt_text
+      "image_width" "440" 
+      "image_format" "png"
+      "class" "header__logo-image"
+      "loading" "eager"
+    }}
+    {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
   {{ else }}
-    <img class="header__logo-image" src="{{ .nav.header.logo }}" alt="{{ .nav.header.logo_alt_text }}" />
+    {{ $optimized_image_props := dict 
+      "data_binding" false 
+      "image_path" $original.logo
+      "image_alt" $override.logo_alt_text
+      "image_width" "440" 
+      "image_format" "png"
+      "class" "header__logo-image"
+      "loading" "eager"
+    }}
+    {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
   {{ end }}
 </a>

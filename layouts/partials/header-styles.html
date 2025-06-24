@@ -1,61 +1,46 @@
-{{ with .Params.hero_block.header_style_overrides.background_color }}
+{{ $override := .Params.hero_block.header_style_overrides }}
+{{ $original := .nav.header }}
 <style>
-  @media screen and (min-width: 600px) {
-    .header__nav-links {
-      background-color: {{ . }};
-      color: #333232;
-    }
-  }
-</style>
-{{ else }}
-<style>
-  @media screen and (min-width: 600px) {
-    .header__nav-links {
-      background-color: {{ .nav.header.background_color }};
-      color: #333232;
-    }
-  }
-</style>
-{{ end }}
-
-{{ with .Params.hero_block.header_style_overrides.text_color }}
-<style>
-  .hamburger-open {
-    color: {{ . }};
-  }
-  @media screen and (min-width: 600px) {
-    .header__nav-links {
+  /* Text color */
+  {{ with $override.text_color }}
+    .hamburger-open {
       color: {{ . }};
     }
-  }
-</style>
-{{ else }}
-<style>
-  .hamburger-open {
-    color: {{ .nav.header.text_color }};
-  }
-  @media screen and (min-width: 600px) {
-    .header__nav-links {
-      color: {{ .nav.header.text_color }};
+    @media screen and (min-width: 600px) {
+      .header__nav-links {
+        color: {{ . }};
+      }
     }
-  }
-</style>
-{{ end }}
-
-{{ with .Params.hero_block.header_style_overrides.hover_text_color }}
-<style>
-  @media screen and (min-width: 600px) {
-    .header__nav-link:hover {
-      color: {{ . }}
+  {{ else }}
+    .hamburger-open {
+      color: {{ $original.text_color }};
     }
-  }
-</style>
-{{ else }}
-<style>
-  @media screen and (min-width: 600px) {
-    .header__nav-link:hover {
-      color: {{ .nav.header.text_hover_color }}
+    @media screen and (min-width: 600px) {
+      .header__nav-links {
+        color: {{ $original.text_color }};
+      }
     }
+  {{ end }}
+  @media screen and (min-width: 600px) {
+    /* Background color */
+    {{ with $override.background_color }}
+      .header__nav-links {
+        background-color: {{ . }};
+      }
+    {{ else }}
+      .header__nav-links {
+        background-color: {{ $original.background_color }};
+      }
+    {{ end }}
+    /* Hover text color */
+    {{ with $override.hover_text_color }}
+      .header__nav-link:hover {
+        color: {{ . }}
+      }
+    {{ else }}
+      .header__nav-link:hover {
+        color: {{ $original.text_hover_color }}
+      }
+    {{ end }}
   }
 </style>
-{{ end }}

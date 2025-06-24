@@ -9,11 +9,16 @@
       <a
         class="flex justify-center sm:justify-start items-center"
         href="{{ .footer.logo_url }}">
-        <img
-          class="footer-logo-image"
-          src="{{ .footer.logo }}"
-          alt="{{ .footer.logo_alt_text }}"
-        />
+        {{ $optimized_image_props := dict 
+          "data_binding" false 
+          "image_path" .footer.logo
+          "image_alt" .footer.logo_alt_text
+          "image_width" "440" 
+          "image_format" "png"
+          "class" "footer-logo-image"
+          "loading" "lazy"
+        }}
+        {{ partial "bookshop" (slice "optimized-image" $optimized_image_props) }}
       </a>
       <ul class="footer-socials">
         {{ range .footer.social }}
