@@ -12,7 +12,7 @@ tags:
   - pagination
   - building
 thumb_image_path: /images/blog/blog-thumb-3.jpg
-thumb_image_alt: A team working around a table on laptops in front of a powerpoint.
+thumb_image_alt: A team working around a table on laptops in front of a powerpoint presentation.
 seo:
   page_description: A post describing how this starter demonstrates how to paginate collections.
   canonical_url:

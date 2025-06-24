@@ -12,12 +12,12 @@ tags:
   - components
   - styling
 thumb_image_path: /images/blog/pexels-cottonbro.jpg
-thumb_image_alt: A person beginning a todo list in a notebook.
+thumb_image_alt: Someone writing a todo list in a notebook. Next to them on the table is a coffee and a small plant. Seen from the POV of the writer.
 seo:
   page_description: A post describing how to use FontAwesome Icons throughout your site.
   canonical_url:
   featured_image: /images/blog/pexels-cottonbro.jpg
-  featured_image_alt: A person beginning a todo list in a notebook.
+  featured_image_alt: Someone writing a todo list in a notebook. Next to them on the table is a coffee and a small plant. Seen from the POV of the writer.
   author_twitter_handle:
   open_graph_type: article
   no_index: false

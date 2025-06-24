@@ -26,7 +26,7 @@ hero_block:
     text_color: '#333232'
   image:
     image_path: /images/transparent-bg/undraw-online-test.svg
-    alt_text: An image
+    alt_text: An illustration of someone leaning against the inside of a desktop computer monitor, with one leg dangled off the side. They're holding a piece of paper with a large 'A', and are next to some buttons on the screen.
   buttons:
     - _bookshop_name: buttons/primary
       button_text: GitHub
@@ -83,8 +83,8 @@ content_blocks:
         - [Color palette controls](/blog/data-files/)
       text_color: '#333232'
     image:
-      image_path: /images/blog/pexels-edmond-dantes.jpg
-      alt_text: An image
+      image_path: /images/transparent-bg/undraw-hello.svg
+      alt_text: An illustration of someone sitting a desk with a monitor and a pile of books on it. Seen from behind, the figure is turned around to face us and is waving.
     button:
   - _bookshop_name: left-right
     background_color: '#ffffff'
@@ -108,7 +108,7 @@ content_blocks:
       text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-startup.svg
-      alt_text: An image
+      alt_text: An illustration of someone leaning on one leg while facing us, next to a laptop that comes up their waist. One of their hands is on the back of the laptop, and one is in their pocket. On the laptop screen is an illustration of the world.
     button:
       _bookshop_name: buttons/primary
       button_text: GitHub

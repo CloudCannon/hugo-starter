@@ -14,7 +14,7 @@ tags:
 thumb_image_path: /images/blog/pexels-ivan-samkov.jpg
 thumb_image_alt: A group of people conversing around a laptop.
 seo:
-  page_description: A post describing how to use Tailwind to style your site.
+  page_description: A post describing how to use Tailwind to style your site, and how to uninstall it you don't want it.
   canonical_url:
   featured_image: /images/blog/pexels-ivan-samkov.jpg
   featured_image_alt: A group of people conversing around a laptop.

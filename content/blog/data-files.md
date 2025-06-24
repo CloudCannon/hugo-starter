@@ -6,9 +6,7 @@ post_hero:
   date: 2025-05-06T11:18:38+12:00
   author: T Richardson
   image: /images/blog/pexels-cottonbro.jpg
-  image_alt: >-
-    A side-on profile of someone working on a laptop with a phone in their hand,
-    and a coffee next to them.
+  image_alt: Someone writing a todo list in a notebook. Next to them on the table is a coffee and a small plant. Seen from the POV of the writer.
 tags:
   - seo
   - inputs
@@ -22,10 +20,8 @@ seo:
     A post describing the role of data files in a Hugo site using CloudCannon
     as a CMS.
   canonical_url:
-  featured_image: /images/blog/featured-image-5.jpg
-  featured_image_alt: >-
-    A side-on profile of someone working on a laptop with a phone in their hand,
-    and a coffee next to them.
+  featured_image: /images/blog/blog-thumb-5.jpg
+  featured_image_alt: A group collaborating around a laptop.
   author_twitter_handle:
   open_graph_type: article
   no_index: false

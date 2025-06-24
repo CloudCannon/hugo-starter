@@ -5,10 +5,8 @@ post_hero:
   heading: Page Building
   date: 2025-05-06T11:18:38+12:00
   author: T Richardson
-  image: /images/blog/featured-image-5.jpg
-  image_alt: >-
-    A side-on profile of someone working on a laptop with a phone in their hand,
-    and a coffee next to them.
+  image: /images/blog/pexels-edmond-dantes.jpg
+  image_alt: A group collaborating around a table.
 tags:
   - bookshop
   - components
