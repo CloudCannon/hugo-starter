@@ -18,15 +18,21 @@
       {{ partial "header-logo" (dict "nav" . "Params" $.Params) }}
 
       <button class="hamburger" @click="open = ! open">
-        <i x-show="!open" class="fas fa-bars hamburger-open"></i>
+        <i 
+        x-show="!open" 
+        aria-label="Open the mobile navigation menu" 
+        class="fas fa-bars hamburger-open">
+        </i>
         <i
           x-show="open"
+          aria-label="Close the mobile navigation menu" 
           class="fas fa-close"
           style="color: #333232;"></i>
       </button>
       <ul
         class="header__nav-links"
         x-show="open"
+        aria-label="Navigation menu links"
         x-transition
         @click.outside="open = false">
         {{ range .header.links }}
