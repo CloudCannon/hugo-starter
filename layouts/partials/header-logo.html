@@ -4,14 +4,16 @@
   {{ with $override.image_path }}
     {{ if hasSuffix . ".svg" }}
       <img 
-        src="/fallback-images{{ . }}" 
+        src="{{ . }}" 
         alt="{{ $override.logo_alt_text }}"
         class="header__logo-image"
         loading="eager"
       >
     {{ else }}
       {{ $image := resources.Get $override.image_path }}
-      {{ $image = $image.Resize "440x png" }}
+      {{ with $image }}
+        {{ $image = $image.Resize "440x png" }}
+      {{ end }}
       {{ with $image }}
         <img 
           src="{{ .RelPermalink }}" 
@@ -26,14 +28,16 @@
   {{ else }}
     {{ if hasSuffix .Params.thumb_image_path ".svg" }}
       <img 
-        src="/fallback-images{{ $original.logo }}" 
+        src="{{ $original.logo }}" 
         alt="{{ $original.logo_alt_text }}"
         class="header__logo-image"
         loading="eager"
       >
     {{ else }}
       {{ $image := resources.Get $original.logo }}
-      {{ $image = $image.Resize "440x png" }}
+      {{ with $image }}
+        {{ $image = $image.Resize "440x png" }}
+      {{ end }}
       {{ with $image }}
         <img 
           src="{{ .RelPermalink }}" 

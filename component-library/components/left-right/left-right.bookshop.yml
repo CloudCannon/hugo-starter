@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: Left-Right
-  description: Text next to image.
+  description: Text next to image
   icon: "chrome_reader_mode"
   tags:
     - Image

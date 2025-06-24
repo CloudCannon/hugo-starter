@@ -9,6 +9,8 @@ module:
   mounts:
     - source: assets
       target: assets
+    - source: static
+      target: assets
     - disableWatch: true
       source: hugo_stats.json
       target: assets/notwatching/hugo_stats.json
@@ -24,4 +26,4 @@ markup:
   goldmark:
     renderer:
       hardWraps: true
-      unsafe: false
+      unsafe: true

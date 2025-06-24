@@ -9,10 +9,6 @@
       {
         "key": "HUGO_CACHEDIR",
         "value": "/usr/local/__site/src/.hugo_cache/"
-      },
-      {
-        "key": "SYNC_PATHS",
-        "value": "/static/fallback-images/"
       }
     ],
     "preserved_paths": "resources/,.hugo_cache/,node_modules/",

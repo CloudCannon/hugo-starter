@@ -24,7 +24,7 @@
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
           {{ if hasSuffix .Params.thumb_image_path ".svg" }}
             <img 
-              src="/fallback-images{{ .Params.thumb_image_path }}" 
+              src="{{ .Params.thumb_image_path }}" 
               alt="{{ .Params.thumb_image_alt }}"
             >
           {{ else }}

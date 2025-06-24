@@ -6,7 +6,7 @@
     - the image is an SVG and can't be processed 
   -->
   <img 
-    src="/fallback-images{{ .image_path }}" 
+    src="{{ .image_path }}" 
     alt="{{ .image_alt }}"
     {{ with .loading }}
       loading="{{ . }}"

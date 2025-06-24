@@ -25,7 +25,7 @@ hero_block:
       creating your own components to use in CloudCannon’s CMS.
     text_color: '#333232'
   image:
-    image_path: /images/transparent-bg/undraw-online-test.svg
+    image_path: /images/blog/pexels-cottonbro.jpg
     alt_text: An illustration of someone leaning against the inside of a desktop computer monitor, with one leg dangled off the side. They're holding a piece of paper with a large 'A', and are next to some buttons on the screen.
   buttons:
     - _bookshop_name: buttons/primary
