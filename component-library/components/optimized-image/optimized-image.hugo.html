@@ -1,9 +1,12 @@
 
 {{ if or site.Params.env_bookshop_live ( hasSuffix .image_path ".svg" ) }}
-  <!-- We copy images from the assets/images folder to static/fallback-images in our prebuild script
-  with the same path so that the fallback works when: 
+  <!-- We mount the static to the assets dir in our hugo.config so that images can have the 
+    same path for their fallback or when using resources.Get to fetch as a global resource. 
+    Fallback is used when:
     - image is viewed in CloudCannon's visual editor 
     - the image is an SVG and can't be processed 
+    It's important they have the same path, so that CC previews work. CC previews look at your image path
+    With the 'static' dir prefixed.
   -->
   <img 
     src="{{ .image_path }}" 
