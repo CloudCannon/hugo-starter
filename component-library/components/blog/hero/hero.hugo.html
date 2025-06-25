@@ -4,7 +4,8 @@
     "image_path" .Params.image 
     "image_alt" .Params.image_alt 
     "image_width" "1000" 
-    "image_format" "webp" 
+    "image_format" "webp"
+    "class" "blog-hero-image"
   }}
   {{ partial "bookshop" (slice "processed-image" $processed_image_props) }}
 

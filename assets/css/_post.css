@@ -14,7 +14,7 @@
   align-items: center;
 }
 .blog-hero-image {
-  border-radius: 8px;
+  border-radius: 2px;
 }
 .blog-title {
   font-size: 2rem;
@@ -47,7 +47,7 @@
   margin-bottom: 32px;
 }
 .blog-related-post-thumb {
-  border-radius: 8px;
+  border-radius: 2px;
   width: 100%;
   aspect-ratio: 16 / 9;
 }

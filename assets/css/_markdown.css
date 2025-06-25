@@ -96,6 +96,7 @@
   max-width: 100%;
   height: auto;
   margin: 1rem auto;
+  border-radius: 2px;
 }
 .markdown-text hr {
   border: 0;
@@ -109,7 +110,7 @@
 .markdown-text p code,
 .markdown-text li code {
   background: #f1f1f1;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 4px 10px;
   text-decoration: none;
   font-size: 0.9rem;
