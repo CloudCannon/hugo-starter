@@ -5,7 +5,7 @@ seo:
   page_description: This is just a test page - testing seo desc
   canonical_url:
   featured_image: /images/blog/pexels-polina-tankilevitch.jpg
-  featured_image_alt: A different seo image
+  featured_image_alt: A different seo image!
   author_twitter_handle:
   open_graph_type: website
   no_index: false
