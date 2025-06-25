@@ -20,12 +20,12 @@ blueprint:
     text_color: '#ffffff'
   video:
     video_path: /videos/nz-coast.mp4
-    poster_image: /images/nz-coast-poster.png
+    poster_image: /images/nz-coast-poster.jpg
     playback_speed: 0.5
   header_style_overrides:
     background_color: transparent
     text_color: '#ffffff'
-    hover_text_color: '#F1F1F1'
+    hover_text_color: '#F2F2F2'
     alternate_logo: 
       image_path: 
       logo_alt_text: 
@@ -54,6 +54,9 @@ _inputs:
       preview:
         text:
           - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   alternate_logo:
     type: object
     comment: Set a different logo in the header if needed with this component.

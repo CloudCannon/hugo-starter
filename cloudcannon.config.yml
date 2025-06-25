@@ -43,8 +43,8 @@ collections_config:
     create:
       path: '[relative_base_path]/{filename|slugify|lowercase}.md'
     add_options:
-      - name: Add Page
-        editor: visual
+      - name: Add Post
+        editor: content
         schema: default
     _enabled_editors:
       - visual
@@ -307,7 +307,7 @@ _inputs:
   button_aria_label:
     type: text
     comment: >-
-      Add a description if the button text content is generic, eg. 'Read more' 
+      Add a description if the button text content is generic, eg. 'Read more', or if the button contains no text at all.
   hover_brightness:
     type: range
     options:
