@@ -49,3 +49,30 @@ To create a copy of your repository to work on your local machine:
 
 5. Navigate to https://localhost:1313.
 
+## Features
+
+- [Blog with pagination & tags](https://moss-goldfish.cloudvent.net/blog/paginated-collection/)
+
+- [Markdown options & styles](https://moss-goldfish.cloudvent.net/blog/markdown/)
+
+- [Tailwind](https://moss-goldfish.cloudvent.net/blog/tailwind/)
+
+- [Font Awesome icons](https://moss-goldfish.cloudvent.net/blog/icons/)
+
+- [Page building in CloudCannon with Bookshop components](https://moss-goldfish.cloudvent.net/blog/bookshop/)
+
+- [Built-in search with Pagefind](https://moss-goldfish.cloudvent.net/blog/pagefind/)
+
+- [Image processing](https://moss-goldfish.cloudvent.net/blog/processed-images/)
+
+- [Pre-configured shortcodes](https://moss-goldfish.cloudvent.net/blog/markdown/#snippets)
+
+- [Header and Footer controls](https://moss-goldfish.cloudvent.net/blog/data-files/)
+
+- [Creating and deleting pages](https://moss-goldfish.cloudvent.net/blog/page-building/)
+
+- [Accessibility controls](https://moss-goldfish.cloudvent.net/blog/lighthouse-scores/#accessibility)
+
+- [SEO controls](https://moss-goldfish.cloudvent.net/blog/seo/)
+
+- [Color palette controls](https://moss-goldfish.cloudvent.net/blog/data-files/)

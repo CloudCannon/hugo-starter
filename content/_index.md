@@ -61,25 +61,25 @@ content_blocks:
         balance between minimal, and easy-to-delete boiler plate, while
         providing some commonly used features out of the box:
 
-        - [Page building with Bookshop components](/blog/bookshop/)
-
-        - [Markdown options & styles](/blog/markdown/)
-
         - [Blog with pagination & tags](/blog/paginated-collection/)
 
-        - [Built-in search with Pagefind](/blog/pagefind/)
-
-        - [Pre-configured shortcodes](/blog/markdown/#snippets)
-
-        - [Image processing](/blog/processed-images/)
-
-        - [Header and Footer controls](/blog/data-files/)
+        - [Markdown options & styles](/blog/markdown/)
 
         - [Tailwind](/blog/tailwind/)
 
         - [Font Awesome icons](/blog/icons/)
 
-        - [Create and delete pages](/blog/page-building/)
+        - [Page building in CloudCannon with Bookshop components](/blog/bookshop/)
+        
+        - [Built-in search with Pagefind](/blog/pagefind/)
+
+        - [Image processing](/blog/processed-images/)
+
+        - [Pre-configured shortcodes](/blog/markdown/#snippets)
+
+        - [Header and Footer controls](/blog/data-files/)
+
+        - [Creating and deleting pages](/blog/page-building/)
 
         - [Accessibility controls](/blog/lighthouse-scores/#accessibility)
 
