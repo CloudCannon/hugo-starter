@@ -57,34 +57,36 @@ content_blocks:
       text_content: >-
         The Hugo CloudCannon Starter's aim is to get developers building their
         own site quickly in CloudCannon. This template is trying to strike a
-        balance between minimal, and easy-to-delete boiler plate, while
+        balance between minimalism and easy-to-delete boilerplate, while
         providing some commonly used features out of the box:
 
-        - [Blog with pagination & tags](/blog/paginated-collection/)
 
-        - [Markdown options & styles](/blog/markdown/)
+        * [Blog with pagination & tags](/blog/paginated-collection/)
 
-        - [Tailwind](/blog/tailwind/)
+        * [Markdown options & styles](/blog/markdown/)
 
-        - [Font Awesome icons](/blog/icons/)
+        * [Tailwind](/blog/tailwind/)
 
-        - [Page building in CloudCannon with Bookshop components](/blog/bookshop/)
-        
-        - [Built-in search with Pagefind](/blog/pagefind/)
+        * [Font Awesome icons](/blog/icons/)
 
-        - [Image processing](/blog/processed-images/)
+        * [Page building in CloudCannon with Bookshop
+        components](/blog/bookshop/)
 
-        - [Pre-configured shortcodes](/blog/markdown/#snippets)
+        * [Built-in search with Pagefind](/blog/pagefind/)
 
-        - [Header and Footer controls](/blog/data-files/)
+        * [Image processing](/blog/processed-images/)
 
-        - [Creating and deleting pages](/blog/page-building/)
+        * [Pre-configured shortcodes](/blog/markdown/#snippets)
 
-        - [Accessibility controls](/blog/lighthouse-scores/#accessibility)
+        * [Header and Footer controls](/blog/data-files/)
 
-        - [SEO controls](/blog/seo/)
+        * [Creating and deleting pages](/blog/page-building/)
 
-        - [Color palette controls](/blog/data-files/)
+        * [Accessibility controls](/blog/lighthouse-scores/#accessibility)
+
+        * [SEO controls](/blog/seo/)
+
+        * [Color palette controls](/blog/data-files/)
       text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-hello.svg
@@ -101,17 +103,17 @@ content_blocks:
       text_color: '#333232'
     text:
       text_content: >-
-        A flexible git-backed CMS that specialises in editing markdown and data
-        files. 
+        CloudCannon is a flexible Git-backed CMS that specialises in editing
+        markdown and data files.
 
 
         Visual editing allows you to preview your changes live before you save
-        them. 
+        them.
 
 
         Git-backed means you can keep all your familiar git workflows, while
         providing an easy-to-understand interface for non-technical editors to
-        collaborate via git. 
+        collaborate via Git.
       text_color: '#333232'
     image:
       image_path: /images/transparent-bg/undraw-startup.svg
