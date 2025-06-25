@@ -49,6 +49,27 @@ collections_config:
     _enabled_editors:
       - visual
       - content
+    preview:
+      text:
+        - key: title
+      gallery:
+        fit: cover
+        image: 
+          - key: thumb_image_path
+          - key: post_hero.image
+      metadata:
+        - icon: calendar_month
+          text: 
+            - template: Created {post_hero.date|date_long}
+            - Add date
+        - icon: person
+          text:
+            - template: By {post_hero.author}
+            - No author
+        - icon: style
+          text:
+            - template: '{post_hero.tags[*]}'
+            - No tags
     _inputs:
       thumb_image:
         options:
