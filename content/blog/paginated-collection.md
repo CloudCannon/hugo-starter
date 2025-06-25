@@ -18,7 +18,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/featured-image-3.jpg
   featured_image_alt: A man drinking a coffee in a dimly lit cafe in front of a laptop.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

@@ -18,7 +18,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/pexels-ivan-samkov.jpg
   featured_image_alt: A group of people conversing around a laptop.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

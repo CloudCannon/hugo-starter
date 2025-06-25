@@ -20,7 +20,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/featured-image-6.jpg
   featured_image_alt: A woman on her phone in front of a laptop.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

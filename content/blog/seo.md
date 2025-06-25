@@ -18,7 +18,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/pexels-enzo-elgalgo.jpg
   featured_image_alt: Someone reading from a book while seated at a white desk. Also on the desk is a notebook, some marker pens, and an open laptop.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

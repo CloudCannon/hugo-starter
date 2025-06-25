@@ -22,7 +22,6 @@ seo:
   featured_image_alt: >-
     Two people working either side of a table, with a distant view of a city in
     the background.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

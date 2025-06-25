@@ -22,7 +22,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/blog-thumb-5.jpg
   featured_image_alt: A group collaborating around a laptop.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

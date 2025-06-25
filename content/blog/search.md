@@ -20,7 +20,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/featured-image-4.jpg
   featured_image_alt: A woman drinking a cup of coffee in bed in front of her laptop.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

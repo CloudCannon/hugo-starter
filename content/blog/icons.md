@@ -18,7 +18,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/pexels-cottonbro.jpg
   featured_image_alt: Someone writing a todo list in a notebook. Next to them on the table is a coffee and a small plant. Seen from the POV of the writer.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

@@ -20,7 +20,6 @@ seo:
   canonical_url:
   featured_image: /images/blog/featured-image-1.jpg
   featured_image_alt: A child working at a computer, seen from behind.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

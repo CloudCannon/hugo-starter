@@ -27,7 +27,6 @@ seo:
   featured_image_alt: >-
     A woman sitting sideways on a chair, working at a desk on a laptop. The only
     other thing on the desk is a small pot plant.
-  author_twitter_handle:
   open_graph_type: article
   no_index: false
 ---

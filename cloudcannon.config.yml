@@ -377,10 +377,6 @@ _inputs:
         - website
         - article
     comment: Defaults to the type 'website'
-  author_twitter_handle:
-    comment: Defaults to the twitter site value set in the Site SEO data file
-  twitter_site:
-    type: url
   no_index:
     type: checkbox
     comment:
