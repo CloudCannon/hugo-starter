@@ -6,7 +6,7 @@ Create your own copy, and start creating your own components quickly, to build y
 
 This template is aimed at helping developers build sites quickly, rather than providing editors with a fully built editable site. If you are an editor looking for an fully built template, have a look at [CloudCannon's templates page](https://cloudcannon.com/templates/).
 
-[See a demo version of this site](TODO: Add link here).
+[See a demo version of this site](https://moss-goldfish.cloudvent.net/).
 
 ## Getting started 
 

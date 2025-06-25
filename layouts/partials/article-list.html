@@ -51,8 +51,8 @@
         {{ with .Params.tags }}
           <div class="blog-post-tags">
             {{ range . }} 
-              {{ $href := print (absURL "tags/") (urlize .) }}
-              <a href="{{ $href }}">{{ . | humanize }}</a>
+              {{ $href := urlize . }}
+              <a href="/tags/{{ $href }}">{{ . | humanize }}</a>
             {{ end }}
           </div>
         {{ end }}
