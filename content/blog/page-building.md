@@ -18,8 +18,7 @@ tags:
 thumb_image_path: /images/blog/pexels-edmond-dantes.jpg
 thumb_image_alt: A group collaborating around a table.
 seo:
-  page_description: >-
-    A post describing what page building features come with the Hugo starter.
+  page_description: A post describing what page building features come with the Hugo starter.
   canonical_url:
   featured_image: /images/blog/pexels-edmond-dantes.jpg
   featured_image_alt: A group collaborating around a table.

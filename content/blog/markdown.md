@@ -16,7 +16,8 @@ thumb_image_alt: >-
   the background.
 seo:
   page_description: >-
-    A post describing what Markdown editing features come with the Hugo starter in CloudCannon.
+    A post describing what Markdown editing features come with the Hugo starter
+    in CloudCannon.
   canonical_url:
   featured_image: /images/blog/blog-thumb-2.jpg
   featured_image_alt: >-

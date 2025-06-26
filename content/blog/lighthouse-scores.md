@@ -41,7 +41,7 @@ An emphasis on low page bundle sizes, fast loading times, and short build times 
 
 ## Best practices
 
-Passes all the lighthouse recommended best practices.
+Passes all the Lighthouse recommended best practices.
 
 ## SEO
 
