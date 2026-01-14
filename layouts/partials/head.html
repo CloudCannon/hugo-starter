@@ -86,7 +86,7 @@
   {{ $bookshop_scss_files := partial "bookshop_scss" . }}
   <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
   {{ $scss := $bookshop_scss_files | resources.Concat "css/bookshop.css" | css.Sass | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $scss.Permalink }}" />
+  <link rel="stylesheet" href="{{ $scss.RelPermalink }}" />
   
   <!-- Tailwind and custom styles in assets/css/ -->
   {{ partialCached "css.html" . }}
