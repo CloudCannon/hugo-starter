@@ -4,14 +4,14 @@ title: CloudCannon Hugo Starter
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Hugo, using
-    Bookshop components in CloudCannon.
+    editable regions in CloudCannon.
   canonical_url:
   featured_image:
   featured_image_alt:
   open_graph_type:
   no_index: false
 content_blocks:
-  - _bookshop_name: heroes/hero
+  - _name: hero
     background_color: '#ffffff'
     heading:
       heading_text: CloudCannon Hugo Starter
@@ -20,7 +20,7 @@ content_blocks:
     subheading:
       text_content: >-
         A starting point for developers looking to build a website with Hugo,
-        using Bookshop components in CloudCannon. Create your own copy, and
+        using editable regions in **CloudCannon**. Create your own copy, and
         start creating your own components to use in CloudCannon’s CMS.
       text_color: '#333232'
     image:
@@ -31,7 +31,7 @@ content_blocks:
         piece of paper with a large 'A', and are next to some buttons on the
         screen.
     buttons:
-      - _bookshop_name: buttons/primary
+      - _name: button-primary
         button_text: GitHub
         button_icon: fab fa-github
         button_link: https://github.com/CloudCannon/hugo-starter/
@@ -39,7 +39,7 @@ content_blocks:
         background_color: '#034AD8'
         hover_brightness: 0.85
         text_color: '#ffffff'
-      - _bookshop_name: buttons/secondary
+      - _name: button-secondary
         button_text: CloudCannon
         button_icon: custom-icon-cloudcannon
         button_link: https://www.cloudcannon.com
@@ -47,7 +47,7 @@ content_blocks:
         background_color: '#034ad8'
         hover_brightness: 0.85
         text_color: '#034AD8'
-  - _bookshop_name: left-right
+  - _name: left-right
     background_color: '#ffffff'
     flipped: true
     heading:
@@ -69,10 +69,10 @@ content_blocks:
 
         * [Font Awesome icons](/blog/icons/)
 
-        * [Page building in CloudCannon with Bookshop
-        components](/blog/bookshop/)
+        * [Page building in CloudCannon with editable
+        regions](/blog/editable-regions/)
 
-        * [Built-in search with Pagefind](/blog/pagefind/)
+        * [Built-in search with Pagefind](/blog/search/)
 
         * [Image processing](/blog/processed-images/)
 
@@ -95,7 +95,7 @@ content_blocks:
         books on it. Seen from behind, the figure is turned around to face us
         and is waving.
     button:
-  - _bookshop_name: left-right
+  - _name: left-right
     background_color: '#ffffff'
     flipped: false
     heading:
@@ -123,7 +123,7 @@ content_blocks:
         the laptop, and one is in their pocket. On the laptop screen is an
         illustration of the world.
     button:
-      _bookshop_name: buttons/primary
+      _name: button-primary
       button_text: GitHub
       button_icon: fab fa-github
       button_link: https://github.com/CloudCannon/hugo-starter/

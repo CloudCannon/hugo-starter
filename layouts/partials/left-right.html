@@ -1,0 +1,80 @@
+{{/*
+  Left-right content block: heading and text beside an image, optionally
+  flipped, with a single optional button. The button is an object, so it gets
+  a component region rather than an array/array-item pair.
+*/}}
+<section class="left-right" style="background-color: {{ .background_color }};" aria-labelledby="left-right-{{ .heading.heading_text | anchorize }}">
+  {{ if .flipped }}
+    <div class="left-right__wrapper">
+      {{ partial "processed-image" (dict
+        "image_path" .image.image_path
+        "image_alt" .image.alt_text
+        "prop_src" "image.image_path"
+        "prop_alt" "image.alt_text"
+        "image_width" "1000"
+        "image_format" "webp"
+        "class" "left-right__image-flipped"
+        "loading" "lazy"
+      ) }}
+      <div class="left-right__text-flipped">
+        <h2
+          id="left-right-{{ .heading.heading_text | anchorize }}"
+          style="color: {{ .heading.text_color }};"
+          data-editable="text"
+          data-prop="heading.heading_text"
+          data-type="span">
+          {{ .heading.heading_text }}
+        </h2>
+        <div
+          class="markdown-text left-right__text-content"
+          style="color: {{ .text.text_color }};"
+          data-editable="text"
+          data-prop="text.text_content"
+          data-type="block">
+          {{ .text.text_content | markdownify }}
+        </div>
+        {{ with .button }}
+          <div data-editable="component" data-prop="button" data-component="{{ ._name }}">
+            {{ partial ._name . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ else }}
+    <div class="left-right__wrapper">
+      <div class="left-right__text">
+        <h2
+          id="left-right-{{ .heading.heading_text | anchorize }}"
+          style="color: {{ .heading.text_color }};"
+          data-editable="text"
+          data-prop="heading.heading_text"
+          data-type="span">
+          {{ .heading.heading_text }}
+        </h2>
+        <div
+          class="markdown-text left-right__text-content"
+          style="color: {{ .text.text_color }};"
+          data-editable="text"
+          data-prop="text.text_content"
+          data-type="block">
+          {{ .text.text_content | markdownify }}
+        </div>
+        {{ with .button }}
+          <div data-editable="component" data-prop="button" data-component="{{ ._name }}">
+            {{ partial ._name . }}
+          </div>
+        {{ end }}
+      </div>
+      {{ partial "processed-image" (dict
+        "image_path" .image.image_path
+        "image_alt" .image.alt_text
+        "prop_src" "image.image_path"
+        "prop_alt" "image.alt_text"
+        "image_width" "1000"
+        "image_format" "webp"
+        "class" "left-right__image-unflipped"
+        "loading" "lazy"
+      ) }}
+    </div>
+  {{ end }}
+</section>

@@ -1,30 +1,26 @@
 {
-  "name": "hugo-bookshop-starter",
+  "name": "hugo-editable-regions-starter",
   "type": "module",
-  "description": "A starter template for Hugo with Bookshop",
+  "description": "A starter template for Hugo with CloudCannon editable regions",
   "scripts": {
     "start": "run-p dev:hugo",
     "build": "run-p build:*",
     "dev:hugo": "hugo server",
     "build:hugo": "hugo --destination public",
-    "new-component": "npx @bookshop/init --component",
-    "update-bookshop": "npx @bookshop/up@latest",
     "pagefind": "npx -y pagefind --site public --serve",
     "pagefind-server": "run-s build pagefind"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CloudCannon/hugo-bookshop-starter.git"
+    "url": "git+https://github.com/CloudCannon/hugo-starter.git"
   },
   "author": "CloudCannon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CloudCannon/hugo-bookshop-starter/issues"
+    "url": "https://github.com/CloudCannon/hugo-starter/issues"
   },
-  "homepage": "https://github.com/CloudCannon/hugo-bookshop-starter#readme",
+  "homepage": "https://github.com/CloudCannon/hugo-starter#readme",
   "devDependencies": {
-    "@bookshop/generate": "3.16.1",
-    "@bookshop/hugo-engine": "3.16.1",
     "@tailwindcss/cli": "^4.0.9",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^4.0.9"

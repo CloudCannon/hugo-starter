@@ -1,0 +1,52 @@
+{{/*
+  Renders an <img>, optionally as an editable image region.
+
+  Hugo's asset pipeline cannot run in CloudCannon's editor renderer, so the
+  unprocessed path is served whenever site.Params.ENV_CLIENT is set. SVGs take
+  the same branch, since Hugo cannot process those either. static/ is mounted
+  into assets/ in hugo.yaml so one path resolves in both branches.
+
+  Params:
+    image_path    - path to the image
+    image_alt     - alt text
+    image_width   - target width for processing, e.g. "1000"
+    image_format  - target format for processing, e.g. "webp"
+    class         - class attribute for the <img>
+    loading       - loading attribute for the <img>
+    prop_src      - data-prop selector for the image path. Omit for a plain <img>.
+    prop_alt      - data-prop selector for the alt text
+
+  Selectors are passed in rather than wrapping this partial's output in a
+  region, so the DOM is identical to a non-editable render. They resolve
+  relative to the nearest editable ancestor: a caller inside a content block
+  passes "image.image_path", one in a page template a path from the file
+  root.
+*/}}
+{{ if and (not .image_path) (not .prop_src) }}
+  {{/* Nothing to show and nothing to edit. An editable caller still gets
+       its <img>, so an unset image has a region to click. */}}
+{{ else if or site.Params.ENV_CLIENT (hasSuffix .image_path ".svg") }}
+  <img
+    src="{{ .image_path }}"
+    alt="{{ .image_alt }}"
+    {{ with .loading }}loading="{{ . }}"{{ end }}
+    {{ with .class }}class="{{ . }}"{{ end }}
+    {{ with .prop_src }}data-editable="image" data-prop-src="{{ . }}"{{ end }}
+    {{ with .prop_alt }}data-prop-alt="{{ . }}"{{ end }}>
+{{ else }}
+  {{ $image := resources.Get .image_path }}
+  {{ with $image }}
+    {{ $image = .Resize (printf "%sx %s" $.image_width $.image_format) }}
+  {{ end }}
+  {{ with $image }}
+    <img
+      src="{{ .RelPermalink }}"
+      width="{{ .Width }}"
+      height="{{ .Height }}"
+      alt="{{ $.image_alt }}"
+      {{ with $.loading }}loading="{{ . }}"{{ end }}
+      {{ with $.class }}class="{{ . }}"{{ end }}
+      {{ with $.prop_src }}data-editable="image" data-prop-src="{{ . }}"{{ end }}
+      {{ with $.prop_alt }}data-prop-alt="{{ . }}"{{ end }}>
+  {{ end }}
+{{ end }}

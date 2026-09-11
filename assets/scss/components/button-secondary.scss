@@ -1,4 +1,8 @@
 .secondary-button {
+  /* Explicit, so the button doesn't rely on a flex parent to be
+     block-level: it sits inside an array-item wrapper, and an inline <a>
+     around a block <p> splits its border. */
+  display: block;
   cursor: pointer;
   border: none;
   border-radius: 8px;
@@ -20,4 +24,8 @@
   width: 1rem;
   height: 1rem;
   display: flex;
+}
+/* See button-primary.scss. */
+.secondary-button p:hover {
+  backdrop-filter: brightness(var(--hover-brightness, 1));
 }

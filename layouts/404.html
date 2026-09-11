@@ -1,7 +1,18 @@
 {{ define "main" }}
+{{/*
+  Hard-coded copy with no data key behind it, so source regions write back to
+  this template file.
+*/}}
 <section class="not-found-page">
   <img src="/images/404.png" alt="404" />
-  <h3>Could not find the page you were looking for.</h3>
-  <a href="/">Homepage</a>
+  <h3
+    data-editable="source"
+    data-path="layouts/404.html"
+    data-key="not-found-heading">Could not find the page you were looking for.</h3>
+  <a
+    href="/"
+    data-editable="source"
+    data-path="layouts/404.html"
+    data-key="not-found-link">Homepage</a>
 </section>
 {{ end }}

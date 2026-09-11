@@ -1,0 +1,62 @@
+{{/*
+  Hero content block: heading, subheading, image and a buttons array.
+
+  Every data-prop is relative to this block's array-item, so
+  "heading.heading_text" resolves to
+  content_blocks[n].heading.heading_text.
+*/}}
+<section style="background-color: {{ .background_color }};" aria-labelledby="hero-heading-text">
+  <div class="hero-container">
+    <div class="content">
+      <h1
+        id="hero-heading-text"
+        class="heading"
+        style="
+        background: -webkit-linear-gradient(to left, {{ .heading.heading_gradient_color }} 50%, {{ .heading.text_color }}); 
+        background: linear-gradient(to left, {{ .heading.heading_gradient_color }} 50%, {{ .heading.text_color }}); 
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+        data-editable="text"
+        data-prop="heading.heading_text"
+        data-type="span">
+        {{ .heading.heading_text }}
+      </h1>
+      {{ if or .subheading.text_content site.Params.ENV_CLIENT }}
+        <div
+          class="markdown-text subheading-text"
+          style="color: {{ .subheading.text_color }};"
+          data-editable="text"
+          data-prop="subheading.text_content"
+          data-type="block">
+          {{ .subheading.text_content | markdownify }}
+        </div>
+      {{ end }}
+      {{/* Rendered even when empty in the editor, so there is a region to
+           add the first button to. */}}
+      {{ if or .buttons site.Params.ENV_CLIENT }}
+        <div
+          class="buttons"
+          data-editable="array"
+          data-prop="buttons"
+          data-component-key="_name">
+          {{ range .buttons }}
+            <div data-editable="array-item" data-id="{{ ._name }}" data-component="{{ ._name }}">
+              {{ partial ._name . }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+
+    {{ partial "processed-image" (dict
+      "image_path" .image.image_path
+      "image_alt" .image.alt_text
+      "prop_src" "image.image_path"
+      "prop_alt" "image.alt_text"
+      "image_width" "1000"
+      "image_format" "webp"
+      "class" "hero-image"
+      "loading" "eager"
+    ) }}
+
+  </div>
+</section>

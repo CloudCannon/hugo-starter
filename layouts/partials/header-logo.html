@@ -1,55 +1,42 @@
-{{ $firstContentBlock := index .Params.content_blocks 0 }}
-{{ $overrideLogo := $firstContentBlock.header_style_overrides.alternate_logo }}
-{{ $overrideLogoPath := $overrideLogo.image_path }}
+{{/*
+  Header logo, from data/nav.yml unless the page's first content block sets
+  header_style_overrides.alternate_logo. content_blocks is nil on blog posts
+  and list pages, so the lookup is guarded.
+
+  Only the dataset logo gets an image region; the override is style config,
+  edited in the sidebar.
+*/}}
 {{ $original := .nav.header }}
+{{ $overrideLogoPath := "" }}
+{{ $overrideLogoAlt := "" }}
+{{ with .Params.content_blocks }}
+  {{ with (index . 0).header_style_overrides }}
+    {{ with .alternate_logo }}
+      {{ $overrideLogoPath = .image_path }}
+      {{ $overrideLogoAlt = .logo_alt_text }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 <a class="header__logo-link" href="{{ $original.logo_url }}">
   {{ with $overrideLogoPath }}
-    {{ if hasSuffix . ".svg" }}
-      <img 
-        src="{{ . }}" 
-        alt="{{ $overrideLogo.logo_alt_text }}"
-        class="header__logo-image"
-        loading="eager"
-      >
-    {{ else }}
-      {{ $image := resources.Get $overrideLogoPath }}
-      {{ with $image }}
-        {{ $image = $image.Resize "440x png" }}
-      {{ end }}
-      {{ with $image }}
-        <img 
-          src="{{ .RelPermalink }}" 
-          width="{{ .Width }}" 
-          height="{{ .Height }}" 
-          class="header__logo-image"
-          alt="{{ $overrideLogo.logo_alt_text }}"
-          loading="eager"
-        >
-      {{ end }}
-    {{ end }}
+    {{ partial "processed-image" (dict
+      "image_path" .
+      "image_alt" $overrideLogoAlt
+      "image_width" "440"
+      "image_format" "png"
+      "class" "header__logo-image"
+      "loading" "eager"
+    ) }}
   {{ else }}
-    {{ if hasSuffix .Params.thumb_image_path ".svg" }}
-      <img 
-        src="{{ $original.logo }}" 
-        alt="{{ $original.logo_alt_text }}"
-        class="header__logo-image"
-        loading="eager"
-      >
-    {{ else }}
-      {{ $image := resources.Get $original.logo }}
-      {{ with $image }}
-        {{ $image = $image.Resize "440x png" }}
-      {{ end }}
-      {{ with $image }}
-        <img 
-          src="{{ .RelPermalink }}" 
-          width="{{ .Width }}" 
-          height="{{ .Height }}" 
-          class="header__logo-image"
-          alt="{{ $original.logo_alt_text }}"
-          loading="eager"
-        >
-      {{ end }}
-    {{ end }}
+    {{ partial "processed-image" (dict
+      "image_path" $original.logo
+      "image_alt" $original.logo_alt_text
+      "prop_src" "@data[nav].header.logo"
+      "prop_alt" "@data[nav].header.logo_alt_text"
+      "image_width" "440"
+      "image_format" "png"
+      "class" "header__logo-image"
+      "loading" "eager"
+    ) }}
   {{ end }}
 </a>

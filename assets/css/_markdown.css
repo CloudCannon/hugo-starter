@@ -64,6 +64,35 @@
   text-underline-offset: 0.1rem;
   cursor: pointer;
 }
+/* Long-form bodies keep their underlines: links there sit mid-sentence, and
+   the link colour is only 1.49:1 against the default body text, short of the
+   3:1 WCAG 1.4.1 asks when colour alone marks a link. Editors pick body
+   colours per block from data/colors.yml, so no fixed link colour can
+   guarantee that ratio.
+
+   Links in component copy are standalone calls to action with no adjacent
+   prose to be confused with, so they drop the underline. Scoped by container,
+   since :only-child ignores text nodes and so also matches a link followed by
+   prose. */
+.left-right__text-content a,
+.text-block-body-content a,
+.subheading-text a,
+.hero-video-subheading-text a {
+  text-decoration: none;
+}
+/* Every link still gets a non-colour cue on hover and keyboard focus. */
+.markdown-text a:hover,
+.markdown-text a:focus-visible,
+.left-right__text-content a:hover,
+.left-right__text-content a:focus-visible,
+.text-block-body-content a:hover,
+.text-block-body-content a:focus-visible,
+.subheading-text a:hover,
+.subheading-text a:focus-visible,
+.hero-video-subheading-text a:hover,
+.hero-video-subheading-text a:focus-visible {
+  text-decoration: underline;
+}
 .markdown-text sup {
   vertical-align: super;
   font-size: smaller;

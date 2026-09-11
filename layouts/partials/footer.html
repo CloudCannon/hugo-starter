@@ -1,4 +1,10 @@
+{{/*
+  Site footer. Everything comes from data/nav.yml, so selectors are @data
+  references and edits land in that file, not the current page.
 
+  footer.social stays sidebar-only: an icon class, a link and a name, with no
+  visible text to edit in place.
+*/}}
 {{ with .Site.Data.nav }}
 <footer
   class="footer"
@@ -9,29 +15,16 @@
       <a
         class="flex justify-center sm:justify-start items-center"
         href="{{ .footer.logo_url }}">
-        {{ if hasSuffix .footer.logo ".svg" }}
-          <img 
-            src="{{ .footer.logo }}" 
-            alt="{{ .footer.logo_alt_text }}"
-            class="footer-logo-image"
-            loading="lazy"
-          >
-        {{ else }}
-          {{ $image := resources.Get .footer.logo }}
-          {{ with $image }}
-            {{ $image = $image.Resize "440x png" }}
-          {{ end }}
-          {{ with $image }}
-            <img 
-              src="{{ .RelPermalink }}" 
-              width="{{ .Width }}" 
-              height="{{ .Height }}" 
-              class="footer-logo-image"
-              alt="{{ $.Site.Data.nav.footer.logo_alt_text }}"
-              loading="lazy"
-            >
-          {{ end }}
-        {{ end }}
+        {{ partial "processed-image" (dict
+          "image_path" .footer.logo
+          "image_alt" .footer.logo_alt_text
+          "prop_src" "@data[nav].footer.logo"
+          "prop_alt" "@data[nav].footer.logo_alt_text"
+          "image_width" "440"
+          "image_format" "png"
+          "class" "footer-logo-image"
+          "loading" "lazy"
+        ) }}
       </a>
       <ul class="footer-socials">
         {{ range .footer.social }}
@@ -43,10 +36,19 @@
         {{ end }}
       </ul>
 
-      <ul class="footer-links">
-        {{ range .footer.links }}
+      {{/* Only loop output and the new-item <template> may be direct
+           children of an array region. */}}
+      <ul class="footer-links"
+        data-editable="array"
+        data-prop="@data[nav].footer.links">
+        <template>
           <li>
-            <a href={{ .link }}>{{ .text }}</a>
+            <a href="/" data-editable="text" data-prop="text" data-type="span"></a>
+          </li>
+        </template>
+        {{ range .footer.links }}
+          <li data-editable="array-item">
+            <a href={{ .link }} data-editable="text" data-prop="text" data-type="span">{{ .text }}</a>
           </li>
         {{ end }}
       </ul>
@@ -61,7 +63,10 @@
           {{ .footer.copyright_start_date }} - {{ time.Now.Year }}
         {{ end }}
       </span>
-      <span>{{ .footer.copyright_statement }}</span>
+      <span
+        data-editable="text"
+        data-prop="@data[nav].footer.copyright_statement"
+        data-type="span">{{ .footer.copyright_statement }}</span>
     </p>
   </div>
 </footer>

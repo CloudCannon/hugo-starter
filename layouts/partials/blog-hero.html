@@ -1,0 +1,49 @@
+{{/*
+  Blog post hero. Takes the page, not a props object: it reads both
+  .Params.post_hero and .Params.tags, and tags has to stay top-level for Hugo's
+  taxonomies, so there is no single object to bind a component region to.
+  Selectors here are paths from the file root.
+
+  tags stays sidebar-only. It is a multiselect from data/tags.yml, and inline
+  editing would allow values that aren't in that list.
+*/}}
+<div class="blog-hero" aria-labelledby="blog-heading-text">
+  {{ partial "processed-image" (dict
+    "image_path" .Params.post_hero.image
+    "image_alt" .Params.post_hero.image_alt
+    "prop_src" "post_hero.image"
+    "prop_alt" "post_hero.image_alt"
+    "image_width" "1000"
+    "image_format" "webp"
+    "class" "blog-hero-image"
+  ) }}
+
+  {{ with .Params.tags }}
+    <div class="blog-post-tags">
+      {{ range . }} 
+        {{ $href := print (absURL "tags/") (urlize .) }}
+        <a href="{{ $href }}">{{ . | humanize }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+  <h1
+    id="blog-heading-text"
+    class="blog-title"
+    data-editable="text"
+    data-prop="post_hero.heading"
+    data-type="span">{{ .Params.post_hero.heading }}</h1>
+  <div class="blog-details">
+    <ul>
+      {{/* Rendered through time.Format, so not round-trippable.
+           Sidebar only. */}}
+      {{ with .Params.post_hero.date }}
+        <li>{{ . | time.Format ":date_long" }}</li>
+      {{ end }}
+      {{ if .Params.post_hero.author }} 
+        <li data-editable="text" data-prop="post_hero.author" data-type="span">{{ .Params.post_hero.author }}</li>
+      {{ else }}
+        <li>{{ site.Data.seo.default_author }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
