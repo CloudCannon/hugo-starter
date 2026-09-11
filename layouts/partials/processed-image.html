@@ -1,11 +1,10 @@
 {{/*
   Renders an <img>, optionally as an editable image region.
 
-  Hugo's asset pipeline (resources.Get / Resize) cannot run inside
-  CloudCannon's editor renderer, so fall back to the unprocessed path whenever
-  site.Params.ENV_CLIENT is set. SVGs take the same branch because Hugo cannot
-  process them either. static/ is mounted into assets/ in hugo.yaml so the same
-  path resolves in both branches.
+  Hugo's asset pipeline cannot run in CloudCannon's editor renderer, so the
+  unprocessed path is served whenever site.Params.ENV_CLIENT is set. SVGs take
+  the same branch, since Hugo cannot process those either. static/ is mounted
+  into assets/ in hugo.yaml so one path resolves in both branches.
 
   Params:
     image_path    - path to the image
@@ -17,18 +16,15 @@
     prop_src      - data-prop selector for the image path. Omit for a plain <img>.
     prop_alt      - data-prop selector for the alt text
 
-  The selectors are passed in rather than wrapping this partial's output in a
-  region, so the DOM stays identical to a non-editable render and the existing
-  image CSS keeps working. They resolve relative to the nearest editable
-  ancestor, so a caller inside a content block passes "image.image_path" while
-  a caller in a page template passes a path from the file root.
+  Selectors are passed in rather than wrapping this partial's output in a
+  region, so the DOM is identical to a non-editable render. They resolve
+  relative to the nearest editable ancestor: a caller inside a content block
+  passes "image.image_path", one in a page template a path from the file
+  root.
 */}}
 {{ if and (not .image_path) (not .prop_src) }}
-  {{/* Nothing to show and nothing to edit. The processing branch already
-       renders nothing for an empty path, since resources.Get returns nil;
-       without this the editor branch would emit <img src=""> instead. An
-       editable caller still gets its <img>, so an unset image has a region
-       for the editor to click. */}}
+  {{/* Nothing to show and nothing to edit. An editable caller still gets
+       its <img>, so an unset image has a region to click. */}}
 {{ else if or site.Params.ENV_CLIENT (hasSuffix .image_path ".svg") }}
   <img
     src="{{ .image_path }}"

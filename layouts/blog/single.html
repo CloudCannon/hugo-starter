@@ -14,16 +14,14 @@
 </section>
 
 <section class="blog-related">
-  {{/* Hard-coded copy with no data key behind it, so it gets a source region:
-       the editor rewrites this heading in the template file itself. */}}
+  {{/* Hard-coded copy, so a source region writes back to this template. */}}
   <h2
     class="blog-related-title"
     data-editable="source"
     data-path="layouts/blog/single.html"
     data-key="recent-posts-heading">Recent Posts</h2>
-  {{/* Derived list: filtered, sorted and truncated. Deliberately not an
-       array region -- @collections[blog] here would let editors add and
-       delete blog posts from a post page. */}}
+  {{/* Derived list, deliberately not an array region: @collections[blog]
+       would let editors delete blog posts from a post page. */}}
   <div class="blog-related-posts">
     {{ with (where (where .Site.RegularPages "Section" "blog") "Title" "!=" .Title ) }}
       {{ $sorted_dates := . }}

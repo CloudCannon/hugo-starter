@@ -64,21 +64,16 @@
   text-underline-offset: 0.1rem;
   cursor: pointer;
 }
-/* Underlines are kept for long-form content (blog bodies), where links appear
-   inline mid-sentence and the underline is the only non-colour cue that marks
-   them: the link colour reaches just 1.49:1 against the default body text,
-   short of the 3:1 WCAG 1.4.1 asks for when colour alone distinguishes a link.
-   Body text colour is chosen per block by editors from data/colors.yml, so no
-   fixed link colour can guarantee that ratio.
+/* Long-form bodies keep their underlines: links there sit mid-sentence, and
+   the link colour is only 1.49:1 against the default body text, short of the
+   3:1 WCAG 1.4.1 asks when colour alone marks a link. Editors pick body
+   colours per block from data/colors.yml, so no fixed link colour can
+   guarantee that ratio.
 
-   Component copy is different: it is short marketing text whose links are
-   standalone list items and calls to action, with no adjacent body text to be
-   confused with, so the underline carries no information there. Rules below
-   drop it for those containers only.
-
-   Note there is no CSS selector for "this link is the whole line" --
-   :only-child ignores text nodes, so it also matches a link followed by prose.
-   Hence scoping by container rather than by position. */
+   Links in component copy are standalone calls to action with no adjacent
+   prose to be confused with, so they drop the underline. Scoped by container,
+   since :only-child ignores text nodes and so also matches a link followed by
+   prose. */
 .left-right__text-content a,
 .text-block-body-content a,
 .subheading-text a,

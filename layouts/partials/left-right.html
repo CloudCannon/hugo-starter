@@ -1,9 +1,7 @@
 {{/*
   Left-right content block: heading and text beside an image, optionally
-  flipped, with a single optional button.
-
-  The button is an object rather than an array, so it gets a component region
-  rather than an array/array-item pair.
+  flipped, with a single optional button. The button is an object, so it gets
+  a component region rather than an array/array-item pair.
 */}}
 <section class="left-right" style="background-color: {{ .background_color }};" aria-labelledby="left-right-{{ .heading.heading_text | anchorize }}">
   {{ if .flipped }}

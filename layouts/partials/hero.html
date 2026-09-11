@@ -1,9 +1,9 @@
 {{/*
   Hero content block: heading, subheading, image and a buttons array.
 
-  Every data-prop here is relative to this block's array-item, which the page
-  builder in layouts/_default/list.html hands us, so plain keys like
-  "heading.heading_text" resolve to content_blocks[n].heading.heading_text.
+  Every data-prop is relative to this block's array-item, so
+  "heading.heading_text" resolves to
+  content_blocks[n].heading.heading_text.
 */}}
 <section style="background-color: {{ .background_color }};" aria-labelledby="hero-heading-text">
   <div class="hero-container">
@@ -30,8 +30,8 @@
           {{ .subheading.text_content | markdownify }}
         </div>
       {{ end }}
-      {{/* Render the container even when empty in the editor, otherwise there
-           is no array region to add the first button to. */}}
+      {{/* Rendered even when empty in the editor, so there is a region to
+           add the first button to. */}}
       {{ if or .buttons site.Params.ENV_CLIENT }}
         <div
           class="buttons"

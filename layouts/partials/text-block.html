@@ -1,11 +1,9 @@
 {{/*
   Text block content block: a heading over one to three columns of markdown.
 
-  The per-instance <style> block this component used to emit has moved to
-  assets/scss/components/text-block.scss; the values that varied per instance
-  arrive as custom properties on the section instead. Unscoped rules in an
-  inline <style> collide when the component renders more than once, and they
-  re-render badly in the editor.
+  Per-instance values arrive as custom properties on the section, styled from
+  assets/scss/components/text-block.scss, so two instances on a page don't
+  collide.
 */}}
 <section
   class="text-block"

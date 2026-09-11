@@ -1,13 +1,10 @@
 {{/*
-  Hero content block with a self-hosted background video.
+  Hero content block with a background video. Self-hosting the video is a
+  placeholder and makes for a heavy page: on a production site, embed it
+  (eg Vimeo) or serve it from a DAM (eg Cloudinary).
 
-  This is a placeholder component that uses a self hosted video.
-  This can result in the page size being overly large, and therefore slow to load.
-  On a production site, you probably want to look into something that allows you to embed videos, eg Vimeo,
-  or using a DAM, eg Cloudinary.
-
-  header_style_overrides is read by layouts/partials/header-styles.html and
-  header-logo.html rather than rendered here.
+  header_style_overrides is read by header-styles.html and header-logo.html
+  rather than rendered here.
 */}}
 <section 
   class="hero-video" 
@@ -30,9 +27,9 @@
         class="hero-video-pause-button">
           <i class="fas fa-pause"></i>
       </button>
-      {{/* Scoped to this section and free of globals, so a second instance on
-           the page does not clash. Skipped in the editor: markup that the
-           renderer diffs back in never executes its scripts anyway. */}}
+      {{/* Scoped to this section so a second instance doesn't clash.
+           Skipped in the editor, where diffed-in markup never runs its
+           scripts. */}}
       {{ if not site.Params.ENV_CLIENT }}
         <script>
           (function () {

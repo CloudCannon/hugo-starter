@@ -1,12 +1,10 @@
 {{/*
-  Header logo. Normally comes from the nav dataset, but the first content block
-  on a page can override it via header_style_overrides.alternate_logo.
+  Header logo, from data/nav.yml unless the page's first content block sets
+  header_style_overrides.alternate_logo. content_blocks is nil on blog posts
+  and list pages, so the lookup is guarded.
 
-  content_blocks is nil on blog posts and list pages, so the lookup is guarded
-  rather than indexed directly.
-
-  Only the dataset logo gets an image region. The override lives inside a
-  page's content block as style configuration, and is edited in the sidebar.
+  Only the dataset logo gets an image region; the override is style config,
+  edited in the sidebar.
 */}}
 {{ $original := .nav.header }}
 {{ $overrideLogoPath := "" }}

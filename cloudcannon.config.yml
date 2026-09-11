@@ -95,7 +95,6 @@ data_config:
   colors:
     path: data/colors.yml
   # Required for the @data[nav] selectors in the header and footer partials.
-  # Without this entry those editable regions cannot resolve.
   nav:
     path: data/nav.yml
   tags:
@@ -188,7 +187,7 @@ file_config:
         comment: Used as author for blog posts that don't have an author defined on the page.
 
 _editables:
-  # Toolbar for data-type="text" regions: paragraph-level rich text.
+  # Toolbar for data-type="text" regions: inline rich text.
   text:
     bold: true
     italic: true
@@ -202,7 +201,7 @@ _editables:
     undo: true
     redo: true
   # Toolbar for data-type="block" regions: multi-paragraph rich text. Mirrors
-  # the _inputs.text_content markdown input, since those are the same values.
+  # the _inputs.text_content markdown input, which edits the same values.
   block:
     blockquote: true
     bold: true
@@ -249,14 +248,9 @@ _editables:
 
 # Structures for the page builder and its nested button arrays.
 #
-# Each value here describes one content block: the label, icon and tags the
-# editor sees when adding a block, the default value written into front matter,
-# and the inputs for editing it in the sidebar.
-#
-# id_key tells CloudCannon which key in each value identifies the structure
-# option. It is the same key the page builder dispatches on in
-# layouts/_default/list.html (data-component-key="_name"), so a block's _name
-# both picks the structure and names the partial that renders it.
+# id_key names the key that identifies each option. It is the key the page
+# builder dispatches on (data-component-key="_name"), so a block's _name both
+# picks the structure and names the partial that renders it.
 _structures:
   content_blocks:
     id_key: _name
@@ -435,13 +429,15 @@ _structures:
           brightness:
             type: range
             options:
-              min: 0
+              # min cannot be 0 -- see _inputs.hover_brightness.
+              min: 0.025
               max: 2
               step: 0.025
           blur:
             type: range
             options:
-              min: 0
+              # min cannot be 0 -- see _inputs.hover_brightness.
+              min: 0.25
               max: 10
               step: 0.25
           buttons:
@@ -697,7 +693,10 @@ _inputs:
   hover_brightness:
     type: range
     options:
-      min: 0
+      # CloudCannon rejects a range whose min is 0 with "This range input is
+      # misconfigured. options.min must be a valid number", so every range min
+      # here is one step above zero. Set them back to 0 once that is fixed.
+      min: 0.05
       max: 1.5
       step: 0.05
   seo:

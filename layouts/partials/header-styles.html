@@ -1,7 +1,6 @@
 {{/*
-  Per-page header colour overrides, taken from the first content block.
-  content_blocks is nil on blog posts and list pages, so this is guarded
-  rather than indexing straight into it.
+  Per-page header colour overrides from the first content block.
+  content_blocks is nil on blog posts and list pages, so the lookup is guarded.
 */}}
 {{ $override := dict }}
 {{ with .Params.content_blocks }}

@@ -24,9 +24,8 @@
   height: 1rem;
   display: flex;
 }
-/* Was an inline <style> block in the component. Moved here so multiple
-   instances don't emit conflicting rules; the value arrives as a custom
-   property set on the component root. */
+/* hover_brightness arrives as a custom property on the component root, so
+   instances don't emit conflicting rules. */
 .primary-button p:hover {
   backdrop-filter: brightness(var(--hover-brightness, 1));
 }

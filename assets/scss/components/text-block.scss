@@ -19,10 +19,8 @@
   }
 }
 
-/* Was an inline <style> block in the component. Kept at the end of this file
-   so it still wins over the .text-block-container rule above, exactly as the
-   inline block did by source order. Per-instance values arrive as custom
-   properties set on the component root. */
+/* Per-instance values arrive as custom properties on the component root.
+   These rules come last so they win over the container rules above. */
 .text-block {
   background-color: var(--text-block-bg);
 }

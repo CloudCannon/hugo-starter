@@ -1,10 +1,9 @@
 {{/*
-  Site footer. Everything here comes from data/nav.yml via the nav dataset, so
-  the selectors are @data references. Like the header, this renders on every
-  page, so edits land in the data file rather than the current page.
+  Site footer. Everything comes from data/nav.yml, so selectors are @data
+  references and edits land in that file, not the current page.
 
-  footer.social is left non-editable: the items are an icon class, a link and a
-  name, with no editable visible text. It stays editable in the sidebar.
+  footer.social stays sidebar-only: an icon class, a link and a name, with no
+  visible text to edit in place.
 */}}
 {{ with .Site.Data.nav }}
 <footer
@@ -37,8 +36,8 @@
         {{ end }}
       </ul>
 
-      {{/* Only loop output and the new-item <template> may be direct children
-           of an array region. */}}
+      {{/* Only loop output and the new-item <template> may be direct
+           children of an array region. */}}
       <ul class="footer-links"
         data-editable="array"
         data-prop="@data[nav].footer.links">

@@ -1,14 +1,11 @@
 {{/*
-  Blog post hero. Takes the page, not a props object.
+  Blog post hero. Takes the page, not a props object: it reads both
+  .Params.post_hero and .Params.tags, and tags has to stay top-level for Hugo's
+  taxonomies, so there is no single object to bind a component region to.
+  Selectors here are paths from the file root.
 
-  This is deliberately a plain partial rather than a component region: it reads
-  both .Params.post_hero and .Params.tags, and tags has to stay a top-level key
-  for Hugo's taxonomies, so there is no single object to bind a component to.
-  The regions inside therefore use paths from the file root.
-
-  tags is left non-editable on purpose. It is a multiselect sourced from
-  data/tags.yml, so inline text editing would let editors type values that
-  aren't in that list. It stays editable in the sidebar.
+  tags stays sidebar-only. It is a multiselect from data/tags.yml, and inline
+  editing would allow values that aren't in that list.
 */}}
 <div class="blog-hero" aria-labelledby="blog-heading-text">
   {{ partial "processed-image" (dict
@@ -37,8 +34,8 @@
     data-type="span">{{ .Params.post_hero.heading }}</h1>
   <div class="blog-details">
     <ul>
-      {{/* date renders through time.Format, so it is not a round-trippable
-           string. Left to the sidebar. */}}
+      {{/* Rendered through time.Format, so not round-trippable.
+           Sidebar only. */}}
       {{ with .Params.post_hero.date }}
         <li>{{ . | time.Format ":date_long" }}</li>
       {{ end }}

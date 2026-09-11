@@ -1,18 +1,11 @@
 {{ define "main" }}
   {{/*
-    Page builder. Each item in content_blocks names its own component in
-    _name, which resolves as a partial under layouts/partials/.
+    Page builder. Each block's _name resolves to a partial in
+    layouts/partials/ and to a structure in cloudcannon.config.yml.
 
-    No `with` guard on content_blocks: without the array region rendered, an
-    empty page gives editors nothing to add the first block to.
-
-    data-id-key defaults to data-component-key, so only the latter is needed.
-    A heterogeneous array with a component key needs no <template> either --
-    new items render from their own component.
-
-    The per-item wrapper div is unavoidable when dispatching through `partial`,
-    since attributes can't be injected into a partial's root element from the
-    call site.
+    content_blocks is rendered unguarded so an empty page still has an array
+    region to add the first block to. The wrapper div carries the array-item
+    attributes, which cannot be set on a partial's root element.
   */}}
   <div
     data-editable="array"

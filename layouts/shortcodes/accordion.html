@@ -1,6 +1,5 @@
-{{/* summary is passed positionally, matching the _snippets.accordion
-     definition in cloudcannon.config.yml. .Params.summary only resolves for
-     named arguments, so use .Get 0. */}}
+{{/* summary is positional, matching the _snippets.accordion definition in
+     cloudcannon.config.yml. */}}
 <details>
   <summary>{{ .Get 0 }}</summary>
   {{ .Inner | markdownify }}
