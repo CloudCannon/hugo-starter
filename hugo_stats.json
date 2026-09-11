@@ -6,6 +6,7 @@
       "body",
       "button",
       "code",
+      "details",
       "div",
       "footer",
       "g",
@@ -29,8 +30,11 @@
       "script",
       "section",
       "span",
+      "strong",
       "style",
+      "summary",
       "svg",
+      "template",
       "title",
       "ul"
     ],
@@ -126,9 +130,10 @@
       "accessibility",
       "best-practices",
       "blog-heading-text",
-      "bookshop",
       "content-editor",
+      "editable-regions",
       "hero-heading-text",
+      "how-it-works-in-hugo",
       "left-right-keep-what-you-need-delete-the-rest",
       "left-right-you-choose-your-editing-experience",
       "main",
@@ -139,8 +144,7 @@
       "snippets",
       "styling",
       "visual-editing-fallbacks",
-      "what-does-bookshop-bring-to-cloudcannon",
-      "what-does-bookshop-bring-to-hugo"
+      "what-this-brings-to-cloudcannon"
     ]
   }
 }

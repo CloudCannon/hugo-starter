@@ -3,10 +3,10 @@
 <section data-pagefind-body>
   <article class="blog-post">
     
-    {{ partial "bookshop_bindings" `(dict "Params" .Params.post_hero "post_tags" .Params.tags)` }}
-    {{ partial "bookshop" (slice "blog/hero" (dict "Params" .Params.post_hero "post_tags" .Params.tags)) }}
+    {{ partial "blog-hero" . }}
 
-    <div data-cms-edit="content" class="markdown-text">
+    {{/* @content is the reserved selector for the file's markdown body. */}}
+    <div data-editable="text" data-prop="@content" data-type="block" class="markdown-text">
       {{ .Content }}
     </div>
   </article>
@@ -14,7 +14,16 @@
 </section>
 
 <section class="blog-related">
-  <h2 class="blog-related-title">Recent Posts</h2>
+  {{/* Hard-coded copy with no data key behind it, so it gets a source region:
+       the editor rewrites this heading in the template file itself. */}}
+  <h2
+    class="blog-related-title"
+    data-editable="source"
+    data-path="layouts/blog/single.html"
+    data-key="recent-posts-heading">Recent Posts</h2>
+  {{/* Derived list: filtered, sorted and truncated. Deliberately not an
+       array region -- @collections[blog] here would let editors add and
+       delete blog posts from a post page. */}}
   <div class="blog-related-posts">
     {{ with (where (where .Site.RegularPages "Section" "blog") "Title" "!=" .Title ) }}
       {{ $sorted_dates := . }}
@@ -22,27 +31,14 @@
       {{ range $sorted_dates.Reverse | first 3 }}
         <div>
           <a href="{{ .Permalink | relURL }}">
-            {{ if hasSuffix .Params.thumb_image_path ".svg" }}
-              <img 
-                src="{{ .Params.thumb_image_path }}" 
-                alt="{{ .Params.thumb_image_alt }}"
-                class="blog-related-post-thumb"
-                loading="lazy"
-              >
-            {{ else }}
-              {{ $image := resources.Get .Params.thumb_image_path }}
-              {{ $image = $image.Resize "700x webp" }}
-              {{ with $image }}
-                <img 
-                  src="{{ .RelPermalink }}" 
-                  width="{{ .Width }}" 
-                  height="{{ .Height }}" 
-                  class="blog-related-post-thumb"
-                  alt="{{ $.Params.thumb_image_alt }}"
-                  loading="lazy"
-                >
-              {{ end }}
-            {{ end }}
+            {{ partial "processed-image" (dict
+              "image_path" .Params.thumb_image_path
+              "image_alt" .Params.thumb_image_alt
+              "image_width" "700"
+              "image_format" "webp"
+              "class" "blog-related-post-thumb"
+              "loading" "lazy"
+            ) }}
           </a>
           <div class="blog-related-post-content">
             <a class="blog-related-post-title" href="{{ .Permalink | relURL }}">

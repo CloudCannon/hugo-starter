@@ -1,6 +1,27 @@
 {{ define "main" }}
-  {{ with .Params.content_blocks }}
-    {{ partial "bookshop_bindings" `.Params.content_blocks` }} 
-    {{ partial "bookshop_partial" (slice "page" .) }} 
-  {{ end }}
+  {{/*
+    Page builder. Each item in content_blocks names its own component in
+    _name, which resolves as a partial under layouts/partials/.
+
+    No `with` guard on content_blocks: without the array region rendered, an
+    empty page gives editors nothing to add the first block to.
+
+    data-id-key defaults to data-component-key, so only the latter is needed.
+    A heterogeneous array with a component key needs no <template> either --
+    new items render from their own component.
+
+    The per-item wrapper div is unavoidable when dispatching through `partial`,
+    since attributes can't be injected into a partial's root element from the
+    call site.
+  */}}
+  <div
+    data-editable="array"
+    data-prop="content_blocks"
+    data-component-key="_name">
+    {{ range .Params.content_blocks }}
+      <div data-editable="array-item" data-id="{{ ._name }}" data-component="{{ ._name }}">
+        {{ partial ._name . }}
+      </div>
+    {{ end }}
+  </div>
 {{ end }}

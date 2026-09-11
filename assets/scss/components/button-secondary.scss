@@ -1,0 +1,32 @@
+.secondary-button {
+  /* Explicit display, so the button does not depend on its parent being a
+     flex container to be block-level. It sits inside an editable array-item
+     wrapper, not directly in .buttons, so it is no longer blockified by flex
+     and an inline <a> around a block <p> would split its border. */
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  max-width: max-content;
+}
+
+.secondary-button p {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.secondary-button .button__icon {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+}
+/* Was an inline <style> block in the component. See button-primary.scss. */
+.secondary-button p:hover {
+  backdrop-filter: brightness(var(--hover-brightness, 1));
+}

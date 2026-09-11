@@ -1,7 +1,22 @@
 {{ define "main" }}
+{{/*
+  Hard-coded copy with no data key behind it, so it gets source regions: the
+  editor rewrites this template file directly.
+
+  Note that a 404 is not part of a collection, so it may not be reachable in
+  the Visual Editor at all -- these are here to exercise source regions rather
+  than because editors are likely to find them.
+*/}}
 <section class="not-found-page">
   <img src="/images/404.png" alt="404" />
-  <h3>Could not find the page you were looking for.</h3>
-  <a href="/">Homepage</a>
+  <h3
+    data-editable="source"
+    data-path="layouts/404.html"
+    data-key="not-found-heading">Could not find the page you were looking for.</h3>
+  <a
+    href="/"
+    data-editable="source"
+    data-path="layouts/404.html"
+    data-key="not-found-link">Homepage</a>
 </section>
 {{ end }}

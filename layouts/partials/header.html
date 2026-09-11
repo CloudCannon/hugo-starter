@@ -1,13 +1,15 @@
+{{/*
+  Site header. The nav links come from data/nav.yml via the nav dataset, so
+  the array region's selector is an @data reference. `nav` has to be listed in
+  data_config in cloudcannon.config.yml for @data[nav] to resolve.
+
+  This partial renders on every page from baseof.html, so editing a link here
+  edits data/nav.yml, not the current page. That is intended.
+*/}}
 {{ with .Site.Data.nav }}
-<header
-  class="header"
-  x-data="{ open: false }"
-  x-transition>
+<header class="header" x-data="{ open: false }" x-transition>
   <style>
-    .header__nav-links {
-      background-color: #fff;
-      color: #333232;
-    }
+    .header__nav-links { background-color: #fff; color: #333232; }
   </style>
 
   {{ partial "header-styles" (dict "nav" . "Params" $.Params) }}
@@ -18,26 +20,29 @@
       {{ partial "header-logo" (dict "nav" . "Params" $.Params) }}
 
       <button class="hamburger" @click="open = ! open">
-        <i 
-        x-show="!open" 
-        aria-label="Open the mobile navigation menu" 
-        class="fas fa-bars hamburger-open">
-        </i>
-        <i
-          x-show="open"
-          aria-label="Close the mobile navigation menu" 
-          class="fas fa-close"
-          style="color: #333232;"></i>
+        <i x-show="!open" aria-label="Open the mobile navigation menu" class="fas fa-bars hamburger-open"></i>
+        <i x-show="open" aria-label="Close the mobile navigation menu" class="fas fa-close" style="color: #333232;"></i>
       </button>
-      <ul
-        class="header__nav-links"
-        x-show="open"
-        aria-label="Navigation menu links"
-        x-transition
-        @click.outside="open = false">
+      {{/* Every direct child of an array region is treated as an item, so this
+           <ul> must hold nothing but the loop output and the <template>. The
+           <template> is the blueprint for new items: without it, deleting the
+           last link would leave nothing to clone from. */}}
+      <ul class="header__nav-links" x-show="open" aria-label="Navigation menu links" x-transition @click.outside="open = false"
+        data-editable="array"
+        data-prop="@data[nav].header.links">
+        <template>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="/" data-editable="text" data-prop="text" data-type="span"></a>
+          </li>
+        </template>
         {{ range .header.links }}
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="{{ .link }}">
+        {{/* Child selectors are relative to the item, so "text" resolves to
+             @data[nav].header.links[n].text. The @data prefix is not repeated. */}}
+        <li class="header__nav-item" data-editable="array-item">
+          <a class="header__nav-link" href="{{ .link }}"
+            data-editable="text"
+            data-prop="text"
+            data-type="span">
             {{ .text }}
           </a>
         </li>

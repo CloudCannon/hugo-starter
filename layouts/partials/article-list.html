@@ -1,5 +1,9 @@
 <section class="blog-section">
-  <h1 class="blog-hero-title">{{ .context.Title }}</h1>
+  {{/* editable_title is only passed from layouts/blog/list.html, where the
+       title maps to a real file (content/blog/_index.md). Taxonomy term pages
+       have generated titles with nothing to write back to. */}}
+  <h1 class="blog-hero-title"
+    {{ if .editable_title }}data-editable="text" data-prop="title" data-type="span"{{ end }}>{{ .context.Title }}</h1>
   <div class="search-bar">
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <script src="/pagefind/pagefind-ui.js"></script>
@@ -22,25 +26,15 @@
     {{ range (.context.Paginate $pagesToPaginate .page_size).Pages }}
       <div class="blog-grid-item">
         <a class="blog-grid-image" href="{{ .RelPermalink }}">
-          {{ if hasSuffix .Params.thumb_image_path ".svg" }}
-            <img 
-              src="{{ .Params.thumb_image_path }}" 
-              alt="{{ .Params.thumb_image_alt }}"
-            >
-          {{ else }}
-            {{ $processedImage := resources.Get .Params.thumb_image_path }}
-            {{ with $processedImage }}
-              {{ $processedImage = $processedImage.Resize "1000x webp" }}
-            {{ end }}
-            {{ with $processedImage }}
-              <img 
-                src="{{ .RelPermalink }}"
-                alt="{{ $.Params.thumb_image_alt }}"
-                width="{{ .Width }}" 
-                height="{{ .Height }}" 
-              >
-            {{ end }}
-          {{ end }}
+          {{/* Via processed-image so the ENV_CLIENT fallback applies: bare
+               resources.Get renders nothing in the editor. No prop selectors,
+               because these thumbnails belong to other pages. */}}
+          {{ partial "processed-image" (dict
+            "image_path" .Params.thumb_image_path
+            "image_alt" .Params.thumb_image_alt
+            "image_width" "1000"
+            "image_format" "webp"
+          ) }}
         </a>
         <h2 class="blog-post-title">
           <a href="{{ .RelPermalink }}" class="">{{ .Title }}</a>

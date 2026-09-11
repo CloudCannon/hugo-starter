@@ -1,11 +1,9 @@
 baseURL: 'https://adjective-noun.cloudvent.net/'
 languageCode: en-us
-title: Hugo Bookshop Starter
+title: Hugo Editable Regions Starter
 module:
-  replacements: local/component-library -> ../component-library
   imports:
-    - path: local/component-library
-    - path: github.com/cloudcannon/bookshop/hugo/v3
+    - path: github.com/CloudCannon/editable-regions
   mounts:
     - source: assets
       target: assets
@@ -14,6 +12,9 @@ module:
     - disableWatch: true
       source: hugo_stats.json
       target: assets/notwatching/hugo_stats.json
+params:
+  editable_regions:
+    verbose: false
 build:
   buildStats:
     enable: true

@@ -49,6 +49,33 @@ To create a copy of your repository to work on your local machine:
 
 5. Navigate to https://localhost:1313.
 
+## Components and page building
+
+Components are plain Hugo partials in `layouts/partials/`, marked up with
+[CloudCannon editable regions](https://github.com/CloudCannon/editable-regions)
+so they can be edited in place in the Visual Editor. The integration is a Hugo
+module, imported in `hugo.yaml` and loaded by `{{ partial "editable-regions" . }}`
+in the site `<head>`.
+
+The page builder is the `content_blocks` array in a page's front matter. Each
+block names its component in `_name`, which resolves as both a partial name and
+a structure in `cloudcannon.config.yml`:
+
+```yaml
+content_blocks:
+  - _name: hero        # renders layouts/partials/hero.html
+    heading:
+      heading_text: Hello
+```
+
+To add a component: create `layouts/partials/<name>.html`, add its styles at
+`assets/scss/components/<name>.scss` (picked up automatically), and add a value
+with `_name: <name>` to `_structures.content_blocks` in `cloudcannon.config.yml`.
+
+Templates that use Hugo's asset pipeline (`resources.Get`, `.Resize`) need a
+fallback for the Visual Editor, which cannot run it. Use `site.Params.ENV_CLIENT`
+— see `layouts/partials/processed-image.html`.
+
 ## Features
 
 - [Blog with pagination & tags](https://moss-goldfish.cloudvent.net/blog/paginated-collection/)
@@ -59,9 +86,9 @@ To create a copy of your repository to work on your local machine:
 
 - [Font Awesome icons](https://moss-goldfish.cloudvent.net/blog/icons/)
 
-- [Page building in CloudCannon with Bookshop components](https://moss-goldfish.cloudvent.net/blog/bookshop/)
+- [Page building in CloudCannon with editable regions](https://moss-goldfish.cloudvent.net/blog/editable-regions/)
 
-- [Built-in search with Pagefind](https://moss-goldfish.cloudvent.net/blog/pagefind/)
+- [Built-in search with Pagefind](https://moss-goldfish.cloudvent.net/blog/search/)
 
 - [Image processing](https://moss-goldfish.cloudvent.net/blog/processed-images/)
 

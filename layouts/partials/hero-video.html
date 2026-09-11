@@ -1,0 +1,92 @@
+{{/*
+  Hero content block with a self-hosted background video.
+
+  This is a placeholder component that uses a self hosted video.
+  This can result in the page size being overly large, and therefore slow to load.
+  On a production site, you probably want to look into something that allows you to embed videos, eg Vimeo,
+  or using a DAM, eg Cloudinary.
+
+  header_style_overrides is read by layouts/partials/header-styles.html and
+  header-logo.html rather than rendered here.
+*/}}
+<section 
+  class="hero-video" 
+  aria-labelledby="hero-video-heading-text">
+  <div class="hero-video-container">
+    <div 
+      class="hero-video-filter" 
+      style="backdrop-filter: brightness({{ .background_filters.brightness }}) blur({{ .background_filters.blur }}px);">
+    </div>
+    <video id="hero-video" playsinline autoplay muted loop poster="{{ .video.poster_image }}" data-playback-speed="{{ .video.playback_speed }}">
+      {{ $video_ext_arr := split .video.video_path "." }}
+      {{ $video_ext := index $video_ext_arr 1 }}
+      <source src="{{ .video.video_path }}" type="video/{{ $video_ext }}">
+    </video>
+    <div class="hero-video-content">
+      <button 
+        style="color: {{ .heading.text_color }};" 
+        aria-label="Toggle play/pause background video" 
+        id="hero-video-pause-button"
+        class="hero-video-pause-button">
+          <i class="fas fa-pause"></i>
+      </button>
+      {{/* Scoped to this section and free of globals, so a second instance on
+           the page does not clash. Skipped in the editor: markup that the
+           renderer diffs back in never executes its scripts anyway. */}}
+      {{ if not site.Params.ENV_CLIENT }}
+        <script>
+          (function () {
+            var section = document.currentScript.closest(".hero-video");
+            if (!section) return;
+            var video = section.querySelector("video");
+            var button = section.querySelector(".hero-video-pause-button");
+            if (!video || !button) return;
+            // Change the playback speed to keep file size down while making video longer
+            video.playbackRate = Number(video.dataset.playbackSpeed) || 1;
+            button.addEventListener("click", function () {
+              if (video.paused) {
+                video.play();
+                button.innerHTML = '<i class="fas fa-pause"></i>';
+              } else {
+                video.pause();
+                button.innerHTML = '<i class="fas fa-play"></i>';
+              }
+            });
+          })();
+        </script>
+      {{ end }}
+      <h1 
+        id="hero-video-heading-text" 
+        class="hero-video-heading"
+        style="color: {{ .heading.text_color }};"
+        data-editable="text"
+        data-prop="heading.heading_text"
+        data-type="span">
+        {{ .heading.heading_text }}
+      </h1>
+      {{ if or .subheading.text_content site.Params.ENV_CLIENT }}
+        <div 
+          class="markdown-text hero-video-subheading-text" 
+          style="color: {{ .subheading.text_color }};"
+          data-editable="text"
+          data-prop="subheading.text_content"
+          data-type="block">
+          {{ .subheading.text_content | markdownify }}
+        </div>
+      {{ end }}
+      {{ if or .buttons site.Params.ENV_CLIENT }}
+        <div
+          class="hero-video-buttons"
+          data-editable="array"
+          data-prop="buttons"
+          data-component-key="_name">
+          {{ range .buttons }}
+            <div data-editable="array-item" data-id="{{ ._name }}" data-component="{{ ._name }}">
+              {{ partial ._name . }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,54 @@
+.text-block-container {
+  max-width: 72ch;
+  padding-inline: var(--pagePadding);
+  padding-block: var(--sectionPaddingMobile);
+  margin: 0 auto;
+}
+
+.text-block .text-block-container h1,
+.text-block .text-block-container h2,
+.text-block .text-block-container h3,
+.text-block .text-block-container h4,
+.text-block .text-block-container h5 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 960px) {
+  .text-block-container {
+    padding-block: var(--sectionPadding);
+  }
+}
+
+/* Was an inline <style> block in the component. Kept at the end of this file
+   so it still wins over the .text-block-container rule above, exactly as the
+   inline block did by source order. Per-instance values arrive as custom
+   properties set on the component root. */
+.text-block {
+  background-color: var(--text-block-bg);
+}
+.text-block-container {
+  padding-top: calc(var(--sectionPaddingMobile));
+  padding-bottom: var(--sectionPaddingMobile);
+  padding-inline: var(--pagePadding);
+  max-width: var(--pageContainer);
+  margin-inline: auto;
+}
+.text-block-container h2 {
+  margin-block: 30px;
+}
+.text-block-body-content {
+  display: grid;
+  grid-template-columns: repeat(var(--text-block-columns), 1fr);
+  gap: 2rem;
+  text-align: var(--text-block-align);
+  color: var(--text-block-color);
+}
+.text-block-body-content > * {
+  margin-inline: var(--text-block-item-margin-inline);
+}
+@media only screen and (min-width: 768px) {
+  .text-block-container {
+    padding-top: calc(var(--sectionPadding));
+    padding-bottom: var(--sectionPadding);
+  }
+}

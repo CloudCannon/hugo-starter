@@ -38,16 +38,18 @@ The image processing on this template makes use of Hugo's built in [image proces
 
 In this template there exists the following examples of image processing:
 
-* A Bookshop component for image processing. This should be used when the image needs to update live in CloudCannon's Visual Editor. This is used throughout the placeholder Bookshop components on the site.
+* The `processed-image` partial. This should be used when the image needs to update live in CloudCannon's Visual Editor. It is used throughout the placeholder components on the site.
 * A built in [figure shortcode](https://gohugo.io/shortcodes/figure/), that comes out-of-the-box with Hugo. This is supposed to be used amongst your markdown content, for example in a blog post.
 * A 'hardcoded' example in the `layouts/blog/single.html` layout file, and in the `header` and `footer` partials.
 * In the `article-list` partial, which is used in the&nbsp;`layouts/blog/list.html` layout file, and in the `/layouts/\_default/taxonomy.html` layout file.
 
 ## Visual Editing Fallbacks
 
-As part of the image processing, the `resources.Get` function is used to fetch the image from the assets folder. An image living in the assets folder is referred to as a global resource in Hugo. The `resources.Get` function doesn't work in the Visual Editor so we must [detect when we're in the Visual Editor](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc#rendering-different-content-when-live-editing), and use a fallback when we are. The fallback will just be a normal HTML image element, meaning it won't use the `resources.Get` function, and will come from the `static` folder. The `static` folder is mounted to the `assets` folder in the `hugo.yml` config file so that images can be used out of either location with the same path.
+As part of the image processing, the `resources.Get` function is used to fetch the image from the assets folder. An image living in the assets folder is referred to as a global resource in Hugo. The `resources.Get` function doesn't work in the Visual Editor, so we must detect when we're being rendered there and use a fallback. The editable regions Hugo module sets a `site.Params.ENV_CLIENT` site parameter for exactly this: it is `false` in a normal build and `true` in the Visual Editor's renderer. The fallback is just a normal HTML image element, meaning it won't use the `resources.Get` function, and will come from the `static` folder. The `static` folder is mounted to the `assets` folder in the `hugo.yaml` config file so that images can be used out of either location with the same path.
 
-If we're using this image processing in a part of the site that isn't a Bookshop component, we don't need to use this visual editing fallback, as `resources.Get` will work as usual.
+This applies everywhere, not just inside components. The Visual Editor re-renders the whole page, so any template that calls `resources.Get` needs the fallback — including layouts and partials like the header logo, footer and article list. Without it those images render as nothing at all in the editor.
+
+All image rendering in this template goes through the `processed-image` partial, which handles the fallback in one place. Pass it an `image_path` and `image_alt`, plus optional `prop_src` and `prop_alt` selectors to make the image editable in place.
 
 ## A note on videos
 
