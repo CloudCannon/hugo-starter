@@ -1,5 +1,5 @@
 baseURL: 'https://adjective-noun.cloudvent.net/'
-languageCode: en-us
+locale: en-us
 title: Hugo Bookshop Starter
 module:
   replacements: local/component-library -> ../component-library
@@ -22,6 +22,15 @@ build:
     target: css
   - source: (postcss|tailwind)\.config\.js
     target: css
+security:
+  exec:
+    allow:
+      - ^(dart-)?sass$
+      - ^go$
+      - ^git$
+      - ^node$
+      - ^postcss$
+      - ^tailwindcss$
 markup:
   goldmark:
     renderer:
