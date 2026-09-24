@@ -1,5 +1,5 @@
 
-{{ with .Site.Data.nav }}
+{{ with hugo.Data.nav }}
 <footer
   class="footer"
   style="background-color: {{ .footer.background_color }}; color: {{ .footer.text_color }};">
@@ -27,7 +27,7 @@
               width="{{ .Width }}" 
               height="{{ .Height }}" 
               class="footer-logo-image"
-              alt="{{ $.Site.Data.nav.footer.logo_alt_text }}"
+              alt="{{ hugo.Data.nav.footer.logo_alt_text }}"
               loading="lazy"
             >
           {{ end }}

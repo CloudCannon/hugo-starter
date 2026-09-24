@@ -11,15 +11,15 @@
     <meta name="description" content="{{ .Params.seo.page_description }}">
     <meta property="og:description" content="{{ .Params.seo.page_description }}" />
   {{ else }}
-    <meta name="description" content="{{ site.Data.seo.description }}">
-    <meta property="og:description" content="{{ site.Data.seo.description }}" />
+    <meta name="description" content="{{ hugo.Data.seo.description }}">
+    <meta property="og:description" content="{{ hugo.Data.seo.description }}" />
   {{ end }}
 
   <!-- Meta tags for open graph -->
   {{ if eq .Permalink "/" }}
     <meta property="og:type" content="website" />
-    <meta name="og:image" content="{{ site.Data.seo.image }}" />
-    <meta name="og:image:alt" content="{{ site.Data.seo.image_alt }}" />
+    <meta name="og:image" content="{{ hugo.Data.seo.image }}" />
+    <meta name="og:image:alt" content="{{ hugo.Data.seo.image_alt }}" />
   {{ else }}
     {{ with .Params.seo.open_graph_type }}
       <meta property="og:type" content="{{ . }}" />
@@ -33,8 +33,8 @@
       <meta name="og:image" content="{{ . }}" />
       <meta name="og:image:alt" content="{{ $.Params.thumb_image_alt }}" />
     {{ else }}
-      <meta name="og:image" content="{{ site.Data.seo.image }}" />
-      <meta name="og:image:alt" content="{{ site.Data.seo.image_alt }}" />
+      <meta name="og:image" content="{{ hugo.Data.seo.image }}" />
+      <meta name="og:image:alt" content="{{ hugo.Data.seo.image_alt }}" />
     {{ end }}
   {{ end }}
 
@@ -46,9 +46,9 @@
 
   <!-- Canonical URL for SEO -->
   {{ with .Params.seo.canonical_url }}
-    <link rel="canonical" href="{{ site.Data.seo.base_url }}{{ . | absURL }}" />
+    <link rel="canonical" href="{{ hugo.Data.seo.base_url }}{{ . | absURL }}" />
   {{ else }}
-    <link rel="canonical" href="{{ site.Data.seo.base_url }}{{ .RelPermalink }}" />  
+    <link rel="canonical" href="{{ hugo.Data.seo.base_url }}{{ .RelPermalink }}" />  
   {{ end }}
 
 
@@ -56,23 +56,23 @@
     {{ if .Page.Title }} 
       <title>{{ .Page.Title }}</title>
       <meta name="og:title" content="{{ .Page.Title }}" />
-    {{ else if site.Data.seo.title }}
-      <title>{{ site.Data.seo.title }}</title>
-      <meta name="og:title" content="{{ site.Data.seo.title }}" />
+    {{ else if hugo.Data.seo.title }}
+      <title>{{ hugo.Data.seo.title }}</title>
+      <meta name="og:title" content="{{ hugo.Data.seo.title }}" />
     {{ else }}
       <title>Home</title>
       <meta name="og:title" content="Home" />
     {{ end }}
   {{ else }}
-    {{ if and .Page.Title site.Data.seo.title }}
-      <title>{{ print .Page.Title " | " site.Data.seo.title }}</title>
-      <meta name="og:title" content="{{ print .Page.Title " | " site.Data.seo.title }}" />
+    {{ if and .Page.Title hugo.Data.seo.title }}
+      <title>{{ print .Page.Title " | " hugo.Data.seo.title }}</title>
+      <meta name="og:title" content="{{ print .Page.Title " | " hugo.Data.seo.title }}" />
     {{ else if .Page.Title }}
       <title>{{ .Page.Title }}</title>
       <meta name="og:title" content="{{ .Page.Title }}" />
-    {{ else if site.Data.seo.title }}
-      <title>{{ site.Data.seo.title }}</title>
-      <meta name="og:title" content="{{ site.Data.seo.title }}" />
+    {{ else if hugo.Data.seo.title }}
+      <title>{{ hugo.Data.seo.title }}</title>
+      <meta name="og:title" content="{{ hugo.Data.seo.title }}" />
     {{ end }}
   {{ end }}
 
