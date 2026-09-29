@@ -1,11 +1,9 @@
 {{/*
   Site footer. Everything comes from data/nav.yml, so selectors are @data
   references and edits land in that file, not the current page.
-
-  footer.social stays sidebar-only: an icon class, a link and a name, with no
-  visible text to edit in place.
 */}}
-{{ with .Site.Data.nav }}
+
+{{ with hugo.Data.nav }}
 <footer
   class="footer"
   style="background-color: {{ .footer.background_color }}; color: {{ .footer.text_color }};">

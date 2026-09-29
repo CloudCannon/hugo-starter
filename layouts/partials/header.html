@@ -3,8 +3,11 @@
   references and edits land in that file, not the current page. `nav` must be
   listed in data_config in cloudcannon.config.yml for @data[nav] to resolve.
 */}}
-{{ with .Site.Data.nav }}
-<header class="header" x-data="{ open: false }" x-transition>
+{{ with hugo.Data.nav }}
+<header
+  class="header"
+  x-data="{ open: false }"
+  x-transition>
   <style>
     .header__nav-links { background-color: #fff; color: #333232; }
   </style>

@@ -14,10 +14,10 @@
     "preserved_paths": "resources/,.hugo_cache/,node_modules/",
     "preserve_output": false,
     "include_git": false,
-    "manually_configure_urls": false,
-    "hugo_version": "0.145.0",
+    "manually_configure_urls": true,
+    "hugo_version": "0.166.0",
     "ruby_version": "2.7.3",
-    "node_version": "20",
+    "node_version": "22",
     "deno_version": "1.40.2"
   }
 }
