@@ -15,27 +15,32 @@
     <meta property="og:description" content="{{ hugo.Data.seo.description }}" />
   {{ end }}
 
-  <!-- Meta tags for open graph -->
-  {{ if eq .Permalink "/" }}
-    <meta property="og:type" content="website" />
-    <meta name="og:image" content="{{ hugo.Data.seo.image }}" />
-    <meta name="og:image:alt" content="{{ hugo.Data.seo.image_alt }}" />
-  {{ else }}
+  <!-- Meta tags for open graph. The home page always uses the site-wide
+       image; other pages fall back to it. Open Graph needs absolute URLs, so
+       relative paths are prefixed with seo.base_url. -->
+  {{ $baseURL := strings.TrimSuffix "/" hugo.Data.seo.base_url }}
+  {{ $ogType := "website" }}
+  {{ $ogImage := hugo.Data.seo.image }}
+  {{ $ogImageAlt := hugo.Data.seo.image_alt }}
+  {{ if not .IsHome }}
     {{ with .Params.seo.open_graph_type }}
-      <meta property="og:type" content="{{ . }}" />
-    {{ else }}
-      <meta property="og:type" content="website" />
+      {{ $ogType = . }}
     {{ end }}
     {{ with .Params.seo.featured_image }}
-      <meta name="og:image" content="{{ . }}" />
-      <meta name="og:image:alt" content="{{ $.Params.seo.featured_image_alt }}" />
+      {{ $ogImage = . }}
+      {{ $ogImageAlt = $.Params.seo.featured_image_alt }}
     {{ else with .Params.thumb_image_path }}
-      <meta name="og:image" content="{{ . }}" />
-      <meta name="og:image:alt" content="{{ $.Params.thumb_image_alt }}" />
-    {{ else }}
-      <meta name="og:image" content="{{ hugo.Data.seo.image }}" />
-      <meta name="og:image:alt" content="{{ hugo.Data.seo.image_alt }}" />
+      {{ $ogImage = . }}
+      {{ $ogImageAlt = $.Params.thumb_image_alt }}
     {{ end }}
+  {{ end }}
+  <meta property="og:type" content="{{ $ogType }}" />
+  {{ with $ogImage }}
+    {{ if not (urls.Parse .).IsAbs }}
+      {{ $ogImage = printf "%s/%s" $baseURL (strings.TrimPrefix "/" .) }}
+    {{ end }}
+    <meta property="og:image" content="{{ $ogImage }}" />
+    <meta property="og:image:alt" content="{{ $ogImageAlt }}" />
   {{ end }}
 
   <!-- Add robots no index -->
@@ -44,35 +49,40 @@
     <meta name="googlebot" content="noindex">
   {{ end }}
 
-  <!-- Canonical URL for SEO -->
+  <!-- Canonical URL for SEO. canonical_url can be a full URL or a path on
+       this site. -->
+  {{ $canonical := printf "%s%s" $baseURL .RelPermalink }}
   {{ with .Params.seo.canonical_url }}
-    <link rel="canonical" href="{{ hugo.Data.seo.base_url }}{{ . | absURL }}" />
-  {{ else }}
-    <link rel="canonical" href="{{ hugo.Data.seo.base_url }}{{ .RelPermalink }}" />  
+    {{ if (urls.Parse .).IsAbs }}
+      {{ $canonical = . }}
+    {{ else }}
+      {{ $canonical = printf "%s/%s" $baseURL (strings.TrimPrefix "/" .) }}
+    {{ end }}
   {{ end }}
+  <link rel="canonical" href="{{ $canonical }}" />
 
 
   {{ if .Page.IsHome }}
     {{ if .Page.Title }} 
       <title>{{ .Page.Title }}</title>
-      <meta name="og:title" content="{{ .Page.Title }}" />
+      <meta property="og:title" content="{{ .Page.Title }}" />
     {{ else if hugo.Data.seo.title }}
       <title>{{ hugo.Data.seo.title }}</title>
-      <meta name="og:title" content="{{ hugo.Data.seo.title }}" />
+      <meta property="og:title" content="{{ hugo.Data.seo.title }}" />
     {{ else }}
       <title>Home</title>
-      <meta name="og:title" content="Home" />
+      <meta property="og:title" content="Home" />
     {{ end }}
   {{ else }}
     {{ if and .Page.Title hugo.Data.seo.title }}
       <title>{{ print .Page.Title " | " hugo.Data.seo.title }}</title>
-      <meta name="og:title" content="{{ print .Page.Title " | " hugo.Data.seo.title }}" />
+      <meta property="og:title" content="{{ print .Page.Title " | " hugo.Data.seo.title }}" />
     {{ else if .Page.Title }}
       <title>{{ .Page.Title }}</title>
-      <meta name="og:title" content="{{ .Page.Title }}" />
+      <meta property="og:title" content="{{ .Page.Title }}" />
     {{ else if hugo.Data.seo.title }}
       <title>{{ hugo.Data.seo.title }}</title>
-      <meta name="og:title" content="{{ hugo.Data.seo.title }}" />
+      <meta property="og:title" content="{{ hugo.Data.seo.title }}" />
     {{ end }}
   {{ end }}
 

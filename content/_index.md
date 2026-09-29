@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: CloudCannon Hugo Starter
+title: Hugo Starter
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Hugo, using
@@ -14,7 +14,7 @@ content_blocks:
   - _name: hero
     background_color: '#ffffff'
     heading:
-      heading_text: CloudCannon Hugo Starter
+      heading_text: Hugo Starter
       text_color: '#333232'
       heading_gradient_color: '#A0A2FF'
     subheading:
@@ -55,7 +55,7 @@ content_blocks:
       text_color: '#333232'
     text:
       text_content: >-
-        The Hugo CloudCannon Starter's aim is to get developers building their
+        The Hugo Starter's aim is to get developers building their
         own site quickly in CloudCannon. This template is trying to strike a
         balance between minimalism and easy-to-delete boilerplate, while
         providing some commonly used features out of the box:

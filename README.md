@@ -1,12 +1,12 @@
-# Hugo CloudCannon Starter
+# Hugo Starter by CloudCannon
 
-A starting template for developers looking to build a site suitable for editing in CloudCannon with Hugo. Created by, and optimized for, CloudCannon.
+A starting template for Hugo sites that are editable in place in CloudCannon's Visual Editor, using [editable regions](https://github.com/CloudCannon/editable-regions). Created by, and optimized for, CloudCannon.
 
 Create your own copy, and start creating your own components quickly, to build your own component-based page building system. A blog section demonstrates best practices for editing longer form text in CloudCannon, using fixed layouts with changing content, instead of the component-based approach with pages that have unique layouts.
 
 This template is aimed at helping developers build sites quickly, rather than providing editors with a fully built editable site. If you are an editor looking for an fully built template, have a look at [CloudCannon's templates page](https://cloudcannon.com/templates/).
 
-[See a demo version of this site](https://moss-goldfish.cloudvent.net/).
+[See a demo version of this site](https://frank-pine.cloudvent.net/).
 
 ## Getting started 
 
@@ -47,7 +47,7 @@ To create a copy of your repository to work on your local machine:
 
 4. Run `npm start`.
 
-5. Navigate to https://localhost:1313.
+5. Navigate to http://localhost:1313.
 
 ## Components and page building
 
@@ -92,7 +92,6 @@ you see the editing experience without committing and pushing first.
 
    ```bash
    npm run build
-   npx @bookshop/generate
    ```
 
 3. Start CloudCannon locally, pointing it at the build output:
@@ -105,10 +104,12 @@ The dev server runs on port `10101` by default and opens CloudCannon in your bro
 files in this repo. Content edits sync to disk as you make them; re-run the build after changing
 components or templates to refresh the preview.
 
-`@bookshop/generate` is what `.cloudcannon/postbuild` runs after the Hugo build. It writes the
-Bookshop live-editing bundle into the output, and it isn't committed — so skip it and components
-won't be editable on the preview. The same postbuild also runs Pagefind
-(`npx -y pagefind --site public`) if you want site search in the preview.
+On CloudCannon, `.cloudcannon/postbuild` runs Pagefind after the Hugo build. To get site search in
+the local preview too, run it yourself after building:
+
+```bash
+npx -y pagefind --site public
+```
 
 Before you commit configuration changes, validate them:
 
@@ -122,28 +123,28 @@ for the full workflow.
 
 ## Features
 
-- [Blog with pagination & tags](https://moss-goldfish.cloudvent.net/blog/paginated-collection/)
+- [Blog with pagination & tags](https://frank-pine.cloudvent.net/blog/paginated-collection/)
 
-- [Markdown options & styles](https://moss-goldfish.cloudvent.net/blog/markdown/)
+- [Markdown options & styles](https://frank-pine.cloudvent.net/blog/markdown/)
 
-- [Tailwind](https://moss-goldfish.cloudvent.net/blog/tailwind/)
+- [Tailwind](https://frank-pine.cloudvent.net/blog/tailwind/)
 
-- [Font Awesome icons](https://moss-goldfish.cloudvent.net/blog/icons/)
+- [Font Awesome icons](https://frank-pine.cloudvent.net/blog/icons/)
 
-- [Page building in CloudCannon with editable regions](https://moss-goldfish.cloudvent.net/blog/editable-regions/)
+- [Page building in CloudCannon with editable regions](https://frank-pine.cloudvent.net/blog/editable-regions/)
 
-- [Built-in search with Pagefind](https://moss-goldfish.cloudvent.net/blog/search/)
+- [Built-in search with Pagefind](https://frank-pine.cloudvent.net/blog/search/)
 
-- [Image processing](https://moss-goldfish.cloudvent.net/blog/processed-images/)
+- [Image processing](https://frank-pine.cloudvent.net/blog/processed-images/)
 
-- [Pre-configured shortcodes](https://moss-goldfish.cloudvent.net/blog/markdown/#snippets)
+- [Pre-configured shortcodes](https://frank-pine.cloudvent.net/blog/markdown/#snippets)
 
-- [Header and Footer controls](https://moss-goldfish.cloudvent.net/blog/data-files/)
+- [Header and Footer controls](https://frank-pine.cloudvent.net/blog/data-files/)
 
-- [Creating and deleting pages](https://moss-goldfish.cloudvent.net/blog/page-building/)
+- [Creating and deleting pages](https://frank-pine.cloudvent.net/blog/page-building/)
 
-- [Accessibility controls](https://moss-goldfish.cloudvent.net/blog/lighthouse-scores/#accessibility)
+- [Accessibility controls](https://frank-pine.cloudvent.net/blog/lighthouse-scores/#accessibility)
 
-- [SEO controls](https://moss-goldfish.cloudvent.net/blog/seo/)
+- [SEO controls](https://frank-pine.cloudvent.net/blog/seo/)
 
-- [Color palette controls](https://moss-goldfish.cloudvent.net/blog/data-files/)
+- [Color palette controls](https://frank-pine.cloudvent.net/blog/data-files/)

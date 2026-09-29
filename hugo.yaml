@@ -1,6 +1,6 @@
-baseURL: 'https://adjective-noun.cloudvent.net/'
+baseURL: 'https://frank-pine.cloudvent.net/'
 locale: en-us
-title: Hugo Editable Regions Starter
+title: Hugo Starter
 module:
   imports:
     - path: github.com/CloudCannon/editable-regions

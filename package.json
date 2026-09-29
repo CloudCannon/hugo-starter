@@ -1,7 +1,7 @@
 {
-  "name": "hugo-editable-regions-starter",
+  "name": "hugo-starter",
   "type": "module",
-  "description": "A starter template for Hugo with CloudCannon editable regions",
+  "description": "A starter template for Hugo, editable in CloudCannon with editable regions",
   "scripts": {
     "start": "run-p dev:hugo",
     "build": "run-p build:*",
