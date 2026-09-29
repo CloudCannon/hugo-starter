@@ -7,6 +7,12 @@
   flex-direction: column;
   align-items: center;
 }
+/* Fill the column so wide content (long code lines) scrolls inside its own
+   box instead of stretching the body past the page width. */
+.blog-post > .markdown-text {
+  width: 100%;
+  min-width: 0;
+}
 .blog-hero {
   width: 100%;
   display: flex;

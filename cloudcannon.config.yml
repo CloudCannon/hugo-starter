@@ -803,7 +803,6 @@ _snippets:
     _inputs:
       background_color:
         type: select
-        comment: Test this config works
         options:
           values: data.colors
           value_key: value
@@ -836,7 +835,7 @@ _snippets:
         comment: The text displayed in the alert.
         type: textarea
   accordion:
-    template: hugo_paired_shortcode_named_args
+    template: hugo_paired_shortcode_positional_args
     inline: false
     preview:
       text:
@@ -859,6 +858,8 @@ _snippets:
         options:
           blockquote: true
           bold: true
+          code_block: true
+          code_inline: true
           format: p
           italic: true
           strike: true

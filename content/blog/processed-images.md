@@ -32,7 +32,7 @@ seo:
 ---
 Sometimes editors will&nbsp;inadvertently upload and use images that are unnecessarily large for use on your site. This can bloat the page size, leading to long load times. Processing the images as part of the build and using this processed image can help safeguard against this, without the editor needing to consider image sizes. Of course it is probably best for editors to at least somewhat consider it, to prevent your Git repository becoming excessively large, but at least with this protection in place your production site's load times will be protected.&nbsp;
 
-{{< alert background_color="" alert_message="If your Git repository is becoming excessively large, consider using a Digital Asset Manager for your image management." color="" icon="" >}}
+{{< alert background_color="#034AD8" alert_message="If your Git repository is becoming excessively large, consider using a Digital Asset Manager for your image management." color="#ffffff" icon="fas fa-info-circle" >}}
 
 The image processing on this template makes use of Hugo's built in [image processing methods](https://gohugo.io/content-management/image-processing/). These take your original image, resize it into a more appropriate size for your site, and change it to a format of your choosing.
 

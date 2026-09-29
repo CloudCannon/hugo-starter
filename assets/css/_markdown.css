@@ -135,6 +135,8 @@
 .markdown-text pre {
   margin-block: 1.5rem;
   padding: 1rem;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .markdown-text p code,
 .markdown-text li code {
