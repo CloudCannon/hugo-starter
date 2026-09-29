@@ -4,8 +4,10 @@
   taxonomies, so there is no single object to bind a component region to.
   Selectors here are paths from the file root.
 
-  tags stays sidebar-only. It is a multiselect from data/tags.yml, and inline
-  editing would allow values that aren't in that list.
+  tags and date stay sidebar-only (tags is a multiselect from data/tags.yml,
+  and the date goes through time.Format, so neither round-trips inline). Each
+  is wrapped in a component region instead, so the preview re-renders them
+  live when they change in the sidebar.
 */}}
 <div class="blog-hero" aria-labelledby="blog-heading-text">
   {{ partial "processed-image" (dict
@@ -18,14 +20,10 @@
     "class" "blog-hero-image"
   ) }}
 
-  {{ with .Params.tags }}
-    <div class="blog-post-tags">
-      {{ range . }} 
-        {{ $href := print (absURL "tags/") (urlize .) }}
-        <a href="{{ $href }}">{{ . | humanize }}</a>
-      {{ end }}
-    </div>
-  {{ end }}
+  {{/* Rendered even with no tags, so adding the first one shows live. */}}
+  <div class="blog-post-tags" data-editable="component" data-component="blog-tags" data-prop="tags">
+    {{- partial "blog-tags" .Params.tags -}}
+  </div>
   <h1
     id="blog-heading-text"
     class="blog-title"
@@ -34,10 +32,10 @@
     data-type="span">{{ .Params.post_hero.heading }}</h1>
   <div class="blog-details">
     <ul>
-      {{/* Rendered through time.Format, so not round-trippable.
-           Sidebar only. */}}
       {{ with .Params.post_hero.date }}
-        <li>{{ . | time.Format ":date_long" }}</li>
+        <li data-editable="component" data-component="blog-date" data-prop="post_hero.date">
+          {{- partial "blog-date" . -}}
+        </li>
       {{ end }}
       {{ if .Params.post_hero.author }} 
         <li data-editable="text" data-prop="post_hero.author" data-type="span">{{ .Params.post_hero.author }}</li>

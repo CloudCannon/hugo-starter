@@ -1,0 +1,6 @@
+{{- /*
+  Blog post date. Takes the date value, so it can back a component region
+  bound to data-prop="post_hero.date" and re-render live when the date changes
+  in the sidebar.
+*/ -}}
+{{- with . }}{{ . | time.Format ":date_long" }}{{ end -}}
