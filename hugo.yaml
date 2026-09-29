@@ -1,5 +1,5 @@
 baseURL: 'https://adjective-noun.cloudvent.net/'
-languageCode: en-us
+locale: en-us
 title: Hugo Editable Regions Starter
 module:
   imports:
