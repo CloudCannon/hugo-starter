@@ -1,6 +1,6 @@
 header:
-  logo: /images/logos/logo-wordmark-blue.png
-  logo_alt_text: CloudCannon
+  logo: /images/logos/hugo-starter-logo.svg
+  logo_alt_text: Hugo Starter
   logo_url: '/'
   background_color: 'transparent'
   text_color: '#333232'
@@ -13,9 +13,9 @@ header:
     - text: CloudCannon
       link: "https://cloudcannon.com/"
 footer:
-  logo: /images/logos/logo-wordmark-white.png
+  logo: /images/logos/hugo-starter-logo-reversed.svg
   logo_url: '/'
-  logo_alt_text: CloudCannon
+  logo_alt_text: Hugo Starter
   background_color: '#333232'
   text_color: '#ffffff'
   social:
