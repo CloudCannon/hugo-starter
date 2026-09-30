@@ -29,6 +29,12 @@
   margin-block: 2rem;
 }
 
+/* Sized to the button, so the Visual Editor's edit controls sit on the
+   button rather than at the far edge of the text column. */
+.left-right__button {
+  width: fit-content;
+}
+
 .left-right__image-flipped,
 .left-right__image-unflipped {
   width: 100%;

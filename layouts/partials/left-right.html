@@ -34,7 +34,7 @@
           {{ .text.text_content | markdownify }}
         </div>
         {{ with .button }}
-          <div data-editable="component" data-prop="button" data-component="{{ ._name }}">
+          <div class="left-right__button" data-editable="component" data-prop="button" data-component="{{ ._name }}">
             {{ partial ._name . }}
           </div>
         {{ end }}
@@ -60,7 +60,7 @@
           {{ .text.text_content | markdownify }}
         </div>
         {{ with .button }}
-          <div data-editable="component" data-prop="button" data-component="{{ ._name }}">
+          <div class="left-right__button" data-editable="component" data-prop="button" data-component="{{ ._name }}">
             {{ partial ._name . }}
           </div>
         {{ end }}

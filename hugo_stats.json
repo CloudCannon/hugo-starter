@@ -102,6 +102,7 @@
       "items-center",
       "justify-center",
       "left-right",
+      "left-right__button",
       "left-right__image-flipped",
       "left-right__image-unflipped",
       "left-right__text",
