@@ -18,7 +18,7 @@
   /* Set here rather than hardcoded to work out the styles for hero components overlapping header */
   /* When increasing header padding, make sure to increase headerHeight to make room */
   /* Logo size is calculated by subtracting headerPadding * 2 from the headerHeight */
-  --headerHeight: 4rem;
+  --headerHeight: 5rem;
   --headerPadding: 1rem;
 }
 
@@ -32,4 +32,18 @@ main {
 
 img {
   object-fit: cover;
+}
+
+/* Anchors the Visual Editor's edit controls (the pencil) to their region.
+   editable-regions sets anchor-name inline, but when a parent component
+   re-renders its diff strips that style attribute, so regions nested inside
+   a component (e.g. the left-right button) lose their pencil. A stylesheet
+   anchor survives the diff, and anchor-scope keeps the shared name resolving
+   to each region's own controls. No effect outside the editor. */
+[data-editable="component"],
+[data-editable="array-item"],
+editable-component,
+editable-array-item {
+  anchor-name: --cc-editable-region;
+  anchor-scope: --cc-editable-region;
 }

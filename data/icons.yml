@@ -1,4 +1,4 @@
-# See static/custom-icons/custom-icons.css to copy how to add other custom icons
+# See static/css/custom-icons.css to copy how to add other custom icons
 - name: CloudCannon
   icon_code: custom-icon-cloudcannon 
 # FontAwesome free icons

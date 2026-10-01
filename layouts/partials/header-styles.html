@@ -1,5 +1,13 @@
-{{ $firstContentBlock := index .Params.content_blocks 0 }}
-{{ $override := $firstContentBlock.header_style_overrides }}
+{{/*
+  Per-page header colour overrides from the first content block.
+  content_blocks is nil on blog posts and list pages, so the lookup is guarded.
+*/}}
+{{ $override := dict }}
+{{ with .Params.content_blocks }}
+  {{ with (index . 0).header_style_overrides }}
+    {{ $override = . }}
+  {{ end }}
+{{ end }}
 {{ $original := .nav.header }}
 <style>
   /* Text color */

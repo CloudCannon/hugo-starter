@@ -1,0 +1,47 @@
+{{/*
+  Blog post hero. Takes the page, not a props object: it reads both
+  .Params.post_hero and .Params.tags, and tags has to stay top-level for Hugo's
+  taxonomies, so there is no single object to bind a component region to.
+  Selectors here are paths from the file root.
+
+  tags and date stay sidebar-only (tags is a multiselect from data/tags.yml,
+  and the date goes through time.Format, so neither round-trips inline). Each
+  is wrapped in a component region instead, so the preview re-renders them
+  live when they change in the sidebar.
+*/}}
+<div class="blog-hero" aria-labelledby="blog-heading-text">
+  {{ partial "processed-image" (dict
+    "image_path" .Params.post_hero.image
+    "image_alt" .Params.post_hero.image_alt
+    "prop_src" "post_hero.image"
+    "prop_alt" "post_hero.image_alt"
+    "image_width" "1000"
+    "image_format" "webp"
+    "class" "blog-hero-image"
+  ) }}
+
+  {{/* Rendered even with no tags, so adding the first one shows live. */}}
+  <div class="blog-post-tags" data-editable="component" data-component="blog-tags" data-prop="tags">
+    {{- partial "blog-tags" .Params.tags -}}
+  </div>
+  <h1
+    id="blog-heading-text"
+    class="blog-title"
+    data-editable="text"
+    data-prop="post_hero.heading"
+    data-type="span">{{ .Params.post_hero.heading }}</h1>
+  <div class="blog-details">
+    <ul>
+      {{ with .Params.post_hero.date }}
+        <li data-editable="component" data-component="blog-date" data-prop="post_hero.date">
+          {{- partial "blog-date" . -}}
+        </li>
+      {{ end }}
+      {{ if .Params.post_hero.author }} 
+        <li data-editable="text" data-prop="post_hero.author" data-type="span">{{ .Params.post_hero.author }}</li>
+      {{ else }}
+        <li>{{ site.Data.seo.default_author }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

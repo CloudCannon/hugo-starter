@@ -1,6 +1,6 @@
 # 🚀 Welcome to the Hugo Starter on CloudCannon
 
-This is the **Hugo CloudCannon Starter**, a fully configured Hugo site built with Bookshop components. Use it to explore how CloudCannon works — build pages visually from components, write blog posts, and manage site data.
+This is the **Hugo Starter**, a fully configured Hugo site built from components that are editable in place with CloudCannon's editable regions. Use it to explore how CloudCannon works — build pages visually from components, write blog posts, and manage site data.
 
 This site is your sandbox, so go ahead and change anything (you can always make a new copy).
 

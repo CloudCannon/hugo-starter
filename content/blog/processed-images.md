@@ -32,25 +32,27 @@ seo:
 ---
 Sometimes editors will&nbsp;inadvertently upload and use images that are unnecessarily large for use on your site. This can bloat the page size, leading to long load times. Processing the images as part of the build and using this processed image can help safeguard against this, without the editor needing to consider image sizes. Of course it is probably best for editors to at least somewhat consider it, to prevent your Git repository becoming excessively large, but at least with this protection in place your production site's load times will be protected.&nbsp;
 
-{{< alert background_color="" alert_message="If your Git repository is becoming excessively large, consider using a Digital Asset Manager for your image management." color="" icon="" >}}
+{{< alert background_color="#034AD8" alert_message="If your Git repository is becoming excessively large, consider using a Digital Asset Manager for your image management." color="#ffffff" icon="fas fa-info-circle" >}}
 
 The image processing on this template makes use of Hugo's built in [image processing methods](https://gohugo.io/content-management/image-processing/). These take your original image, resize it into a more appropriate size for your site, and change it to a format of your choosing.
 
-In this template there exists the following examples of image processing:
+In this template, image processing is handled by the `processed-image` partial, which is used in:
 
-* A Bookshop component for image processing. This should be used when the image needs to update live in CloudCannon's Visual Editor. This is used throughout the placeholder Bookshop components on the site.
-* A built in [figure shortcode](https://gohugo.io/shortcodes/figure/), that comes out-of-the-box with Hugo. This is supposed to be used amongst your markdown content, for example in a blog post.
-* A 'hardcoded' example in the `layouts/blog/single.html` layout file, and in the `header` and `footer` partials.
-* In the `article-list` partial, which is used in the&nbsp;`layouts/blog/list.html` layout file, and in the `/layouts/\_default/taxonomy.html` layout file.
+* The placeholder components on the site, such as `hero` and `left-right`.
+* The blog post layout, `layouts/blog/single.html`, and the `blog-hero` partial.
+* The `header-logo` and `footer` partials.
+* The `article-list` partial, which is used in the&nbsp;`layouts/blog/list.html` layout file, and in the `/layouts/\_default/taxonomy.html` layout file.
 
 ## Visual Editing Fallbacks
 
-As part of the image processing, the `resources.Get` function is used to fetch the image from the assets folder. An image living in the assets folder is referred to as a global resource in Hugo. The `resources.Get` function doesn't work in the Visual Editor so we must [detect when we're in the Visual Editor](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc#rendering-different-content-when-live-editing), and use a fallback when we are. The fallback will just be a normal HTML image element, meaning it won't use the `resources.Get` function, and will come from the `static` folder. The `static` folder is mounted to the `assets` folder in the `hugo.yml` config file so that images can be used out of either location with the same path.
+As part of the image processing, the `resources.Get` function is used to fetch the image from the assets folder. An image living in the assets folder is referred to as a global resource in Hugo. The `resources.Get` function doesn't work in the Visual Editor, so we must detect when we're being rendered there and use a fallback. The editable regions Hugo module sets a `site.Params.ENV_CLIENT` site parameter for exactly this: it is `false` in a normal build and `true` in the Visual Editor's renderer. The fallback is just a normal HTML image element, meaning it won't use the `resources.Get` function, and will come from the `static` folder. The `static` folder is mounted to the `assets` folder in the `hugo.yaml` config file so that images can be used out of either location with the same path.
 
-If we're using this image processing in a part of the site that isn't a Bookshop component, we don't need to use this visual editing fallback, as `resources.Get` will work as usual.
+This applies everywhere, not just inside components. The Visual Editor re-renders the whole page, so any template that calls `resources.Get` needs the fallback — including layouts and partials like the header logo, footer and article list. Without it those images render as nothing at all in the editor.
+
+All image rendering in this template goes through the `processed-image` partial, which handles the fallback in one place. Pass it an `image_path` and `image_alt`, plus optional `prop_src` and `prop_alt` selectors to make the image editable in place.
 
 ## A note on videos
 
-The placeholder component `heroes/hero-video` has a video background that is self-hosted - meaning it comes straight from the `static` folder. This video uses a [poster](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/poster) image while it loads the video. There is no way to process the image used for the poster, so care must be taken to ensure the image used is a reasonable size. (Something in the realm of &lt;100kb as a ballpark figure.)
+The placeholder component `hero-video` has a video background that is self-hosted - meaning it comes straight from the `static` folder. This video uses a [poster](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/poster) image while it loads the video. There is no way to process the image used for the poster, so care must be taken to ensure the image used is a reasonable size. (Something in the realm of &lt;100kb as a ballpark figure.)
 
 Similarly, no processing is run by Hugo on the video itself. Videos can quickly bloat your page size, and slow load times. If you want to use a video background on your site, it is recommended to use a video hosting platform like Vimeo (which lets you customize the video to fit with the styles on your site), or YouTube (not-so-customizable). You could also use a DAM like Cloudinary to avoid self-hosting the video.

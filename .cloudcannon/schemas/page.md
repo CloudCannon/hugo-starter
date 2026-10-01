@@ -8,7 +8,7 @@ seo:
   open_graph_type: website
   no_index: false
 content_blocks:
-  - _bookshop_name: heroes/hero
+  - _name: hero
     background_color: '#ffffff'
     heading:
       heading_text: 

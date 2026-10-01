@@ -98,3 +98,6 @@
     justify-content: start;
   }
 }
+.blog-post-tags:empty {
+  display: none;
+}

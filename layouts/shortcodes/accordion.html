@@ -1,4 +1,6 @@
+{{/* summary is positional, matching the _snippets.accordion definition in
+     cloudcannon.config.yml. */}}
 <details>
-  <summary>{{ .Params.summary }}</summary>
+  <summary>{{ .Get 0 }}</summary>
   {{ .Inner | markdownify }}
 </details>

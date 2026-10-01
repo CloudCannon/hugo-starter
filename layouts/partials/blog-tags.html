@@ -1,0 +1,8 @@
+{{- /*
+  Blog post tag links. Takes the tags array, so it can back a component
+  region bound to data-prop="tags" and re-render live when tags change in the
+  sidebar. Whitespace is trimmed so an empty list leaves the wrapper :empty.
+*/ -}}
+{{- range . -}}
+  <a href="{{ print (absURL "tags/") (urlize .) }}">{{ . | humanize }}</a>
+{{- end -}}

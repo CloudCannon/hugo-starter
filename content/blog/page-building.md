@@ -8,7 +8,7 @@ post_hero:
   image: /images/blog/pexels-edmond-dantes.jpg
   image_alt: A group collaborating around a table.
 tags:
-  - bookshop
+  - editable regions
   - components
   - schemas
   - editing
@@ -33,9 +33,9 @@ Schemas are used for creating files with consistent content and populating the i
 
 A blog schema might contain title, author, and hero image inputs in the front matter. A changelog schema for a technical documentation site might contain a date input in the front matter and headings for “Features” and “Fixes” in the Markdown content. A review schema might contain inputs for title, author, and rating, and “Today, we are reviewing the…” as the opening line in the Markdown content.
 
-## Bookshop
+## Editable regions
 
-Build custom components that non-technical editors can use in a page building experience in CloudCannon. [Bookshop](/blog/bookshop/) enables live editing in CloudCannon's visual editor.
+Build custom components that non-technical editors can use in a page building experience in CloudCannon. [Editable regions](/blog/editable-regions/) enable live editing in CloudCannon's Visual Editor.
 
 Editors can reuse existing components with new content to build new pages in the CMS.
 

@@ -1,0 +1,13 @@
+{{/* Secondary button. See button-primary.html. */}}
+<a
+  class="secondary-button"
+  href="{{ .button_link }}"
+  {{ with .button_aria_label }}aria-label="{{ . }}"{{ end }}
+  style="background-color: transparent; border: 2px solid {{ .background_color }}; --hover-brightness: {{ .hover_brightness }};">
+  <p class="button__link" style="color: {{ .text_color }};">
+    {{ with .button_icon }}
+      <span class="button__icon"><i class="{{ . }}"></i></span>
+    {{ end }}
+    <span data-editable="text" data-prop="button_text" data-type="span">{{ .button_text }}</span>
+  </p>
+</a>

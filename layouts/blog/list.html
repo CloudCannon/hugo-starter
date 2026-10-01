@@ -1,3 +1,3 @@
 {{ define "main" }}
-  {{ partial "article-list" (dict "context" . "page_size" .Params.page_size) }}
+  {{ partial "article-list" (dict "context" . "page_size" .Params.page_size "editable_title" true) }}
 {{ end }}
